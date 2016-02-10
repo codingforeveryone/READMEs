@@ -3,11 +3,10 @@
 [![Join the chat at https://gitter.im/codingforeveryone/READMEs](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-This is a simple tutorial  to provide an introduction to Markdown and a reference to the most frequently used sintax.  
+This is a simple tutorial  to provide a refresher to Markdown and a reference to the most frequently used sintax.  
 Here there is a short [interactive markdown tutorial](http://markdowntutorial.com/) to try.   
-Additionally this is a link to [John Gruber site](https://daringfireball.net/projects/markdown/syntax), the creator of markdown, for a more exaustive list of the sintax.  
-
-Below you can find a small cheatsheet with some sintax present in the interactive tutorial for quick reference.
+This is a link to [John Gruber site](https://daringfireball.net/projects/markdown/syntax), the creator of markdown, for a more exaustive list of the sintax.  
+Below you can find a small cheat sheet with some sintax present in the interactive tutorial, for quick reference.
 
 ### CheatSheet
 
@@ -18,13 +17,13 @@ Below you can find a small cheatsheet with some sintax present in the interactiv
 
 
 * bold
- * \*myWord\*    -->   *myWord*
- * \*myWord1 myWord2\*   -->   *myWord1 myWord2*
+ * \*\*myWord\*\*    -->   **myWord**
+ * \*\*myWord1 myWord2\*\*   -->   **myWord1 myWord2**
 
 
 
 * header  
-The number of hashtag indicates what kind of header you are creating.
+The number of hashtags indicates what kind of header you are creating.
  * \#header1 
  * \#\#header2
  * \#\#\#header3 
