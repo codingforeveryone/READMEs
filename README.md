@@ -1,5 +1,7 @@
 # READMEs
 
+[![Join the chat at https://gitter.im/codingforeveryone/READMEs](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a place for creating and using tutorials. The idea is to create a short tutorial on a topic of your choice as a way to consolidate your own learning and to help others. 
 
 We recommend that you create a pull request for your tutorial and put a request on Gitter for it to be reviewed and merged into the *master* branch.
