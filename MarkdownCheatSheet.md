@@ -4,7 +4,7 @@
 
 
 This is a simple tutorial  to provide an introduction to Markdown and a reference to the most frequently used sintax.
-Here there is a short [interactive markdown tutorial](http://markdowntutorial.com/) to try.  
+Here there is a short [interactive markdown tutorial](http://markdowntutorial.com/) to try.   
 Additionally this is a link to [John Gruber site](https://daringfireball.net/projects/markdown/syntax), the creator of markdown, for a more exaustive list of the sintax.
 Below you can find a small cheatsheet with some sintax present in the interactive tutorial for quick reference.
 
@@ -38,8 +38,8 @@ Below you can find a small cheatsheet with some sintax present in the interactiv
  * \> 
 
 * lists
- * unordened lists \* myWord  --> * myWord
- * ordered lists \1. myWord  --> 1. myWord
+ * unordened lists \* myWord
+ * ordered lists \1. myWord
 
 
 
