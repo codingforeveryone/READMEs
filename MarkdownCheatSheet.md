@@ -8,6 +8,27 @@ Here there is a short [interactive markdown tutorial](http://markdowntutorial.co
 This is a link to [John Gruber site](https://daringfireball.net/projects/markdown/syntax), the creator of markdown, for a more exaustive list of the sintax.  
 Below you can find a small cheat sheet with some sintax present in the interactive tutorial, for quick reference.
 
+##### Further text formatting
+If you want to achieve some effects that are not covered by basic Markdown syntax, you can **embed standard html tags** in Markdown and use inline css.
+
+For example if you want to have text wrapping around an image you could do the following, replace:
+
+```
+![karate kata gif](https://45.media.tumblr.com/tumblr_m67my3RMlA1rvcjd7o1_400.gif)
+```
+
+with:
+
+```
+<img  src="https://45.media.tumblr.com/tumblr_m67my3RMlA1rvcjd7o1_400.gif" alt="karate kata gif" style="float: right; padding-left: 1%">
+```
+
+
+Beware that what showed above **will not work on GitHub** due to Github Markdown Limitation.
+GitHub accepts html tags in the Markdown, but for consistency/safety reasons it strips the 'style' parameter.
+See [here](http://stackoverflow.com/questions/20598628/do-style-tags-work-in-markdown) for a better explanation.
+
+
 ### CheatSheet
 
 * italics
@@ -43,9 +64,4 @@ The number of hashtags indicates what kind of header you are creating.
  use \* followed by a space and your text
  * ordered lists  
  use 1. followed by a space and  your text
-
-
-
-
-
 
