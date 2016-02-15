@@ -60,7 +60,7 @@ passing them as argumenst to `add` and `addCheck` and comparing the two outputs.
 
 You might be thinking that if you only slightly changed the function’s name (from `add` to `addCheck`) and nothing else,
 then it is obvious that they will produce exactly the same results and therefore pass all the tests, since they are exactly the same
-except the name. Well, don’t forget that the ‘addCheck’ function’s output will be compared not against your output, but against the
+except the name. Well, don’t forget that the `addCheck` function’s output will be compared not against your output, but against the
 user’s output.
 
 Obviously, not for all test cases you need to generate numbers as sometimes you will need to generate strings, stings of random length
