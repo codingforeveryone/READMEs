@@ -3,28 +3,28 @@ the same with function expressions?
 
 For instance, with function statements you can do the following, you can put the call to them before themselves:
 
-'''love(); // produces ‘I love you’
+```love(); // produces ‘I love you’
 function love(){
 console.log(‘I love you’);
-}'''
+}```
 
 On the other hand, with function expressions, the following doesn’t work:
 
-'''love(); //this produces an error
+```love(); //this produces an error
 var love = function(){
 console.log(‘I love you’);
-}'''
+}```
 
 Further, if you console.log some variable before the variable is declared in your code, you will not get an error but simply
 ‘undefined’, which is not an error but a value.
 
-'''console.log(a); //produces ‘undefined’
-var a = ‘what up man’;'''
+```console.log(a); //produces ‘undefined’
+var a = ‘what up man’;```
 
 Whereas:
 
-'''var a = ‘what up man’;
-console.log(a); // produces ‘what up man’'''
+```var a = ‘what up man’;
+console.log(a); // produces ‘what up man’```
 
 So how do we explain this behaviour? All this has to do with hoisting. You may have heard that hoisting is something that the
 JavaScript engine does whereby the variables ‘are moved to the top’. While this may be visually the easiest way to imagine it,
@@ -37,22 +37,22 @@ function statements. I repeat, for variables **AND** function statements. Functi
 However, as far as variables are concerned, the assignments to them (their values) are not put into memory. So regarding the following
 code:
 
-'''swear();
+```swear();
 console.log(a);
 function swear(){
 console.log(‘damn’)
 }
-var a = ‘I like’;'''
+var a = ‘I like’;```
 
 What is going to be put into memory in the creation phase is that function statement in its entirety:
 
-'''function swear(){
+```function swear(){
 console.log(‘damn’)
-}'''
+}```
 
 And the variable a without its value (assignment): 
 
-'''var a'''
+```var a```
 
 The assignment (the value) to our variable ‘a’, which is ‘I like’, is not going to be put in memory during the creation phase,
 instead, for the time being, it will be assigned the value ‘undefined’. Then, during the execution phase, as the JavaScript goes
@@ -65,11 +65,11 @@ console.logged. However, when it hits the second line that console.logs ‘a’,
 
 And that is also why you can’t make a call to function expressions before function expressions in your code. For example:
 
-'''like(); //produces an error
+```like(); //produces an error
 var like = function(){
 console.log(‘I like very much’);
 }
-//last line here'''
+//last line here```
 
 The same reasoning as above applies here. During the creation phase, what is put into memory are variables without their values
 AND function statements in their entirety. Here, we have a variable ‘like’. So ‘like’ is put into memory and assigned the value
@@ -80,11 +80,11 @@ last line of the code, then during the execution phase, JavaScripts assigns ‘l
 
 Let me give you one more example which I found on w3schools that demonstrates hoisting rather nicely:
 
-'''console.log(x); //this produces ‘undefined’
+```console.log(x); //this produces ‘undefined’
 x = 5;
 console.log(x); //this produces 5
 //some code here
-var x;'''
+var x;```
 
 When we execute the code, we first go through the creation phase and then the execution phase. During the creation phase, 
 variable ‘x’ is put into memory and assigned the value undefined. Now that the creation phase is over, the execution phase begins.
