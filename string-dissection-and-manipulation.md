@@ -4,7 +4,7 @@ This basically mean dissecting , searching and splitting of a piece of string. J
 <h2>String Character Methods</h2>
 <b>`charAt()` and `charCodeAt()`</b>- Both of these accepts a single argument, which is the character's zero based position.
 
-```
+```javascript
 var stringValue = "founders and coders";
 console.log(stringValue.charAt(5));  // "e"
 ```
@@ -12,14 +12,14 @@ console.log(stringValue.charAt(5));  // "e"
 
 Now if we want the characters code instead of the actual character then using `charCodeAt()` would be the right choice.
 
-```
+```javascript
 console.log(stringValue.charCodeAt(9));  
 // The output will be 101 which is the character code for lowercase "e".
 ```
 
 Their is one another method available on String constructor called `fromCharCode()`. This methods takes one or more character code and convert them into a string. Reverse of `charCodeAt()`.
 
-```
+```javascript
 console.log(String.fromCharCode(104 , 101 , 108 ,108 , 111));
 // This will result into a string "hello".
 ```
@@ -27,7 +27,7 @@ console.log(String.fromCharCode(104 , 101 , 108 ,108 , 111));
 <h2>String Manipulation Methods</h2>
 <b>1.`concat()`</b>-Concatenate one or more strings. Although the original string stays the same.It can take as many number of arguments as we want.
 
-```
+```javascript
 var newString = "Hello " ; 
 var result = newString.concat("World" , "!"); // Hello World!
 ```
@@ -39,7 +39,7 @@ For `slice()` and `substring()` first argument is where the capture of the strin
 For `substr()` the second argument is the number of characters return.
 <i>If the second argument is not given it is assumed that the ending position is the length of the string.</i> 
 
-```
+```javascript
 var newString = "Hello World!"
 console.log(newString.slice(3 , 7))// Output= "lo W"
 console.log(newString.substring(3 , 7)) // Output = "lo W"
@@ -50,7 +50,8 @@ console.log(newString.substr(3 , 7)) // Output= "lo Worl"(7 Characters)
 For `slice()` Negative argument is treated as string.length + Negative argument(for both arguments).<br>
 For `substr()` the first negative argument is treated as the string.length + Negative argument. Where as the second negative argument is converted to Zero.<br>
 For `substring()` all negative methods are converted to zero.<br>
-```
+
+```javascript
 var newString = "Hello World!"
 console.log(newString.slice(3 , -4)) // Output= "lo W"(Converts to 11-4=7 -- (3,7))
 console.log(newString.substring(3 , -4))//Output ="hel" (Converts to (3 , 0) which is equivalent to substring(3 , 0) this method expects the smaller number is the starting point and the larger is the ending.)
@@ -61,7 +62,8 @@ console.log(newString.substr(3 , -4))// Output= ""(Empty String Converts to (3 ,
 <b>`indexOf()` & `lastIndexOf()`</b> Both these methods search for a given substring and returns the position. Takes two arguments although the second argument is optional that indicated the position to start searching.
 For `indexOf()` search begins from the beginning of the string
 For `lastIndexOf()` search begins from the end of the  string.
-```
+
+```javascript
 var newString = "Hello World!"
 console.log(newString.indexOf("o" ,6)); // Output = 7(Search starts from the beginning and ignore every "o" before the starting position)
 console.log(newString.lastIndexOf("o", 6)); // Output =4 (Search starts from the end towards the beginning.)
@@ -72,7 +74,8 @@ console.log(newString.lastIndexOf("o", 6)); // Output =4 (Search starts from the
 <h2>Trim Method</h2>
 <b>`trim()`</b> - Creates a copy of the string removing all leading and trailing white space.Supports two nonstandard methods called 
 <b>`trimLeft()` and `trimRight()`</b> Remove whitespace from the beginning or end.
-```
+
+```javascript
 var newString = "       Hello World       "
 var trimmedNewString = newString.trim();
 console.log(trimmedNewString) // "Hello World"
@@ -80,19 +83,21 @@ console.log(trimmedNewString) // "Hello World"
 
 <h2>String Case Methods</h2>
 <b>`toLowerCase()` & `toUpperCase()`</b> Case conversions from lower to upper or upper to lower
-```
+
+```javascript
 var newString = "Hello World!";
 console.log(newString.toLowerCase()) // "hello world"
 ```
 
-```
+```javascript
 var newString = "hello world";
 console.log(newString.toUpperCase()) // "Hello World"
 ```
 
 <h2>String Pattern Matching Methods</h2>
 <b>1.`match()`</b> Used to pattern match with a string. It is same as calling the RegExp object's exec(). Accepts a single argument.
-```
+
+```javascript
 var text = "cat, bat, sat, fat";
 var pattern = /.at/g ;
 //same as pattern.exec(text)
@@ -100,18 +105,22 @@ var matches = text.match(pattern);
 console.log(matches) // [ 'cat', 'bat', 'sat', 'fat' ]
 ```
 <b>2.`search()`</b> Same as the method match() .Returns Index of first pattern occurrence in the string or -1 if it's not found.
-```
+
+```javascript
 var text = "cat , bat , mat , hat" ;
 var position = text.search(/at/);// 1
 ```
+
 <b>3.`replace()`</b> Used to replace substrings.This method accepts two arguments. First can be a RegExp object or a string and the second argument can be a string or function.
-```
+
+```javascript
 var text = "cat , bat , mat , hat";
 var result = text.replace("at" , "tty") // "catty , batty , matty , hatty"
 ```
+
 <b>4.`split`()</b> separates the string into an array of substrings based on a separator. Second argument is optional and assigned as the array's limit. It ensures that the return array will no longer than a certain size.
 
-```
+```javascript
 var newString = "cat,dog,sheep,fish"
 var splitString =newString.split(",") //["cat" , "dog" , "sheep" , "fish"]
 var splitLimit = newString.split("," , 2) // ["cat" , "dog"]
@@ -123,7 +132,7 @@ var splitLimit = newString.split("," , 2) // ["cat" , "dog"]
 2.if both are equal return 0<br>
 3. If string comes after the argument return +1</i><br>
 
-```
+```javascript
 var stringValue = “Javascript”;
 alert(stringValue.localeCompare("brick")); //1(come before alphabetically)
 alert(stringValue.localeCompare("Javascript")); //0(both are equal)
