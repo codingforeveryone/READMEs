@@ -7,7 +7,8 @@ For instance, with function statements you can do the following, you can put the
 love(); // produces ‘I love you’
 function love(){
 console.log(‘I love you’);
-}```
+}
+```
 
 On the other hand, with function expressions, the following doesn’t work:
 
@@ -15,14 +16,16 @@ On the other hand, with function expressions, the following doesn’t work:
 love(); //this produces an error
 var love = function(){
 console.log(‘I love you’);
-}```
+}
+```
 
 Further, if you console.log some variable before the variable is declared in your code, you will not get an error but simply
 ‘undefined’, which is not an error but a value.
 
 ```javascript
 console.log(a); //produces ‘undefined’
-var a = ‘what up man’;```
+var a = ‘what up man’;
+```
 
 Whereas:
 
@@ -49,19 +52,22 @@ console.log(a);
 function swear(){
 console.log(‘damn’)
 }
-var a = ‘I like’;```
+var a = ‘I like’;
+```
 
 What is going to be put into memory in the creation phase is that function statement in its entirety:
 
 ```javascript
 function swear(){
 console.log(‘damn’)
-}```
+}
+```
 
 And the variable a without its value (assignment): 
 
 ```javascript
-var a```
+var a
+```
 
 The assignment (the value) to our variable ‘a’, which is ‘I like’, is not going to be put in memory during the creation phase,
 instead, for the time being, it will be assigned the value ‘undefined’. Then, during the execution phase, as the JavaScript goes
@@ -96,7 +102,8 @@ console.log(x); //this produces ‘undefined’
 x = 5;
 console.log(x); //this produces 5
 //some code here
-var x;```
+var x;
+```
 
 When we execute the code, we first go through the creation phase and then the execution phase. During the creation phase, 
 variable ‘x’ is put into memory and assigned the value undefined. Now that the creation phase is over, the execution phase begins.
