@@ -34,6 +34,7 @@ When you run your code, JavaScript engine executes it in two stages - the creati
 important to understanding hoisting. Two stages – the creation phase and the execution phase.
 What happens in the creation phase is called ‘hoisting’. This is JavaScript engine setting up memory space for all variables **AND**
 function statements. I repeat, for variables **AND** function statements. Function statements are put into memory **IN THEIR ENTIRETY**.
+
 However, as far as variables are concerned, the assignments to them (their values) are not put into memory. So regarding the following
 code:
 
