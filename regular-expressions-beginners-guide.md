@@ -87,7 +87,7 @@ var n = str.search(/fac/i);
 
 The result in n will be: 18
 
-<h3>Use String replace()</h3>
+<h3>Using String replace()</h3>
 
 Use a case insensitive regular expression to replace Python with Javascript in a string:
 ```
