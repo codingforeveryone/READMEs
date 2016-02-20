@@ -72,3 +72,17 @@ To be used in syntax /pattern/modifiers;
 | g        | Global search for all occurrences of a pattern | /ain/g matches both "ain"s in "No pain no gain", instead of just the first. |
 | gi       | Global search, ignore case.                    | /it/gi matches all "it"s in "It is our IT department"                       |
 | m        | Perform multiline matching                     |                                                                             |
+
+<h2>Function Applications</h3>
+
+Below is a list of functions that can incorporate regular expressions, it is by no means a complete list!
+
+<h3>Using String search()</h3>
+
+Use a regular expression to do a case-insensitive search for "fac" in a string:
+```
+var str = "Monday meetups at fac";
+var n = str.search(/fac/i);
+```
+
+The result in n will be: 18
