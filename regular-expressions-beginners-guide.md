@@ -29,7 +29,7 @@ Using the constructor function provides runtime compilation of the regular expre
 | [xyz]  | Match any one character enclosed in the character set. You may use a hyphen to denote range. For example. /[a-z]/ matches any letter in the alphabet, /[0-9]/ any single digit.                                                   | /[AN]BC/ matches "ABC" and "NBC" but not "BBC" since the leading “B” is not in the set. |
 | [^xyz] | Match any one character not enclosed in the character set. The caret indicates that none of the characters. The caret used within a character class is not to be confused with the caret that denotes the beginning of a string.  | /[^AN]BC/ matches "BBC" but not "ABC" or "NBC".                                         |
 
-<h3>Bracket Character Classes</h3>
+<h3>Further Character Classes</h3>
 
 | Symbol | Description                                                                            | Example                                |
 |--------|----------------------------------------------------------------------------------------|----------------------------------------|
@@ -39,6 +39,17 @@ Using the constructor function provides runtime compilation of the regular expre
 | \D     | Match any non-digit. Equivalent to [^0-9].                                             | /\D/ matches "No" in "No 342222"       |
 | \s     | Match any single space character.                                                      | /\s/ matches " " in "No 342222"        |
 | \S     | Match any single non-space character.                                                  | /\S/ matches "No342222" in "No 342222" |
+
+<h3>Position Matching</h3>
+
+| Symbol | Description                                                                                                | Example                                                   |
+|--------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| ^n     | Matches any string with n at the beginning of it                                                           | /^The/ matches "The" in "The night" by not "In The Night" |
+| n$     | Matches any string with n at the end of it                                                                 | /and$/ matches "and" in "Land" but not "landing"          |
+| ?=n    | Matches any string that is followed by a specific string n                                                 | /?=night/ matches "The" in "Thenight" but not "Thesun"    |
+| ?!n    | Matches any string that is not followed by a specific string n                                             | /?!night/ matches "The" in "Thesun" but not "Thenight"    |
+| \b     | Matches any word boundary (test characters must exist at the beginning or end of a word within the string) | /ly\b/ matches "ly" in "This is really cool."             |
+| \B     | Matches any non-word boundary.                                                                             | /\Bor/ matches “or” in "normal" but not "origami."        |
 
 <h3>Quantifiers</h3>
 
