@@ -132,3 +132,22 @@ The following example find the number of white spaces in a string:
 ```
 Since there are 4 spaces in the string, the output of the code above will be: 4
 
+<h2>Codewars Practise Kata</h2>
+
+Want to get stuck into the above? Try the following kata on codewars:
+
+[Regex count lowercase letters](http://www.codewars.com/kata/regex-count-lowercase-letters)
+[Regex validation of 24 hours time](http://www.codewars.com/kata/regex-validation-of-24-hours-time)
+[Regex validate pin code](http://www.codewars.com/kata/regex-validate-pin-code)
+[Validdate regex](http://www.codewars.com/kata/validdate-regex)
+[Regex password validation](http://www.codewars.com/kata/regex-password-validation)
+
+<h2>References</h2>
+
+There are a number of regular expression tutorials on the web, the above is a simplied and combined version of the following resources:
+
+[W3Schools JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+[W3Schools JavaScript Regular Expressions](http://www.w3schools.com/js/js_regexp.asp)
+[Javscript.info regular expressions tutorial](http://javascript.info/tutorial/regular-expressions-javascript)
+[Javascriptkit Introductory Guide to regular expressions](http://www.javascriptkit.com/javatutors/re.shtml)
+[Mozilla Developer Network Regular Expressions](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)
