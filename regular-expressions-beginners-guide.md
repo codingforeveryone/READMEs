@@ -75,7 +75,7 @@ To be used in syntax /pattern/modifiers;
 
 <h2>Function Applications</h3>
 
-Below is a list of functions that can incorporate regular expressions, it is by no means a complete list!
+Below is a example list of functions that can incorporate regular expressions. There are many many instances where RegExp is useful beyond the below!
 
 <h3>Using String search()</h3>
 
