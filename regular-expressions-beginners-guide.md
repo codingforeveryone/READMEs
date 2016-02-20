@@ -29,3 +29,25 @@ Using the constructor function provides runtime compilation of the regular expre
 | [xyz]  | Match any one character enclosed in the character set. You may use a hyphen to denote range. For example. /[a-z]/ matches any letter in the alphabet, /[0-9]/ any single digit.                                                   | /[AN]BC/ matches "ABC" and "NBC" but not "BBC" since the leading “B” is not in the set. |
 | [^xyz] | Match any one character not enclosed in the character set. The caret indicates that none of the characters. The caret used within a character class is not to be confused with the caret that denotes the beginning of a string.  | /[^AN]BC/ matches "BBC" but not "ABC" or "NBC".                                         |
 
+<h3>Bracket Character Classes</h3>
+
+| Symbol | Description                                                                            | Example                                |
+|--------|----------------------------------------------------------------------------------------|----------------------------------------|
+| \w     | Match any alphanumeric character including the underscore. Equivalent to [a-zA-Z0-9_]. | /\w/ matches "200" in "200%"           |
+| /W     | Match any single non-word character. Equivalent to [^a-zA-Z0-9_].                      | /\W/ matches "%" in "200%"             |
+| \d     | Match any single digit. Equivalent to [0-9].                                           | /\d/ matches "342222" in "No 342222"   |
+| \D     | Match any non-digit. Equivalent to [^0-9].                                             | /\D/ matches "No" in "No 342222"       |
+| \s     | Match any single space character.                                                      | /\s/ matches " " in "No 342222"        |
+| \S     | Match any single non-space character.                                                  | /\S/ matches "No342222" in "No 342222" |
+
+<h3>Quantifiers</h3>
+
+| Quantifier | Description                                                   | Example                                                                 |
+|------------|---------------------------------------------------------------|-------------------------------------------------------------------------|
+| n+         | Matches any input that contains at least one n                | /fe+d/ matches both "fed" and "feed"                                    |
+| n*         | Matches any input that contains zero or more occurrences of n | /we*/ matches "w" in "why" and "wee" in "between", but nothing in "bad" |
+| n?         | Matches any input that contains zero or one occurrences of n  | /a\s?b/ matches "ab" or "a b".                                          |
+| n{X}       | Matches any input that contains a sequence of X n's           | /\d{5}/ matches 5 digits.                                               |
+| n{X,Y}     | Matches any input that contains a sequence of X to Y n's      | /\d{2,4}/ matches at least 2 but no more than 4 digits.                 |
+| n{X,}      | Matches any input that contains a sequence of at least X n's  | /\s{2,}/ matches at least 2 whitespace characters.                      |
+
