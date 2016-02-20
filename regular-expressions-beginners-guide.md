@@ -127,8 +127,8 @@ Since there is an "e" in the string, the output of the code above will be: e
 A personal favourite; use this to count the number of occurances of a pattern in a string.
 
 The following example find the number of white spaces in a string:
-
+```
 "hi there how are you".match(/\s/g).length;
-
+```
 Since there are 4 spaces in the string, the output of the code above will be: 4
 
