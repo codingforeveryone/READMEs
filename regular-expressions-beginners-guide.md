@@ -23,6 +23,7 @@ Using the constructor function provides runtime compilation of the regular expre
 <h2>Pattern Notation</h2>
 
 <h3>Bracket Character Classes</h3>
+
 | [xyz]  | Match any one character enclosed in the character set. You may use a hyphen to denote range. For example. /[a-z]/ matches any letter in the alphabet, /[0-9]/ any single digit.                                                   | /[AN]BC/ matches "ABC" and "NBC" but not "BBC" since the leading “B” is not in the set. |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | [^xyz] | Match any one character not enclosed in the character set. The caret indicates that none of the characters. The caret used within a character class is not to be confused with the caret that denotes the beginning of a string.  | /[^AN]BC/ matches "BBC" but not "ABC" or "NBC".                                         |
