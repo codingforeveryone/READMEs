@@ -111,3 +111,13 @@ You don't have to put the regular expression in a variable first. The two lines 
 ```
 /e/.test("The best things in life are free!");
 ```
+<h3>Using exec()</h3>
+
+It searches a string for a specified pattern, and returns the found text. If no match is found, it returns null.
+
+The following example searches a string for the character "e":
+
+```
+/e/.exec("The best things in life are free!");
+```
+Since there is an "e" in the string, the output of the code above will be: e
