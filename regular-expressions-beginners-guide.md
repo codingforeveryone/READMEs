@@ -62,3 +62,13 @@ Using the constructor function provides runtime compilation of the regular expre
 | n{X,Y}     | Matches any input that contains a sequence of X to Y n's      | /\d{2,4}/ matches at least 2 but no more than 4 digits.                 |
 | n{X,}      | Matches any input that contains a sequence of at least X n's  | /\s{2,}/ matches at least 2 whitespace characters.                      |
 
+<h3>Modifiers</h3>
+
+To be used in syntax /pattern/modifiers;
+
+| Modifier | Description                                    | Example                                                                     |
+|----------|------------------------------------------------|-----------------------------------------------------------------------------|
+| i        | Ignore the case of characters.                 | /The/i matches "the" and "The" and "tHe"                                    |
+| g        | Global search for all occurrences of a pattern | /ain/g matches both "ain"s in "No pain no gain", instead of just the first. |
+| gi       | Global search, ignore case.                    | /it/gi matches all "it"s in "It is our IT department"                       |
+| m        | Perform multiline matching                     |                                                                             |
