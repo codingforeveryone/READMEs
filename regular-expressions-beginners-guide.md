@@ -86,3 +86,28 @@ var n = str.search(/fac/i);
 ```
 
 The result in n will be: 18
+
+<h3>Use String replace()</h3>
+
+Use a case insensitive regular expression to replace Python with Javascript in a string:
+```
+var	str = "Python rocks!";
+var res = str.replace(/python/i, "Javascript");
+```
+The result in res will be: Javascript rocks!
+
+<h3>Using test()</h3>
+
+It searches a string for a pattern, and returns true or false, depending on the result.
+
+The following example searches a string for the character "e":
+```
+var patt = /e/;
+patt.test("The best things in life are free!");
+```
+Since there is an "e" in the string, the output of the code above will be: true
+
+You don't have to put the regular expression in a variable first. The two lines above can be shortened to one:
+```
+/e/.test("The best things in life are free!");
+```
