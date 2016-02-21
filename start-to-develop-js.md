@@ -38,12 +38,21 @@ languages, or even run a web server in nodejs.
 
 #### How to start with jsbin
 - Open a browser and go to [http://jsbin.com](http://jsbin.com)
+![jsbin](images/jsbin.png)
+- Select panels you are going to need for your code
+![panels](images/jsbin_panels.png)
 - Choose the language you are going to code with
+![choose language](images/jsbin_choose_lang.png)
 - Write your code
+![write code](images/jsbin_code.png)
 - Check your syntax errors
+![check errors](images/jsbin_errors.png)
 - Fix your code
+![fix errors](images/jsbin_fix.png)
 - Run you code
+![run](images/jsbin_run.png)
 - And share it
+![share](images/jsbin_share.png)
 
 ### Desktop Code Editors
 
