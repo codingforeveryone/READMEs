@@ -65,3 +65,34 @@ The number of hashtags indicates what kind of header you are creating.
  * ordered lists  
  use 1. followed by a space and  your text
 
+* code
+ * use \` var foo = 'bar'; \`  --> `var foo = 'bar';` 
+ * wrap your code between \`\`\`  to conservate its format. Optionally you can indicate its language. I.e:
+ 
+  \`\`\`javascript
+  
+      var foo = 'bar';
+      
+       function repeat(str, times){
+        
+         return (''+Array(times + 1)).split(',').join(str);
+        
+       }
+      
+      repeat(foo, 5);
+  
+  \`\`\`
+
+ turns into:
+ 
+ ```javascript
+ var foo = 'bar';
+
+ function repeat(str, times){
+  
+   return (''+Array(times + 1)).split(',').join(str);
+  
+ }
+
+repeat(foo, 5);
+ ```
