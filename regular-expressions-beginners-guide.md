@@ -34,7 +34,7 @@ Using the constructor function provides runtime compilation of the regular expre
 | Symbol | Description                                                                            | Example                                |
 |--------|----------------------------------------------------------------------------------------|----------------------------------------|
 | \w     | Match any alphanumeric character including the underscore. Equivalent to [a-zA-Z0-9_]. | /\w/ matches "200" in "200%"           |
-| /W     | Match any single non-word character. Equivalent to [^a-zA-Z0-9_].                      | /\W/ matches "%" in "200%"             |
+| \W     | Match any single non-word character. Equivalent to [^a-zA-Z0-9_].                      | /\W/ matches "%" in "200%"             |
 | \d     | Match any single digit. Equivalent to [0-9].                                           | /\d/ matches "342222" in "No 342222"   |
 | \D     | Match any non-digit. Equivalent to [^0-9].                                             | /\D/ matches "No" in "No 342222"       |
 | \s     | Match any single space character.                                                      | /\s/ matches " " in "No 342222"        |
