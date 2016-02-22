@@ -132,6 +132,21 @@ The following example find the number of white spaces in a string:
 ```
 Since there are 4 spaces in the string, the output of the code above will be: 4
 
+<h2>Using Parenthesized Substring Matches</h2>
+
+A slightly more advanced, yet incredibly useful, technique. Including parentheses in a regular expression pattern causes the corresponding submatch to be remembered. For example, /a(b)c/ matches the characters 'abc' and remembers 'b'. To recall these parenthesized substring matches, use the Array elements [1], ..., [n].
+
+The number of possible parenthesized substrings is unlimited. The returned array holds all that were found. The following examples illustrate how to use parenthesized substring matches.
+
+The following script uses the replace() method to switch the words in the string. For the replacement text, the script uses the $1 and $2 in the replacement to denote the first and second parenthesized substring matches.
+```
+var re = /(\w+)\s(\w+)/;
+var str = "John Smith";
+var newstr = str.replace(re, "$2, $1");
+console.log(newstr);
+```
+This prints "Smith, John".
+
 <h2>Codewars Practise Kata</h2>
 
 Want to get stuck into the above? Try the following kata on codewars:
