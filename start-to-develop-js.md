@@ -5,19 +5,18 @@
 JavaScript, also known as ECMAScript is programming language created by
 [Brendam Eich](https://en.wikipedia.org/wiki/Brendan_Eich) for the
 Netscape browser in 1995. JavaScript was created to give some dynamism
-to the static web pages of that dates. Now, the most important websites
-of internet are huge JavaScript applications. Some of them are Gmail,
+to the static web pages of the late 90's. Now, many of the most important websites
+are huge JavaScript applications. Some of them are Gmail,
 Youtube, Netflix, Airbnb...
 
-There are two mainly environments where JavaScript can be executed, browsers
+There are two main environments where JavaScript can be executed, browsers
 like Internet Explorer, Chrome or Firefox and [Nodejs](https://nodejs.org),
 which let you execute javascript in the command line or like a server language
 in substitution of *php*, *java*, *ruby*, or others.
 
 ## Code Editors and IDEs
-In order to start coding, we will need a tool for write our code which
-can help us to be more productive writing code, avoid mistakes, highlighting
-our code and exposing our syntax errors.
+In order to start coding, we will need a tool to write our code within. These should should help us to be more productive writing code, avoid mistakes and highlight
+our code while exposing our syntax errors.
 
 In this README I'm going to talk about two main kinds of code editors:
 - Online Code Editors
@@ -25,14 +24,13 @@ In this README I'm going to talk about two main kinds of code editors:
 
 ### Online Code Editors
 
-Sometimes, it's heavy to setup your environment to start develop some
-small things, or concept proofs. Or may be you only want to be able to
+Sometimes, it's tricky to setup your environment to start developing small projects, or concept proofs. Maybe you only want to be able to
 share a small snippet with other people. To accomplish those things we
 have available some online code editors like [jsbin](https://jsbin.com),
 [jsfiddle](https://jsfiddle.net/), or [codepen](http://codepen.io/).
-There you can write your code a run it without leave the browser.
+There you can write your code and run it without leaving the browser.
 There are too others tools with more features like
-[cloud9](https://c9.io/), which allows you to run codre from other
+[cloud9](https://c9.io/), which allows you to run code from other
 languages, or even run a web server in nodejs.
 
 
@@ -61,7 +59,7 @@ languages, or even run a web server in nodejs.
 
   ![fix errors](images/jsbin_fix.png)
 
-- Run you code
+- Run your code
 
   ![run](images/jsbin_run.png)
 
@@ -71,19 +69,19 @@ languages, or even run a web server in nodejs.
 
 ### Desktop Code Editors
 
-One of the first things you are gonna need is a code editor. A code
+One of the first things you are going to need is a code editor. A code
 editor is a tool like *the notepad* which allows you to write code, but
-it comes with some tools like code highlighting, autocompletion or small
-snippets to avoid repeat some tasks.
+it comes with extra tools like code highlighting, autocompletion or small
+snippets to avoid repeating some tasks.
 
-Let's gonna see some of them:
+Let's take a look at some of them:
 
 - [Visual Studio Code](https://code.visualstudio.com/). This is a free
-  an open source code editor from MicroSoft. It has a lot of packages
+  open source code editor from MicroSoft. It has a lot of packages
   and plugins.
-- [Atom](https://atom.io/). It's a free and open source code editor
+- [Atom](https://atom.io/). This is a free and open source code editor
   developed by GitHub.
-  It has a lot of packages and plugins for everything you can need.
+  It has a lot of packages and plugins for everything you could need.
 - [Brackets](http://brackets.io/). Another free and open source code
   editor developed by Adobe. It comes with Live Preview, which is a good
   feature for newbies, it allows you preview every change you made on
@@ -94,7 +92,7 @@ Let's gonna see some of them:
 
 ## Code Linters
 
-There are some tool for checking your code looking for syntax error
+There are tools for reviewing your code, specifically looking for syntax error
 and bad practices. The two most popular are:
 
 - [jslint](http://www.jslint.com/)
