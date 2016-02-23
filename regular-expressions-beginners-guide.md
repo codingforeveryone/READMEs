@@ -134,9 +134,7 @@ Since there are 4 spaces in the string, the output of the code above will be: 4
 
 <h2>Using Parenthesized Substring Matches</h2>
 
-A slightly more advanced, yet incredibly useful, technique. Including parentheses in a regular expression pattern causes the corresponding submatch to be remembered. For example, /a(b)c/ matches the characters 'abc' and remembers 'b'. To recall these parenthesized substring matches, use the Array elements [1], ..., [n].
-
-The number of possible parenthesized substrings is unlimited. The returned array holds all that were found. The following examples illustrate how to use parenthesized substring matches.
+A slightly more advanced, yet incredibly useful, technique. Including parentheses (a pair of brackets) in a regular expression pattern causes the corresponding submatch (the pattern within the brackets) to be remembered. For example, /a(b)c/ matches the characters 'abc' and remembers 'b'. The nine most recent mataches are stored under and can be recalled using the notation $n (where n is an integer from 1-9).
 
 The following script uses the replace() method to switch the words in the string. For the replacement text, the script uses the $1 and $2 in the replacement to denote the first and second parenthesized substring matches.
 ```
@@ -145,7 +143,7 @@ var str = "John Smith";
 var newstr = str.replace(re, "$2, $1");
 console.log(newstr);
 ```
-This prints "Smith, John".
+The (\w+) matches and stores a pattern of alphanumeric characters up until a white space or the end of string. So $1 = "John" and $2 = "Smith".  Therefore the newstr replaces any occurance of "John Smith" with "$2, $1" (or "Smith, John"). So console log will print "Smith, John".
 
 <h2>Codewars Practise Kata</h2>
 
