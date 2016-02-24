@@ -59,7 +59,7 @@ console.log(newString.substr(3 , -4))// Output= ""(Empty String Converts to (3 ,
 ```
 
 <h2>String Location Methods</h2>
-<b>`indexOf()` & `lastIndexOf()`</b> Both these methods search for a given substring and returns the position. Takes two arguments although the second argument is optional, and indicates the position to start searching.
+<b>1.`indexOf()` & `lastIndexOf()`</b> Both these methods search for a given substring and returns the position. Takes two arguments although the second argument is optional, and indicates the position to start searching.
 For `indexOf()` search begins from the beginning of the string.
 For `lastIndexOf()` search begins from the end of the  string.
 
@@ -70,6 +70,16 @@ console.log(newString.lastIndexOf("o", 6)); // Output =4 (Search starts from the
 ```
 
 <i>Both of these return -1 if the string isn't found!</i>
+
+<b>2.`startsWith()` & `endsWith()`</b> Determines whether a string starts/ends with the characters of a specified string. This method returns true if the string starts/ends with the characters, and false if not.
+
+```javascript
+var newString = "Hello World!";
+console.log(newString.startsWith("Hell")) // true
+console.log(newString.endsWith("rld!")) // true
+```
+
+
 
 <h2>Trim Method</h2>
 <b>`trim()`</b> - Creates a copy of the string removing all leading and trailing white space. It supports two nonstandard methods called
