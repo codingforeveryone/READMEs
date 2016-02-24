@@ -15,7 +15,7 @@ Regular expression literals provide compilation of the regular expression when t
 
 Or calling the constructor function of the RegExp object, as follows:
 
-```javascript
+```javascript 
 var re = new RegExp("ab+c");
 ```
 
