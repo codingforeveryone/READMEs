@@ -53,11 +53,13 @@ function factorial (n){
     return 1;
   }
   return factorial(n-1)*n;
-} 
+}
+factorial(2) // return 2
 ```
 A factorial number is defined as follow: ![factorial](https://upload.wikimedia.org/math/9/3/9/939c013423574cad70f33eaa7dd68f0c.png)  
 In this example the base case is n = 1. n = 0 is added as alternative to take into account the value zero as input.  
-When the function is invoked, for example with the value 2 as input, one instance of the the function is added to the execution stack. Since n is not equal to the base case, the function call itself again, this time with the input value of n-1, which is one. The first created instance of the function remains in the execution stack as it waits the second instance to return a value. In the second instance of the function the base case is met, and one is returned to the first instance. The value is multiplied to the value of n inside the first instance, so 1*2, and then return. The result as expected is 2.  
+When the function is invoked, for example with the value 2 as input, one instance of the the function is added to the execution stack. Since n is not equal to the base case, the function call itself again, this time with the input value of n-1, which is one. The first created instance of the function remains in the execution stack as it waits the second instance to return a value. In the second instance of the function the base case is met, and one is returned to the first instance. The value is multiplied to the value of n inside the first instance, so 1*2, and then return. The result as expected is 2.
+
 This is a classic example used for recursion, as there is a significant advantage in calculating a factorial in this way, in terms of simplicity of code. Try to solve the same problem using a for loop to see for yourself.
 
 #### Drawbacks
