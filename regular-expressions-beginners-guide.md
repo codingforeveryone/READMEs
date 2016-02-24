@@ -19,7 +19,7 @@ Or calling the constructor function of the RegExp object, as follows:
 var re = new RegExp("ab+c");
 ```
 
-Using the constructor function provides runtime compilation of the regular expression. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.
+Using the constructor function provides runtime compilation of the regular expression. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input. When using the constructor notation you have to scape every \ that you have in your regex e.g.  ```var myRegex = /\bHello\b/g``` is simmilar to var ```myRegex = new RegExp('\\bHello\\b', 'g')```. 
 
 ## Pattern Notation
 
@@ -156,6 +156,12 @@ console.log(newstr);
 ```
 
 The (\w+) matches and stores a pattern of alphanumeric characters up until a white space or the end of string. So $1 = "John" and $2 = "Smith".  Therefore the newstr replaces any occurance of "John Smith" with "$2, $1" (or "Smith, John"). So console log will print "Smith, John".
+
+## Regex Crossword
+
+Regex Crossword is a crossword puzzle game, where the crossword clues are defined using regular expressions. Everybody can play and it is a great way for newcomers to learn regular expressions and for experts to practice their skills.
+
+[Regex Crossword](https://regexcrossword.com/)
 
 ## Codewars Practise Kata
 
