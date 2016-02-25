@@ -77,7 +77,7 @@ The `asin()` method returns the arcsine of a number as a value between -PI/2 and
 ```javascript
 Math.tan(90) // -1.995200412208242
 ```
-**`Math.tan(x)`** - Returns the arctangent of a number `x`. 
+**`Math.atan(x)`** - Returns the arctangent of a number `x`. 
 ```javascript
 Math.atan(2) // 1.1071487177940904
 ```
