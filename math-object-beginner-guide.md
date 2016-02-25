@@ -55,3 +55,21 @@ Math.exp(1) // 2.718281828459045
 Math.log(2) // 0.6931471805599453
 ```
 
+## Trigonometry 
+
+Trigonometry is a branch of mathematics that studies relationships involving lengths and angles of triangles. See more [here](Trigonometry (https://en.wikipedia.org/wiki/Trigonometry).
+
+**`Math.sin(x)` & `Math.cos(x)`** - Returns the sine/cosine of angle `x` (**in radians not degrees!**). 
+```javascript
+Math.sin(3) // 0.1411200080598672
+Math.cos(3) // -0.9899924966004454
+```
+Both methods return a value between -1 and 1. For more information on Sine & Cosine see [here](https://en.wikipedia.org/wiki/Sine).
+
+**`Math.asin(x)` & `Math.acos(x)`** - Returns the arcsine/arccosine of number `x`. 
+```javascript
+Math.asin(0.5) // 0.5235987755982989
+Math.acos(0.5) // 1.0471975511965979
+```
+The `asin()` method returns the arcsine of a number as a value between -PI/2 and PI/2 radians. The `acos()` method returns the arccosine of a number as a value value between 0 and PI radians. If the parameter `x` is outside the range -1 to 1, the method will return NaN. For more information on arcsine & arccosine see [here](https://en.wikipedia.org/wiki/Inverse_trigonometric_functions).
+
