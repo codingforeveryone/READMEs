@@ -46,6 +46,18 @@ Math.pow(5, 4) // 625
 ```javascript
 Math.sqrt(16) // 4
 ```
+**`Math.cbrt(x)`** - Returns the cube root of number `x`.
+```javascript
+Math.cbrt(16) // 2
+```
+Both square root and cube root can be replaced by `Math.pow(x, y)`. To find roots of numbers you must have input `y` as `1/y`. E.g. 
+```javascript
+Math.sqrt(16) // 4 
+Math.pow(16, 0.5) // 4
+Math.cbrt(64) // 4
+Math.pow(62, 0.25) // 4
+```
+
 **`Math.exp(x)`** -Returns the value of E^x, where E is Euler's number (approximately 2.7183) and `x` is the number passed to it.
 ```javascript
 Math.exp(1) // 2.718281828459045
