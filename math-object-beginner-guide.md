@@ -25,6 +25,15 @@ Math.max(14, 10, 5, 20) // 20
 ```javascript
 Math.max(14, 10, 5, 20) // 5
 ```
+**`Math.trunc()`** - Unlike other three Math methods: `Math.floor()`, `Math.ceil()` and `Math.round()`, the way `Math.trunc()` works is very simple and straightforward, just truncate the dot and the digits behind it, no matter whether the argument is a positive number or a negative number.
+```javascript
+Math.trunc(1.213) // 1
+```
+**`Math.sign(x)`** - Returns the sign of a number, indicating whether the number is positive, negative or zero.
+```javascript
+Math.sign(-5) // -1
+```
+This function has 5 kinds of return values, 1, -1, 0, -0, NaN, which represent "positive number", "negative number", "positive zero", "negative zero" and NaN respectively.
 
 ## Random Numbers
 
