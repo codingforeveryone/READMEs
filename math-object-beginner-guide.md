@@ -57,7 +57,7 @@ Math.log(2) // 0.6931471805599453
 
 ## Trigonometry 
 
-Trigonometry is a branch of mathematics that studies relationships involving lengths and angles of triangles. See more [here](Trigonometry (https://en.wikipedia.org/wiki/Trigonometry).
+Trigonometry is a branch of mathematics that studies relationships involving lengths and angles of triangles. See more [here](https://en.wikipedia.org/wiki/Trigonometry).
 
 **`Math.sin(x)` & `Math.cos(x)`** - Returns the sine/cosine of angle `x` (**in radians not degrees!**). 
 ```javascript
@@ -73,3 +73,12 @@ Math.acos(0.5) // 1.0471975511965979
 ```
 The `asin()` method returns the arcsine of a number as a value between -PI/2 and PI/2 radians. The `acos()` method returns the arccosine of a number as a value value between 0 and PI radians. If the parameter `x` is outside the range -1 to 1, the method will return NaN. For more information on arcsine & arccosine see [here](https://en.wikipedia.org/wiki/Inverse_trigonometric_functions).
 
+**`Math.tan(x)`** - Returns the tangent of a number `x` representing an angle (in radians).
+```javascript
+Math.tan(90) // -1.995200412208242
+```
+**`Math.tan(x)`** - Returns the arctangent of a number `x`. 
+```javascript
+Math.atan(2) // 1.1071487177940904
+```
+The `atan()` method returns the arctangent of a number as a value between -PI/2 and PI/2 radians.
