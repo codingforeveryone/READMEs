@@ -28,5 +28,24 @@ Math.max(14, 10, 5, 20) // 5
 
 ## Random Numbers
 
-**`Math.random()`** - Returns a random number between 0 (included) and 1 (excluded). Commonly used in generating random tests cases for Codewars. See [Random Test Cases for Complete Beginners](https://github.com/codingforeveryone/READMEs/blob/master/random-test-cases-for-complete-beginners.md).
+**`Math.random()`** - Returns a random number between 0 (included) and 1 (excluded). 
+```javascript
+Math.random() // e.g 0.39622215856797993
+```
+Commonly used in tandem with `Math.round()` for generating random tests cases for Codewars. See [Random Test Cases for Complete Beginners](https://github.com/codingforeveryone/READMEs/blob/master/random-test-cases-for-complete-beginners.md).
+
+## Exponentiation
+
+The process of using exponents is called "raising to a power", where the exponent is the "power".
+
+**`Math.pow(x, y)`** - Return the value of the number `x` to be the power of `y`.
+```javascript
+Math.pow(5, 4) // 625
+```
+**`Math.pow(x, y)`** - Return the value of the number `x` to be the power of `y`. (`x`^`y`)
+```javascript
+Math.pow(5, 4) // 625
+```
+
+
 
