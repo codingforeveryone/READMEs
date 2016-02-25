@@ -82,3 +82,33 @@ Math.tan(90) // -1.995200412208242
 Math.atan(2) // 1.1071487177940904
 ```
 The `atan()` method returns the arctangent of a number as a value between -PI/2 and PI/2 radians.
+
+*Note that the trigonometric functions (sin(), cos(), tan(), asin(), acos(), atan(), atan2()) expect or return angles in radians. To convert radians to degrees, divide by (Math.PI / 180), and multiply by this to convert the other way.*
+
+## Constants
+
+Constants are defined with the full precision of real numbers in JavaScript.
+
+**`Math.E`** - Euler's constant and the base of natural logarithms, approximately 2.718.
+
+**`Math.LN2`** - Natural logarithm of 2, approximately 0.693.
+
+**`Math.LN10`** - Natural logarithm of 10, approximately 2.303.
+
+**`Math.LOG2E`** -Base 2 logarithm of E, approximately 1.443.
+
+**`Math.LOG10E`** - Base 10 logarithm of E, approximately 0.434.
+
+**`Math.PI`** - Ratio of the circumference of a circle to its diameter, approximately 3.14159.
+
+**`Math.SQRT1_2`** - Square root of 1/2; equivalently, 1 over the square root of 2, approximately 0.707.
+
+**`Math.SQRT2`** - Square root of 2, approximately 1.414.
+
+## References
+
+There are a number of Math object resources on the web, the above is a simplied and combined version of the following resources:
+
+[W3Schools JavaScript RegExp Math Object Reference](http://www.w3schools.com/jsref/jsref_obj_math.asp)
+
+[Mozilla Developer Network Math Object](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math)
