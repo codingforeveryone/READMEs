@@ -42,10 +42,16 @@ The process of using exponents is called "raising to a power", where the exponen
 ```javascript
 Math.pow(5, 4) // 625
 ```
-**`Math.pow(x, y)`** - Return the value of the number `x` to be the power of `y`. (`x`^`y`)
+**`Math.sqrt(x)`** - Returns the square root of number `x`.
 ```javascript
-Math.pow(5, 4) // 625
+Math.sqrt(16) // 4
 ```
-
-
+**`Math.exp(x)`** -Returns the value of E^x, where E is Euler's number (approximately 2.7183) and `x` is the number passed to it.
+```javascript
+Math.exp(1) // 2.718281828459045
+```
+**`Math.log(x)`** -Returns the natural logarithm (base E) of number `x`.
+```javascript
+Math.log(2) // 0.6931471805599453
+```
 
