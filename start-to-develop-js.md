@@ -38,21 +38,21 @@ languages, or even run a web server in nodejs.
 - Open a browser and go to [http://jsbin.com](http://jsbin.com)
 
   ![jsbin](images/jsbin.png)
-  
+
 - Select panels you are going to need for your code
-  
+
   ![panels](images/jsbin_panels.png)
 
 - Choose the language you are going to code with
-  
+
   ![choose language](images/jsbin_choose_lang.png)
 
 - Write your code
-  
+
   ![write code](images/jsbin_code.png)
 
 - Check your syntax errors
-  
+
   ![check errors](images/jsbin_errors.png)
 
 - Fix your code
@@ -89,6 +89,50 @@ Let's take a look at some of them:
 - [Sublime Text](https://www.sublimetext.com/). One of the most famous
   code editor. It has a bunch of packages and plugins. It isn't free,
   but you can download a trial version which is completly functional.
+
+#### How to start with Brackets
+I have selected Brackets to make this tutorial because I think built-in
+live preview is cool tool for newbies, so it's going to be easier to start
+making websites.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our first website</title>
+  </head>
+  <body>
+    <script>
+    function wave(name){
+      return 'Hello World, my name is ' + name;
+    }
+
+    alert(wave('Gabriel'));
+    </script>
+  </body>
+</html>
+```
+
+
+```javascript
+function wave(name){
+  return 'Hello World, my name is ' + name;
+}
+
+alert(wave('Gabriel'));
+```
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our first website</title>
+  </head>
+  <body>
+    <script src="myscript.js"></script>
+  </body>
+</html>
+```
 
 ## Code Linters
 
