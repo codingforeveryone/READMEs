@@ -4,7 +4,7 @@ A recursive function is a function that, at some point during it's execution, ca
 
 #### Anatomy of a Recursive function
 
-A recursive function will typically first check if a condition is satisfied. If the condition is met, the function will return a value or perform some other task. If the condition is not met, the function will return a call to itself with **modified** arguments. This cycle will continue until the condition is met, returning any target value back through the stack to the initial call.
+A recursive function will typically first check if a condition is satisfied. If the condition is met, the function will return a value or perform some other task. If the condition is not met, the function will return a call to itself with **modified** arguments. This cycle will continue until the condition is met, returning any target value back through the stack to the initial call. This condition is called the **base case**. 
 
 ##### Example 1
 ```javascript
@@ -44,6 +44,23 @@ function sum(num, add){
 sum(9,10); //returns 19
 ```
 In this example, function ```sum``` adds two numbers. It does this by adding 1 to ```num``` and returning a call to ```sum``` with the argument ```add``` decremented by 1. When ```add``` is 0, ```num``` (having been incremented by 1 ```add``` number of times) is returned.
+
+
+##### Example 3
+```javascript
+function factorial (n){
+  if (n==0 || n==1){
+    return 1;
+  }
+  return factorial(n-1)*n;
+}
+factorial(2) // return 2
+```
+A factorial number is defined as follow: ![factorial](https://upload.wikimedia.org/math/9/3/9/939c013423574cad70f33eaa7dd68f0c.png)  
+In this example the base case is n = 1. n = 0 is added as alternative to take into account the value zero as input.  
+When the function is invoked, for example with the value 2 as input, one instance of the the function is added to the execution stack. Since n is not equal to the base case, the function call itself again, this time with the input value of n-1, which is one. The first created instance of the function remains in the execution stack as it waits the second instance to return a value. In the second instance of the function the base case is met, and one is returned to the first instance. The value is multiplied to the value of n inside the first instance, so 1*2, and then return. The result as expected is 2.
+
+This is a classic example used for recursion, as there is a significant advantage in calculating a factorial in this way, in terms of simplicity of code. Try to solve the same problem using a for loop to see for yourself.
 
 #### Drawbacks
 Recursive functions have two main drawbacks. One is that repeatedly calling a function is less efficient when a standard ```for``` or ```while``` loop will do the job. The other is that each recursive call adds another function to the stack, consuming more and more memory each time. Calling ```sum``` from Example 2 like this: ```sum(9,100000);``` would result in a 'Range' or 'Too much recursion' error as the stack would overflow.  
