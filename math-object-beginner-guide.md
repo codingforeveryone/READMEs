@@ -13,7 +13,7 @@ Math.round(2.5); // 3
 ```javascript
 Math.floor(1.6); // 1
 ```
-**`Math.ceil()`** - Round a number upward to it's nearest integer.
+**`Math.ceil()`** - Round a number upward to its nearest integer.
 ```javascript
 Math.ceil(1.4) // 2
 ```
@@ -25,7 +25,7 @@ Math.max(14, 10, 5, 20) // 20
 ```javascript
 Math.max(14, 10, 5, 20) // 5
 ```
-**`Math.trunc()`** - Unlike other three Math methods: `Math.floor()`, `Math.ceil()` and `Math.round()`, the way `Math.trunc()` works is very simple and straightforward, just truncate the dot and the digits behind it, no matter whether the argument is a positive number or a negative number.
+**`Math.trunc()`** - Unlike other three Math methods: `Math.floor()`, `Math.ceil()` and `Math.round()`, the way `Math.trunc()` works is very simple and straightforward, just truncate (remove) the dot and the digits behind it, no matter whether the argument is a positive number or a negative number.
 ```javascript
 Math.trunc(1.213) // 1
 ```
@@ -41,7 +41,7 @@ This function has 5 kinds of return values, 1, -1, 0, -0, NaN, which represent "
 ```javascript
 Math.random() // e.g 0.39622215856797993
 ```
-Commonly used in tandem with `Math.round()` for generating random tests cases for Codewars. See [Random Test Cases for Complete Beginners](https://github.com/codingforeveryone/READMEs/blob/master/random-test-cases-for-complete-beginners.md).
+Commonly used in tandem with `Math.round()` to generate random integers for random tests cases in Codewars. See [Random Test Cases for Complete Beginners](https://github.com/codingforeveryone/READMEs/blob/master/random-test-cases-for-complete-beginners.md).
 
 ## Exponentiation
 
@@ -108,7 +108,7 @@ The `atan()` method returns the arctangent of a number as a value between -PI/2 
 
 ## Constants
 
-Constants are defined with the full precision of real numbers in JavaScript.
+As well as having methods, the Math object also allows you to access some mathematical contants as properties. There is a programming convention of writing constants in UPPERCASE as opposed to camelCase. So the Pi property of Math is written `Math.PI` instead of `Math.pi` or `Math.Pi`. Constants are defined with the full precision of real numbers in JavaScript.
 
 **`Math.E`** - Euler's constant and the base of natural logarithms, approximately 2.718.
 
