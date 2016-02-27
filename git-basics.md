@@ -84,6 +84,12 @@ Switch branch
 $ git checkout <branch>
 ```
 
+Create a new branch and switch to it
+
+```bash
+$ git checkout -b <branch>
+```
+
 Delete a local branch
 
 ```bash
@@ -116,7 +122,7 @@ Download changes and merge into HEAD
 $ git pull <remote> <branch>
 ```
 
-### Merge and rebaes
+### Merge and rebase
 
 Merge a branch into your current HEAD
 
@@ -132,13 +138,13 @@ $ git rebash <branch>
 
 ### Undo
 
-Discart all local changes
+Discard all local changes
 
 ```bash
 $ git reset --hard HEAD
 ```
 
-Discart local changes in a specific file
+Discard local changes in a specific file
 
 ```bash
 $ git checkout <file>
