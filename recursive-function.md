@@ -62,10 +62,59 @@ When the function is invoked, for example with the value 2 as input, one instanc
 
 This is a classic example used for recursion, as there is a significant advantage in calculating a factorial in this way, in terms of simplicity of code. Try to solve the same problem using a for loop to see for yourself.
 
+##### Example 4 - The Fibonacci Sequence
+
+A common problem found in many Codewars kata is how to generate the fibonacci sequence. The first two numbers in the Fibonacci sequence are either 1 and 1, or 0 and 1 and each subsequent number is the sum of the previous two. 
+
+The first method we’re going to look at is by looping since it is often easier for people to wrap their head around.
+
+```javascript
+var looping = function(n) {
+    var a = 0, b = 1, f = 1;
+    for(var i = 2; i <= n; i++) {
+        f = a + b;
+        a = b;
+        b = f;
+    }
+    return f;
+};
+```
+
+We know that Fibonacci number is the sum of the previous two sequence numbers which is why we are starting our loop at index two, which is really the third value since our index starts at zero.  The first two numbers in our sequence are zero and one.  The goal is to find the Fibonacci number at a certain sequence index, which in this example is fifteen.
+
+Every loop iteration we are summing the previous two sequence values, then pushing our values up in a sense.  By this I mean that a is dropped off and replaced with b and b is replaced with the current index value of the sequence, being our new sum.  When our loop has reached our desired fifteen index, we can return whatever the new sum value is.
+
+Now let’s take a look at the recursive version of this.
+
+```javascript
+var recursive = function(n) {
+    if(n <= 2) {
+        return 1;
+    } else {
+        return recursive(n - 1) + recursive(n - 2);
+    }
+};
+```
+Recursion can be a little tricky to wrap your head around.  In the above code, we are going to plan on receiving the sequence value at index five because anything larger is going to be rough for me to type out.  You can break this down like the following:
+
+```
+recursive(4) + recursive(3)
+(recursive(3) + recursive(2)) + (recursive(2) + recursive(1))
+((recursive(2) + recursive(1)) + 1) + (1 + 1)
+((1 + 1) + 1) + (1 + 1)
+5
+```
+You can see above that on every line it is one further iteration through the recursive process.  Based on our function logic, as soon as n <= 2 then we just return a value of one.  At the furthest breakdown, our sum turns into five which is the Fibonacci number at index five. 
+
+Example Kata -> [Fibonacci Reloaded](http://www.codewars.com/kata/fibonacci-reloaded) & [Complete Fibonacci Series](http://www.codewars.com/kata/complete-fibonacci-series).
+
+
 #### Drawbacks
 Recursive functions have two main drawbacks. One is that repeatedly calling a function is less efficient when a standard ```for``` or ```while``` loop will do the job. The other is that each recursive call adds another function to the stack, consuming more and more memory each time. Calling ```sum``` from Example 2 like this: ```sum(9,100000);``` would result in a 'Range' or 'Too much recursion' error as the stack would overflow.  
 
 Consult the links below for a tutorial on *Tail Call Optimisation* for further information.
+
+
 
 ##### Links
 * [Understanding recursion in functional JavaScript Programming](http://www.integralist.co.uk/posts/js-recursion.html) TCO using *Trampolining*  
