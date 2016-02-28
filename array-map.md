@@ -1,6 +1,6 @@
 # Array `map()` method
 
-The `map()` method transforms an array into another array. The transformation (or processing) is done by a callback function, which is specified as the first parameter of the method.
+The `map()` method creates a new array, without altering the original, by applying a function to each element of the array. The transformation (or processing) is done by a callback function, which is specified as the first parameter of the method. Higher-order functions such as `map()`, `reduce()` or `filter()` are an shorter, more readable alternative to iterating through an array with a loop.
 
 ## Example
 
@@ -93,6 +93,7 @@ As you can see, `Math` is specified as the second parameter, which is used as `t
 
 - [Array.prototype.map() – MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [From Map/Reduce to JavaScript Functional Programming](https://hacks.mozilla.org/2015/01/from-mapreduce-to-javascript-functional-programming/)
+- [Eloquent Javascript Chapter 5 - Chapter 5 Higher-Order Functions](http://eloquentjavascript.net/05_higher_order.html)
 - [Codecademy Advanced Array manipulation](https://www.codecademy.com/courses/javascript-advanced-en-eQcHT/0/1)
 
 
