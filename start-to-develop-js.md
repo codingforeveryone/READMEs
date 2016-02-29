@@ -11,7 +11,7 @@ Youtube, Netflix, Airbnb...
 
 There are two main environments where JavaScript can be executed, browsers
 like Internet Explorer, Chrome or Firefox and [Nodejs](https://nodejs.org),
-which let you execute javascript in the command line or like a server language
+which let you execute JavaScript in the command line or like a server language
 in substitution of *php*, *java*, *ruby*, or others.
 
 ## Code Editors and IDEs
@@ -38,21 +38,21 @@ languages, or even run a web server in nodejs.
 - Open a browser and go to [http://jsbin.com](http://jsbin.com)
 
   ![jsbin](images/jsbin.png)
-  
+
 - Select panels you are going to need for your code
-  
+
   ![panels](images/jsbin_panels.png)
 
 - Choose the language you are going to code with
-  
+
   ![choose language](images/jsbin_choose_lang.png)
 
 - Write your code
-  
+
   ![write code](images/jsbin_code.png)
 
 - Check your syntax errors
-  
+
   ![check errors](images/jsbin_errors.png)
 
 - Fix your code
@@ -90,8 +90,120 @@ Let's take a look at some of them:
   code editor. It has a bunch of packages and plugins. It isn't free,
   but you can download a trial version which is completly functional.
 
-## Code Linters
+#### How to start with Brackets
+I have selected Brackets to make this tutorial because I think built-in
+live preview is cool tool for newbies, so this feature is going to make
+easier to start crafting websites.
 
+
+- Donwnload Brackets from its website [brackets.io](http://brackets.io/).
+
+- Open it. You should see this Brackets starting guide written in **html**:
+
+  ![brackets first run](images/brackets_first_run.png)
+
+- To open the live preview, click on the button with a lightning on the right:
+
+  ![live preview button detail](images/brackets_live_preview_button.png)
+
+- Your default browser should show up the starting guide:
+
+  ![live preview](images/brackets_live_preview.png)
+
+- Now you can edit the html and css code of the starting guide and you will
+see this changes on the browser.
+  I.e. we can change the background color of the body in the `main.css`
+  file. As soon as we make this changes, our browser will update those:
+
+  ![live preview changed](images/brackets_live_preview_changes.png)
+
+
+
+
+Now we are going to create our first website for execute JavaScript
+there:
+
+- Close current working files. Click on `File > Close All`.
+
+- Create a new document and then save it with an `.html` extension in
+  some place of your file system.
+
+- Copy the following code there:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our first website</title>
+  </head>
+  <body>
+    <script>
+    function wave(name) {
+      return 'Hello World, my name is ' + name;
+    }
+
+    alert(wave('Gabriel'));
+    </script>
+  </body>
+</html>
+```
+
+- Change where you see `alert(wave('Gabriel'))` and write there your
+  name where `'Gabriel'` is.
+
+- Save it and click on the live preview button.
+
+- You should see an empty website showing up an alert with your name
+  like this:
+
+![alert with your name](images/brackets_alert.png)
+
+This is an easy way to start trying JavaScript snippets, but would be
+better if we split our html with JavaScript in two files. One for html,
+and other for JavaScript code.
+
+- Create a JavaScript file called `myscript.js` and save it in the same
+  folder where you saved your html. This is what you must to put there:
+
+```javascript
+function wave(name) {
+    return 'Hello World, my name is ' + name
+}
+
+alert(wave('Gabriel'))
+```
+
+Maybe you adviced that we have forgotten some semicolons, don't worry I
+did it intentionally because Brackets will tell us our syntax errors.
+
+- Click on the warning button:
+
+  ![brackets warning button](images/brackets_warning_button.png)
+
+- Check our code errors:
+
+  ![code errors](images/brackets_code_errors.png)
+
+- Modify or code to avoid those errors.
+
+- Modify your html to make a reference to that JavaScript file:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our first website</title>
+  </head>
+  <body>
+    <script src="myscript.js"></script>
+  </body>
+</html>
+```
+
+Now you should learn more about linters, but you can keep coding
+JavaScript.
+
+## Code Linters
 There are tools for reviewing your code, specifically looking for syntax error
 and bad practices. The two most popular are:
 
