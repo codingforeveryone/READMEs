@@ -83,6 +83,57 @@ console.log(roots);
 
 As you can see, `Math` is specified as the second parameter, which is used as `this` in the callback function. (This is just an example of the usage and obviously there is not much point in using it in a simple case like this.)
 
+## Slightly more practical example
+
+One of slightly more practical examples of using `map()` method is transposing a 2 dimensionl array (swap rows and columns), which I found [here on StackOverflow](http://stackoverflow.com/questions/17428587/transposing-a-2d-array-in-javascript):
+
+```javascript
+var newArray = array[0].map(function(col, i) {
+  return array.map(function(row) {
+    return row[i]
+  })
+});
+```
+
+For example,
+
+```javascript
+var array = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+var newArray = array[0].map(function(col, i) {
+  return array.map(function(row) {
+    return row[i]
+  })
+});
+
+print2DArray(array);
+// 1, 2, 3
+// 4, 5, 6
+// 7, 8, 9
+
+print2DArray(newArray);
+// 1, 4, 7
+// 2, 5, 8
+// 3, 6, 9
+
+// This function prints out a 2D array
+function print2DArray(arr) {
+  arr.forEach(function(row) {
+    console.log(row.join(', '));
+  });
+}
+```
+
+Two `map()` functions are used in this piece of code. The first `map()` obtains the indexes of the columns from the first row of the source array. The output of the first `map()` basically forms the rows in the new array. The second `map()` goes through the array and fills the rows. This might look a bit complicated, but the following image hopefully helps you understand how the code above works.
+
+![Transpose 2D Array](images/transpose2dArray.gif)
+
+I have not found a practical example of using the second parameter of the `map()` method yet.
+
 ## Points to remember
 
 - The `map()` method returns a new array and the original array is not modified.
