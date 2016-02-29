@@ -5,69 +5,80 @@ According to Wikipedia, _“Kata (型 or 形 literally: "form"), a Japanese word
 
 ![sword kata](https://c1.staticflickr.com/5/4124/5216047112_51457061d5_b.jpg)
 
-You should approach writing a kata with this frame of mind. Which language feature am I testing knowledge of? What skills will be required? If you’re short of inspiration, a good place to start is to think of a something you learned recently, such as sorting an array or regular expressions, then to try to use that to solve a real life problem you might have had. Remember, you'll have to solve this kata yourself in a few minutes so always have in the back of your head what data structures and methods you might use, even if it's an outline at this stage - don't set yourself a challenge that's far beyond your current ability.
+You should approach writing a kata with this frame of mind. Which language feature am I testing knowledge of? What skills will be required? If you’re short of inspiration, a good place to start is to think of a something you learned recently, then to try to apply it to a real life problem. Remember, you'll have to solve this kata yourself in a few minutes so always have in the back of your head what data structures and methods you might use, even if it's an outline at this stage - don't set yourself a challenge that's far beyond your current ability.
 
 Try having a look at other people’s kata. Could you ask the user to do something similar but with a twist? Could you stitch two existing kata together to make something new and interesting? Or maybe a simplified version of something you've seen? You’re going to have to look through other people’s kata anyway if you follow golden rule #1!
 
 #### Golden rule 1 – Search for duplicate kata
-Don’t worry, you’re not on Stack Overflow so you won’t get actually crucified for posting a duplicate kata, but you may get mildly tarred and feathered. And certainly as the number of kata on the site increases, this rule will become ever more important. But what is and is not a duplicate?
+Don’t worry, you’re not on Stack Overflow so you won’t get actually crucified for posting a duplicate kata, but you may get mildly tarred and feathered. Duplications spring up naturally as authors try to use established concepts to test programming skill, for example sudoku or the Fibonacci sequence. And who can blame them? Imagine having coming up with a new game every time or defining your own sequence of numbers! To avoid duplication, make sure you follow golden rule #2.
+#### Golden rule 2 – Give it a twist!
+Martial arts kata are executed as a series of steps, turns, kicks, punches and sword slashes. So must your kata require the user to carry out a series of mental turns and calculation steps. There are other places on the web to practice syntax, your kata should make the user think. Here are some example twists:
 
-Duplications spring up naturally as authors try to use established concepts to test programming skill, for example sudoku or the Fibonacci sequence. And who can blame them? Imagine having coming up with a new game every time or defining your own sequence of numbers! The problem arises when the solution for one kata can be pretty much copy-pasted into another one, or lifted straight from a well-known textbook. Not much of a challenge anymore! As well as to avoid duplication, it's important to make your kata challenging by adding your own twist or angle and following golden rule #2.
-![karate kata gif](https://45.media.tumblr.com/tumblr_m67my3RMlA1rvcjd7o1_400.gif)
-<h5>Golden rule 2 – Give it a twist!</h5>
-<p>Martial arts kata are executed as a series of steps, turns, kicks, punches and sword slashes. So must your kata require the user to carry out a series of mental turns and calculation steps. There are other places on the web to practice syntax. In more advanced kata, the twist is often the requirement for optimisation through a time limit. At a beginner level it might take the form of:<p>
-<ul>
-<li>Fulfilling multiple requirements from the same method e.g. instead of removing all the spaces from a string with a regex, reducing any instances of multiple spaces to just one space with a regex.</li>
-<li>Additional computation e.g. instead of returning an array of numbers in a range, returning an array of all the prime numbers in a range.</li>
-<li>Formatting requirements e.g. instead of returning an array, returning an array sorted in a particular way.</li>
-</ul>
-<p>Finally, read through <a href="http://bkaestner.github.io/codewars-rules/#writing-a-kata">Section 2 of the Conjured Codewars Codex</a> and the <a href="http://www.codewars.com/topics/kata-best-practices">Kata Best Practices</a> section in the Codewars Docs which talk about important conventions that I have not covered in detail here.</p>
-<h2>Step 2 – Draft description and name</h2>
-<p>So you’ve finally got an idea you want to run with. Well done you, that’s half the battle! I find a good step at this stage is to open up the new kata tab and to give your kata a provisional name and draft description.</p>
+* Instead of removing all the spaces from a string with a regex, reducing any instances of multiple spaces to just one space with a regex.
+* Instead of returning an array of numbers in a range, returning an array of all the prime numbers in a range.
+* Instead of returning an array, returning an array sorted in a particular way.
+
+Finally make sure you have read through [Section 2 of the Conjured Codewars Codex](http://bkaestner.github.io/codewars-rules/#writing-a-kata) and the [Kata Best Practices](http://www.codewars.com/topics/kata-best-practices) section in the Codewars Docs which talk about other kata writing conventions.
+## Step 2 – Draft description and name
+So you’ve finally got an idea you want to run with. Well done you, that’s half the battle! I find a good step at this stage is to open up the new kata tab and to give your kata a provisional name and draft description.
+
 ![new kata](http://i.imgur.com/2o3NmnK.png "new kata")
-<p></p>
-<p>This has two benefits:</p>
-<ul>
-<li>You can refer back to this draft description as you are writing the rest of the kata so it’s useful as an aide-memoir both for the writing process and generally should you decide to go and work on something else and then come back.</li>
-<li>Writing the kata requirements focusses your mind on what the kata will actually look like and can help guide the tests you are about to write. Ever heard of <a href=https://www.youtube.com/watch?v=huOPVqztPdc>rubber ducking</a>? Forcing yourself to think out loud or in writing can help clarify ideas that are swirling around in your brain E.g. Do I want the user to return a number or a string? How many parameters should the function have? And what would a good name the function be?</li>
-</ul>
-<p>At this stage it can be a summary of what the user will be asked to do. You can refine it as you go along and finalise before you publish but to be able to start the next step you're going to need to have an idea of what you're going to ask the user's function to return and what/how many arguments the function will take.</p>
-<h2>Step 3 – Write basic tests</h2>
-<p>Now you know what you want your user to do it’s time for your first test. Test Driven Development (TDD) involves, among other things, following the practice of writing the test before you’ve written the solution. But first to introduce the tests themselves:</p>
-<p>The full test reference docs can be found <a href="http://www.codewars.com/docs/js-slash-coffeescript-test-reference">here</a>. In older kata you might see Test.expect(), which is now considered bad practice, so as a general rule you will be using Test.assertEquals() and Test.assertSimilar(). They both take three arguments:</p>
+
+This has two benefits:
+
+* You can refer back to this draft description when you are writing the rest of the kata or if you want to go away and work on something else.
+* Writing the kata requirements focuses your mind on what the kata will actually look like and can help guide the tests you are about to write. Ever heard of [rubber ducking](https://www.youtube.com/watch?v=huOPVqztPdc)? Forcing yourself to think out loud or in writing can help clarify ideas that are swirling around in your brain E.g. Do I want the user to return a number or a string? How many parameters should the function have? And what would a good name the function be?
+
+At this stage it can be a summary. You can refine it as you go along but to start the next step you're going to know roughly what the user's function will return and what/how many arguments the function will take.
+## Step 3 – Write basic tests
+Now you know what you want your user to do it’s time for your first test. Test Driven Development (TDD) involves, among other things, following the practice of writing the test before you’ve written the solution.
+
+The full test reference docs can be found [here](http://www.codewars.com/docs/js-slash-coffeescript-test-reference). In older kata you might see `Test.expect()`, which is now considered bad practice, so don't use that.
+
+* For numbers, strings and booleans use `Test.assertEquals()`
+* For arrays and objects use `Test.assertSimilar()`
+
+They both take three arguments:
+
 `Test.assertEquals(`the user’s solution, the correct answer, an optional message if the test fails`)`
-<p></p>
-<p>Test.assertEquals() asserts that the first two arguments it is passed evaluate to have the same value. This works for strings, numbers and booleans, but not for arrays or objects. An array of numbers does not have a 'value'. To test arrays and objects we use Test.assertSimilar(). Some other testing frameworks use deepEqual() for objects - it's the same idea. I'm going to use Test.assertEquals in the examples below but just remember assertSimilar for arrays and objects, assertEquals for everything else.</p>
-<p>Choose a simple input then figure out (in your head) what the output should be and slot these into your first test. For example if your function multiply() multiplies values it is given by two then your first test might look like this:</p>
+
+Choose a simple input then figure out (in your head) what the output should be and slot these into your first test. For example if your function multiply() multiplies values it is given by two then your first test might look like this:
+
 `Test.assertEquals(multiply(2), 4, “Should return double the given argument!”)`
-<p></p>
-<p>Write your first tests into the Test cases box on the bottom right-hand side. Now it hit the green validate solution button. Oh dear it failed! Now all we have to do is write something that passes!</p>
+
+Write your first tests into the Test cases box on the bottom right-hand side then press the green Validate Solution button. Oh dear it failed! Now all we have to do is write something that passes!
+
 ![failed test](http://i.imgur.com/nvWyNTU.png)
-<p></p>
-<p>Check out <a href="http://bkaestner.github.io/codewars-rules/#tested-testing-theories">Section 4 of the Conjured Codewars Codex</a> for more details on testing. I've only just touched on it here.</p>
-<h2>Step 4 – Write your solution</h2>
-<p>Now, like you’ve been doing so far on codewars, write a function that fulfils the requirements of the test. Once you have validated your solution and made it turn green, then give yourself a pat on the back, you just completed the first two steps of TDD! When writing your solution and tests try following the TDD cycle of:</p>
-<ul>
-<li>Red - Write a test for one aspect of the function.</li>
-<li>Green - Update the solution so that this new test can be passed.</li>
-<li>Refactor - Go back to your solution before writing the next test to see if you can make it clearer/simpler.</li>
-<li>Repeat!</li>
-</ul>
+
+Check out [Section 4 of the Conjured Codewars Codex](http://bkaestner.github.io/codewars-rules/#tested-testing-theories) for more details on testing. I've only just touched on it here.
+## Step 4 – Write your solution
+Write a function that fulfills the requirements of the test. Once you have validated your solution and made it turn green, then give yourself a pat on the back, you just completed the first two steps of TDD!
+
+1. Red - Write a test for one aspect of the function.
+2. Green - Update the solution so that this new test can be passed.
+3. Refactor - Go back to your solution before writing the next test to see if you can make it clearer/simpler.
+4. Repeat!
+
 ![tdd flow](http://hanwax.github.io/assets/tdd_flow.png)
-<p></p>
-<p>Your vision for the kata is likely to change during this process because you’ve realised that what is in the description is too easy or too hard or just not interesting. Make sure you keep the draft description updated as you go along.</p>
-<h2>Step 5 – Fixed test cases</h2>
-<p>A good set of tests should work together as a team. Imagine each test as an obstacle on an assault course, where the obstacles are getting steadily harder</p>
+
+Your vision for the kata is likely to change during this process because you’ve realised that what is in the description is too easy or too hard or just not interesting. Make sure you keep the draft description updated as you go along.
+
+## Step 5 – Fixed test cases
+A good set of tests should work together as a team. Imagine each test as an obstacle on an assault course, where the obstacles are getting steadily harder.
+
 ![obstacle course](https://upload.wikimedia.org/wikipedia/commons/6/63/Clyne_Farm's_assault_course_-_geograph.org.uk_-_791094.jpg)
-<p></p>
-<p>Only a solution that can climb over every wall, crawl through every tunnel and swim through every stream should get through to the other side. If you write tests that only ask the solution to climb over walls then how do you know that it can crawl through tunnels? That’s why it’s important to follow golden rule #3.</p>
-<h5>Golden rule 3 – Test for edge cases</h5>
-<p>An edge case test can probably best be described as a test that if the user has missed part of the description, will trip them up. For example, let's return to our multiply() function from earlier. I now want it to double its given argument <i>unless</i> the argument is an odd number, in which case I want it to triple its given argument. I would make sure that at least one of the tests covers a case where the argument is an odd number:</p>
+
+Only a solution that can climb over every wall, crawl through every tunnel and swim through every stream should get through to the other side. If you write tests that only ask the solution to climb over walls then how do you know that it can crawl through tunnels? That’s why it’s important to follow golden rule #3.
+
+#### Golden rule 3 – Test for edge cases
+An edge case test can probably best be described as a test that if the user has missed part of the description, will trip them up. For example, let's return to our `multiply()` function from earlier. I now want it to double its given argument _unless_ the argument is an odd number, in which case I want it to triple its given argument. I would make sure that at least one of the tests covers a case where the argument is an odd number:
+
 `Test.assertEquals(multiply(1), 3, “Should return triple the given argument!”)`
-<p></p>
-<p>Go through each element of the description to make sure that it has been covered in this way. The idea of making sure that every aspect of the solution is being tested is similar to another well-known TDD concept, <a href="https://en.wikipedia.org/wiki/Code_coverage">code coverage</a>. Beyond the scope of this guide, but worth checking out if you're interested!</p>
+
+Go through each element of the description to make sure that it has been covered in this way. The idea of making sure that every aspect of the solution is being tested is similar to another well-known TDD concept, [code coverage](https://en.wikipedia.org/wiki/Code_coverage). Beyond the scope of this guide, but worth checking out if you're interested!
+
 ![code coverage meme](http://cdn.meme.am/instances/500x/61965170.jpg)
-<p></p>
+
 <p>You should write each test case so that it ‘only just’ passes. This stops users getting through the tests if they have made a minor error. For example let's say we have a kata that mentions 10 minutes in its description. We should have a test in there that fails if you forget that 10 minutes is 0.1666 of an hour NOT 0.1 of an hour. Look for opportunities to pick out the edges like this and once you’ve got the major bases covered then you’re ready to follow golden rule #4.</p>
 <h5>Golden rule 4 – Example tests</h5>
 <p>The general convention is that if a solution passes the example test fixtures it should stand a good chance of passing the full testing suite. It might get picked off by the random tests or require a rethink because it runs too slowly and the full tests require optimisation but with your random tests you should be giving your users a very clear indication of what you’re looking for. Some kata have no example tests. Some kata have very few examples, then the full testing suit has totally unexpected demands. Don’t do this. It’s annoying. Write carefully edged example tests with helpful error messages that enable the user to build their function piece by piece in the same way you have done.</p>
