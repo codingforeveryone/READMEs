@@ -136,6 +136,8 @@ var splitString =newString.split(",") //["cat" , "dog" , "sheep" , "fish"]
 var splitLimit = newString.split("," , 2) // ["cat" , "dog"]
 ```
 
+<b>5. `Regular Expressions`</b> An advanced tool for creating and performing pattern matches. See [Regular Expressions - A Beginners Guide](https://github.com/codingforeveryone/READMEs/blob/master/regular-expressions-beginners-guide.md).
+
 <h2>String Compare</h2>
 `localeCompare()`- Compares one string to another and returns one of these 3 values:<br>
 <i>1.If the string comes alphabetically before the argument, return -1<br>
