@@ -1,5 +1,7 @@
 # Random Test Cases for Complete Beginners
 
+![Imgur](http://i.imgur.com/g4hUKdO.png?1)
+
 If you are having to create your very first random test cases for your kata and have not any idea of what they are or how to produce
 them, this document might help you. 
 
