@@ -38,10 +38,10 @@ JavaScript can be generated thus:
 var random = Math.random();
 ```
 
-The variable random will now be a random number between 0 and 1, for example: 0.03526814002543688
+The variable random will now be a random number between 0  and 1, for example: 0.03526814002543688. `Math.random()` can be equal to 0, but cannot be equal to 1. 
 
 If you do `Math.random() * 100`, you will get 3. 526814002543688 instead of the number above.
-If you do `Math.round(Math.random() * 100)`, you will get `4` instead of the number above, as `3.5…`. will be rounded to `4`.
+If you do `Math.round(Math.random() * 100)`, you will get `4` instead of the number above, as `3.5…`. will be rounded to `4`. 
 
 So the code in our ‘for loop’ could look like this (pay attention to the last line):
 
@@ -70,3 +70,13 @@ I sometimes felt that generating these random test cases was a kata to solve in 
 
 I hope this short introduction gave you an idea of what random test cases are and how and where to create them. Please note that I
 will update this document as time  goes on.
+
+## Further Random Number Examples
+
+Are you looking to generate a random integer greater than 0 and less than but not including `x`? Try `Math.round(Math.random() * x)`. 
+
+*For integers `0 <= x < 100`, use `Math.round(Math.random() * 100)`.*
+
+Are you looking to generate a random integer greater than or equal to `x` but less than `y`? Try adding the lower bound `x` to a random object generating the remaining variable number (which is equal to `y - x`) e.g. `Math.round(Math.random() * (y - x)) + x`. 
+
+*For integers `40 <= x < 100`, use `Math.round(Math.random() * 60) + 40`.*
