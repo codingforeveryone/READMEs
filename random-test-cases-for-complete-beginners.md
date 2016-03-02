@@ -80,3 +80,20 @@ Are you looking to generate a random integer greater than 0 and less than but no
 Are you looking to generate a random integer greater than or equal to `x` but less than `y`? Try adding the lower bound `x` to a random object generating the remaining variable number (which is equal to `y - x`) e.g. `Math.round(Math.random() * (y - x)) + x`. 
 
 *For integers `40 <= x < 100`, use `Math.round(Math.random() * 60) + 40`.*
+
+## Generating Random Strings
+
+The following function generates a random string 5 characters long. 
+
+```javascript
+function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 5; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+```
