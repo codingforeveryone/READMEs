@@ -3,6 +3,8 @@
 If you are having to create your very first random test cases for your kata and have not any idea of what they are or how to produce
 them, this document might help you. 
 
+![Imgur](http://i.imgur.com/g4hUKdO.png?1)
+
 Random test cases are what it says on the tin – the user’s solution will be tested against a randomly generated input several times.
 Suppose we have made a kata asking the user to add a number `a` to a number `b`. His or her solution may be this:
 
