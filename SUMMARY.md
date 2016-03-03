@@ -6,9 +6,10 @@
     * [String Dissection and Manipulation](string-dissection-and-manipulation.md)
     * [Math Object Beginner Guide](math-object-beginner-guide.md)
     * [Array Map](array-map.md)
-    * [Regular Expressions Beginner Guide](regular-expressions-beginner-guide.md)
+    * [Regular Expressions Beginner Guide](regular-expressions-beginners-guide.md)
     * [Recursion](recursive-function.md)
     * [Best JS Resources](best-js-resources.md)
+    * [Basic Performanc Testing](basic-performance-testing.md)
     
 * [Programmer Skills](gitbook-chapter-headers/programmer-skills.md)
     * [Git Basics](git-basics.md) 
