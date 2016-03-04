@@ -19,7 +19,7 @@
     * [Hoisting](hoisting.md)
     * [Start Developing with JavaScript](start-to-develop-js.md)
     * [Command Line](command-line.md)
-    * [Setting Up a Local Server](https://github.com/codingforeveryone/READMEs/blob/master/setting-up-a-local-server.md)
+    * [Setting Up a Local Server](setting-up-a-local-server.md)
     
 * [Codewars](gitbook-chapter-headers/codewars.md)
     * [Writing Your Own Kata](writing-your-own-kata.md)
