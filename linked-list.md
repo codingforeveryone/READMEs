@@ -4,7 +4,7 @@ This problem is taken from chapter four of "Eloquent Javascript". Since the book
 
 I haven't understood yet how often linked list are used in web development, but it was a good exercise to write it and I learned a lot . If someone is reading Eloquent Javascript and solving the exercises, we could compare our solutions. 
 
-If you are not familiar with lists, the look something like this:
+If you are not familiar with lists, they look something like this:
 ```Javascript
 var list = {
   value: 1,
@@ -17,10 +17,10 @@ var list = {
   }
 };
 ```
-A list is a nested set of objects, where one object hold reference to the next one. 
+A list is a nested set of objects, where one object holds the reference to the next one. 
 ![pic](http://eloquentjavascript.net/img/linked-list.svg)
 
-The first task is to create a function that creates a list, starting from an array of integer:
+The first task is to create a function that creates a list, starting from an array of integers:
 ```Javascript
 function arrayToList (arr){
   var list = {
@@ -42,8 +42,9 @@ The second tasks is to create a function that transforms a list into an array:
 function listToArray(list){
   var res = []
   function traverse(list){
-    if(list.rest == null) return res;
-    else{
+    if(list.rest == null) {
+      return res;
+    } else {
       res.push(list.value)
       return traverse(list.rest)
     }
@@ -62,13 +63,14 @@ function prepend(value, list){
 }
 ```
 
-The last tasks is to creat a function that, given an integer and a list, returns the value held by the list at the position corrisponding to the integer:
+The last tasks is to creat a function that, given an integer and a list, returns the value held by the list at the position corresponding to the integer:
 ```Javascript
 function nth(pos,list){
   var counter = 0;
   function reach(list){
-    if (pos == counter) return list.value
-    else{
+    if (pos == counter) {
+      return list.value
+    } else {
       counter++
       return reach(list.rest)
     }
