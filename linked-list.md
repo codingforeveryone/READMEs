@@ -2,7 +2,7 @@
 
 This problem is taken from chapter four of "Eloquent Javascript". Since the book doesn't provide solutions, these are my own.
 
-I haven't understood yet how often linked list are used in web development, but it was a good exercise to write it and I learned a lot writing it. If someone is reading Eloquent Javascript, we could compare our solutions. 
+I haven't understood yet how often linked list are used in web development, but it was a good exercise to write it and I learned a lot . If someone is reading Eloquent Javascript and solving the exercises, we could compare our solutions. 
 
 If you are not familiar with lists, the look something like this:
 ```Javascript
