@@ -9,7 +9,7 @@
     * [Regular Expressions Beginner Guide](regular-expressions-beginners-guide.md)
     * [Recursion](recursive-function.md)
     * [Best JS Resources](best-js-resources.md)
-    * [Basic Performanc Testing](basic-performance-testing.md)
+    * [Basic Performance Testing](basic-performance-testing.md)
     
 * [Programmer Skills](gitbook-chapter-headers/programmer-skills.md)
     * [Git Basics](git-basics.md) 
