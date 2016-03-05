@@ -106,6 +106,15 @@ The `atan()` method returns the arctangent of a number as a value between -PI/2 
 
 *Note that the trigonometric functions (sin(), cos(), tan(), asin(), acos(), atan(), atan2()) expect or return angles in radians. To convert radians to degrees, divide by (Math.PI / 180), and multiply by this to convert the other way.*
 
+Example kata: 
+
+[Triangle Type](http://www.codewars.com/kata/triangle-type)
+
+[Wind Component Calculation](http://www.codewars.com/kata/542c1a6b25808b0e2600017c)
+
+[Convert Between Radian and Degrees](http://www.codewars.com/kata/convert-between-radians-and-degrees)
+
+
 ## Constants
 
 As well as having methods, the Math object also allows you to access some mathematical contants as properties. There is a programming convention of writing constants in UPPERCASE as opposed to camelCase. So the Pi property of Math is written `Math.PI` instead of `Math.pi` or `Math.Pi`. Constants are defined with the full precision of real numbers in JavaScript.
