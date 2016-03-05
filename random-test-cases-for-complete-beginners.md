@@ -99,3 +99,41 @@ function makeid()
     return text;
 }
 ```
+
+you can generate random strings within a range by adding a length variable and using that in place of the 5 in the for loop.  The following code generates a random string of a length between 1 and 10 characters:
+
+```javascript
+function makestring() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var length = Math.ceil(Math.random() * 9)
+    
+    if (max < min) return "Maximum argument should be greater than minimum!";
+
+    for( var i=0; i < length; i++ ) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    
+    return text;
+}
+```
+
+You will probably want to set a minimum value as well and pass the maximum and minimum values in to the string generator as arguments:
+
+```javascript
+function makestring(min, max) {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var length = Math.ceil((Math.random() * max - 1) + min)
+    
+    if (max < min) return "Maximum argument should be greater than minimum!";
+
+    for( var i=0; i < length; i++ ) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    
+    return text;
+}
+```
+
+You can of course, use the random number generators above to generate random integers to be passed in to the makestring function.
