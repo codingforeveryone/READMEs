@@ -202,7 +202,7 @@ did it intentionally because Brackets will tell us our syntax errors.
 
 #### Running Javascript code and viewing output in your browser
 
-You can view the output of your Javascript file using the browser's developer tool, this is helpful you're trying to debug, profile your site, or just learn in general what your code does.
+You can view the output of your Javascript file using the browser's developer tool, and interact with the code that you have written. This is helpful when you're trying to debug, profile your site, or just learn in general what your code does.
 
 - Try copy and paste the following code to your Javascript file (i.e myscript.js):
 
@@ -214,7 +214,7 @@ function b() {
 b();
 ```
 
-- Save and click the Live Preview button again to bring up the browser.
+- Save and click the Live Preview button again to bring up the browser. **Side note**: It's safe to say that this works for any code editor that you use, as long as you're opening an html file (that has a Javascript file being linked to) with a web browser. 
 
 - To bring up the browser's developer tool, press ```Cmd + Opt + I ``` on Mac or ```Ctrl + Shift + I``` on Windows.
 
@@ -222,7 +222,7 @@ b();
 
 ![Javascript output](images/developer_tool_js_output.png)
 
-- Type ```a``` in the developer tool console and you should see "Hello World!"
+- Type ```a``` in the developer tool console and you should see "Hello World!" as output.
 
 ![Javascript output](images/developer_tool_js_output_hello.png)
 
