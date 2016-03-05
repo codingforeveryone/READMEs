@@ -4,7 +4,7 @@ A recursive function is a function that, at some point during it's execution, ca
 
 #### Anatomy of a Recursive function
 
-A recursive function will typically first check if a condition is satisfied. If the condition is met, the function will return a value or perform some other task. If the condition is not met, the function will return a call to itself with **modified** arguments. This cycle will continue until the condition is met, returning any target value back through the stack to the initial call. This condition is called the **base case**. 
+A recursive function will typically first check if a condition is satisfied. This condition is called the **base case**. If the condition is met, the function will return a value or perform some other task. If the condition is not met, the function will return a call to itself with **modified** arguments. This cycle will continue until the condition is met, returning any target value back through the stack to the initial call. 
 
 ##### Example 1
 ```javascript
