@@ -161,3 +161,5 @@ $ git checkout <file>
 - Online Courses:
   - [Try Git](https://www.codeschool.com/courses/try-git)
   - [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
+  - [Git - The simple guide](http://rogerdudler.github.io/git-guide/)
+  - [Git workflow to collaborate on open source projects](http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
