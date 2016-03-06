@@ -1,6 +1,6 @@
 # Array `reduce()` method
 
-The `reduce()` method returns a single value by applying a callback function, which is specified as the first parameter of the method, to each element of the array. This method is one of the functions called higher-order functions, which are shorter, more readable alternatives to iterating through an array with a loop.
+`reduce()` is a method of the `Array` object. It returns a single value by applying a callback function, which is specified as the first parameter of the method, to each element of the array. This method is one of the functions called higher-order functions, which are shorter, more readable alternatives to iterating through an array with a loop.
 
 ## Example
 
@@ -120,7 +120,7 @@ console.log(counts);
 // {A: 4, B: 4, C: 2}
 ```
 
-Note that the initial value of the object `{}` is specified as the second parameter of the `reduce()` method. This object holds the letters and thier counter values. At each iteration of the callback function, the counter is incremented by looking up the counter value (`a[b]`).
+Note that the initial value of the object `{}` is specified as the second parameter of the `reduce()` method. This object holds the letters and their counter values. At each iteration of the callback function, the counter is incremented by looking up the counter value (`a[b]`).
 
 ## Other parameters of the callback function
 
@@ -148,7 +148,7 @@ console.log(result);
 - The first parameter of the `reduce()` method is a callback function.
 - The result of the callback function is passed to the first parameter of the callback function at the next iteration.
 - The initial value of the first parameter can be specified as the second parameter of the `reduce()` method.
-- The elements of the array is passed to the second parameter of the callback function, one by one.
+- The elements of the array are passed to the second parameter of the callback function, one by one.
 
 ## Further reading
 
