@@ -34,7 +34,7 @@ Here's an example, the following HTML syntax
 
 will produce the following tree strucure, and each page element is represented by a tree node (**Note**: This is a simplication of what the actual tree structure is):
 
-![DOM tree structure](images/dom/dom-tree.png)
+![DOM tree structure](images/dom/dom-tree-small.png)
 
 You can also visually see the DOM using the browser's developer tool. Simply bring up a browser (eg Google Chrome or Firefox) and press ```Cmd + Opt + I``` on Mac or ```Ctrl + shift + I``` on Windows.
 
@@ -94,15 +94,15 @@ Now update the HTML syntax to the following:
 </html>
 ```
 
-**Finding node by Id**: Just as the title imply we can find a node on the page using ```document.getElementById```
+**Find node by Id**: Just as the title imply we can find a node on the page using ```document.getElementById```
 
 ![Get by ID](images/dom/get-by-id.png)
 
-**Find node by Class name** You can also find a node on the page using ```document.getElementsByClassName```
+**Find node by Class name**: You can also find a node on the page using ```document.getElementsByClassName```
 
 ![Get by class name](images/dom/get-by-classname.png)
 
-**Find node by html tag (i.e body, head, h1, p etc)** Try and find the node by ```document.getElementsByTagName```
+**Find node by html tag (i.e body, head, h1, p etc)**: Try and find the node by ```document.getElementsByTagName```
 
 ![Get by tag](images/dom/get-by-tag.png)
 
@@ -112,7 +112,7 @@ Of course, there are several other ways in which you can find nodes on the page,
 
 ##### 3. Manipulating the DOM elements
 
-While we can certainly inspect the DOM elements and its structure, we can also change it. Below we are changing the text in the ```<h1>``` from "This is my homepage" to "This is David's homepage" using ```element.innerText```
+While we can certainly inspect the DOM elements and its structure, we can also change it. Below we are changing the text in the ```<h1>``` from "This is my homepage" to "This is David's homepage" using ```element.innerText```.
 
 ![Before node manipulation](images/dom/manipulate-before.png)
 
