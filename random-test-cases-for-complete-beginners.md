@@ -88,15 +88,13 @@ Are you looking to generate a random integer greater than or equal to `x` but le
 The following function generates a random string 5 characters long. 
 
 ```javascript
-function makeid()
-{
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-    for( var i=0; i < 5; i++ )
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-    return text;
+function makestring() {
+   var array = [];
+   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+   for( var i=0; i < 5; i++ ) {
+       array.push(possible[(Math.floor(Math.random() * possible.length))]);
+   }
+   return array.join("");
 }
 ```
 
@@ -104,17 +102,15 @@ you can generate random strings within a range by adding a length variable and u
 
 ```javascript
 function makestring() {
-    var text = "";
+    var array = [];
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    var length = Math.ceil(Math.random() * 9)
+    var length = Math.ceil(Math.random() * 10)
     
-    if (max < min) return "Maximum argument should be greater than minimum!";
-
     for( var i=0; i < length; i++ ) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+        array.push(possible[(Math.floor(Math.random() * possible.length))]);
     }
     
-    return text;
+    return array.join("");
 }
 ```
 
@@ -122,17 +118,17 @@ You will probably want to set a minimum value as well and pass the maximum and m
 
 ```javascript
 function makestring(min, max) {
-    var text = "";
+    var array = [];
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    var length = Math.ceil((Math.random() * max - 1) + min)
+    var length = Math.ceil((Math.random() * max) + min)
     
     if (max < min) return "Maximum argument should be greater than minimum!";
 
     for( var i=0; i < length; i++ ) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+        array.push(possible[(Math.floor(Math.random() * possible.length))]);
     }
     
-    return text;
+    return array.join("");
 }
 ```
 
