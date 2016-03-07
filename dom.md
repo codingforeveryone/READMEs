@@ -1,7 +1,7 @@
 
 # A primer on Document Object Model (DOM)
 
-It all start when you visit a webpage, there are a few things going on in the background whenever a web page is displayed in the browser. 
+It all starts when you visit a webpage, there are a few things going on in the background whenever a web page is displayed in the browser. 
 
 1. When you visit a URL, the browser will fetch the HTML file from the destination along with the assets mentioned needed (i.e css, js, images etc).
 
@@ -13,7 +13,7 @@ It all start when you visit a webpage, there are a few things going on in the ba
 
 5. This model that we just described, is the DOM (aka Document Object Model).
 
-How does the DOM look like
+## How does the DOM look like
 
 When the DOM is created, it is represented by a [Tree structure](https://en.wikipedia.org/wiki/Tree_structure). 
 
@@ -40,6 +40,8 @@ You can also visually see the DOM using the browser's developer tool. Simply bri
 
 ![Visual DOM tree structure](images/dom/visual-dom-tree.png)
 
+
+
 ## The DOM is also referred to as an API
 
 An application programming interface [(API)](https://en.wikipedia.org/wiki/Application_programming_interface) is simply just a means for one computer program to communicate with another computer program. In this context, the DOM API allows the interaction and manipulation of the html document in the browser through Javascript code.
@@ -48,25 +50,32 @@ An application programming interface [(API)](https://en.wikipedia.org/wiki/Appli
 
 There are several ways to interact with the DOM, they are inclusive of but not limited to:
 
-#### 1. Traverse the DOM tree structure
+##### 1. Traverse the DOM tree structure
 
 If you go over to the console in the browser development tool, and type in ```document```, you can see its immediate child nodes being logged. The ```document``` node sits right at the top of the tree (aka the root node). 
 
 ![DOM document](images/dom/document.png)
 
+
 Every parent node has a ```childNodes``` method that can be called to retrieve its child nodes in an array.
+
 
 ![DOM document's child node](images/dom/document-childnode.png)
 
+
 and you can traverse further into the tree structure
+
 
 ![DOM document's grand child node](images/dom/document-child-child.png)
 
+
 just as a parent node has a ```childNodes``` method, the child notes themselves have a ```parentNode``` method to find its parent, although they will have only one.
+
 
 ![Parent node](images/dom/parent-node.png)
 
-#### 2. Finding a specific sub-section of web page
+
+##### 2. Finding a specific sub-section of web page
 
 We can reach any node on the page by means of ```childNodes``` and ```parentNode```, but we can already tell that doing so can be very repetitive. Fortunately the DOM allows us to find a specific node of the page more easily.
 
@@ -82,7 +91,8 @@ Now try and update the HTML syntax to the following:
      	<h1 id="blue">This is my homepage</h1>
         <p class="yellow">I hope you like it</p>
      </body>
-</html>```
+</html>
+```
 
 - Find node by Id
 
@@ -106,7 +116,7 @@ There are several other ways in which you can find nodes on the page, feel free 
 
 ![Get options](images/dom/get-option.png)
 
-#### 3. Manipulating the DOM elements
+##### 3. Manipulating the DOM elements
 
 While we can certainly inspect the DOM elements and its structure, we can also change it:
 
