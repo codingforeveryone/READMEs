@@ -17,6 +17,7 @@
     * [Hosting on GitHub](hosting-on-github-gh-pages.md)
     * [Markdown Cheat-Sheet](markdown-cheat-sheet.md)
     * [Hoisting](hoisting.md)
+    * [Document Object Model](https://github.com/codingforeveryone/READMEs/blob/master/document-object-model.md)
     * [Start Developing with JavaScript](start-to-develop-js.md)
     * [Command Line](command-line.md)
     * [Setting Up a Local Server](setting-up-a-local-server.md)
