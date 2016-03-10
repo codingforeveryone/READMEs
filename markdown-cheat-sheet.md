@@ -96,3 +96,17 @@ The number of hashtags indicates what kind of header you are creating.
 
 repeat(foo, 5);
  ```
+
+### Further readings
+
+- [Markdown basics by John Gruber](https://daringfireball.net/projects/markdown/basics)
+- [Gitbook - Markdown](https://www.gitbook.com/book/gitbookio/markdown/details)
+- [Ghost - The ultimate guide to markdown](https://blog.ghost.org/markdown/)
+
+### Practicing markdown
+
+- [Dillinger.io](http://dillinger.io)
+- [Stackedit.io](https://stackedit.io)
+- [Codecademy](https://www.codecademy.com/courses/web-intermediate-en-Bw3bg/2/1)
+
+
