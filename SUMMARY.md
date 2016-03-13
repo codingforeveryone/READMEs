@@ -12,6 +12,8 @@
     * [Best JS Resources](best-js-resources.md)
     * [Basic Performance Testing](basic-performance-testing.md)
     * [Linked list](linked-list.md)
+    * [Discover Meteor](discover-meteor.md)
+
     
 * [Programmer Skills](gitbook-chapter-headers/programmer-skills.md)
     * [Git Basics](git-basics.md) 
