@@ -42,7 +42,8 @@ console.log("the program has reached the end")
 Fifty percent of the times, when the unreliableFunction doesn't fail this will be the output:
 ![img2](images/s2.png)
 
-When the unreliableFunction returns the product this will be the output. You can see that the code following the function call has been executed:
+You can see that the code following the function call has been executed.  
+When the functions fails this will be the output:
 ![img3](images/s3.png)
 
 
