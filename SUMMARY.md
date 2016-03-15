@@ -12,6 +12,7 @@
     * [Best JS Resources](best-js-resources.md)
     * [Basic Performance Testing](basic-performance-testing.md)
     * [Linked list](linked-list.md)
+    * [Exception handling](raising-exceptions.md)
     
 * [Programmer Skills](gitbook-chapter-headers/programmer-skills.md)
     * [Git Basics](git-basics.md) 
