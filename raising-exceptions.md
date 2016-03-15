@@ -88,7 +88,7 @@ try {
 ```
 
 This will output the following:
-[img5](images/s5.png)
+![img5](images/s5.png)
 
 When something goes wrong inside unrealiableFunction JS will raise an exception. In practical terms, an exception is a value.  JS will create a new Object using its standard constructor Error(), and it will assign to Error.message the type of error that was encoutered. In this case "y is not defined".  Raising an exeption is somewhat similar to a _return_ from a function. In the case of an exception the program will jump out of the  current function and also of all the functions that came before in the execution stack. This is called _unwinding the stack_. When this happens the exception traverse the execution stack and if nothing intercepts it, it is handled by the environment.This is why in the forlast example the error message was displayed **after** the last line of code was run. It was the environment that output that error message to console, after the code in the finally block was executed. The extra line that you see below the error message are the functions that compose the execution stack. 
 
