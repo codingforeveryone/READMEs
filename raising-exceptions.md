@@ -1,6 +1,5 @@
 # Working with exceptions
 
-##Intro
 This readme will cover the usage of the following functions: throw, try, catch, finally.
 
 ## Why is exception handling useful
