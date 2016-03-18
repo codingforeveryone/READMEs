@@ -3,7 +3,7 @@
 
 ## What is an Array
 
-An array is a native JavaScript data structure, which is used for lists of things.
+An array is a native JavaScript data structure used for storing lists of things.
 
 
 ## Create an Array
@@ -162,8 +162,7 @@ var c = a.slice(0, -1);   // ['a', 'b', 'c', 'd']
 
 ### Traversing arrays
 
-Often we want to do something to each value within an array. The simplist way to do this is with
-a for loop.
+Often we want to do something to each value within an array. The simplest way to do this is with a for loop.
 
 ```javascript
 var arr = [1, 2, 3];
@@ -180,7 +179,7 @@ for (var i = 0; i < arr.length; i++) {
 
 Or in ES2015, you can do:
 
-```
+```javascript
 var arr = [1, 2, 3];
 
 for (let val of arr) {
@@ -195,7 +194,7 @@ for (let val of arr) {
 
 As traversing arrays is such a common task, there is a built-in Array method for doing so.
 
-``` Array.prototype.forEach(callback[, thisArg]) ` executes the provided callback once for each element
+`Array.prototype.forEach(callback[, thisArg])` executes the provided callback once for each element
 present in the array in ascending order. It is not invoked for index properties that have been
 deleted or are uninitialized (i.e. on sparse arrays).
 
@@ -223,8 +222,7 @@ Of course, you can also use an anonymous function:
 ```javascript
 var myArr = [1, 2, 3];
 
-myArr.forEach(function (val, idx, arr) { console.log(val ' is item ' + idx + 'in array:
-' + arr); });
+myArr.forEach(function (val, idx, arr) { console.log(val ' is item ' + idx + 'in array:' + arr); });
 ```
 
 Which, with ES2015, can be written more succinctly with arrow functions:
@@ -232,9 +230,10 @@ Which, with ES2015, can be written more succinctly with arrow functions:
 ```javascript
 var myArray = [1, 2, 3];
 
-myArr.forEach((val, idx, arr) => console.log(val ' is item ' + idx + 'in array:
-227 ' + arr));
+myArr.forEach((val, idx, arr) => console.log(val ' is item ' + idx + 'in array:' + arr));
 ```
+
+Because arrow functions work so well with array methods which take functions, we will use them from here on.
 
 ### Map and reduce
 
@@ -254,7 +253,7 @@ arr.map(v => v + 1);  // [2, 3, 4]
 arr;                  // [1, 2, 3]
 ```
 
-The second array manipulation method to look at is ```Array.prototype.reduce(callback[, initialValue\)```. See
+The second array manipulation method to look at is ```Array.prototype.reduce(callback[, initialValue])```. See
 [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 for full description. This takes applies a function to each value and collects the results into a new value.
 
@@ -284,7 +283,7 @@ arrayMap(arr, v => v + 1);    // [2, 3, 4]
 ### More array manipulation methods
 
 In addition to map and reduce, JavaScript provides various other array manipulation methods. All of
-which work in a similar way to ```forEach``` ```map`` and ```reduce``` (i.e. they take a callback
+which work in a similar way to ```forEach``` ```map``` and ```reduce``` (i.e. they take a callback
 which is applied to each element in the array). Next we'll have a look at some of the most useful
 and also implement them using ```reduce```.
 
@@ -292,7 +291,7 @@ _Filter_
 ```Array.prototype.filter(callback[, thisArg])``` filters out all elements which return a falsy
 value when called with the callback. See [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Whilst not strictly required, for the purposes of clarity, the callback should return a Boolean.
 
-```
+```javascript
 var arr = [10, 15, 18, 30];
 
 arr.filter(v => v % 5 === 0);   // [10, 15, 30];
@@ -300,7 +299,7 @@ arr.filter(v => v % 5 === 0);   // [10, 15, 30];
 
 Filter implemented with ```reduce```:
 
-```
+```javascript
 function filter(myArr, callback) {
   return myArr.reduce((acc, crnt) => callback(crnt) ? acc.concat(crnt) : acc, []);
 }
@@ -324,7 +323,7 @@ arr2.every(v => v % 5 === 0);  // false
 
 Every implemented with ```reduce```
 
-```
+```javascript
 function every(myArr, callback) {
   return myArr.reduce((acc, crnt) => acc && callback(crnt), true);
 }
@@ -337,9 +336,9 @@ every(arr2, v => v % 5 === 0);  // false
 ```
 
 _Some_
-```Array.protoype.some(callback[, thisArg)``` returns true if some oelement returns a truthy value
+```Array.protoype.some(callback[, thisArg)``` returns true if any element returns a truthy value
 when called with the callback. See [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some).
-AS for filter and every, the callback should return a Boolean.
+As for filter and every, the callback should return a Boolean.
 
 ```javascript
 var arr1 = [10, 15, 20];
