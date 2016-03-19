@@ -194,7 +194,7 @@ for (let val of arr) {
 
 As traversing arrays is such a common task, there is a built-in Array method for doing so.
 
-`Array.prototype.forEach(callback[, thisArg])` executes the provided callback once for each element
+```Array.prototype.forEach(callback[, thisArg])``` executes the provided callback once for each element
 present in the array in ascending order. It is not invoked for index properties that have been
 deleted or are uninitialized (i.e. on sparse arrays).
 
@@ -287,7 +287,7 @@ which work in a similar way to ```forEach``` ```map``` and ```reduce``` (i.e. th
 which is applied to each element in the array). Next we'll have a look at some of the most useful
 and also implement them using ```reduce```.
 
-_Filter_
+#### Filter
 ```Array.prototype.filter(callback[, thisArg])``` filters out all elements which return a falsy
 value when called with the callback. See [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Whilst not strictly required, for the purposes of clarity, the callback should return a Boolean.
 
@@ -309,11 +309,10 @@ var arr = [10, 15, 18, 30];
 filter(arr, v => v % 5 === 0);  // [10, 15, 30]
 ```
 
-_Every_
-```Array.prototype.every(callback[, thisArg])``` returns true if all elements return a truthy value
-when called with the callback. See [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every). Like filter, for the purposes of clarity, the callback should return a Boolean.
+#### Every
+```Array.prototype.every(callback[, thisArg])``` returns true if all elements return a truthy value when called with the callback. See [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every). Like filter, for the purposes of clarity, the callback should return a Boolean.
 
-```
+```javascript
 var arr1 = [10, 15, 20];
 var arr2 = [10, 15, 18, 20];
 
@@ -335,7 +334,7 @@ every(arr1, v => v % 5 === 0);  // true
 every(arr2, v => v % 5 === 0);  // false
 ```
 
-_Some_
+#### Some
 ```Array.protoype.some(callback[, thisArg)``` returns true if any element returns a truthy value
 when called with the callback. See [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some).
 As for filter and every, the callback should return a Boolean.
@@ -359,9 +358,96 @@ function some(myArr, callback) {
 
 var arr1 = [10, 15, 20];
 var arr2 = [10, 15, 18, 20];
-var arr3 = [4, 9, 13, 27]; 
+var arr3 = [4, 9, 13, 27];
 
 some(arr1, v => v % 5 === 0);  // true
 some(arr2, v => v % 5 === 0);  // true
 some(arr3, v => v % 5 === 0);  // false
+```
+
+### Sorting arrays
+
+Sorting algorithms are hard. In fact there's almost a whole [Khan Academy course](https://www.khanacademy.org/computing/computer-science/algorithms) on the subject. Whilst this is all very interesting, it's a lot to learn just to put some values into order. Fortunately arrays have a built in sort method ```Array.prototype.sort([compareFunction])``` (see [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)).
+
+An important thing to note about ```Array.prototype.sort``` is that it sorts <u>in place</u>. Which means the original array is changed. If you need to keep the original array, then you should make a copy of the original before sorting (see ```Array.prototype.slice``` section above for a way how to make a copy).
+
+By default elements are converted to strings and then compared in Unicode point order. This means sort is great for lists of strings:
+
+```javascript
+var arr = ['orange', 'kiwi', 'apple', 'pear', 'banana'];
+
+var sortedArr = arr.sort(['orange', 'kiwi', 'apple', 'pear', 'banana']);  // ['apple', 'banana', 'pear', 'kiwi', 'orange']
+
+sortedArr === arr;    // true
+```
+
+This doesn't work so well for numbers:
+
+```javascript
+var arr = [4, 2, 5, 7, 9, 11, 80];
+
+arr.sort();   // [ 11, 2, 4, 5, 7, 80, 9 ]
+```
+
+This is where the compare function comes in. The compare function provides information to the sort method on how to sort the elements in the array. It takes in two values (lets call them ```a``` and ```b```) and returns a Number, which should be:
+
+- <b>0</b> if the sort order of ```a``` and ```b``` should remain unchanged
+- <b>less than 0</b> if ```a``` should have a lower sort index than ```b```
+- <b>more than 0</b> if ```b``` should have a lower sort index than ```a```
+
+Therefore to sort numbers in ascending order we can do:
+
+```javascript
+var arr = [ 11, 2, 4, 5, 7, 80, 9 ];
+
+arr.sort((a, b) => a - b) //  [ 2, 4, 5, 7, 9, 11, 80 ]
+```
+
+And to sort in descending order:
+
+```javascript
+var arr = [ 11, 2, 4, 5, 7, 80, 9 ];
+
+arr.sort((a, b) => b - a) //  [ 80, 11, 9, 7, 5, 4, 2 ]
+```
+
+### Reversing arrays
+
+A method that fits well with sorting is reversing. For example, if you want to sort a list in reverse alphabetical order, you could write a compare function to do this in one step, but an easier solution (although not necessarily better), would be to first sort alphabetically and then reverse.
+
+```Array.prototype.reverse()``` does this.  It worth noting that, like ```Array.prototype.sort```, ```reverse``` sorts in place.
+
+```javascript
+var arr = ['orange', 'kiwi', 'apple', 'pear', 'banana'];
+
+arr.sort().reverse();     //  [ 'pear', 'orange', 'kiwi', 'banana', 'apple' ]
+```
+
+
+### Spread operator
+
+ES2015 provides the new spread operator, which allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected (see [description](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)). As a side note, there is also the [rest operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/rest_parameters) which has the same syntax, so is worth looking at in order to understand the difference.
+
+This can be used to combine arrays:
+
+```javascript
+var arr1 = [1, 2, 3];
+
+var arr2 = [4, 5, 6];
+
+var arr3 = [...arr1, ...arr2];   // [1, 2, 3, 4, 5, 6]
+
+var arr4 = [...arr3, 7, 8, 9];  // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+
+### Destructuring
+
+Another ES2015 feature which works well with the spread operator is destructuring assignment ([see description](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)). The destructuring assignment syntax makes it possible to extract data from arrays or objects using a syntax that mirrors the construction of array and object literals. So can be combined with the spread operator to extract values like this:
+
+```javascript
+var [head, ...tail] = [1, 2, 3, 4, 5];
+
+head;     // 1
+tail;     // [2, 3, 4, 5]
 ```
