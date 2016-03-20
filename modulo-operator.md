@@ -25,15 +25,11 @@ var resultTwo = 25 % 3.5;
 
 In this example `resultTwo` equals `0.5` as `3.5` goes into `25` _seven_ times (3.5 &times; 7 = 24.5), leaving a remainder of `0.5`.
 
-
-
-
 ##Katas
 
 Here is a kata I created to practise using modulo:
 
-[Paperboy](http://www.codewars.com/kata/56ed5f13c4e5d6c5b3000745/edit/javascript)
-
+[Paperboy](http://www.codewars.com/kata/56ed5f13c4e5d6c5b3000745)
 
 Here are some example katas that can be solved with the modulo operator:
 
