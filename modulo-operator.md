@@ -19,7 +19,7 @@ console.log(result); //prints 2
 
 ###Example 2
 
-```
+```javascript
 var resultTwo = 25 % 3.5;
 ```
 
