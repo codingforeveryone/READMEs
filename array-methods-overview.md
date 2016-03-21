@@ -1,4 +1,4 @@
-# Arrays
+# Array Methods Overview
 
 
 ## What is an Array
