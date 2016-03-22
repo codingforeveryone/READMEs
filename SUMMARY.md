@@ -5,6 +5,7 @@
 * [JavaScript](gitbook-chapter-headers/js.md)
     * [String Dissection and Manipulation](string-dissection-and-manipulation.md)
     * [Math Object Beginner Guide](math-object-beginner-guide.md)
+    * [Modulo Operator](https://github.com/codingforeveryone/READMEs/blob/master/modulo-operator.md)
     * [Array Methods Overview](array-methods-overview.md)
     * [Array Map](array-map.md)
     * [Array Reduce](array-reduce.md)
