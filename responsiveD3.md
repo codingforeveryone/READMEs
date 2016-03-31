@@ -5,6 +5,6 @@ that will walk you though how to make a D3 visualisation that is responsive, by 
 
 Any and all feedback welcome!
 
-Thanks 
+Thanks<br/>
 Alison 
 
