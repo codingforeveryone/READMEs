@@ -19,3 +19,5 @@ Other than this, the quick tutorial is a really useful introduction into the com
 http://cli.learncodethehardway.org/book/
 
 http://www.macworld.com/article/2080814/master-the-command-line-copying-and-moving-files.html
+
+https://www.codecademy.com/learn/learn-the-command-line
