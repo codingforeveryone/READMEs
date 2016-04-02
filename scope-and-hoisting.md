@@ -1,16 +1,16 @@
-#Variable scope and hosting
+#Variable scope and hoisting
 -
-What we're going to cover in this article, as the title states, is variable scope and hoisting. I would stronly reccomemd reading the mutable vs imumtable README before continuing with this if unfamiliar with the concept. 
+What we're going to cover in this article, as the title states, is variable scope and hoisting. I would strongly recommend reading the mutable vs immutable README before continuing with this if unfamiliar with the concept. 
 
-Variable scope is the region where the variable is accesable from, or also, where it is visible.  
+Variable scope is the region where the variable is accesible from, or also, where it is visible.  
 
-Variables have local scope or global scope and all variables declared outside of a function are in the global scope. This means they are available to the whole application.
+Variables have local scope or global scope and all variables declared outside of a function are in the global scope. This means they are available everywhere.
 
-Unlike most languages which have block-level scope, Javascript has what is called function-level scope. Variables which are declared inside a function are local variables (to the function they are in) and are only accesible inside that function or to a function inside the function. 
+Unlike most languages which have block-level scope, JavaScript has what is called function-level scope. Variables which are declared inside a function are local variables (to the function they are in) and are only accesible inside that function or to a function inside the function. 
 
 -
 
-![Javascript Hosting](http://captivatedev.com/wp-content/uploads/2011/04/VariableScope_thumb1.jpg)
+![Javascript Hoisting](http://captivatedev.com/wp-content/uploads/2011/04/VariableScope_thumb1.jpg)
 
 
 ###Function level scope
@@ -23,12 +23,12 @@ function printName(name) {
 	console.log(myName);
 }
 
-printName() // logs Biff Tannen
+printName(); // logs Biff Tannen
 
-console.log(myName) // logs Marty McFly
+console.log(myName); // logs Marty McFly
 ```
 
-Only inside of the function are we able to access the variable `Rodger Smith` as it is in the local scope of the `printName` function and not visible anywhere else but in the function. 
+Only inside of the function are we able to access the value `Biff Tannen` as it is in the local scope of the `printName` function and not visible anywhere else but in the function. 
 
 -
 
@@ -38,25 +38,25 @@ Only inside of the function are we able to access the variable `Rodger Smith` as
 var name = "Chunk";
 
 if (name) {
-	name = "Mouth";
-	console.log(name);
+	var name = "Mouth";
+	console.log(name); // logs Mouth
 }
 
 console.log(name) // logs Mouth
 ```
-We don't create a local context for the variable inside the `if` statement. Javascript only does this with _functions_.  When we `console.log(name)` it is still the global variable only that we re-assigned the value to `Mouth` inside of the `if` statement. 
+
+We don't create a local context for the variable `name` inside the `if` statement. Javascript only does this with _functions_. When we `console.log(name)` it is still the global variable only that we re-assigned the value of `Mouth` to it inside of the `if` statement. 
 
 -
 
 ###Not declaring variables
 
-![Javascript Hosting](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4RTdLDeAdSU3zqbT8LoCm2dYPCqIZzxmlKCSePWursKYl-sh-)
-
+![Javascript Hoisting](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4RTdLDeAdSU3zqbT8LoCm2dYPCqIZzxmlKCSePWursKYl-sh-)
 
 If we don't declare variables with the `var` keyword then automatically they become global variables. 
 
 ```javascript
-var name = "E.T"
+var name = "E.T";
 
 function printAlienName() {
 	console.log(name);	
@@ -73,31 +73,11 @@ printPersonName(); // logs Elliot
 
 printAlienName(); // logs Elliot
 ```
-Here when we use `name = "Elliot"` inside of the function we re-assign the global variable to `Elliot`. To avoid this all we need to do is the declare the variable like in the example below.
-
--
-
-###Declaring varibales
+Here when we use `name = "Elliot"` inside of the function we re-assign the global variable to `Elliot`. To avoid this all we need to do is the declare the variable inside `printPersonName()` like this:
 
 ```javascript
-var name = "E.T"
-
-function printAlienName() {
-	console.log(name);	
-}
-
-function printPersonName() {
-	var name = "Elliot";
-	console.log(name);
-}
-
-printAlienName(); // logs E.T
-
-printPersonName(); // logs Elliot
-
-printAlienName(); // logs E.T
+var name = "Elliot";
 ```
-Elliot is in the local scope of the function as we declared it so it is not visible globally. 
 
 -
 
@@ -142,16 +122,18 @@ function printFullName(){
 }
 ```
 
+# EXPLAIN WHY
+
 -
 
-###Variable Hosting
+###Variable Hoisting
 
-![Javascript Hosting](http://www.codingtutes.com/wp-content/uploads/2016/03/1456827053_maxresdefault-205x130.jpg)
+![Javascript Hoisting](http://www.codingtutes.com/wp-content/uploads/2016/03/1456827053_maxresdefault-205x130.jpg)
 
-Variable declarations inside of a function are hoisted and delared at the top of the function. This only happens with variable `name` and not the actual value `"Myagi"` of the variable.
+Variable declarations inside of a function are hoisted and delared at the top of the function.
 
 ```javascript
-function printName(){
+function printName() {
 	console.log("First Name: " + name);
 	var name = "Miyagi";
 	console.log("Last Name:" + name);
@@ -162,29 +144,33 @@ printName();
 // Last Name: Miyagi 
 ```
 
-`name` gets hoisted to the top of the function without the value which is why we get a `First Name: undefined`. Then the value is assigned when we declare the variable `name` and `Last Name: Myagi` is printed. 
+The variable `name` gets hoisted to the top of the function. It's as if the code had been written like this:
 
-###Function declaration takes precedence over variable declaration
-
-Lets fist remember that neither variable or function assignments are hoisted, only variabe and function declarations (the values). A function declaration overrides a variable declaration. 
-
-This is a function assignment which again, is not hoisted:
-
-```javascript 
-var myName = function(){
+```
+function printName() {
+	var name;
+	console.log("First Name: " + name);
+	var name = "Miyagi";
+	console.log("Last Name:" + name);
 }
 ```
 
-Lets now take a look at how function declaration takes precedence. 
+The variable `name` is hoisted but without the value assigned to it, which is why we get a `First Name: undefined`. Then the value is assigned when we declare the variable `name` and `Last Name: Myagi` is printed.
+
+###Function declaration takes precedence over variable declaration
+
+Lets first remember that neither variable nor function assignments (_values_) are hoisted, only variabe and function _declarations_. A function declaration overrides a variable declaration. 
+
+Let's now take a look at how function declaration takes precedence. 
 
 ```javascript
-var characterName;
 function characterName() {
 	console.log("Daniel");
 }
 
-console.log(typeof characterName); // function
+var characterName;
 
+console.log(typeof characterName); // function
 ```
 
 Although if we were to assign a value to the variable (variable assignment) then this would take precedence.
@@ -192,10 +178,9 @@ Although if we were to assign a value to the variable (variable assignment) then
 ```javascript
 var characterName = "Falkor";
 
-function characterName(){
+function characterName() {
 	console.log("Bastian");
 }
 
-console.log(typeof characterName)
-// string
+console.log(typeof characterName) // string
 ```
