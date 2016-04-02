@@ -78,8 +78,7 @@
 [JavaScript Allonge](https://leanpub.com/javascriptallongesix/read)<br>
 [Mostly-Adequate-Guide](https://drboolean.gitbooks.io/mostly-adequate-guide//)<br>
 [Human JavaScript](http://read.humanjavascript.com/)<br>
-[Javasript: The Definite Guide](ftp://91.193.236.10/pub/docs/linux-support/programming/JavaScript/%5BO%60Reilly%5D%20-%20JavaScript.%20The%20Definitive%20Guide,%206th%20ed.%20-%20%5BFlanagan%5D.pdf)<br>
-<br>
+
 <h1>Competitive Programming</h1><br>
 [4Clojure](http://www.4clojure.com/)<br>
 [Code Abbey](http://www.codeabbey.com/)<br>
