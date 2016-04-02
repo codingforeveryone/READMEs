@@ -60,6 +60,8 @@
 [Two Pillars Of Javascript-Part 1](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3#.dcoqbydng)<br>
 [Two Pillars Of JavaScript-Part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.t5mtu7cnc)<br>
 [JavaScript The Right Way](http://jstherightway.org/)<br>
+[The Full Stack](http://thefullstack.xyz/)<br>
+
 <br>
 <h1>JavaScript Books</h1><br>
 [Eloquent JavaScript](http://eloquentjavascript.net/)<br>
@@ -76,6 +78,7 @@
 [JavaScript Allonge](https://leanpub.com/javascriptallongesix/read)<br>
 [Mostly-Adequate-Guide](https://drboolean.gitbooks.io/mostly-adequate-guide//)<br>
 [Human JavaScript](http://read.humanjavascript.com/)<br>
+[Javasript: The Definite Guide](ftp://91.193.236.10/pub/docs/linux-support/programming/JavaScript/%5BO%60Reilly%5D%20-%20JavaScript.%20The%20Definitive%20Guide,%206th%20ed.%20-%20%5BFlanagan%5D.pdf)<br>
 <br>
 <h1>Competitive Programming</h1><br>
 [4Clojure](http://www.4clojure.com/)<br>
