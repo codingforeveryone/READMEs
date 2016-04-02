@@ -2,11 +2,11 @@
 
 -
 
-Variable scope is the region where the variable is accesible from, or also, where it is visible.  
+Variable scope is the region where the variable is accessible from, or also, where it is visible.  
 
 Variables have local scope or global scope and all variables declared outside of a function are in the global scope. This means they are available everywhere.
 
-Unlike most languages which have block-level scope, JavaScript has what is called function-level scope. Variables which are declared inside a function are local variables (to the function they are in) and are only accesible inside that function or to a function inside the function. 
+Unlike most languages which have block-level scope, JavaScript has what is called function-level scope. Variables which are declared inside a function are local variables (to the function they are in) and are only accessible inside that function or to a function inside the function. 
 
 -
 
@@ -101,7 +101,7 @@ When we run `printName` the search for `name` starts inside of the function when
 
 We should always do what we can to keep global variables to an absolute minimum and avoid the following.
 
-```javscript
+```javascript
 var firstName = "Indiana";
 var lastName = "Jones";
 
@@ -144,7 +144,7 @@ printName();
 
 The variable `name` gets hoisted to the top of the function. It's as if the code had been written like this:
 
-```
+```javascript
 function printName() {
 	var name;
 	console.log("First Name: " + name);
@@ -153,11 +153,11 @@ function printName() {
 }
 ```
 
-The variable `name` is hoisted but without the value assigned to it, which is why we get a `First Name: undefined`. Then the value is assigned when we declare the variable `name` and `Last Name: Myagi` is printed.
+The variable `name` is hoisted but without the value assigned to it, which is why we get a `First Name: undefined`. Then the value is assigned when we declare the variable `name` and `Last Name: Miyagi` is printed.
 
 ###Function declaration takes precedence over variable declaration
 
-Lets first remember that neither variable nor function assignments (_values_) are hoisted, only variabe and function _declarations_. A function declaration overrides a variable declaration. 
+Lets first remember that neither variable nor function assignments (_values_) are hoisted, only variable and function _declarations_. A function declaration overrides a variable declaration. 
 
 Let's now take a look at how function declaration takes precedence. 
 
