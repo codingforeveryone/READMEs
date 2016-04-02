@@ -1,5 +1,5 @@
 <h1>String Dissection And Manipulation</h1>
-This basically mean dissecting , searching and splitting of a piece of string. Javascript provides us with many built in methods to so operations on string objects. In this section we will go through each one of them.
+This basically means dissecting, searching and the splitting of a piece of string. Javascript provides us with many built in methods to so many operations on string objects. In this section we will go through each one of them.
 
 <h2>String Character Methods</h2>
 <b>`charAt()` and `charCodeAt()`</b>- Both of these accepts a single argument, which is the character's zero based position.
@@ -17,24 +17,24 @@ console.log(stringValue.charCodeAt(9));
 // The output will be 101 which is the character code for lowercase "e".
 ```
 
-There is one another method available on String constructor called `fromCharCode()`. This methods takes one or more character code and convert them into a string. Reverse of `charCodeAt()`.
+There is another method available on the String constructor called `fromCharCode()`. This methods takes one or more characters of code and converts it into a string. Reverse of `charCodeAt()`.
 
 ```javascript
 console.log(String.fromCharCode(104 , 101 , 108 ,108 , 111));
 // This will result into a string "hello".
 ```
 
-It can also possible to access a string as an array, e.g:
+It's also possible to access a string as an array, e.g:
 
 ```javascript
 var str = "HELLO WORLD";
 str[0];                   // returns H
 ```
 
-However, this method is unpredictable as numeric properties of a string is non-standard prior to ECMAScript 5 and doesn't work in all browsers (for example, IE 6 or 7). It is best to use `str.charAt(0)` instead when your code has to work in non-ECMAScript 5 environments. Alternatively, if you're going to be accessing a lot of characters in the string then you can turn a string into an array of characters using its `split()` method.
+However, this method is unpredictable as numeric properties of a string is non-standard prior to ECMAScript 5 and doesn't workk in all browsers (for example, IE 6 or 7). It is best to use `str.charAt(0)` instead when your code has to work in non-ECMAScript 5 environments. Alternatively, if you're going to be accessing a lot of characters in the string then you can turn a string into an array of characters using its `split()` method.
 
 <h2>String Manipulation Methods</h2>
-<b>1.`concat()`</b>-Concatenate one or more strings. Although the original string stays the same. It can take as arguments as we want.
+<b>1.`concat()`</b> - Concatenate one or more strings. Although the original string stays the same. It can take as arguments as we want.
 
 ```javascript
 var newString = "Hello " ; 
@@ -43,7 +43,7 @@ var result = newString.concat("World" , "!"); // Hello World!
 
 Although the `concat()` method is available, the `(+)` addition operator method is often used and actually performs better in most cases.
 
-<b>2.`slice()` , `substr()` , `substring()`</b> - These methods are used for creating string values from a substring. All of these accepts either one argument or two.
+<b>2.`slice()`, `substr()`, `substring()`</b> - These methods are used for creating string values from a substring. All of these accepts either one argument or two.
 For `slice()` and `substring()` the first argument is where the capture of the string begins and the second argument is the position before the capture stops.
 For `substr()` the second argument is the number of characters to return.
 <i>If the second argument is not given it is assumed that the ending position is the length of the string.</i> 
@@ -56,7 +56,7 @@ console.log(newString.substr(3 , 7)) // Output= "lo Worl"(7 Characters)
 ```
 
 <h4>When the arguments are negative numbers</h4>
-For `slice()` a negative argument is treated as string.length + negative argument(for both arguments).<br>
+For `slice()` a negative argument is treated as string.length + negative argument (for both arguments).<br>
 For `substr()` the first negative argument is treated as the string.length + negative argument, whereas the second negative argument is converted to zero.<br>
 For `substring()` all negative methods are converted to zero.<br>
 
@@ -137,7 +137,7 @@ var text = "cat , bat , mat , hat";
 var result = text.replace("at" , "tty") // "catty , batty , matty , hatty"
 ```
 
-<b>4.`split`()</b> separates the string into an array of substrings based on a separator. Second argument is optional and assigned as the array's limit. It ensures that the return array will no longer than a certain size.
+<b>4.`split`()</b> separates the string into an array of substrings based on a separator. Second argument is optional and assigned as the array's limit. It ensures that the returned array will be no longer than a certain size.
 
 ```javascript
 var newString = "cat,dog,sheep,fish"
