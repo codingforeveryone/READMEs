@@ -1,6 +1,6 @@
 #Variable scope and hoisting
+
 -
-What we're going to cover in this article, as the title states, is variable scope and hoisting. I would strongly recommend reading the mutable vs immutable README before continuing with this if unfamiliar with the concept. 
 
 Variable scope is the region where the variable is accesible from, or also, where it is visible.  
 
@@ -11,7 +11,6 @@ Unlike most languages which have block-level scope, JavaScript has what is calle
 -
 
 ![Javascript Hoisting](http://captivatedev.com/wp-content/uploads/2011/04/VariableScope_thumb1.jpg)
-
 
 ###Function level scope
 
@@ -100,7 +99,7 @@ When we run `printName` the search for `name` starts inside of the function when
 
 -
 
-We should always do what we can to keep global variables to an absolute minimum and avoid the following:
+We should always do what we can to keep global variables to an absolute minimum and avoid the following.
 
 ```javscript
 var firstName = "Indiana";
@@ -110,6 +109,8 @@ function printFullName() {
 	console.log(firstName + " " + lastName);
 }
 ```
+
+In keeping them as local variables we can make sure they don't get reassigned down the track and cause unexpected results.
 
 This is how we should run the same code:
 
@@ -121,9 +122,6 @@ function printFullName(){
 	console.log(firstName + " " + lastName);
 }
 ```
-
-# EXPLAIN WHY
-
 -
 
 ###Variable Hoisting
@@ -170,7 +168,7 @@ function characterName() {
 
 var characterName;
 
-console.log(typeof characterName); // function
+console.log(typeof characterName); // logs function
 ```
 
 Although if we were to assign a value to the variable (variable assignment) then this would take precedence.
@@ -182,5 +180,5 @@ function characterName() {
 	console.log("Bastian");
 }
 
-console.log(typeof characterName) // string
+console.log(typeof characterName) // logs string
 ```
