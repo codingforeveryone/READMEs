@@ -2,7 +2,7 @@
 
 -
 
-Variable scope is the region where the variable is accessible from, or also, where it is visible.  
+Variable scope is the context where the variable is accessible from, or also, where it is visible.  
 
 Variables have local scope or global scope and all variables declared outside of a function are in the global scope. This means they are available everywhere.
 
