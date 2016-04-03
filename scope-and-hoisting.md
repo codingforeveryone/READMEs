@@ -6,7 +6,7 @@ Variable scope is the context where the variable is accessible from, or also, wh
 
 Variables have local scope or global scope and all variables declared outside of a function are in the global scope. This means they are available everywhere.
 
-Unlike most languages which have block-level scope, JavaScript has what is called function-level scope. Variables which are declared inside a function are local variables (to the function they are in) and are only accessible inside that function or to a function inside the function. 
+Unlike most languages which have block-level scope, JavaScript has what is called function-level scope. Variables which are declared inside a function are local to the function they are declared in. These variables are only accessible inside that function, or to a function inside that function. 
 
 -
 
@@ -27,7 +27,7 @@ printName(); // logs Biff Tannen
 console.log(myName); // logs Marty McFly
 ```
 
-Only inside of the function are we able to access the value `Biff Tannen` as it is in the local scope of the `printName` function and not visible anywhere else but in the function. 
+Only inside of the function are we able to access the value `Biff Tannen`, as it is in the local scope of the `printName` function, and not visible anywhere else but in that function. 
 
 -
 
@@ -44,7 +44,7 @@ if (name) {
 console.log(name) // logs Mouth
 ```
 
-We don't create a local context for the variable `name` inside the `if` statement. Javascript only does this with _functions_. When we `console.log(name)` it is still the global variable only that we re-assigned the value of `Mouth` to it inside of the `if` statement. 
+We don't create a local context for the variable `name` inside the `if` statement. Javascript only does this with _functions_. When we `console.log(name)` it is still the global variable but we have re-assigned the value of `Mouth` to it inside of the `if` statement. 
 
 -
 
@@ -52,7 +52,7 @@ We don't create a local context for the variable `name` inside the `if` statemen
 
 ![Javascript Hoisting](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4RTdLDeAdSU3zqbT8LoCm2dYPCqIZzxmlKCSePWursKYl-sh-)
 
-If we don't declare variables with the `var` keyword then automatically they become global variables. 
+If we don't declare variables with the `var` keyword, and there is a global variable of the same name, then it is assumed you are referring to the global variable. 
 
 ```javascript
 var name = "E.T";
@@ -72,7 +72,7 @@ printPersonName(); // logs Elliot
 
 printAlienName(); // logs Elliot
 ```
-Here when we use `name = "Elliot"` inside of the function we re-assign the global variable to `Elliot`. To avoid this all we need to do is the declare the variable inside `printPersonName()` like this:
+Here, when we use `name = "Elliot"` inside of the function, we re-assign the global variable to `Elliot`. To avoid this all we need to do is declare the variable inside `printPersonName()` like this:
 
 ```javascript
 var name = "Elliot";
@@ -95,7 +95,7 @@ function printName(){
 printName(); // logs R2-D2
 ```
 
-When we run `printName` the search for `name` starts inside of the function when it finds it it doesn't look anywhere else.
+When we run `printName` the search for `name` starts inside of the function. When a match is found within the function, the search completes there.
 
 -
 
