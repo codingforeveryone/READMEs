@@ -15,6 +15,7 @@
     * [Basic Performance Testing](basic-performance-testing.md)
     * [Linked list](linked-list.md)
     * [Exceptions handling](raising-exceptions.md)
+    * [Variable Scope and Hoisting](scope-and-hoisting.md)
     
 * [Programmer Skills](gitbook-chapter-headers/programmer-skills.md)
     * [Git Basics](git-basics.md) 
