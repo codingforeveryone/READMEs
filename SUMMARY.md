@@ -20,7 +20,7 @@
     * [Exceptions handling](raising-exceptions.md)
     * [Best JS Resources](best-js-resources.md)
 
-* [HTML and CSS](gitbook-chapter-headiers/html-css.md)
+* [HTML and CSS](gitbook-chapter-headers/html-css.md)
     * [Choosing a CSS Framework](choosing-a-css-framework.md)
     * [Document Object Model](document-object-model.md)
 
