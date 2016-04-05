@@ -34,7 +34,7 @@ str[0];                   // returns H
 However, this method is unpredictable as numeric properties of a string is non-standard prior to ECMAScript 5 and doesn't workk in all browsers (for example, IE 6 or 7). It is best to use `str.charAt(0)` instead when your code has to work in non-ECMAScript 5 environments. Alternatively, if you're going to be accessing a lot of characters in the string then you can turn a string into an array of characters using its `split()` method.
 
 <h2>String Manipulation Methods</h2>
-<b>1.`concat()`</b> - Concatenate one or more strings. Although the original string stays the same. It can take as arguments as we want.
+<b>1.`concat()`</b> - Concatenate one or more strings. Although the original string stays the same. It can take as many arguments as we want.
 
 ```javascript
 var newString = "Hello " ; 
@@ -110,7 +110,7 @@ console.log(newString.toLowerCase()) // "hello world"
 
 ```javascript
 var newString = "hello world";
-console.log(newString.toUpperCase()) // "Hello World"
+console.log(newString.toUpperCase()) // "HELLO WORLD"
 ```
 
 <h2>String Pattern Matching Methods</h2>
@@ -151,7 +151,7 @@ var splitLimit = newString.split("," , 2) // ["cat" , "dog"]
 `localeCompare()`- Compares one string to another and returns one of these 3 values:<br>
 <i>1.If the string comes alphabetically before the argument, return -1<br>
 2. If both are equal, return 0<br>
-3. If the string comes after the argument, return +1</i><br>
+3. If the string comes after the argument, return +1<br></i>
 
 ```javascript
 var stringValue = “Javascript”;
