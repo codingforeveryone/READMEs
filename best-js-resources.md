@@ -8,8 +8,7 @@
 [edX](http://edx.org)<br>
 [Coursera](http://coursera.org)<br>
 [Udemy](https://www.udemy.com)<br>
-[Code School](https://www.codeschool.com/)(Paid)<br>
-(very good explanations and exercises for beginners, especially the tougher concepts are very well explained in Part 2 and 3 of the JavaScript Roadtrip) <br>
+[Code School](https://www.codeschool.com/)(Paid, very good explanations and exercises for beginners, especially the tougher concepts are very well explained in Part 2 and 3 of the JavaScript Roadtrip) <br>
 [Lynda](http://www.lynda.com/)(Paid)<br>
 [One Month](https://onemonth.com)(Paid)<br>
 [Team Treehouse](https://teamtreehouse.com)(Paid)<br>
