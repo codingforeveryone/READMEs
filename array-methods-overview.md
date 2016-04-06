@@ -21,7 +21,7 @@ var d = [1, 2, 3];                  // [1, 2, 3]
 Array literal notation is considered best practice. In most cases array literal and object instantiation perform the same, but see the first two answers to this [stack overflow question](http://stackoverflow.com/questions/931872/what-s-the-difference-between-array-and-while-declaring-a-javascript-ar) for some of the scenarios where the literal and the object instantiation are different.
 
 ## Arrays are a sub-type of Object
-Arrays are a type of Object. ES2015 adds the method Array.isArray which makes type checking easier.
+Arrays are a type of [Object](http://codingforeveryone.foundersandcoders.org/Objects.html). ES2015 adds the method Array.isArray which makes type checking easier.
 ```javascript
 typeof [];                        // 'object'
 [] instanceof Object;             // true
@@ -40,7 +40,7 @@ arr[1];                             // 'b'
 ```
 
 ## Arrays can be changed after creation
-Arrays are mutable, like Objects. Unlike Numbers, Strings and Booleans.
+Arrays are mutable, like Objects, and unlike Numbers, Strings and Booleans.
 
 ```javascript
 var arr = ['a', 'b', 'c', 'd'];
@@ -75,9 +75,9 @@ Arrays, like Objects, are passed by reference. This contrasts with the other pri
 ```javascript
 
 // Array passed by reference
-var a = [1, 2, 3]
-var b = a
-b[3] = 4
+var a = [1, 2, 3];
+var b = a;
+b[3] = 4;
 
 a;        // [1, 2, 3, 4]
 
@@ -91,7 +91,7 @@ c;       // 10
 
 ## Arrays and equality
 
-An equality check on a reference type checks if the values point to the same reference, So an equality check on an array will check if the two refrences point to the same array object. It will not check if the contents of the arrays are the same.
+An equality check on a reference type checks if the values point to the same reference, so an equality check on an array will check if the two refrences point to the same array object. It will not check if the contents of the arrays are the same.
 
 ```javascript
 var a = [1, 2, 3];
@@ -124,12 +124,14 @@ a;                                  // ['a', 'b', 'c']
 
 _By copying the values (i.e. the original array is not changed)_
 
-``` Array.prototype.slice([begin, [end]]) ``` returns a shallow copy of a portion of an array into a new array object.
+``` Array.prototype.slice([begin, [end]]) ``` returns a shallow copy of a portion of an array into a new array object. Using a negative value as a parameter points to the sum of the array length and the negative value.
 
 ```javascript
 var a = ['a', 'b', 'c', 'd', 'e'];
 
 a.slice(1, 3);         // ['b', 'c']
+
+a.slice(1, -2);         // ['b', 'c']
 
 a;                     // ['a', 'b', 'c', 'd', 'e']
 ```
@@ -369,7 +371,7 @@ some(arr3, v => v % 5 === 0);  // false
 
 Sorting algorithms are hard. In fact there's almost a whole [Khan Academy course](https://www.khanacademy.org/computing/computer-science/algorithms) on the subject. Whilst this is all very interesting, it's a lot to learn just to put some values into order. Fortunately arrays have a built in sort method ```Array.prototype.sort([compareFunction])``` (see [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)).
 
-An important thing to note about ```Array.prototype.sort``` is that it sorts <u>in place</u>. Which means the original array is changed. If you need to keep the original array, then you should make a copy of the original before sorting (see ```Array.prototype.slice``` section above for a way how to make a copy).
+An important thing to note about ```Array.prototype.sort``` is that it sorts <u>in place</u>, which means the original array is changed. If you need to keep the original array, then you should make a copy of the original before sorting (see ```Array.prototype.slice``` section above for a way how to make a copy).
 
 By default elements are converted to strings and then compared in Unicode point order. This means sort is great for lists of strings:
 
