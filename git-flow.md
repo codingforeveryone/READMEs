@@ -86,7 +86,7 @@ It will create a new release branch for that feature.
 
 And to finish it:
 
-```git-flow feature finish RELEASENAME ```
+```git flow feature finish RELEASENAME ```
 It will merge the release branch with your development repo, and delete the branch, automatically !
 
 
