@@ -64,7 +64,7 @@
 
 <br>
 <h1>JavaScript Books</h1><br>
-[Eloquent JavaScript](http://eloquentjavascript.net/)<br>
+[Eloquent JavaScript](http://eloquentjavascript.net/)(one of the best resources for detailed explanations with good examples, try running and then rewriting the examples by yourself in the browser<br>
 [Exploring ES6](http://exploringjs.com/es6/)<br>
 [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)<br>
 [Speaking JavaScript](http://speakingjs.com/es5/)<br>
