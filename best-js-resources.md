@@ -8,21 +8,21 @@
 [edX](http://edx.org)<br>
 [Coursera](http://coursera.org)<br>
 [Udemy](https://www.udemy.com)<br>
-[Code School](https://www.codeschool.com/)(Paid)<br>
-[Lynda](http://www.lynda.com/)(Paid)<br>
-[One Month](https://onemonth.com)(Paid)<br>
-[Team Treehouse](https://teamtreehouse.com)(Paid)<br>
+[Code School](https://www.codeschool.com/) (Paid, very good explanations and exercises for beginners, especially the tougher concepts are very well explained in Part 2 and 3 of the JavaScript Roadtrip) <br>
+[Lynda](http://www.lynda.com/) (Paid)<br>
+[One Month](https://onemonth.com) (Paid)<br>
+[Team Treehouse](https://teamtreehouse.com) (Paid)<br>
 [Code Academy](www.codecademy.com)<br>
 [FreeCodeCamp](www.freecodecamp.com)<br>
-[Egghead](https://egghead.io)(Paid)<br>
+[Egghead](https://egghead.io) (Paid)<br>
 [General Assembly](https://dash.generalassemb.ly)<br>
 [The Code Player](https://thecodeplayer.com)<br>
 [Microsoft Virtual Academy](http://www.microsoftvirtualacademy.com/)<br>
 [JavaScript.com](https://www.javascript.com/)<br>
 [JavaScript For Cats](http://jsforcats.com/)<br>
 [Learn-JS.org](http://www.learn-js.org/)<br>
-[CodeMentors](https://www.codementor.io)(Paid)<br>
-[Code College](http://codecollege.ca/)(Paid)<br>
+[CodeMentors](https://www.codementor.io) (Paid)<br>
+[Code College](http://codecollege.ca/) (Paid)<br>
 [Try JQuery](http://try.jquery.com/)<br>
 [iLoveCoding](https://ilovecoding.org/)<br>
 [PluralSight](https://www.pluralsight.com/)<br>
@@ -64,7 +64,7 @@
 
 <br>
 <h1>JavaScript Books</h1><br>
-[Eloquent JavaScript](http://eloquentjavascript.net/)<br>
+[Eloquent JavaScript](http://eloquentjavascript.net/) (one of the best resources for detailed explanations with good examples, try running and then rewriting the examples by yourself in the browser)<br>
 [Exploring ES6](http://exploringjs.com/es6/)<br>
 [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)<br>
 [Speaking JavaScript](http://speakingjs.com/es5/)<br>
@@ -79,7 +79,7 @@
 [Mostly-Adequate-Guide](https://drboolean.gitbooks.io/mostly-adequate-guide//)<br>
 [Human JavaScript](http://read.humanjavascript.com/)<br>
 
-<h1>Competitive Programming</h1><br>
+<h1>Competitive Programming / Coding Challenges </h1><br>
 [4Clojure](http://www.4clojure.com/)<br>
 [Code Abbey](http://www.codeabbey.com/)<br>
 [Code Wars](http://www.codewars.com/)<br>
@@ -94,3 +94,4 @@
 [Project Euler](https://projecteuler.net/)<br>
 [Interview Bits](https://www.interviewbit.com/)<br>
 [Screeps](https://screeps.com/)<br>
+[ReactiveX Functional Programming Challenges](http://reactivex.io/learnrx/)<br>
