@@ -9,7 +9,7 @@
        * [Array Map](array-map.md)
        * [Array Reduce](array-reduce.md)
     * [Math Object Beginner Guide](math-object-beginner-guide.md)
-    * [Modulo Operator](https://github.com/codingforeveryone/READMEs/blob/master/modulo-operator.md)
+    * [Modulo Operator](modulo-operator.md)
     * [Variable Scope and Hoisting](scope-and-hoisting.md)
     * [Mutable vs Immutable](mutable-vs-immutable.md)
     * [Regular Expressions Beginner Guide](regular-expressions-beginners-guide.md)
