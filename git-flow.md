@@ -2,13 +2,13 @@ git-flow
 ===================
 
 
-git-flow is both the name of a branching model for git(the git flow) and a software that uses that model.
+git-flow is both the name of a branching model for git(the git flow) and a software that uses that model. It will most likely make your life easier !
 
 ----------
 The Git Flow
 -------------
 
-The git flow is whole new workflow for git, based on branches, which can make your repos more organized, and making you work with git more efficiently.  For example:
+The git flow is a whole new workflow for git, based on branches, which can make your repos more organized, and making you work with git more efficiently.  For example:
 
  - If you work on a feature with classic git workflow, you
    wouldn't want to work directly on your master branch or risk breaking
