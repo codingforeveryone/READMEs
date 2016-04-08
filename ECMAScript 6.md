@@ -178,7 +178,7 @@ arr1.push(…arr2);
 
 ####Binary and Octal Literals
 
-ES6 supports new literal forms for binary (```0b```) and octal (```0o```).
+ES6 supports new literal forms for binary (```0b```) and octal (```0o```) representations. A number preceded by ```0b``` or ```0o``` will be read as a binary or octal number respectively.
 
 ```javascript
 0b110010100 === 404 //  true
