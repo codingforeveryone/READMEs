@@ -176,11 +176,19 @@ arr1.push(…arr2);
 
 **Note:** Default, Rest and Spread parameters can also be used with arrow functions, as well as destructuring within the parameter list.
 
+####Binary and Octal Literals
+
+ES6 supports new literal forms for binary (```0b```) and octal (```0o```).
+
+```javascript
+0b110010100 === 404 //  true
+0o624 === 404 //  true
+```
+
 #### Related
 
 To be added here, or in separate readmes.
 
-* Binary and Octal literals
 * Classes & Modules/ Module Loaders
 * Destructuring
 * Enhanced Object literals
