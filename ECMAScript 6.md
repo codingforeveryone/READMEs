@@ -12,6 +12,7 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 * Block-Scoping
 * Constants
 * Extended Parameter Handling
+* Binary and Octal Literals
 
 #### Arrow Functions
 
