@@ -4,7 +4,7 @@ One source of bugs when writing my first Javascript was failing to understand wh
 
 ## Sync
 
-Confusingly, "synchronous" in Javascript means exactly the opposite of its non-technical meaning of "at the same time". In Javascript, synchronous means that each line of code will be executed only after the previous line has finished. For example, in the code below, the value of `input` is printed only after the `sync` function has reached the end of its loop and returned the new value. That could take a bit of time, since it's a very long loop!
+Confusingly, "synchronous" in Javascript means exactly the opposite of its non-technical meaning of "at the same time". In Javascript, synchronous means that each line of code will be executed only after the previous line has finished. For example, in the code below, `newVal` is printed only after the `sync` function has reached the end of its loop and returned the new value. That could take a bit of time, since it's a very long loop!
 
 ```javascript
 function sync(val){
