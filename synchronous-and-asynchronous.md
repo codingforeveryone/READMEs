@@ -40,7 +40,7 @@ Consider again the example of requesting data from a server. Instead of holding 
 	}
 ```
 
-You might sometimes see he whole function `request_data` referred to as asynchronous. That's a bit misleading because in fact that function is executed synchronously within the call stack. It is the `callback_function` that is asynchronous. This will be executed only after the response event.
+You might sometimes see the whole function `request_data` referred to as asynchronous. That's a bit misleading because in fact that function is executed synchronously within the call stack. It is the `callback_function` that is asynchronous. This will be executed only after the response event.
 
 ## Event queue and event loop
 
