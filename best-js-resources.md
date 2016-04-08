@@ -82,6 +82,7 @@
 <h1>Competitive Programming / Coding Challenges </h1><br>
 [4Clojure](http://www.4clojure.com/)<br>
 [Code Abbey](http://www.codeabbey.com/)<br>
+[Code Fights](https://codefights.com)<br>
 [Code Wars](http://www.codewars.com/)<br>
 [Hacker Rank](https://www.hackerrank.com/)<br>
 [Code Eval](https://www.codeeval.com/)<br>
@@ -90,6 +91,7 @@
 [CodinGame](https://www.codingame.com/)<br>
 [Codility](https://codility.com/)<br>
 [Exercism](http://exercism.io/)<br>
+[Leet Code](https://leetcode.com)<br>
 [Google Code Jam](https://code.google.com/codejam/contests.html)<br>
 [Project Euler](https://projecteuler.net/)<br>
 [Interview Bits](https://www.interviewbit.com/)<br>
