@@ -70,7 +70,7 @@ function outer(){
 #####**Block Scope**
 With the advent of ECMAScript 6 it's brought us some new keywords let and const. Block level scope refers to variable that has it's own scope, in other words a variable defined in an if statement will be tied to that particular statement and will not be accessible anywhere outside of it. So, when you declare a variable with the let or const keyword you are ensuring that the variable is block scoped. 
 
-**Example of Lexically Scoped variable:**
+**Example of Block Scoped variable:**
 
 ```
 function outer(){
