@@ -130,7 +130,7 @@ function print2DArray(arr) {
 
 Two `map()` functions are used in this piece of code. The first `map()` obtains the indexes of the columns from the first row of the source array. The output of the first `map()` basically forms the rows in the new array. The second `map()` goes through the array and fills the rows. This might look a bit complicated, but the following image hopefully helps you understand how the code above works.
 
-![Transpose 2D Array](images/transpose2dArray.gif)
+![Transpose 2D Array](/images/transpose2dArray.gif)
 
 I have not found a practical example of using the second parameter of the `map()` method yet.
 
