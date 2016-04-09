@@ -37,35 +37,35 @@ languages, or even run a web server in nodejs.
 #### How to start with jsbin
 - Open a browser and go to [http://jsbin.com](http://jsbin.com)
 
-  ![jsbin](images/jsbin.png)
+  ![jsbin](/images/jsbin.png)
 
 - Select panels you are going to need for your code
 
-  ![panels](images/jsbin_panels.png)
+  ![panels](/images/jsbin_panels.png)
 
 - Choose the language you are going to code with
 
-  ![choose language](images/jsbin_choose_lang.png)
+  ![choose language](/images/jsbin_choose_lang.png)
 
 - Write your code
 
-  ![write code](images/jsbin_code.png)
+  ![write code](/images/jsbin_code.png)
 
 - Check your syntax errors
 
-  ![check errors](images/jsbin_errors.png)
+  ![check errors](/images/jsbin_errors.png)
 
 - Fix your code
 
-  ![fix errors](images/jsbin_fix.png)
+  ![fix errors](/images/jsbin_fix.png)
 
 - Run your code
 
-  ![run](images/jsbin_run.png)
+  ![run](/images/jsbin_run.png)
 
 - And share it
 
-  ![share](images/jsbin_share.png)
+  ![share](/images/jsbin_share.png)
 
 ### Desktop Code Editors
 
@@ -100,22 +100,22 @@ easier to start crafting websites.
 
 - Open it. You should see this Brackets starting guide written in **html**:
 
-  ![brackets first run](images/brackets_first_run.png)
+  ![brackets first run](/images/brackets_first_run.png)
 
 - To open the live preview, click on the button with a lightning on the right:
 
-  ![live preview button detail](images/brackets_live_preview_button.png)
+  ![live preview button detail](/images/brackets_live_preview_button.png)
 
 - Your default browser should show up the starting guide:
 
-  ![live preview](images/brackets_live_preview.png)
+  ![live preview](/images/brackets_live_preview.png)
 
 - Now you can edit the html and css code of the starting guide and you will
 see this changes on the browser.
   I.e. we can change the background color of the body in the `main.css`
   file. As soon as we make this changes, our browser will update those:
 
-  ![live preview changed](images/brackets_live_preview_changes.png)
+  ![live preview changed](/images/brackets_live_preview_changes.png)
 
 
 
@@ -156,7 +156,7 @@ there:
 - You should see an empty website showing up an alert with your name
   like this:
 
-![alert with your name](images/brackets_alert.png)
+![alert with your name](/images/brackets_alert.png)
 
 This is an easy way to start trying JavaScript snippets, but would be
 better if we split our html with JavaScript in two files. One for html,
@@ -178,11 +178,11 @@ did it intentionally because Brackets will tell us our syntax errors.
 
 - Click on the warning button:
 
-  ![brackets warning button](images/brackets_warning_button.png)
+  ![brackets warning button](/images/brackets_warning_button.png)
 
 - Check our code errors:
 
-  ![code errors](images/brackets_code_errors.png)
+  ![code errors](/images/brackets_code_errors.png)
 
 - Modify or code to avoid those errors.
 
@@ -220,11 +220,11 @@ b();
 
 - You should see something like this:
 
-![Javascript output](images/developer_tool_js_output.png)
+![Javascript output](/images/developer_tool_js_output.png)
 
 - Type ```a``` in the developer tool console and you should see "Hello World!" as output.
 
-![Javascript output](images/developer_tool_js_output_hello.png)
+![Javascript output](/images/developer_tool_js_output_hello.png)
 
 - There are many use cases for browser's developer tool, and interacting with Javascript code is just the tip of the iceberg. To learn more you can check out these guides from [Google Chrome](https://developer.chrome.com/devtools), [Firefox](https://developer.mozilla.org/en/docs/Tools) and [Safari](https://developer.apple.com/safari/tools/).
 
