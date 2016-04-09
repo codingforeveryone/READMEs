@@ -45,7 +45,7 @@ At the first iteration, no callback function has been executed, so the first par
 
 The following diagram shows how the element values are assigned to the parameters:
 
-![reduce() method](images/array.reduce1.gif)
+![reduce() method](/images/array.reduce1.gif)
 
 As you can see, the element values are passed to the second parameter (`b`) one by one, and the first parameter (`a`) holds the previous result of the callback function. After you go though all the element values, the value of the first parameter (`a`) becomes the final result of the `reduce()` method.
 
@@ -64,7 +64,7 @@ console.log(sum);
 
 At the first iteration of the callback function, the first parameter (`a`) stores the initial value (`10`). The second parameter (`b`) stores the first element of the array (`0`). Then the rest of the calculation is done in the same way as the first example.
 
-![reduce() method](images/array.reduce2.gif)
+![reduce() method](/images/array.reduce2.gif)
 
 If you understand how these parameters work, you can understand how to correct a mistake in the example below (taken from [Javascript reduce on array of objects – StackOverflow](http://stackoverflow.com/questions/5732043/javascript-reduce-on-array-of-objects))
 
@@ -82,7 +82,7 @@ Why is it?
 
 The problem is that the callback function returns a number, so at the next iteration, the parameter `a` holds a number. Then, the function accesses `a.x`, which is `undefined` because a number does not have a property called `x`, and `undefined + number` becomes `NaN`.
 
-![reduce() method](images/array.reduce4.gif)
+![reduce() method](/images/array.reduce4.gif)
 
 In order to fix the problem, you need to write a code like the following example, which returns a value as an object:
 
@@ -94,7 +94,7 @@ arr.reduce(function (a, b) {
 // {x: 7}
 ```
 
-![reduce() method](images/array.reduce3.gif)
+![reduce() method](/images/array.reduce3.gif)
 
 Alternatively, the following example returns a value as a number:
 

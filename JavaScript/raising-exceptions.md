@@ -20,7 +20,7 @@ function unreliableFunction(a,b){
 
 This function is an unrealible one. When invoked, half of the times it will return the products of the 2 parameters. The rest of the times it will try to log in the console the value y. Since y was not declared anywhere, this will cause an error. In this case the error is handled by the environment and I will see something like this as output:
 
-![img1](images/s1.png)
+![img1](/images/s1.png)
 
 ## try {}... finally {}
 What would happen if this function was part of a bigger program? If the unreliableFunction fails, the code that comes after the function call would not be executed. See this example:
@@ -40,11 +40,11 @@ console.log("the program has reached the end")
 ```  
 
 Fifty percent of the times, when the unreliableFunction doesn't fail this will be the output:
-![img2](images/s2.png)
+![img2](/images/s2.png)
 
 You can see that the code following the function call has been executed.  
 When the functions fails this will be the output:
-![img3](images/s3.png)
+![img3](/images/s3.png)
 
 
 It may be the case that the last line of code is essential to my program, so how do I make sure that it is executed even if the function fails? In javascript I can use the construct `try {} ... finally {}`
@@ -65,7 +65,7 @@ try {
 }
 ```  
 If the unreliableFunction doesn't fail the output will be as before. Instead when it fails I will see something like this:
-![img3](images/s4.png)
+![img3](/images/s4.png)
 
 You can see the last line of the code has been executed even if the function before failed.  There is an important observation to make at this point: **Why is the error sent to the console after the last line of the program is executed and not before?** Understanding the answer to this question is at the core of understanding how exceptions work in JS. Before answering the question I will show you the same example where the error message is displayed in the console **before** the last line of code is executed:
 
@@ -89,7 +89,7 @@ try {
 ```
 
 This will output the following:
-![img5](images/s5.png)
+![img5](/images/s5.png)
 
 When something goes wrong inside unrealiableFunction, JS will raise an exception. In practical terms, an exception is a value.  JS will create a new Object using its standard constructor Error(), and it will assign to Error.message the type of error that was encoutered. In this case "y is not defined".  Raising an exeption is somewhat similar to a _return_ from a function. In the case of an exception the program will jump out of the  current function and also of all the functions that came before in the execution stack. This is called _unwinding the stack_. When this happens the exception traverses the execution stack and if nothing intercepts it, it is handled by the environment. This is why in the last example the error message was displayed **after** the last line of code was run. It was the environment that output that error message to console, after the code in the finally block was executed. The extra line that you see below the error message are the functions that compose the execution stack.
 

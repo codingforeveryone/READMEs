@@ -5,7 +5,7 @@ Most modern object oriented programming (OOP) languages support the concept of i
 
 So for example in C#, C++ or Java we may have a Vehicle class, parent blueprint, which will have steering wheel, engine and wheels.  This Vehicle can be specified further with the following classes of Car and Lorry, child blueprints, which can be specified further and so on.  The important thing is that Car and Lorry both inherit from the Vehicle class.  
 
- ![Javascript output](images/ClassesExample.png)
+ ![Javascript output](/images/ClassesExample.png)
 
 
 
@@ -29,13 +29,13 @@ However JavaScript **DOES NOT SUPPORT** classical inheritance, it has no concept
 This is done with the prototype property.  A prototype may be thought of as an object, from which other objects inherit properties. This may inherit from another object, effectively this is a chain of objects. Therefore object properties, which are defined using the prototype object, are inherited by all instances, which reference it.  This can be a bit confusing so it may be demonstrated as follows.
 
 An object and its property 			
-![Javascript output](images/objprop1.png)
+![Javascript output](/images/objprop1.png)
 
 In code it can be accessed by `obj.prop1`  
 
 All objects in JavaScript have a prototype property, also an object. This prototype can also have a property, and this prototype is a reference to another object. This can be shown in the example below.
 
-![Javascript output](images/objpropproto.png)
+![Javascript output](/images/objpropproto.png)
 
 
 
@@ -51,7 +51,7 @@ We are actually calling the prototype property _prop2_.  It looks like _prop2_ i
 
 Now the prototype may also point to another prototype in turn pointing to another prototype, forming a prototype chain.
 
- ![Javascript output](images/protochain.png)
+ ![Javascript output](/images/protochain.png)
 
 
 
@@ -68,7 +68,7 @@ Will actually call the property from _proto2{}_.  We are calling down the protot
 
 We can also have another object referencing _proto{}_, _obj2_.
 
-![Javascript output](images/twoobjectschain.png)
+![Javascript output](/images/twoobjectschain.png)
 
 
 

@@ -34,11 +34,11 @@ Here's an example, the following HTML syntax
 
 will produce the following tree strucure, and each page element is represented by a tree node (**Note**: This is a simplication of what the actual tree structure is):
 
-![DOM tree structure](images/dom/dom-tree-small.png)
+![DOM tree structure](/images/dom/dom-tree-small.png)
 
 You can also visually see the DOM using the browser's developer tool. Simply bring up a browser (eg Google Chrome or Firefox) and press ```Cmd + Opt + I``` on Mac or ```Ctrl + shift + I``` on Windows.
 
-![Visual DOM tree structure](images/dom/visual-dom-tree.png)
+![Visual DOM tree structure](/images/dom/visual-dom-tree.png)
 
 
 
@@ -54,25 +54,25 @@ There are several ways to interact with the DOM, they are inclusive of but not l
 
 If you go over to the console in the browser development tool, and type in ```document```, you can see its immediate child nodes being logged. The ```document``` node sits right at the top of the tree (aka the root node). 
 
-![DOM document](images/dom/document.png)
+![DOM document](/images/dom/document.png)
 
 
 Every parent node has a ```childNodes``` method that can be called to retrieve its child nodes in an array.
 
 
-![DOM document's child node](images/dom/document-childnode.png)
+![DOM document's child node](/images/dom/document-childnode.png)
 
 
 and you can traverse further into the tree structure
 
 
-![DOM document's grand child node](images/dom/document-child-child.png)
+![DOM document's grand child node](/images/dom/document-child-child.png)
 
 
 just as a parent node has a ```childNodes``` method, the child notes themselves have a ```parentNode``` method to find its parent, although they will have only one.
 
 
-![Parent node](images/dom/parent-node.png)
+![Parent node](/images/dom/parent-node.png)
 
 
 ##### 2. Finding a specific sub-section of web page
@@ -96,27 +96,27 @@ Now update the HTML syntax to the following:
 
 **Find node by Id**: Just as the title imply we can find a node on the page using ```document.getElementById```
 
-![Get by ID](images/dom/get-by-id.png)
+![Get by ID](/images/dom/get-by-id.png)
 
 **Find node by Class name**: You can also find a node on the page using ```document.getElementsByClassName```
 
-![Get by class name](images/dom/get-by-classname.png)
+![Get by class name](/images/dom/get-by-classname.png)
 
 **Find node by html tag (i.e body, head, h1, p etc)**: Try and find the node by ```document.getElementsByTagName```
 
-![Get by tag](images/dom/get-by-tag.png)
+![Get by tag](/images/dom/get-by-tag.png)
 
 Of course, there are several other ways in which you can find nodes on the page, feel free to explore them:
 
-![Get options](images/dom/get-option.png)
+![Get options](/images/dom/get-option.png)
 
 ##### 3. Manipulating the DOM elements
 
 While we can certainly inspect the DOM elements and its structure, we can also change it. Below we are changing the text in the ```<h1>``` from "This is my homepage" to "This is David's homepage" using ```element.innerText```.
 
-![Before node manipulation](images/dom/manipulate-before.png)
+![Before node manipulation](/images/dom/manipulate-before.png)
 
-![After node manipulation](images/dom/manipulate-after.png)
+![After node manipulation](/images/dom/manipulate-after.png)
 
 Often times the manipulation of the DOM is done using Javascript. We can simply update our HTML syntax again to show an example:
 
@@ -142,7 +142,7 @@ In the code above we just added a simple Javascript to change the text in the ``
 
 Here's the output from the console:
 
-![Her homepage](images/dom/her-homepage.png)
+![Her homepage](/images/dom/her-homepage.png)
 
 You can see that even though the ```<h1>``` text was defined "This is my homepage" originally, it was later modified to "This is her homepage" by the javascript code.
 
