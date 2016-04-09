@@ -15,7 +15,7 @@ console.log(result); //prints 2
 
 `3` goes into `11` in its entirety, _three_ times (3 &times; 3 = 9). This leaves a remainder of two. Making `result` equal `2` (11 - 9 = 2).
 
-![Remainder of division](images/remainder.png)
+![Remainder of division](/images/remainder.png)
 
 ###Example 2
 
