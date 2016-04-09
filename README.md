@@ -4,7 +4,7 @@
 
 This is a place for creating and using tutorials. The idea is to create a short tutorial on a topic of your choice as a way to consolidate your own learning and to help others. 
 
-A [summary](SUMMARY.md) of all existing READMEs and the structure of topics can be found [here](SUMMARY.md). Please make sure that your new tutorial fits well into the structure and is not already covered somewhere else.
+The [SUMMARY.md](SUMMARY.md) shows the current structure of the gitbook. Please make sure that your new tutorial fits into the current structure and add the link to your tutorial there once it has been approved.
 
 We recommend that you create a pull request for your tutorial and put a request on Gitter for it to be reviewed and merged into the *master* branch.
 
