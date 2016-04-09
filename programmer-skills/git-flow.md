@@ -2,13 +2,14 @@ git-flow
 ===================
 
 
-git-flow is both the name of a branching model for git(the git flow) and a software that uses that model.
-
+git-flow is both the name of a branching model for git(the git flow) and a software that uses that model. It will most likely make your life easier !
+Before reading this READMEs, you should be familiar with git, as it is basically git, but with a new way of working with it.
+If you're not familiar with git, please read [Git Basics](https://github.com/codingforeveryone/READMEs/blob/master/git-basics.md)
 ----------
 The Git Flow
 -------------
 
-The git flow is whole new workflow for git, based on branches, which can make your repos more organized, and making you work with git more efficiently.  For example:
+The git flow is a whole new workflow for git, based on branches, which can make your repos more organized, and making you work with git more efficiently.  For example:
 
  - If you work on a feature with classic git workflow, you
    wouldn't want to work directly on your master branch or risk breaking
@@ -74,6 +75,7 @@ Same as with git commands, you use init to initialize a repo:
 It will ask you a few questions. Just keep the default values (recommended).
 
 If you want to start a new feature,  use the feature start command
+
 ```git flow feature start ```
 Intuitive, isn't it ? and to end it, same logic:
 
