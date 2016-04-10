@@ -1,6 +1,6 @@
 # Array `map()` method
 
-The `map()` method creates a new array, without altering the original, by applying a function to each element of the array. The transformation (or processing) is done by a callback function, which is specified as the first parameter of the method. Higher-order functions such as `map()`, `reduce()` or `filter()` are an shorter, more readable alternative to iterating through an array with a loop.
+The `map()` method creates a new array, without altering the original, by applying a function to each element of the array. The transformation (or processing) is done by a callback function, which is specified as the first parameter of the method. Higher-order functions such as `map()`, `reduce()` or `filter()` are a shorter, more readable alternative to iterating through an array with a loop.
 
 ## Example
 
@@ -85,7 +85,7 @@ As you can see, `Math` is specified as the second parameter, which is used as `t
 
 ## Slightly more practical example
 
-One of slightly more practical examples of using `map()` method is transposing a 2 dimensionl array (swap rows and columns), which I found [here on StackOverflow](http://stackoverflow.com/questions/17428587/transposing-a-2d-array-in-javascript):
+One of the slightly more practical examples of using the `map()` method is transposing a 2-dimensional array (swapping rows and columns), which I found [here on StackOverflow](http://stackoverflow.com/questions/17428587/transposing-a-2d-array-in-javascript):
 
 ```javascript
 var newArray = array[0].map(function(col, i) {
