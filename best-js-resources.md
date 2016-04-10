@@ -1,5 +1,5 @@
 <h1>Best JavaScript Resources Online</h1>
-<p>Learning something new is scary. For all of us the biggest issue with picking up a new skill is don't know where to start. It's often useful if we have a Plan of actions , A Blueprint , A Roadmap. It makes our journey towards that new step a lot easier. But you don't have to worry about that now i have found the best resources on the Internet sorting out the bad ones. Available to us for free. All these resources are authentic, reliable and effective.</p>
+<p>Learning something new is scary. For all of us the biggest issue with picking up a new skill is not knowing where to start. It's often useful if we have a plan of action, a blueprint, a roadmap. It makes our journey towards that new skill a lot easier. But you don't have to worry about that now I have found the best resources on the internet, weeding out the bad ones. These are all available to us for free. All these resources are authentic, reliable and effective.</p>
 
 <h1>Massive Open Online Courses(MOOC)/Online Courses</h1><br>
 [Udacity-Web Development Program](https://www.udacity.com/courses/web-development)<br>
@@ -64,7 +64,7 @@
 
 <br>
 <h1>JavaScript Books</h1><br>
-[Eloquent JavaScript](http://eloquentjavascript.net/) (one of the best resources for detailed explanations with good examples, try running and then rewriting the examples by yourself in the browser)<br>
+[Eloquent JavaScript](http://eloquentjavascript.net/) (One of the best resources for detailed explanations with good examples; try running and then rewriting the examples by yourself in the browser)<br>
 [Exploring ES6](http://exploringjs.com/es6/)<br>
 [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)<br>
 [Speaking JavaScript](http://speakingjs.com/es5/)<br>
