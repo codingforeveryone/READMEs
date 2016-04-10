@@ -1,7 +1,7 @@
 #Objects
 -
 
-An object is a list which contains items and each of these items is stored by a _name-value_ pair. These can be both primitive data types and reference data types. Here is a link to see the different behaviour of primitive and reference types [Reference and primitive types](mutable-vs-immutable.md)
+An object is a list which contains items and each of these items is stored by a _name-value_ pair. These can be both primitive data types and reference data types. Here is a link to see the different behaviour of primitive and reference types [Reference and primitive types](/programmer-skills/mutable-vs-immutable.md)
 
 ![oop in js](http://www.newthinktank.com/wp-content/uploads/2015/09/Object-Oriented-JavaScript.png)
 
