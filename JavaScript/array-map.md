@@ -34,7 +34,7 @@ This is much more concise.
 
 In this example, the callback function is `Math.sqrt()`, which takes a number as a parameter and returns the square root of the number. The `map()` method applies this callback function to each of the elements in the array (`numbers`) and returns an array containing the result of the callback function.
 
-![map() method](images/Array.map.png)
+![map() method](/images/Array.map.png)
 
 Often an anonymous function is used as a callback function. Just to illustrate the point, the same example can be written as shown below:
 
