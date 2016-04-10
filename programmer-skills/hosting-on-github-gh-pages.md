@@ -92,7 +92,7 @@ While uploading a valid Jekyll  website require you to understand a little bette
 So, why use Jekyll over plain html/css? Because with it you can do things that would normally require a database and a content managment system.
 In its own documentation Jekyll is defined  as a blog-aware, static site generator.  
 Blog-aware means that creating a blog is a feature embedded in Jekyll, which means that you can create a blog without the need for a database and without the need for a content managment system.
-I'll stop here as Jekyll would require a tutorial for itself. If you are interested in the topic you can find a good resource [here](jekyll resource)
+I'll stop here as Jekyll would require a tutorial for itself. If you are interested in the topic you can find a good resource [here](https://jekyllrb.com/docs/resources/)
 
 
 
