@@ -102,12 +102,12 @@ When your script returns an error you can see all this information in the JavaSc
 
 To bring up the browser's developer tool, press Cmd + Opt + I on Mac or Ctrl + Shift + I on Windows. Go to the tab labelled console and you should see something like this:
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-09%20at%2014.24.49_zpslwef7y3u.png)
+![img](/images/Debugging-img-1.png)
 
 1. On the left, you can see this is a `SyntaxError`, accompanied with the message that an unexpected idenfifier `show_pattern` was found.
 2. On the right, you can see that the error happened in a file called `colour_squares_2.js` on line 3.
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-09%20at%2011.19.13_zpshjmnmtbt.png)
+![img](/images/Debugging-img-2.png)
 
 Opening the file `colour_squares_2.js`, all we need to do is go to line 3 and we can quickly see the problem. The keyword `var` has been misspelt `va`. Error resolved.
 
@@ -123,7 +123,7 @@ The console has functionality available to help you isolate the problem areas of
 
 You can type code directly into the console and it will show you the result:
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-09%20at%2016.03.16_zpsz6ffy22n.png)
+![img](/images/Debugging-img-3.png)
 
 Browsers also have a console object, which has several methods available for your code. One of the most useful is `console.log()` that writes data from your script to the console that can then be viewed like the above.
 
@@ -156,14 +156,14 @@ cheapestQuote(236);
 ```
 All the values of all the variables are logged. If any of them were not what was expected we would quickly know where the problem is:
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-09%20at%2019.12.42_zpsrmtwky1s.png)
+![img](/images/Debugging-img-4.png)
 
 1. On the left you can see the values of the variables being logged to the console.
 2. On the right you can see the name of the function, the name of the js file, and the line number the `console.log` was called within (and that we hence know the script runs up to.)
 
 You can also write the values of variables into the console, call functions from the console to check if they are returning what you would expect them to, and check if objects exist and have the methods/properties you think they do:
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-09%20at%2019.18.34_zpsrn91evsd.png)
+![img](/images/Debugging-img-5.png)
 
 In this way you can methodically test each part of your script and narrow down onto the problem area.
 
@@ -179,7 +179,7 @@ To set a breakpoint, from the debugger tab in the console just click on the line
 
 After setting the breakpoints refresh the page with the console window open and the execution of the script will pause at the breakpoint. If you now hover over the variables in your script, shown in the debugger tab, their current values at this point of execution will appear (an array in this example):
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-09%20at%2022.24.13_zps6yzmm8ps.png)
+![img](/images/Debugging-img-6.png)
 
 ##### Multiple breakpoints
 
@@ -193,7 +193,7 @@ It is possible to tell the interpreter to step into a function. The debugger wil
 
 You can also tell it to step out of a function, in which case the rest of the function will be executed as the debugger moves to its parent function:
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-10%20at%2000.14.31_zpsh8t9oxei.png)
+![img](/images/Debugging-img-7.png)
 
 (left to right)
 
@@ -209,7 +209,7 @@ You can indicate that a breakpoint should be triggered only if a condition that 
 
 To do this just right click the breakpoint line and number and select edit breakpoint. You can enter the condition into the condition field.
 
-![img](http://i1381.photobucket.com/albums/ah218/bradjohnreeder/Screen%20Shot%202016-04-10%20at%2000.17.56_zpszxpuh7a3.png)
+![img](/images/Debugging-img-8.png)
 
 ##### Debugger keyword
 
