@@ -62,7 +62,7 @@ console.log(sum);
 // 20
 ```
 
-At the first iteration of the callback function, the first parameter (`a`) stores the initial value (`10`). The second parameter (`b`) stores the first element of the array (`0`). Then the rest of the calculation is done in the same way as the first example.
+At the first iteration of the callback function, the first parameter (`a`) stores the initial value (`10`). The second parameter (`b`) stores the first element of the array (`0`). Then the rest of the calculation is done in the same way as in the first example.
 
 ![reduce() method](images/array.reduce2.gif)
 
@@ -108,7 +108,7 @@ arr.reduce(function (a, b) {
 
 Note that you need to specify the initial value `0` as the second parameter of the `reduce()` method, because, as mentioned above, the initial value of the parameter `a` would be the first element of the array (`{x:1}` in this case) if the second parameter of the `reduce()` method were not specified.
 
-Another example of the `reduce()` method is to count the occurence of values in an array. For example, the following example shows one of the ways to count how many times each letters appears in an array:
+Another example of the `reduce()` method is to count the occurence of values in an array. For example, the following example shows one of the ways to count how many times each letter appears in an array:
 
 ```javascript
 var array = ['A', 'B', 'C', 'B', 'B', 'A', 'A', 'C', 'A', 'B'];
@@ -124,7 +124,7 @@ Note that the initial value of the object `{}` is specified as the second parame
 
 ## Other parameters of the callback function
 
-The `reduce()` method can actually take 2 more parameters:
+The `reduce()` method can actually take two more parameters:
 
 - The third parameter stores the index value of the element at the current iteration
 - The fourth parameter stores the array itself
