@@ -21,7 +21,7 @@ var d = [1, 2, 3];                  // [1, 2, 3]
 Array literal notation is considered best practice. In most cases array literal and object instantiation perform the same, but see the first two answers to this [stack overflow question](http://stackoverflow.com/questions/931872/what-s-the-difference-between-array-and-while-declaring-a-javascript-ar) for some of the scenarios where the literal and the object instantiation are different.
 
 ## Arrays are a sub-type of Object
-Arrays are a type of [Object](http://codingforeveryone.foundersandcoders.org/Objects.html). ES2015 adds the method Array.isArray which makes type checking easier.
+Arrays are a type of [Object](/JavaScript/Objects.md). ES2015 adds the method Array.isArray which makes type checking easier.
 ```javascript
 typeof [];                        // 'object'
 [] instanceof Object;             // true
