@@ -30,7 +30,7 @@ Array.isArray([]);                // true
 ```
 
 ## Accessing items in an Array
-An array provides random access to the elements of the list via the items position (index) within the list. Indexes start at zero.
+An array provides random access to the elements of the list via an item's position (index) within the list. Indexes start at zero.
 
 ```javascript
 var arr = ['a', 'b', 'c', 'd'];
@@ -91,7 +91,7 @@ c;       // 10
 
 ## Arrays and equality
 
-An equality check on a reference type checks if the values point to the same reference, so an equality check on an array will check if the two refrences point to the same array object. It will not check if the contents of the arrays are the same.
+An equality check on a reference type checks if the values point to the same reference, so an equality check on an array will check if the two references point to the same array object. It will not check if the contents of the arrays are the same.
 
 ```javascript
 var a = [1, 2, 3];
@@ -200,7 +200,7 @@ As traversing arrays is such a common task, there is a built-in Array method for
 present in the array in ascending order. It is not invoked for index properties that have been
 deleted or are uninitialized (i.e. on sparse arrays).
 
-The callback is a function which will be passed (i) the element value, (ii) the element index, (iii)
+The callback is a function which will be passed (i) the element value, (ii) the element index, and (iii)
 the array being traversed.
 
 ```javascript
@@ -208,15 +208,15 @@ the array being traversed.
 var myArr = [1, 2, 3];
 
 var myCallback = function (val, idx, arr) {
-  console.log(val ' is item ' + idx + 'in array: ' + arr);
+  console.log(val + ' is item ' + idx + ' in array: ' + arr);
 }
 
 myArr.forEach(myCallback);
 
 // Outputs:
-// 1 is item 0 in [1, 2, 3]
-// 2 is item 1 in [1, 2, 3]
-// 3 is item 2 in [1, 2, 3]
+// 1 is item 0 in array: [1, 2, 3]
+// 2 is item 1 in array: [1, 2, 3]
+// 3 is item 2 in array: [1, 2, 3]
 ```
 
 Of course, you can also use an anonymous function:
@@ -224,15 +224,15 @@ Of course, you can also use an anonymous function:
 ```javascript
 var myArr = [1, 2, 3];
 
-myArr.forEach(function (val, idx, arr) { console.log(val ' is item ' + idx + 'in array:' + arr); });
+myArr.forEach(function (val, idx, arr) { console.log(val + ' is item ' + idx + ' in array: ' + arr); });
 ```
 
 Which, with ES2015, can be written more succinctly with arrow functions:
 
 ```javascript
 var myArray = [1, 2, 3];
-
-myArr.forEach((val, idx, arr) => console.log(val ' is item ' + idx + 'in array:' + arr));
+ 
+myArr.forEach((val, idx, arr) => console.log(val + ' is item ' + idx + 'in array: ' + arr));
 ```
 
 Because arrow functions work so well with array methods which take functions, we will use them from here on.
@@ -243,7 +243,7 @@ Often we want to traverse arrays because we want to manipulate the data in the a
 provides a number of methods which apply a function to each value, returning a new result.
 
 The first array manipulation method to look at is ```Array.prototype.map(callback[, thisArg])```. See
-[definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) for full description.
+[definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) for a full description.
 This method applies the callback to each value and returns a new array (so does not change the
 original array).
 
@@ -257,7 +257,7 @@ arr;                  // [1, 2, 3]
 
 The second array manipulation method to look at is ```Array.prototype.reduce(callback[, initialValue])```. See
 [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-for full description. This takes applies a function to each value and collects the results into a new value.
+for a full description. This takes an array, applies a function to each value and collects the results into a new value.
 
 The most common example used for reduce is summing values in an array, which could work like this:
 
@@ -285,7 +285,7 @@ arrayMap(arr, v => v + 1);    // [2, 3, 4]
 ### More array manipulation methods
 
 In addition to map and reduce, JavaScript provides various other array manipulation methods. All of
-which work in a similar way to ```forEach``` ```map``` and ```reduce``` (i.e. they take a callback
+which work in a similar way to ```forEach```, ```map``` and ```reduce``` (i.e. they take a callback
 which is applied to each element in the array). Next we'll have a look at some of the most useful
 and also implement them using ```reduce```.
 
@@ -371,14 +371,14 @@ some(arr3, v => v % 5 === 0);  // false
 
 Sorting algorithms are hard. In fact there's almost a whole [Khan Academy course](https://www.khanacademy.org/computing/computer-science/algorithms) on the subject. Whilst this is all very interesting, it's a lot to learn just to put some values into order. Fortunately arrays have a built in sort method ```Array.prototype.sort([compareFunction])``` (see [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)).
 
-An important thing to note about ```Array.prototype.sort``` is that it sorts <u>in place</u>, which means the original array is changed. If you need to keep the original array, then you should make a copy of the original before sorting (see ```Array.prototype.slice``` section above for a way how to make a copy).
+An important thing to note about ```Array.prototype.sort``` is that it sorts <u>in place</u>, which means the original array is changed. If you need to keep the original array, then you should make a copy of the original before sorting (see ```Array.prototype.slice``` section above for one way to make a copy).
 
 By default elements are converted to strings and then compared in Unicode point order. This means sort is great for lists of strings:
 
 ```javascript
 var arr = ['orange', 'kiwi', 'apple', 'pear', 'banana'];
 
-var sortedArr = arr.sort(['orange', 'kiwi', 'apple', 'pear', 'banana']);  // ['apple', 'banana', 'pear', 'kiwi', 'orange']
+var sortedArr = arr.sort(['orange', 'kiwi', 'apple', 'pear', 'banana']);  // ['apple', 'banana', 'kiwi', 'orange', 'pear']
 
 sortedArr === arr;    // true
 ```
