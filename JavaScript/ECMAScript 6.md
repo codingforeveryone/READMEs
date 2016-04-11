@@ -8,12 +8,12 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 
 #### Features covered:
 
-* Arrow Functions
-* Block-Scoping
-* Constants
-* Extended Parameter Handling
-* Binary and Octal Literals
-* Template Literals
+* [Arrow Functions](/JavaScript/ECMAScript%206.md#arrow-functions)
+* [Block-Scoping](/JavaScript/ECMAScript%206.md#block-scoping)
+* [Constants](/JavaScript/ECMAScript%206.md#constants)
+* [Extended Parameter Handling](/JavaScript/ECMAScript%206.md#extended-parameter-handling)
+* [Binary and Octal Literals](/JavaScript/ECMAScript%206.md#binary-and-octal-literals)
+* [Template Literals](/JavaScript/ECMAScript%206.md#template-literals)
 
 #### Arrow Functions
 
@@ -178,7 +178,7 @@ arr1.push(…arr2);
 
 **Note:** Default, Rest and Spread parameters can also be used with arrow functions, as well as destructuring within the parameter list.
 
-####Binary and Octal Literals
+#### Binary and Octal Literals
 
 ES6 supports new literal forms for binary (```0b```) and octal (```0o```) representations. A number preceded by ```0b``` or ```0o``` will be read as a binary or octal number respectively.
 
