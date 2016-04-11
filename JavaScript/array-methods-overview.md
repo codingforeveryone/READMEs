@@ -30,7 +30,7 @@ var c = [];                         // []
 var d = [1, 2, 3];                  // [1, 2, 3]
 ```
 
-Array literal notation is considered best practice. In most cases, array literal and object instantiation perform equally efficiently, but see the first two answers to this [stack overflow question](http://stackoverflow.com/questions/931872/what-s-the-difference-between-array-and-while-declaring-a-javascript-ar) for some of the scenarios where the literal and the object instantiation are different.
+Array literal notation is considered best practice. In most cases, array literal and object instantiation perform just as efficiently, but see the first two answers to this [stack overflow question](http://stackoverflow.com/questions/931872/what-s-the-difference-between-array-and-while-declaring-a-javascript-ar) for some of the scenarios where the literal and the object instantiation are different.
 
 
 ### Accessing items in an Array
@@ -75,7 +75,7 @@ arr.shift();      // Returns 'a', arr = ['b', 'c', 'd']
 
 ##Array Behaviour
 ### Arrays are passed by reference
-In contrast to the primitive data types in JavaScript (Number, String and Boolean), which are passed by value, arrays, like Objects, are passed by reference. This means that when an array is assigned to more than one variable, changing either variable will change the original array (because the value of the array is not copied, but the variables are instead assigned a 'reference' to the array). By contrast, when a number is assigned to a second variable, it is copied, so that changing that variable changes the value of the copy, but leaves the original unchanged.
+In contrast to the primitive data types in JavaScript (Number, String and Boolean) - which are passed by value - arrays, like Objects, are passed by reference. This means that when an array is assigned to more than one variable, changing either variable will change the original array. This is because the value of the array is not copied. Instead the variables are assigned a 'reference' to the array. By contrast, when a number is assigned to a second variable, it is copied, so that changing that variable changes the value of the copy but leaves the original unchanged.
 
 ```javascript
 // Array passed by reference
@@ -94,7 +94,7 @@ c;       // 10
 ```
 ###Consequences of passing by value
 ####Passing to functions
-**Beware!** It's very easy to create a bug in your code if you forget that an array you have passed to a function is actually passed by value: anything that you do to the array within the function will also modify the array outside the function.
+**Beware!** It is very easy to create a bug in your code if you forget that an array you have passed to a function is actually passed by value: anything that you do to the array within the function will also modify the array outside the function.
  
 #### Checking equality
 
@@ -113,7 +113,7 @@ a === c;      // true
 
 ###By modifying the array (the original array is changed)
 
-```Array.prototype.splice(start, deleteCount, item1, ..., itemN)``` changes the content of an array by removing existing elements and/or adding new elements
+```Array.prototype.splice(start, deleteCount, item1, ..., itemN)``` changes the content of an array by removing existing elements and/or adding new elements.
 
 ```javascript
 var a = ['a', 'b', 'c', 'd', 'e'];
@@ -131,7 +131,7 @@ a;                                  // ['a', 'b', 'c']
 
 ###By copying its values (the original array is not changed)
 
-``` Array.prototype.slice([begin, [end]]) ``` returns a shallow copy of a portion of an array into a new array object. Note that copying stops at the index *before* that passed in the `end` parameter. If no end `end` parameter is passed, copying continues until the end of the array. Using a negative value as a parameter points to the sum of the array length and the negative value (i.e. starts counting from the end of the array).
+``` Array.prototype.slice([begin, [end]]) ``` returns a shallow copy of a portion of an array into a new array object. Note that copying stops at the index *before* that passed in the `end` parameter. If no `end` parameter is passed, copying continues until the end of the array. Using a negative value as a parameter points to the sum of the array length and the negative value (i.e. starts counting from the end of the array).
 
 ```javascript
 var a = ['a', 'b', 'c', 'd', 'e'];
@@ -245,17 +245,17 @@ var myArray = [1, 2, 3];
 myArr.forEach((val, idx, arr) => console.log(val ' is item ' + idx + 'in array:' + arr));
 ```
 
-Because arrow functions work so well with array methods which take functions, we will use them from here on.
+Because arrow functions work so well with array methods that take functions, we will use them from here on.
 
 ## More exotic array methods
 ###Map and reduce
 
 Often we want to traverse arrays because we want to manipulate the data in the array. JavaScript
-provides a number of methods which apply a function to each value, returning a new result.
+provides a number of methods which apply a function to each value and return a new result.
 
-The first array manipulation method to look at is ```Array.prototype.map(callback[, thisArg])```. See the
-[definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) for full description.
-This method applies the callback to each value and returns a new array (so does not change the
+The first array manipulation method to look at is ```Array.prototype.map(callback[, thisArg])```. See this
+[definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) for a full description.
+This method applies the callback to each value and returns a new array (it does not change the
 original array).
 
 ```javascript
@@ -266,9 +266,9 @@ arr.map(v => v + 1);  // [2, 3, 4]
 arr;                  // [1, 2, 3]
 ```
 
-The second array manipulation method to look at is ```Array.prototype.reduce(callback[, initialValue])```. See the
+The second array manipulation method to look at is ```Array.prototype.reduce(callback[, initialValue])```. See this
 [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-for full description. This applies a function to each value and collects the results into a new value.
+a for full description. This applies a function to each value and collects the results into a new value.
 
 The most common example used for reduce is summing values in an array, which could work like this:
 
@@ -302,7 +302,7 @@ and also implement them using ```reduce```.
 
 #### Filter
 ```Array.prototype.filter(callback[, thisArg])``` filters out all elements which return a falsy
-value when called with the callback. See the [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Whilst not strictly required, for the purposes of clarity, the callback should return a Boolean.
+value when called with the callback. See this [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Whilst not strictly required, for the purposes of clarity the callback should return a Boolean.
 
 ```javascript
 var arr = [10, 15, 18, 30];
@@ -323,7 +323,7 @@ filter(arr, v => v % 5 === 0);  // [10, 15, 30]
 ```
 
 #### Every
-```Array.prototype.every(callback[, thisArg])``` returns true if all elements return a truthy value when called with the callback. See the [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every). Like `filter`, for the purposes of clarity, the callback should return a Boolean.
+```Array.prototype.every(callback[, thisArg])``` returns true if all elements return a truthy value when called with the callback. See this [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every). Like `filter`, for the purposes of clarity the callback should return a Boolean.
 
 ```javascript
 var arr1 = [10, 15, 20];
@@ -350,7 +350,7 @@ every(arr2, v => v % 5 === 0);  // false
 #### Some
 
 ```Array.protoype.some(callback[, thisArg)``` returns true if any element returns a truthy value
-when called with the callback. See the [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some).
+when called with the callback. See this [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some).
 As for `filter` and `every`, the callback should return a Boolean.
 
 ```javascript
@@ -381,7 +381,7 @@ some(arr3, v => v % 5 === 0);  // false
 
 #### Sort
 
-Sorting algorithms are hard. In fact there's almost a whole [Khan Academy course](https://www.khanacademy.org/computing/computer-science/algorithms) on the subject. Whilst this is all very interesting, it's a lot to learn just to put some values into order. Fortunately arrays have a built in sort method:
+Sorting algorithms are hard. In fact there's almost a whole [Khan Academy course](https://www.khanacademy.org/computing/computer-science/algorithms) on the subject. While this is all very interesting, it's a lot to learn just to put some values into order. Fortunately arrays have a built in sort method:
 
 ```Array.prototype.sort([compareFunction])``` (see [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)).
 
@@ -431,7 +431,7 @@ arr.sort((a, b) => b - a) //  [ 80, 11, 9, 7, 5, 4, 2 ]
 
 A method that fits well with sorting is reversing. For example, if you want to sort a list in reverse alphabetical order, you could write a compare function to do this in one step, but an easier solution (although not necessarily better), would be to first sort alphabetically and then reverse.
 
-```Array.prototype.reverse()``` does this.  It worth noting that, like ```Array.prototype.sort```, ```reverse``` sorts in place.
+```Array.prototype.reverse()``` does this.  It is worth noting that, like ```Array.prototype.sort```, ```reverse``` sorts in place.
 
 ```javascript
 var arr = ['orange', 'kiwi', 'apple', 'pear', 'banana'];
@@ -442,7 +442,7 @@ arr.sort().reverse();     //  [ 'pear', 'orange', 'kiwi', 'banana', 'apple' ]
 ##Arrays in ES2015 (ES6) 
 ### Spread operator
 
-ES2015 provides the new spread operator, which allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected (see [description](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)). As a side note, there is also the [rest operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/rest_parameters) which has the same syntax, so is worth looking at in order to understand the difference.
+ES2015 provides the new spread operator, which allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected (see [description](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)). As a side note, there is also the [rest operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/rest_parameters) which has the same syntax, so it is worth looking at in order to understand the difference.
 
 This can be used to combine arrays:
 
@@ -459,7 +459,7 @@ var arr4 = [...arr3, 7, 8, 9];  // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ### Destructuring
 
-Another ES2015 feature which works well with the spread operator is destructuring assignment ([see description](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)). The destructuring assignment syntax makes it possible to extract data from arrays or objects using a syntax that mirrors the construction of array and object literals. So it can be combined with the spread operator to extract values like this:
+Another ES2015 feature which works well with the spread operator is the destructuring assignment ([see description](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)). The destructuring assignment syntax makes it possible to extract data from arrays or objects using a syntax that mirrors the construction of array and object literals. So it can be combined with the spread operator to extract values like this:
 
 ```javascript
 var [head, ...tail] = [1, 2, 3, 4, 5];
