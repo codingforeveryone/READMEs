@@ -5,7 +5,7 @@
 ##Introduction
 This is a place for creating, editing and using tutorials (READMEs). The idea is to help build a collection of tutorials as a way to consolidate your own learning and to help others. There are two ways to contribute:
 
-1. Add a new tutorial 
+1. Add a new tutorial
 2. Improve the existing tutorials.
 
 But first you need to understand a bit about GitHub!
@@ -14,7 +14,7 @@ But first you need to understand a bit about GitHub!
 
 GitHub can be confusing at first. You need to understand at least the meaning of the terms *branch*, *master*, and *pull request* before you will be able to contribute. Check out the README on the [Contributor workflow](#tobeadded) for more information.
 
-Note that the existing READMEs are available at two locations, the [repository](https://github.com/codingforeveryone/READMEs) from where you can edit them and add new ones, and the [GitBook](https://github.com/codingforeveryone/READMEs) which represents the files in a more convenient form for browsing. Cross-references within READMEs should point to the files in the GitBook, not the repository.
+Note that the existing READMEs are available at two locations, the [repository](https://github.com/codingforeveryone/READMEs) from where you can edit them and add new ones, and the [GitBook](http://codingforeveryone.foundersandcoders.org/index.html) which represents the files in a more convenient form for browsing. Cross-references within READMEs should point to the files in the GitBook, not the repository.
 
 GitHub READMEs are written using a markup language called Markdown. You can familiarise yourself with Markdown using the [Markdown Cheat Sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/markdown-cheat-sheet.html).
 
@@ -26,9 +26,9 @@ Make sure the topic is not already covered, keep the topic small, and aim to be 
 1. An **Introduction** providing a single paragraph on the what, why and how of the topic.
 2. A penultimate section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. If a related topic is not covered, consider raising it as an issue or mentioning it on Gitter.
 3. A final section called **References**, linking to other helpful resources on the topic.
- 
+
 Some further notes:
- 
+
 4. If you think the topic can be clarified with a Code Wars kata, then create one and link to it.
 5. Consider adding a nice illustrative diagram or screenshot.
 6. **Bonus**: If you are feeling adventurous, create a screencast to accompany your README.
