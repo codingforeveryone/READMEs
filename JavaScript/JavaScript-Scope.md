@@ -25,11 +25,11 @@ var global = 'everywhere';
 console.log(global); //returns the string 'everywhere'
 ```
 
-> Things to note: You have to be wary when declaring Global variables as they can interact or possibly override other variables, which can ruin scripts and make your code harder to debug. Also, if a variable isn't declared explicitly with the **var** keyword it automatically becomes a Global variable.
+> Things to note: You have to be wary when declaring Global variables as they can interact or possibly override other variables, which can ruin scripts and make your code harder to debug. Also, if a variable isn't declared explicitly with the `var` keyword it automatically becomes a Global variable.
 
 -----
 #####**Local Scope**
-So now that we've covered Global scope, let's move on to understanding a locally scoped environment, When you declare a Local variable, that variable or argument is only tied to that particular function, which means you can only use it in that environment. Essentially each function gives way to it's own unique environment. 
+So now that we've covered Global scope, let's move on to understanding a locally scoped environment. When you declare a Local variable, that variable or argument is only tied to that particular function, which means you can only use it in that environment. Essentially each function gives way to its own unique environment. 
 
 **Example of Locally Scoped variable:**
 
@@ -68,7 +68,7 @@ function outer(){
 
 ------------
 #####**Block Scope**
-The advent of ECMAScript 6 has brought us some new keywords, `let` and `const`. Block level scope refers to a variable that has it's own scope, in other words a variable defined in an if statement will be tied to that particular statement and will not be accessible anywhere outside of it. So, when you declare a variable with the let or const keyword you are ensuring that the variable is block scoped. 
+The advent of ECMAScript 6 has brought us some new keywords, `let` and `const`. Block level scope refers to a variable that has its own scope, in other words a variable defined in an `if` statement will be tied to that particular statement and will not be accessible anywhere outside of it. So, when you declare a variable with the let or const keyword you are ensuring that the variable is block scoped. 
 
 **Example of Block Scoped variable:**
 
