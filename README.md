@@ -5,7 +5,7 @@
 ##Introduction
 This is a place for creating, editing and using tutorials (READMEs). The idea is to help build a collection of tutorials as a way to consolidate your own learning and to help others. There are two ways to contribute:
 
-1. Add a new tutorial
+1. Add a new tutorial.
 2. Improve the existing tutorials.
 
 But first you need to understand a bit about GitHub!
