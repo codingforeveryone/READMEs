@@ -27,7 +27,7 @@ singleParam => { statements } or (singleParam) => { statements }
 () => ({ foo: 1 }); // returns an object expression.
 ```
 ##### Short syntax
-One main reason for introducing arrow functions is their shorter anonymous function syntax. Consider how more elegant the following arrow function is than the standard function syntax:
+One main reason for introducing arrow functions is their shorter anonymous function syntax. Consider how much more elegant the following arrow function is than the standard function syntax:
 ```javascript
 var arr = [5, 6, 13, 0, 1, 18, 23];
 
@@ -38,7 +38,7 @@ var double = arr.map(function(v) {
 //returns [10,12,26,0,2,36,46];
 ```
 ##### Lexical this
-The other main reason for introducing arrow functions is that they share the same lexical this as their surrounding code. Standard functions define their own this value, which makes arrow functions the more intuitive option in handling object contexts:
+The other main reason for introducing arrow functions is that they share the same lexical `this` as their surrounding code. Standard functions define their own this value, which makes arrow functions the more intuitive option in handling object contexts:
 ```javascript
 //arrow function
 function Person() {
@@ -191,7 +191,7 @@ ES6 supports new literal forms for binary (```0b```) and octal (```0o```) repres
 To be added here, or in separate readmes.
 
 * Classes & Modules/ Module Loaders
-* Destructuring
+* [Destructuring](http://codingforeveryone.foundersandcoders.org/JavaScript/array-methods-overview.html#destructuring)
 * Enhanced Object literals
 * For…of Operator
 * Generators
