@@ -13,6 +13,7 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 * Constants
 * Extended Parameter Handling
 * Binary and Octal Literals
+* Template Strings
 
 #### Arrow Functions
 
@@ -185,7 +186,82 @@ ES6 supports new literal forms for binary (```0b```) and octal (```0o```) repres
 0b110010100 === 404 //  true
 0o624 === 404 //  true
 ```
+#### Template Strings
 
+Template literals are String literals that allow embedded expressions. You can use
+them for multi-line strings and string interpolation (see below).
+
+Template literals are enclosed by back-ticks and can contain placeholders 
+indicated by the dollar sign and curly braces `${expression}`:
+```javascript
+`String text ${expression}`
+```
+##### Multi-line Strings
+
+With template literals this:
+```javascript
+`string text line 1
+ string text line 2`
+```
+Achieves the same effect as this:
+```javascript
+"string text line 1\n"+
+"string text line 2"
+```
+##### String interpolation
+
+To embed expressions within strings you would normally do this:
+```javascript
+var a = 5;
+var b = 15;
+var s = "Ten is " + (a + a) + " and Fifteen is " + b;
+//Ten is 10 and Fifteen is 15
+```
+Now with template literals you can achieve the same effect with tidier code using the placeholder `${expression}`:
+```javascript
+var a = 5;
+var b = 10;
+var s = `Ten is ${a + a} and Fifteen is ${b}`;
+//Ten is 10 and Fifteen is 15
+```
+##### Tagged Template Literals
+
+If the template literal is 'tagged' you can modify the output of it using a function.
+The first argument will contain an array of strings, and the second and subsequent 
+arguments will contain the values of the processed substitution expressions:
+```javascript
+//Note that the use of the function name tag here is arbitrary. Any function name can be used.
+var a = 5;
+var b = 10;
+
+function tag(strings, ...values) {
+  console.log(strings[0]); // "Hello "
+  console.log(strings[1]); // " world "
+  console.log(values[0]);  // 15
+  console.log(values[1]);  // 50
+
+  return "Result!";
+}
+
+tag`Hello ${ a + b } world ${ a * b }`;
+// "Result!"
+```
+Tagged template literals have the `raw` property. This is available on their
+first function argument and allows you to access the raw strings as they were entered:
+```javascript
+function tag(strings, ...values) {
+  console.log(strings.raw[0]); 
+  // "string text line 1 \\n string text line 2"
+}
+
+tag`string text line 1 \n string text line 2`;
+```
+A `String.raw()` method also exists, which can create raw strings just like the default
+template function and string concatenation would create:
+```javascript
+String.raw`Hi\n${2+3}!`;
+// "Hi\n5!"
+```
 #### Related
 
 To be added here, or in separate readmes.
@@ -200,7 +276,6 @@ To be added here, or in separate readmes.
 * Promises
 * Proxies/ Reflections
 * Symbols
-* Template Strings
 * Typed Arrays
 * Unicode
 
@@ -221,3 +296,5 @@ To be added here, or in separate readmes.
 [Rest Parameters — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
 [Spread Operator — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+
+[Template Literals - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
