@@ -83,12 +83,12 @@ Intuitive, isn't it ? and to end it, same logic:
 
 To start a release :
 
-```git flow feature start RELEASENAME ```
+```git flow release start RELEASENAME ```
 It will create a new release branch for that feature.
 
 And to finish it:
 
-```git flow feature finish RELEASENAME ```
+```git flow release finish RELEASENAME ```
 It will merge the release branch with your development repo, and delete the branch, automatically !
 
 
