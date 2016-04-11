@@ -2,28 +2,41 @@
 
 [![Join the chat at https://gitter.im/codingforeveryone/READMEs](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is a place for creating and using tutorials. The idea is to create a short tutorial on a topic of your choice as a way to consolidate your own learning and to help others. 
+##Introduction
+This is a place for creating, editing and using tutorials (READMEs). The idea is to help build a collection of tutorials as a way to consolidate your own learning and to help others. There are two ways to contribute:
 
-The [SUMMARY.md](SUMMARY.md) shows the current structure of the gitbook. Please make sure that your new tutorial fits into the current structure and add the link to your tutorial there once it has been approved.
+1. Add a new tutorial 
+2. Improve the existing tutorials.
 
-We recommend that you create a pull request for your tutorial and put a request on Gitter for it to be reviewed and merged into the *master* branch.
+But first you need to understand a bit about GitHub!
 
-## Checklist for creating READMEs
+##Using GitHub
 
-+ Pick your topic; keep it small;
-+ Google for tutorials on your chosen topic;
-+ Skim the tutorials you find and pick your favourite;
-+ If you don't think you can improve on your favourite tutorial then just summarise it in a single paragraph and link to it;
-+ If you think it could be simplified or made easier to understand, then give it a go;
-+ If you think the topic can be clarified with a Code Wars kata, then create one and link to it;
-+ Add an introductory paragraph that describes the *What, Why, How* of the topic;
-+ Add a *Related* section and list any related topics that you think we need READMEs for;
-+ Link the related topics to any READMEs that already exist;
-+ Add a *References* section and link to any material that you found useful in your research;
-+ Add a nice illustrative diagram or screenshot;
-+ Add your README to this repo and give it a sensible name; *
-+ Above all, keep your explanations short and simple;
-+ **Bonus**: If you are feeling adventurous, create a screencast to accompany your README.
+GitHub can be confusing at first. You need to understand at least the meaning of the terms *branch*, *master*, and *pull request* before you will be able to contribute. Check out the README on the [Contributor workflow](#tobeadded) for more information.
 
-(* Sensible names are all lower-case, do not have spaces or non-ASCII characters and end with the .md file extension)
+Note that the existing READMEs are available at two locations, the [repository](https://github.com/codingforeveryone/READMEs) from where you can edit them and add new ones, and the [GitBook](https://github.com/codingforeveryone/READMEs) which represents the files in a more convenient form for browsing. Cross-references within READMEs should point to the files in the GitBook, not the repository.
 
+GitHub READMEs are written using a markup language called Markdown. You can familiarise yourself with Markdown using the [Markdown Cheat Sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/markdown-cheat-sheet.html).
+
+## Adding a new tutorial
+
+### General guidelines
+Make sure the topic is not already covered, keep the topic small, and aim to be simple and brief. Do not feel you need to write at length if an external resource has done it well: just summarise and link to it. In any case, your README should contain at least:
+
+1. An **Introduction** providing a single paragraph on the what, why and how of the topic.
+2. A penultimate section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. If a related topic is not covered, consider raising it as an issue or mentioning it on Gitter.
+3. A final section called **References**, linking to other helpful resources on the topic.
+ 
+Some further notes:
+ 
+4. If you think the topic can be clarified with a Code Wars kata, then create one and link to it.
+5. Consider adding a nice illustrative diagram or screenshot.
+6. **Bonus**: If you are feeling adventurous, create a screencast to accompany your README.
+
+###Submitting a pull request
+
+Before you submit a pull request for a new README, please make sure you have created it in the appropriate folder and added a link to it in SUMMARY.md. Submit the new file and revised SUMMARY.md as part of a single pull request. If you are unsure how to do this, consult the [Contributor workflow](#tobeadded) README.
+
+## Improving the existing tutorials
+
+To be updated.
