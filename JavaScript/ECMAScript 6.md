@@ -8,11 +8,12 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 
 #### Features covered:
 
-* Arrow Functions
-* Block-Scoping
-* Constants
-* Extended Parameter Handling
-* Binary and Octal Literals
+* [Arrow Functions](/JavaScript/ECMAScript%206.md#arrow-functions)
+* [Block-Scoping](/JavaScript/ECMAScript%206.md#block-scoping)
+* [Constants](/JavaScript/ECMAScript%206.md#constants)
+* [Extended Parameter Handling](/JavaScript/ECMAScript%206.md#extended-parameter-handling)
+* [Binary and Octal Literals](/JavaScript/ECMAScript%206.md#binary-and-octal-literals)
+* [Template Literals](/JavaScript/ECMAScript%206.md#template-literals)
 
 #### Arrow Functions
 
@@ -177,7 +178,7 @@ arr1.push(…arr2);
 
 **Note:** Default, Rest and Spread parameters can also be used with arrow functions, as well as destructuring within the parameter list.
 
-####Binary and Octal Literals
+#### Binary and Octal Literals
 
 ES6 supports new literal forms for binary (```0b```) and octal (```0o```) representations. A number preceded by ```0b``` or ```0o``` will be read as a binary or octal number respectively.
 
@@ -185,7 +186,82 @@ ES6 supports new literal forms for binary (```0b```) and octal (```0o```) repres
 0b110010100 === 404 //  true
 0o624 === 404 //  true
 ```
+#### Template Literals
 
+Template literals are String literals that allow embedded expressions. You can use
+them for multi-line strings and string interpolation (see below).
+
+Template literals are enclosed by back-ticks and can contain placeholders 
+indicated by the dollar sign and curly braces `${expression}`:
+```javascript
+`String text ${expression}`
+```
+##### Multi-line Strings
+
+With template literals this:
+```javascript
+`string text line 1
+ string text line 2`
+```
+Achieves the same effect as this:
+```javascript
+"string text line 1\n"+
+"string text line 2"
+```
+##### String interpolation
+
+To embed expressions within strings you would normally do this:
+```javascript
+var width = 5;
+var height = 15;
+var string = "The area is " + (width * height);
+//The area is 75
+```
+Now with template literals you can achieve the same effect with tidier code using the placeholder `${expression}`:
+```javascript
+var width = 5;
+var height = 15;
+var string = `The area is ${width * height}`;
+//The area is 75
+```
+##### Tagged Template Literals
+
+If the template literal is 'tagged' you can modify the output of it using a function.
+The first argument will contain an array of strings, and the second and subsequent 
+arguments will contain the values of the processed substitution expressions:
+```javascript
+//Note that the use of the function name tag here is arbitrary. Any function name can be used.
+var width = 5;
+var height = 15;
+
+function tag(strings, ...values) {
+    strings[0] === "Hello "
+    strings[1] === " world "
+    values[0] ===  20
+    values[1] ===  75
+  return `The area is ${width * height}`
+}
+
+tag`Hello ${ a + b } world ${ a * b }`;
+// The area is 75
+```
+Tagged template literals have the `raw` property. This is available on their
+first function argument and allows you to access the raw strings as they were entered:
+```javascript
+function tag(strings, ...values) {
+    strings.raw[0] === "example string" 
+}
+
+tag`example string`;
+```
+A `String.raw()` method also exists, which can create raw strings just like the default
+template function and string concatenation would create:
+```javascript
+var width = 5;
+var height = 15;
+String.raw`The area is ${width * height}!`;
+// "The area is 75!"
+```
 #### Related
 
 To be added here, or in separate readmes.
@@ -200,7 +276,6 @@ To be added here, or in separate readmes.
 * Promises
 * Proxies/ Reflections
 * Symbols
-* Template Strings
 * Typed Arrays
 * Unicode
 
@@ -221,3 +296,5 @@ To be added here, or in separate readmes.
 [Rest Parameters — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
 [Spread Operator — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+
+[Template Literals - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
