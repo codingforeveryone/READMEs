@@ -33,15 +33,23 @@ There are 4 main steps to go through for a new change to be implemented. The fir
 
 The first step to propose a new change is always to create a new branch for it. Before you create a new branch you should make sure your master is up-to-date by pulling all previous changes.
 
+To create a new branch switch to the branch you can use the following command:
+```bash
+$ git checkout -b <name of the branch>
+```
+This is equal to first creating the branch and then switching to it with the following two commands:
 ```bash
 $ git branch <name of the branch>
+$ git checkout <name of the branch>
 ```
 
+After creating and switching to branch locally you should push the branch to github and set upstream branch:
 ```bash
-$ git checkout "name of the branch"
+$ git push -u origin <name of the branch>
 ```
+This will create the branch on github and enable you to easily push further changes to that branch
 
-But how should you name your branch? Here's where the naming convention comes in.
+So how should you name your branch? Here's where the naming convention comes in.
 
 ####Naming convention for new branches
 
@@ -104,6 +112,8 @@ On the READMEs repository you go through the following steps to issue your pull 
 #### Assign the pull request
 
 If possible always try to assign your pull request to a specific person. That makes sure someone gets notified to look at it.
+
+Use Blame button to check who created the README or did the most edits recently.
 
 ###4. Review & merge the changes to master
 
