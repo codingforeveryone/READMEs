@@ -129,6 +129,8 @@ Here we will differentiate between different **types of changes** indicated by t
 
 **For smaller changes** such as pure corrections of typos (type. correct) anyone can check and merge the pull request.
 
+After merging the pull request the branch is not anymore needed and should be deleted by the person who merged it.
+
 ## Related
 
 ## References
