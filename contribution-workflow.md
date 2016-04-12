@@ -92,7 +92,7 @@ $ git push
 For git push to correctly work the default upstream branch has to be set correctly already. Otherwise you have to use the following command once in order to set the upstream branch.
 
 ```bash
-git push -u origin "name of the branch"
+git push -u origin <name of the branch>
 ```
 
 ###3. Create pull request to master
