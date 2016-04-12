@@ -24,9 +24,11 @@ In the next chapter we will go through the necessary steps and how to execute th
 
 ## Specific steps to go through for each change
 
+There are 4 main steps to go through for a new change to be implemented. The first 3 steps are done by the person who proposes the change, while the
+
 1. Create a new branch
 2. Stage, commit & push changes to the branch
-4. Create a pull request
+4. Create and assign a pull request
 5. Review & merge the changes
 
 ### Branch creation
@@ -35,13 +37,13 @@ In the next chapter we will go through the necessary steps and how to execute th
 
 #### Naming conventions
 
-### Stage & commit changes
-
-### Push changes
+### Stage, commit & push the changes to the branch
 
 ### Create pull request
 
-### Review & merging of changes
+#### Assign the pull request
+
+### Review & merge the changes
 
 ## Related
 
