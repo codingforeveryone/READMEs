@@ -92,9 +92,9 @@ d = 15;
 
 c;       // 10
 ```
-###Consequences of passing by value
+###Consequences of passing by reference
 ####Passing to functions
-**Beware!** It is very easy to create a bug in your code if you forget that an array you have passed to a function is actually passed by value: anything that you do to the array within the function will also modify the array outside the function.
+**Beware!** It is very easy to create a bug in your code if you forget that an array you have passed to a function is actually passed by reference: anything that you do to the array within the function will also modify the array outside the function.
  
 #### Checking equality
 
