@@ -23,6 +23,7 @@
     * [Exceptions handling](/JavaScript/raising-exceptions.md)
     * [Best JS Resources](/JavaScript/best-js-resources.md)
     * [JavaScript Shortcuts](/JavaScript/shortcuts.md)
+    * [Synchrous and Asynchronous](/JavaScript/synchronous-and-asynchronous.md)
 
 * [HTML and CSS](/gitbook-chapter-headers/html-css.md)
     * [Choosing a CSS Framework](/html-css/choosing-a-css-framework.md)
