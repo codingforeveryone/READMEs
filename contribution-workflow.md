@@ -125,9 +125,9 @@ Then anyone available can check and merge your new README.
 The last step for the change to be implemented is the review and merging of the pull request to master.
 Here we will differentiate between different **types of changes** indicated by the **second part of the branch name**.
 
-**For significant changes** such as the adding new paragraphs (type: add) or structural changes (type: enhance) the assigned person (mostly the creator) should check and merge the pull request. Other people can also check it and provide their comments but shouldn't merge it immediately. Only if the assigned person doesn't react to the pull request within at least 3 days, then other contributors are also allowed to check and merge it.
+**For significant changes** such as the adding new paragraphs (_type: add_) or structural changes (_type: enhance_) the assigned person (mostly the creator) should check and merge the pull request. Other people can also check it and provide their comments but shouldn't merge it immediately. Only if the assigned person doesn't react to the pull request within at least 3 days, then other contributors are also allowed to check and merge it.
 
-**For smaller changes** such as pure corrections of typos (type. correct) anyone can check and merge the pull request.
+**For smaller changes** such as pure corrections of typos (_type: correct_) anyone can check and merge the pull request.
 
 After merging the pull request the branch is not anymore needed and should be deleted by the person who merged it.
 
