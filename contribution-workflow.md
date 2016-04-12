@@ -47,7 +47,9 @@ After creating and switching to branch locally you should push the branch to git
 ```bash
 $ git push -u origin <name of the branch>
 ```
-This will create the branch on github and enable you to easily push further changes to that branch
+This will create the branch on github and enable you to easily push further changes to that branch.
+
+More details on creating and managing branches can be found [here](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches).
 
 So how should you name your branch? Here's where the naming convention comes in.
 
@@ -68,37 +70,33 @@ Additionally it makes sure that
 
 _NOTE: This naming convention makes sense for this repository because changes should be made to each README file on separate branches. For other projects you might want to choose different naming conventions._
 
-####Naming convention
-
-
 #####Types of changes
 
-_to be added_
+_currently add, correct and new. Further ones potentially to be added_
 
 ###2. Stage, commit & push the changes to the branch
 
-For this use the basic git commands
+For this use the basic git commands outlined here for the Mac command line. More details on those commands can be found in the [Git Basics Tutorial](https://github.com/codingforeveryone/READMEs/blob/contribution-workflow/new/programmer-skills/git-basics.md) and the [official Github help pages](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/).
 
+Staging changes to the file:
 ```bash
-$ git add "name of the file"
+$ git add <name of the file>
 ```
 
+Commiting the staged changes:
 ```bash
 $ git commit -m "summary of changes made"
 ```
 
+Pushing the commited stages on the branch:
 ```bash
 $ git push
 ```
 
-For the first commit to the branch: remote
+For git push to correctly work the default upstream branch has to be set correctly already. Otherwise you have to use the following command once in order to set the upstream branch.
 
 ```bash
 git push -u origin "name of the branch"
-```
-
-```bash
-git push --set-upstream origin "name of the branch"
 ```
 
 ###3. Create pull request to master
