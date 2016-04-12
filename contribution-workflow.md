@@ -116,7 +116,7 @@ That person should either be the original creator of the README file or someone 
 
 Use the Blame button (at the top right of each file, next to the history) to check which person to assign your pull request to.
 
-For completely new README files you created, you don't have assign anyone to the pull request. Instead just post the link to your new README in the ![README Gitter channel](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
+For completely new README files you created, you don't have assign anyone to the pull request. Instead just post the link to your new README in the [README Gitter channel](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 Then anyone available can check and merge your new README.
 
 ###4. Review & merge the changes to master
