@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document outlines the workflow and steps to go through when proposing new changes to the READMEs repository. The workflow should be followed when making changes to improve current READMEs as well when adding new READMEs.
+This document outlines the workflow and steps to go through when proposing new changes to the READMEs repository. The workflow should be followed when making changes to improve current READMEs as well as when adding new READMEs.
 At first sight the process might seem complicated, but it is a great exercise to practice contribution to future programming projects and
 ensures that all added changes are checked.
 
