@@ -133,10 +133,14 @@ After merging the pull request the branch is not anymore needed and should be de
 
 ## Related
 [Main README](https://github.com/codingforeveryone/READMEs/blob/master/README.md)
+
 [Git Basics Tutorial](https://github.com/codingforeveryone/READMEs/blob/contribution-workflow/new/programmer-skills/git-basics.md)
 
 ## References
 [Atlassian: Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+
 [Branch creation & management](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
+
 [Github help: adding files](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/)
+
 [Github help: pull requests](https://help.github.com/articles/creating-a-pull-request/)
