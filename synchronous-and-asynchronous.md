@@ -66,6 +66,7 @@ Here's an interesting exercise, maybe: write a function which takes a callback a
 ##Related
 
 [HTTP requests](#tobeadded)
+
 [Timers](#tobeadded)
 
 ## References
