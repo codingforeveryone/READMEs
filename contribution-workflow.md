@@ -31,28 +31,28 @@ There are 4 main steps to go through for a new change to be implemented. The fir
 
 ###1. Create a new branch
 
-The first step to propose a new change is always to create a new branch for it.
+The first step to propose a new change is always to create a new branch for it. Before you create a new branch you should make sure your master is up-to-date by pulling all previous changes.
 
 ```bash
-$ git branch "name of the branch"
+$ git branch <name of the branch>
 ```
 
 ```bash
 $ git checkout "name of the branch"
 ```
 
-But how to name your branch. Here's where the naming convention comes in.
+But how should you name your branch? Here's where the naming convention comes in.
 
-####Naming convention
+####Naming convention for new branches
 
 In order to clearly identify what the branch is used for, the branch should be named according to the following naming convention.
 
 **"file name"/"type of change"/"short summary of change"**
 
 Examples for possible branch names:
-* README/addition/intro-added
-* ES6/correction/typos
-* hoisting/addition/headers-added
+* README/add/intro-added
+* ES6/correct/typos
+* hoisting/add/headers-added
 
 This kind of naming convention not only helps to see what branches are used for. It also impacts the review process because a simple typo correction can be approved and merge more quickly than a larger change.
 Additionally it makes sure that
