@@ -6,6 +6,8 @@ This document outlines the workflow and steps to go through when proposing new c
 At first sight the process might seem complicated but it is a great exercise to practice contribution to future programming projects and
 ensures that all added changes are checked.
 
+If you have any questions or are stuck somewhere please don't hesitate to ask in the README Gitter channel: [![Join the chat at https://gitter.im/codingforeveryone/READMEs](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ##The Feature Branch Workflow
 
 The process used is called [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
