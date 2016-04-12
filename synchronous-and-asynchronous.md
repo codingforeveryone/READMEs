@@ -65,8 +65,8 @@ Here's an interesting exercise, maybe: write a function which takes a callback a
 
 ##Related
 
-HTTP requests(#tobeadded)
-Timers(#tobeadded)
+[HTTP requests](#tobeadded)
+[Timers](#tobeadded)
 
 ## References
 * [John Resig on Javascript timers.](http://ejohn.org/blog/how-javascript-timers-work/)
