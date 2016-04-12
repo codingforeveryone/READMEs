@@ -24,7 +24,7 @@ In the next chapter we will go through the necessary steps and how to execute th
 
 There are 4 main steps to go through for a new change to be implemented. The first 3 steps are done by the person who proposes the change, while the forth step has to be done by a different person to ensure quality.
 
-1. [Create a new branch](document.URL#create-a-new-branch)
+1. [Create a new branch](contribution-workflow.md#create-a-new-branch)
 2. Stage, commit & push changes to the branch
 4. Create and assign a pull request
 5. Review & merge the changes
