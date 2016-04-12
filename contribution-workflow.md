@@ -6,12 +6,12 @@ This document outlines the workflow and steps to go through when proposing new c
 At first sight the process might seem complicated but it is a great exercise to practice contribution to future programming projects and
 ensures that all added changes are checked.
 
-## The Feature Branch Workflow
+##The Feature Branch Workflow
 
 The process used is called [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 The basic concept of this workflow is that every change is treated as a new "feature" and made on branch dedicated to that change.
 Once the change is ready a [pull request](https://help.github.com/articles/using-pull-requests/) is raised. This pull request will be checked by another person and then merged into the master branch.
-After merging the branch is deleted, since it is not needed anymore.
+After merging the branch is deleted.
 
 The following picture visualizes the process of creating and merging a new branch for each feature or change:
 
@@ -19,7 +19,7 @@ The following picture visualizes the process of creating and merging a new branc
 
 In the next chapter we will go through the necessary steps and how to execute them through the command line.
 
-## Specific steps to go through for each change
+##Steps to go through for each change
 
 There are 4 main steps to go through for a new change to be implemented. The first 3 steps are done by the person who proposes the change, while the forth step has to be done by a different person to ensure quality.
 
@@ -30,7 +30,7 @@ There are 4 main steps to go through for a new change to be implemented. The fir
 
 ###1. Create a new branch
 
-The first step to propose a new change is always to create a new branch for it. Before you create a new branch you should make sure your master is up-to-date by pulling all previous changes.
+The first step is to create a new branch for the proposed change. Before you create the branch you should make sure your master is up-to-date by pulling all previous changes with git pull.
 
 To create a new branch switch to the branch you can use the following command:
 ```bash
@@ -106,15 +106,25 @@ On the repository you will go through the following steps to issue your pull req
 3. Name & assign your pull request
 4. Click on "Create pull request"
 
+This is quite straight-forward. You can see the steps in more detail on [Github help](https://help.github.com/articles/creating-a-pull-request/).
+
 #### Assign the pull request
 
-If possible always try to assign your pull request to a specific person. That makes sure someone gets notified to look at it.
+If possible always assign your pull request to a specific person. That makes sure someone gets notified to look at it.
 
-Use Blame button to check who created the README or did the most edits recently.
+That person should either be the original creator of the README file or someone who recently contributed a lot.
+
+Use the Blame button (at the top right of each file, next to the history) to check which person to assign your pull request to.
+
+For completely new README files you created, you don't have assign anyone to the pull request. Instead just post the link to your new README in the ![README Gitter channel](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
+Then anyone available can check and merge your new README.
 
 ###4. Review & merge the changes to master
 
-**Important: ** This is not done by the same person who proposes the change.
+**Important:** This is not done by the same person who proposes the change.
+
+The last step for the change to be implemented is the review and merging the pull request into master. Ideally this is done by the person who the pull request was assigned to.
+Here we will differentiate between different types of changes indicated by the second part of the branch name.
 
 ## Related
 
