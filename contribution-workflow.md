@@ -29,11 +29,21 @@ There are 4 main steps to go through for a new change to be implemented. The fir
 4. [Create and assign a pull request](contribution-workflow.md#3.-create-and-assign-a-pull-request)
 5. [Review & merge the changes](contribution-workflow.md#4.-review-&-merge-the-changes)
 
-### 1. Create a new branch
+###1. Create a new branch
 
 The first step to propose a new change is always to create a new branch for it.
 
-#### Naming convention
+```bash
+$ git branch "name of the branch"
+```
+
+```bash
+$ git checkout "name of the branch"
+```
+
+But how to name your branch. Here's where the naming convention comes in.
+
+####Naming convention
 
 In order to clearly identify what the branch is used for, the branch should be named according to the following naming convention.
 
@@ -49,11 +59,40 @@ Additionally it makes sure that
 
 _NOTE: This naming convention makes sense for this repository because changes should be made to each README file on separate branches. For other projects you might want to choose different naming conventions._
 
-##### Types of changes
+####Naming convention
 
-### 2. Stage, commit & push the changes to the branch
 
-### 3. Create pull request to master
+#####Types of changes
+
+_to be added_
+
+###2. Stage, commit & push the changes to the branch
+
+For this use the basic git commands
+
+```bash
+$ git add "name of the file"
+```
+
+```bash
+$ git commit -m "summary of changes made"
+```
+
+```bash
+$ git push
+```
+
+For the first commit to the branch: remote
+
+```bash
+git push -u origin "name of the branch"
+```
+
+```bash
+git push --set-upstream origin "name of the branch"
+```
+
+###3. Create pull request to master
 
 A [pull request](https://help.github.com/articles/using-pull-requests/) is a request to transfer the changes from your branch to master. To issue the pull request we recommend using the github website.
 On the READMEs repository you go through the following steps to issue your pull request:
@@ -64,8 +103,11 @@ On the READMEs repository you go through the following steps to issue your pull 
 
 #### Assign the pull request
 
+If possible always try to assign your pull request to a specific person. That makes sure someone gets notified to look at it.
 
-### 4. Review & merge the changes to master
+###4. Review & merge the changes to master
+
+**Important: ** This is not done by the same person who proposes the change.
 
 ## Related
 
