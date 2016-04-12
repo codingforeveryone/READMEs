@@ -64,7 +64,7 @@ Both square root and cube root can be replaced by `Math.pow(x, y)`. To find root
 Math.sqrt(16) // 4 
 Math.pow(16, 0.5) // 4
 Math.cbrt(64) // 4
-Math.pow(62, 0.25) // 4
+Math.pow(256, 0.25) // 4
 ```
 
 **`Math.exp(x)`** -Returns the value of E^x, where E is Euler's number (approximately 2.7183) and `x` is the number passed to it.
