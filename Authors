@@ -1,0 +1,47 @@
+# Authors
+
+* [Introduction](README.md)
+
+* [JavaScript] 
+    * [ECMAScript 6] bradreeder
+    * [String Dissection and Manipulation]  4mohit
+    * [Arrays] 
+       * [Array Methods Overview]  Matt Glover
+       * [Array Map]  Mikio Oba
+       * [Array Reduce]  mikiooba
+    * [Math Object Beginner Guide]  RichAWarren
+    * [Modulo Operator] TroyMaeder
+    * [Variable Scope and Hoisting] 
+       * [Hoisting]  JakubSvihla
+       * [Javascript Scope]  edward
+    * [Regular Expressions Beginner Guide]  RichAWarren
+    * [Recursion]  coudrew
+    * [Objects]  TroyMaeder 
+    * [Inheritance and Javascript]  alwinsol 
+    * [Linked list]  daymos
+    * [Basic Performance Testing] RichAWarren
+    * [Exceptions handling] ????????
+    * [Best JS Resources] 4mohit
+    * [JavaScript Shortcuts] ????????
+
+* [HTML and CSS] 
+    * [Choosing a CSS Framework]  heatherlauren
+    * [Document Object Model]  davidnge
+
+* [Programmer Skills] 
+    * [Debugging Javascript]  bradreeder
+    * [Git Basics]  gabrielperales
+    * [Git Flow]  gomesalexandre
+    * [Hosting on GitHub]  daymos
+    * [Markdown Cheat-Sheet]  daymos 
+    * [Mutable vs Immutable] TroyMaeder
+    * [Start Developing with JavaScript]  gabrielperales
+    * [Command Line] Anneka Sillitoe
+    * [Setting Up a Local Server]  heatherlauren
+    
+* [Codewars] 
+    * [Writing Your Own Kata] mcelearr
+    * [Random Test Cases for Complete Beginners]  JakubSvihla 
+
+#Not in summary
+ResponsiveD3 – radiocontrolled
