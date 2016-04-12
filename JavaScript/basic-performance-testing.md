@@ -39,7 +39,7 @@ function makestring2() {
 
 Now rather than just accepting the advice, how do we actually test these?
 
-Our chosen method is to make use of javascripts `new Date()` constructor. This gives the time since 01 January 1970 00:00:00 UTC. The number is specified in milliseconds. Therefore if we wrap a for loop repeating the function in two variables that equal `new Date()` and find the difference between these variables we should have the time taken to perform the function. To give a large enough data set, consider repeating the function 20,000 times.
+Our chosen method is to make use of Javascript's `new Date()` constructor. This gives the time since 01 January 1970 00:00:00 UTC. The number is specified in milliseconds. Therefore if we wrap a for loop repeating the function in two variables that equal `new Date()` and find the difference between these variables we should have the time taken to perform the function. To give a large enough data set, consider repeating the function 20,000 times.
 
 ```javascript
 var start = new Date();  // log start timestamp
@@ -65,11 +65,11 @@ console.log(diff1.toString());
 
 ## The Comparison
 
-By comparing the time taken to perform each function you will be able to get a rough idea for performance. In this example, our `makestring()` takes approximately 2322 ms and our array function `makestring1()` takes approximately 323 ms. 
+By comparing the time taken to perform each function you will be able to get a rough idea of their performance. In this example, our `makestring()` takes approximately 2322 ms and our array function `makestring1()` takes approximately 323 ms. 
 
 *Note: Values may not be constant between seperate runs, but will be in a similar range. Likewise consider moving `console.log(diff)` to end of function for ease of reading.*
 
-Moving beyond this example, the same method should be applicable to any other set of functions. Wrap a loop repeating functions in date variables, find difference, compare!
+Moving beyond this example, the same method should be applicable to any other set of functions. Wrap a loop repeating functions in date variables, find the difference, compare!
 
 ## Appendix
 
@@ -112,7 +112,6 @@ var diff1 = end1 - start1;
 console.log(diff.toString());
 console.log(diff1.toString());
 ```
-
 
 
 
