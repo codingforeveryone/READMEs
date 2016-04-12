@@ -43,7 +43,7 @@ $ git branch <name of the branch>
 $ git checkout <name of the branch>
 ```
 
-After creating and switching to branch locally you should push the branch to github and set upstream branch:
+After creating and switching to branch locally you should push the branch to github and set it as the default upstream branch:
 ```bash
 $ git push -u origin <name of the branch>
 ```
@@ -61,6 +61,7 @@ Examples for possible branch names:
 * README/add/intro-added
 * ES6/correct/typos
 * hoisting/add/headers-added
+* contribution-workflow/new
 
 This kind of naming convention not only helps to see what branches are used for. It also impacts the review process because a simple typo correction can be approved and merge more quickly than a larger change.
 Additionally it makes sure that
