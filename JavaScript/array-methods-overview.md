@@ -74,8 +74,15 @@ arr.shift();      // Returns 'a', arr = ['b', 'c', 'd']
 ```
 
 ##Array Behaviour
+
 ### Arrays are passed by reference
-In contrast to the primitive data types in JavaScript (Number, String and Boolean) - which are passed by value - arrays, like Objects, are passed by reference. This means that when an array is assigned to more than one variable, changing either variable will change the original array. This is because the value of the array is not copied. Instead the variables are assigned a 'reference' to the array. By contrast, when a number is assigned to a second variable, it is copied, so that changing that variable changes the value of the copy but leaves the original unchanged.
+
+In contrast to the primitive data types in JavaScript (Number, String and Boolean) – which are passed by value – arrays, like Objects, are passed by reference. When you assign an array to a variable, you create a reference to the array and store only the reference in the variable, not the contents of the array itself. By contrast, when a number is assigned to a variable, it is copied and stored in the variable as a value. 
+
+###Consequences of passing by reference
+
+####Assigning one variable to another
+It is easiest to see the consequences of passing by reference by thinking about what happens when one variable is assigned to another. If you assign a variable holding a reference to an array to another variable, you are not copying the array contents into the new variable, but are assigning a reference to the same array. That means the same array can then be accessed and modified from either of the variables. By contrast, if a variable holding a number is assigned to another variable, the number will be copied, so that the first and second variables can be modified independently.
 
 ```javascript
 // Array passed by reference
@@ -92,8 +99,9 @@ d = 15;
 
 c;       // 10
 ```
-###Consequences of passing by reference
+
 ####Passing to functions
+
 **Beware!** It is very easy to create a bug in your code if you forget that an array you have passed to a function is actually passed by reference: anything that you do to the array within the function will also modify the array outside the function.
  
 #### Checking equality
