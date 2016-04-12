@@ -60,7 +60,7 @@ In order to clearly identify what the branch is used for, the branch should be n
 Examples for possible branch names:
 * README/add/intro-added
 * ES6/correct/typos
-* hoisting/add/headers-added
+* hoisting/enhance/structure-changed
 * contribution-workflow/new
 
 This kind of naming convention not only helps to see what branches are used for. It also impacts the review process because a simple typo correction can be approved and merge more quickly than a larger change.
@@ -111,20 +111,23 @@ This is quite straight-forward. You can see the steps in more detail on [Github 
 #### Assign the pull request
 
 If possible always assign your pull request to a specific person. That makes sure someone gets notified to look at it.
-
-That person should either be the original creator of the README file or someone who recently contributed a lot.
+The assigned person should either be the original creator of the README file or someone who recently contributed a lot.
 
 Use the Blame button (at the top right of each file, next to the history) to check which person to assign your pull request to.
 
-For completely new README files you created, you don't have assign anyone to the pull request. Instead just post the link to your new README in the [README Gitter channel](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
+For completely new README files you created, you don't have assign anyone. Instead just post the link in the [README Gitter channel](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 Then anyone available can check and merge your new README.
 
 ###4. Review & merge the changes to master
 
-**Important:** This is not done by the same person who proposes the change.
+**Important:** This is not done by the same person who proposed the change.
 
-The last step for the change to be implemented is the review and merging the pull request into master. Ideally this is done by the person who the pull request was assigned to.
-Here we will differentiate between different types of changes indicated by the second part of the branch name.
+The last step for the change to be implemented is the review and merging of the pull request to master.
+Here we will differentiate between different **types of changes** indicated by the **second part of the branch name**.
+
+**For significant changes** such as the adding new paragraphs (type: add) or structural changes (type: enhance) the assigned person (mostly the creator) should check and merge the pull request. Other people can also check it and provide their comments but shouldn't merge it immediately. Only if the assigned person doesn't react to the pull request within at least 3 days, then other contributors are also allowed to check and merge it.
+
+**For smaller changes** such as pure corrections of typos (type. correct) anyone can check and merge the pull request.
 
 ## Related
 
