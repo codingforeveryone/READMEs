@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document outlines the workflow and steps to go through when proposing new changes to the READMEs repository. The workflow governs making changes to improve current READMEs as well as adding new READMEs.
+This document outlines the workflow and steps to go through when proposing new changes to the READMEs repository. The workflow should be followed when making changes to improve current READMEs as well as when adding new READMEs.
 At first sight the process might seem complicated, but it is a great exercise to practice contribution to future programming projects and
 ensures that all added changes are checked.
 
@@ -19,7 +19,31 @@ The following picture visualizes the process of creating and merging a new branc
 
 ![Feature Branch visualization](http://wiki.techniv.fr/images/3/3c/Git_Feature_Workflow.png)
 
-In the next chapter we will go through the necessary steps and how to execute them through the command line.
+While you could do all your editing and branch creation using the GitHib online interface, it is easier in the long run to keep a copy of the repository on you local machine, and work on it there. This entails setting up Git and learning to use the command line interface.
+
+##Setting up a local repository
+
+Before working with the READMEs repository we should install git and clone the repository to our local directory. Refer to [Git Basics]((http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac)) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there).
+Be aware that most beginners' guides to setting up Git out on the web assume that you will be making contributions via a fork. **In this workflow though we don't use forks (complete copies of the repository) but simply branches.**
+
+Setting up Git without a fork is simpler. All you need to do is clone the remote repository:
+
+```bash
+$ git clone https://github.com/codingforeveryone/READMEs.git
+```
+
+You now have a local copy of the repository, but you are not quite ready to make changes to it. You need to ensure it is up to date. Navigate to your local repository:
+
+```bash
+$ cd READMEs
+```
+Then tell Git to pull any changes on the master branch of origin (the default name for the remote repository) into your local repository:
+
+```bash
+$ git pull origin master
+```
+
+Now make your change! In the next section we will go through the steps necessary to get your local change merged into the main repository, and how to execute them through the command line.
 
 ##Steps to go through for each change
 
@@ -32,7 +56,7 @@ There are 4 main steps to go through for a new change to be implemented. The fir
 
 ###1. Create a new branch
 
-The first step is to create a new branch for the proposed change. Before you create the branch you should make sure your master is up-to-date by pulling all previous changes with git pull.
+The first step is to create a new branch for the proposed change. Before you create the branch you should make sure your master is up-to-date by pulling all previous changes with `git pull`.
 
 To create a new branch and switch to the branch at the same time, you can use the following command:
 
@@ -97,7 +121,7 @@ Pushing the commited stages on the branch to the remote repository:
 $ git push
 ```
 
-For git push to correctly work, the default upstream branch has to be set correctly already. Otherwise you have to use the following command once in order to set the upstream branch.
+For `git push` to correctly work, the default upstream branch has to be set correctly already. Otherwise you have to use the following command once, in order to set the upstream branch.
 
 ```bash
 git push -u origin <name of the branch>
@@ -137,7 +161,11 @@ Here we will differentiate between different **types of changes** indicated by t
 
 **For smaller changes** such as pure corrections of typos (_type: correct_) anyone can check and merge the pull request.
 
-After merging the pull request the branch is not needed any more and should be deleted by the person who merged it.
+After merging the pull request the branch is not needed any more and should be deleted by the person who merged it. This can be done directly in the pull request view or in the terminal with the following command.
+
+```bash
+git branch -D <name of the branch>
+```
 
 ## Related
 [Main README](https://github.com/codingforeveryone/READMEs/blob/master/README.md)
