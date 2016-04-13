@@ -39,4 +39,27 @@ Before you submit a pull request for a new README, please make sure you have cre
 
 ## Improving the existing tutorials
 
-To be updated.
+The less sexy but possibly more important way to contribute!
+
+###Editing
+Do not be shy about suggesting changes to other people's work. The [Contributor workflow](#tobeadded) ensures that authors have a chance to look over the changes you suggest and reject them if they do not feel they are appropriate.
+
+You will see in the [Contributor workflow](#tobeadded) that different kinds of changes should be labelled differently when you submit them. Some basic kinds of change and the branch names you should use for them are below:
+
+
+|Type of correction|Branch name|
+|----------------|:-------------:|
+|Correcting grammatical mistakes or typos|*/correct*|
+|Reorganising or clarifying material|*/enhance*|
+|Adding new sections|*/add*|
+
+You can make up your own name if these do not seem appropriate!
+
+###Maintaining the GitBook
+
+Files are placed in the wrong location and need moving, links are inaccurate or go out of date...If you see something that looks wrong, change it!
+
+|Type of correction|Branch name|
+|----------------|:-------------:|
+|Maintenance|*/maintenance*|
+
