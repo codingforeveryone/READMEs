@@ -65,13 +65,13 @@ then it is obvious that they will produce exactly the same results and therefore
 except the name. Well, don’t forget that the `addCheck` function’s output will be compared not against your output, but against the
 user’s output.
 
-Obviously, not for all test cases you need to generate numbers as sometimes you will need to generate strings, stings of random length
-and so forth.
+Obviously, 
+you will not always need to generate random numbers. Sometimes you will need to generate strings, arrays and so on and so forth. 
 
 I sometimes felt that generating these random test cases was a kata to solve in itself. 
 
-I hope this short introduction gave you an idea of what random test cases are and how and where to create them. Please note that I
-will update this document as time  goes on.
+I hope this short introduction gave you an idea of what random test cases are, and how and where to create them. Please note that I
+will update this document as time goes on.
 
 ## Further Random Number Examples
 
