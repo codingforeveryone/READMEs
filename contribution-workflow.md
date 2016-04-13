@@ -24,7 +24,8 @@ While you could do all your editing and branch creation using the GitHib online 
 ##Setting up a local repository
 
 
-Refer to [Git Basics]((http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac)) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there). Note that most beginners' guides to setting up Git out on the web assume that you will be making contributions via a fork. **In this workflow we don't use forks (complete copies of the repository) but simply branches (side tracks on the same main repository)**
+Refer to [Git Basics]((http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac)) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there). Note that most beginners' guides to setting up Git out on the web assume that you will be making contributions via a fork. **In this workflow we don't use forks (complete copies of the repository) but simply branches (side tracks on the same main repository).**
+
 Setting up Git without a fork is simpler. All you need to do is clone the remote repository:
 
 ```bash
