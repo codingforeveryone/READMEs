@@ -37,6 +37,36 @@ Here are some example katas that can be solved with the modulo operator:
 
 [Normalizing out of range array indexes](http://www.codewars.com/kata/5285bf61f8fc1b181700024c)
 
+##Other Important Uses
+
+The modulo operator can be used in a number of other useful cases:
+
+You can use it to test whether an integer is odd or even:
+
+```javascript
+function oddOrEven(n) {
+ if (n % 2 === 0) return "even"
+ if (n % 2 === 1) return "odd"
+}
+```
+Or whether a number is an integer:
+
+```javascript
+function isInteger(n) {
+ if (n % 1 === 0) return "Integer"
+ if (n % 1 !== 0) return "Not Integer"
+}
+```
+
+In, for example, prime number generation it can be used to test whether a candidate integer y has a divisor x:
+
+```javascript
+function isDivisor(y, x) {
+ if (y % x !== 0) return "Not divisor"
+ if (y % x === 0) return "Divisor"
+}
+```
+
 ##Documentation
 
 Here's a link to the documentation of the modulo operator:
