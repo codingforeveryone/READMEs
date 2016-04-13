@@ -160,7 +160,11 @@ Here we will differentiate between different **types of changes** indicated by t
 
 **For smaller changes** such as pure corrections of typos (_type: correct_) anyone can check and merge the pull request.
 
-After merging the pull request the branch is not needed any more and should be deleted by the person who merged it.
+After merging the pull request the branch is not needed any more and should be deleted by the person who merged it. This can be done directly in the pull request view or in the terminal with the following command.
+
+```bash
+git branch -D <name of the branch>
+```
 
 ## Related
 [Main README](https://github.com/codingforeveryone/READMEs/blob/master/README.md)
