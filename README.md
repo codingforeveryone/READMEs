@@ -27,7 +27,7 @@ Make sure the topic is not already covered, keep the topic small, and aim to be 
 2. A penultimate section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. If a related topic is not covered, consider raising it as an issue or mentioning it on Gitter.
 3. A final section called **References**, linking to other helpful resources on the topic.
 
-Some further notes:
+Make sure you give your file a sensible name: sensible filenames are all lower-case, do not have spaces or non-ASCII characters and end with the .md file extension. Some further notes:
 
 4. If you think the topic can be clarified with a Code Wars kata, then create one and link to it.
 5. Consider adding a nice illustrative diagram or screenshot.
