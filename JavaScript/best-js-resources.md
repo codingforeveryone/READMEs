@@ -1,7 +1,7 @@
 <h1>Best JavaScript Resources Online</h1>
-<p>Learning something new is scary. For all of us the biggest issue with picking up a new skill is don't know where to start. It's often useful if we have a Plan of actions , A Blueprint , A Roadmap. It makes our journey towards that new step a lot easier. But you don't have to worry about that now i have found the best resources on the Internet sorting out the bad ones. Available to us for free. All these resources are authentic, reliable and effective.</p>
+<p>Learning something new is scary. For all of us the biggest issue with picking up a new skill is not knowing where to start. It's often useful if we have a Plan of Action, a Blueprint , a Roadmap. It makes our journey towards that new step much easier. But you don't have to worry about that now I have found the best resources on the Internet, filtering out the bad ones.</p>
 
-<h1>Massive Open Online Courses(MOOC)/Online Courses</h1><br>
+<h1>Massive Open Online Courses (MOOC) / Online Courses</h1><br>
 [Udacity-Web Development Program](https://www.udacity.com/courses/web-development)<br>
 [The Odin Project](http://www.theodinproject.com)<br>
 [Khan Academy](https://www.khanacademy.org)<br>
@@ -15,7 +15,7 @@
 [Code Academy](www.codecademy.com)<br>
 [FreeCodeCamp](www.freecodecamp.com)<br>
 [Egghead](https://egghead.io) (Paid)<br>
-[General Assembly](https://dash.generalassemb.ly)<br>
+[General Assembly](https://dash.generalassemb.ly) (Paid)<br>
 [The Code Player](https://thecodeplayer.com)<br>
 [Microsoft Virtual Academy](http://www.microsoftvirtualacademy.com/)<br>
 [JavaScript.com](https://www.javascript.com/)<br>
@@ -48,7 +48,7 @@
 [Codek.tv](https://www.youtube.com/channel/UCbvzUavFjvAeF9LGxx9sz3g/)<br>
 [A Video On Regular Expressions](https://youtu.be/EkluES9Rvak?list=PLsLGl4_AIZC2sH_YAvByOqzXPItXZ8XOs)<br>
 <br>
-<h1>JavaScript Blogs/ Reference</h1><br>
+<h1>JavaScript Blogs / Reference</h1><br>
 [2ality](http://www.2ality.com/)<br>
 [Crockford.com](http://www.crockford.com/javascript/)<br>
 [SitePoint](http://www.sitepoint.com/)<br>
