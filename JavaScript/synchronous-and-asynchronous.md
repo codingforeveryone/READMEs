@@ -1,5 +1,7 @@
 # Synchronous and asynchronous in Javascript
 
+##Introduction
+
 One source of bugs when writing my first Javascript was failing to understand when I was using an **asynchronous** (async for short) instead of a **synchronous** (sync) function, and what the difference implies. Here I provide a conceptual overview of the distinction and a few tips on usage. On the way, we'll grapple with some other jargon: "call stack", "callback", "event queue" and "event loop".
 
 ## Sync
@@ -61,7 +63,13 @@ Another area where it pays to be aware of asynchronous behaviour is Javascript's
 
 Here's an interesting exercise, maybe: write a function which takes a callback and chops any loops above a certain length in the callback into chunks wrapped in `setTimeout()`. What other dangers, besides long loops, could we check for and address within the function?
 
-## Further reading
+##Related
+
+[HTTP requests](#tobeadded)
+
+[Timers](#tobeadded)
+
+## References
 * [John Resig on Javascript timers.](http://ejohn.org/blog/how-javascript-timers-work/)
 * [Asynchronous and synchronous stackoverflow thread.](http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean)
 * [Philip Roberts' great talk on the event loop.](http://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html)
