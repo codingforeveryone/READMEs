@@ -1,6 +1,7 @@
 # Array `map()` method
 
-The `map()` method creates a new array, without altering the original, by applying a function to each element of the array. The transformation (or processing) is done by a callback function, which is specified as the first parameter of the method. Higher-order functions such as `map()`, `reduce()` or `filter()` are an shorter, more readable alternative to iterating through an array with a loop.
+
+The `map()` method creates a new array, without altering the original, by applying a function to each element of the array. The transformation (or processing) is done by a callback function, which is specified as the first parameter of the method. Higher-order functions such as `map()`, `reduce()` or `filter()` are a shorter, more readable alternative to iterating through an array with a loop.
 
 ## Example
 
@@ -85,7 +86,7 @@ As you can see, `Math` is specified as the second parameter, which is used as `t
 
 ## Slightly more practical example
 
-One of slightly more practical examples of using `map()` method is transposing a 2 dimensionl array (swap rows and columns), which I found [here on StackOverflow](http://stackoverflow.com/questions/17428587/transposing-a-2d-array-in-javascript):
+One slightly more practical example of using the `map()` method is transposing a 2-dimensional array (swapping rows and columns), which I found [here on StackOverflow](http://stackoverflow.com/questions/17428587/transposing-a-2d-array-in-javascript):
 
 ```javascript
 var newArray = array[0].map(function(col, i) {
@@ -134,19 +135,23 @@ Two `map()` functions are used in this piece of code. The first `map()` obtains 
 
 I have not found a practical example of using the second parameter of the `map()` method yet.
 
-## Points to remember
+## Points to remember
 
 - The `map()` method returns a new array and the original array is not modified.
 - The `map()` method takes a callback function as a parameter, and the optional second parameter to be used as `this` in the callback function.
 - The callback function takes 3 parameters, the element of the array, the index of the element and the array itself.
 
-## Further reading
+## Related
+
+[Array methods overview](http://codingforeveryone.foundersandcoders.org/JavaScript/array-methods-overview.html)
+
+
+## References
 
 - [Array.prototype.map() – MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [From Map/Reduce to JavaScript Functional Programming](https://hacks.mozilla.org/2015/01/from-mapreduce-to-javascript-functional-programming/)
 - [Eloquent Javascript Chapter 5 - Chapter 5 Higher-Order Functions](http://eloquentjavascript.net/05_higher_order.html)
 - [Codecademy Advanced Array manipulation](https://www.codecademy.com/courses/javascript-advanced-en-eQcHT/0/1)
-
 
 
 
