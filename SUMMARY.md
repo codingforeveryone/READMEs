@@ -18,6 +18,7 @@
     * [Recursion](/JavaScript/recursive-function.md)
     * [Objects](/JavaScript/Objects.md)
     * [Inheritance and Javascript](/JavaScript/inheritance-and-javascript.md)
+    * [More on prototypes](/JavaScript/prototypes-more.md)
     * [Linked list](/JavaScript/linked-list.md)
     * [Basic Performance Testing](/JavaScript/basic-performance-testing.md)
     * [Exceptions handling](/JavaScript/raising-exceptions.md)
