@@ -1,6 +1,6 @@
 By Value:
 
-Suppose we have var num that contains a primitive: 
+Suppose we have ```var num``` that contains a primitive: 
 ```
 var num = 8;
 ```
