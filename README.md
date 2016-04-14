@@ -5,8 +5,8 @@
 ##Introduction
 This is a place for creating, editing and using tutorials (READMEs). The idea is to help build a collection of tutorials as a way to consolidate your own learning and to help others. There are two ways to contribute:
 
-1. Add a new tutorial.
-2. Improve the existing tutorials.
+1. Improve the existing tutorials.
+2. Add a new tutorial.
 
 But first you need to understand a bit about GitHub!
 
@@ -21,14 +21,18 @@ GitHub READMEs are written using a markup language called Markdown. You can fami
 ## Adding a new tutorial
 
 ### General guidelines
-Make sure the topic is not already covered, keep the topic small, and aim to be simple and brief. Do not feel you need to write at length if an external resource has done it well: just summarise and link to it. In any case, your README should contain at least:
+Make sure the topic is not already covered in other READMEs. Note that another README may cover your topic of interest despite having another title, as programming topics often overlap.  You will need to become familiar with the content of the other READMEs before writing a new one.  Keep the topic small, and aim to be simple and brief. Do not feel you need to write at length if an external resource has done it well: just summarise and link to it. In any case, your README should contain at least:
 
+## Essential
 1. An **Introduction** providing a single paragraph on the what, why and how of the topic.
-2. A penultimate section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. If a related topic is not covered, consider raising it as an issue or mentioning it on Gitter.
+2. A section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. The 'Related' section **must** outline a related topic that is not covered in yours or other existing READMEs, or a suggesion on how the topic of your README could be extended. You should also raise your related topic as an issue and mention it on Gitter.  This will help other users to get ideas on what to write about.
 3. A final section called **References**, linking to other helpful resources on the topic.
+
+If you cannot fulfill all of the above requirements, consider contributing your topic to the [Today I Learned](https://github.com/codingforeveryone/today-i-learned) repository.  If you want to write about the subject anyway, to improve your own understanding, you may consider writing a blog post or creating a screencast, which you can post in the Gitter rooms.
 
 Make sure you give your file a sensible name: sensible filenames are all lower-case, do not have spaces or non-ASCII characters and end with the .md file extension. Some further notes:
 
+## Optional
 4. If you think the topic can be clarified with a Code Wars kata, then create one and link to it.
 5. Consider adding a nice illustrative diagram or screenshot.
 6. **Bonus**: If you are feeling adventurous, create a screencast to accompany your README.
@@ -62,4 +66,3 @@ Files are placed in the wrong location and need moving, links are inaccurate or 
 |Type of correction|Branch name|
 |----------------|:-------------:|
 |Maintenance|*/maintenance*|
-
