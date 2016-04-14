@@ -1,7 +1,7 @@
 By Value:
 
 Suppose we have var num that contains a primitive: 
-javascript```
+```
 var num = 8;
 ```
 At this point, ‘var num =’ creates a new space in memory that contains number 8. It has an address just like you have an addressere
