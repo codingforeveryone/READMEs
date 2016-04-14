@@ -43,7 +43,7 @@ If we change the name via that ```person2```:
 ```
 person2.name = ‘Wollowitz’;
 ```
-Now both ```person.name`` and ```person2.name``` will console.log ‘Wollowitz’. It doesn’t matter which of them two variables we use to change the name property because they are both pointing at the same object.
+Now both ```person.name``` and ```person2.name``` will console.log ‘Wollowitz’. It doesn’t matter which of them two variables we use to change the name property because they are both pointing at the same object.
 
 This is called By Reference.
 
