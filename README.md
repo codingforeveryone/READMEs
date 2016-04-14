@@ -18,32 +18,9 @@ Note that the existing READMEs are available at two locations, the [repository](
 
 GitHub READMEs are written using a markup language called Markdown. You can familiarise yourself with Markdown using the [Markdown Cheat Sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/markdown-cheat-sheet.html).
 
-## Adding a new tutorial
+##Improving the existing tutorials
 
-### General guidelines
-Make sure the topic is not already covered in other READMEs. Note that another README may cover your topic of interest despite having another title, as programming topics often overlap.  You will need to become familiar with the content of the other READMEs before writing a new one.  Keep the topic small, and aim to be simple and brief. Do not feel you need to write at length if an external resource has done it well: just summarise and link to it. In any case, your README should contain at least:
-
-## Essential
-1. An **Introduction** providing a single paragraph on the what, why and how of the topic.
-2. A section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. The 'Related' section **must** outline a related topic that is not covered in yours or other existing READMEs, or a suggesion on how the topic of your README could be extended. You should also raise your related topic as an issue and mention it on Gitter.  This will help other users to get ideas on what to write about.
-3. A final section called **References**, linking to other helpful resources on the topic.
-
-If you cannot fulfill all of the above requirements, consider contributing your topic to the [Today I Learned](https://github.com/codingforeveryone/today-i-learned) repository.  If you want to write about the subject anyway, to improve your own understanding, you may consider writing a blog post or creating a screencast, which you can post in the Gitter rooms.
-
-Make sure you give your file a sensible name: sensible filenames are all lower-case, do not have spaces or non-ASCII characters and end with the .md file extension. Some further notes:
-
-## Optional
-4. If you think the topic can be clarified with a Code Wars kata, then create one and link to it.
-5. Consider adding a nice illustrative diagram or screenshot.
-6. **Bonus**: If you are feeling adventurous, create a screencast to accompany your README.
-
-###Submitting a pull request
-
-Before you submit a pull request for a new README, please make sure you have created it in the appropriate folder and added a link to it in SUMMARY.md. Submit the new file and revised SUMMARY.md as part of a single pull request. If you are unsure how to do this, consult the [Contributor workflow](#tobeadded) README.
-
-## Improving the existing tutorials
-
-The less sexy but possibly more important way to contribute!
+This is the most important way to contribute to the READMEs as it helps to assure the quality of the content.  It is also easier for others to make more insightful contributions to high quality content than if the content was lower and more disorganised.  You should familiarise yourself with the existing content and consider how to improve it before attempting to write a new README.
 
 ###Editing
 Do not be shy about suggesting changes to other people's work. The [Contributor workflow](#tobeadded) ensures that authors have a chance to look over the changes you suggest and reject them if they do not feel they are appropriate.
@@ -58,6 +35,29 @@ You will see in the [Contributor workflow](#tobeadded) that different kinds of c
 |Adding new sections|*/add*|
 
 You can make up your own name if these do not seem appropriate!
+
+##Adding a new tutorial
+
+###General guidelines
+Make sure the topic is not already covered in other READMEs. Note that another README may cover your topic of interest despite having another title, as programming topics often overlap.  You will need to become familiar with the content of the other READMEs before writing a new one.  Keep the topic small, and aim to be simple and brief. Do not feel you need to write at length if an external resource has done it well: just summarise and link to it. In any case, your README should contain at least:
+
+###Essential
+1. An **Introduction** providing a single paragraph on the what, why and how of the topic.
+2. A section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. The 'Related' section **must** outline a related topic that is not covered in yours or other existing READMEs, or a suggesion on how the topic of your README could be extended. You should also raise your related topic as an issue and mention it on Gitter.  This will help other users to get ideas on what to write about.
+3. A final section called **References**, linking to other helpful resources on the topic.
+
+If you cannot fulfill all of the above requirements, consider contributing your topic to the [Today I Learned](https://github.com/codingforeveryone/today-i-learned) repository.  If you want to write about the subject anyway, to improve your own understanding, you may consider writing a blog post or creating a screencast, which you can post in the Gitter rooms.
+
+Make sure you give your file a sensible name: sensible filenames are all lower-case, do not have spaces or non-ASCII characters and end with the .md file extension. Some further notes:
+
+###Optional
+4. If you think the topic can be clarified with a Code Wars kata, then create one and link to it.
+5. Consider adding a nice illustrative diagram or screenshot.
+6. **Bonus**: If you are feeling adventurous, create a screencast to accompany your README.
+
+###Submitting a pull request
+
+Before you submit a pull request for a new README, please make sure you have created it in the appropriate folder and added a link to it in SUMMARY.md. Submit the new file and revised SUMMARY.md as part of a single pull request. If you are unsure how to do this, consult the [Contributor workflow](#tobeadded) README.
 
 ###Maintaining the GitBook
 
