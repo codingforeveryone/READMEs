@@ -46,7 +46,7 @@ Make sure the topic is not already covered in other READMEs. Note that another R
 2. A section called **Related**, listing related topics and linking to existing READMEs in the GitBook where appropriate. The 'Related' section **must** outline a related topic that is not covered in yours or other existing READMEs, or a suggesion on how the topic of your README could be extended. You should also raise your related topic as an issue and mention it on Gitter.  This will help other users to get ideas on what to write about.
 3. A final section called **References**, linking to other helpful resources on the topic.
 
-If you cannot fulfill all of the above requirements including the general guidelines, consider contributing your topic to the [Today I Learned](https://github.com/codingforeveryone/today-i-learned) repository.  If you want to write about the subject anyway, to improve your own understanding, you may consider writing a blog post or an article on your own website if you have one, which you can link in the Gitter rooms.
+If you cannot fulfill all of the above requirements including the general guidelines, your README may not be merged into the master branch of this repository. If you are just looking to share a quick tip you learned, consider contributing it to the [Today I Learned](https://github.com/codingforeveryone/today-i-learned) repository. If you want to write about the subject anyway, to improve your own understanding, you may consider writing a blog post or an article on your own website if you have one, which you can link in the Gitter rooms.
 
 Make sure you give your file a sensible name: sensible filenames are all lower-case, do not have spaces or non-ASCII characters and end with the .md file extension. Some further notes:
 
