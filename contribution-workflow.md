@@ -2,18 +2,14 @@
 
 ## Introduction
 
-This document outlines the workflow and steps to go through when proposing new changes to the READMEs repository. The workflow should be followed when making changes to improve current READMEs as well as when adding new READMEs.
-At first sight the process might seem complicated, but it is a great exercise to practice contribution to future programming projects and
-ensures that all added changes are checked.
+This document outlines the workflow and steps to go through when proposing new changes to the READMEs repository. The workflow should be followed when making changes to improve current READMEs as well as when adding new READMEs. At first sight the process might seem complicated, but it is a great exercise to practice contribution to future programming projects and ensures that all added changes are checked.
 
 If you have any questions or are stuck somewhere please don't hesitate to ask in the README Gitter channel: [![Join the chat at https://gitter.im/codingforeveryone/READMEs](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ##The Feature Branch Workflow
 
-The process used is called [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
-The basic concept of this workflow is that every change is treated as a new "feature" and made on a branch dedicated to that change.
-Once the change is ready a [pull request](https://help.github.com/articles/using-pull-requests/) is raised. This pull request will be checked by another person and then merged into the master branch.
-After merging the branch is deleted.
+The process used is called [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). The basic concept of this workflow is that every change is treated as a new "feature" and made on a branch dedicated to that change.
+Once the change is ready a [pull request](https://help.github.com/articles/using-pull-requests/) is raised. This pull request will be checked by another person and then merged into the master branch. After merging the branch is deleted.
 
 The following picture visualizes the process of creating and merging a new branch for each feature or change:
 
@@ -23,8 +19,7 @@ While you could do all your editing and branch creation using the GitHib online 
 
 ##Setting up a local repository
 
-Before working with the READMEs repository we should install git and clone the repository to our local directory. Refer to [Git Basics]((http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac)) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there).
-Be aware that most beginners' guides to setting up Git out on the web assume that you will be making contributions via a fork. **In this workflow though we don't use forks (remote copies of the repository) but simply branches.**
+Before working with the READMEs repository we should install Git and clone the repository to our local directory. Refer to [Git Basics](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there). Be aware that most beginners' guides to setting up Git out on the web assume that you will be making contributions via a fork. **In this workflow, though, we don't use forks (remote copies of the repository), but simply branches.**
 
 Setting up Git without a fork is simpler. All you need to do is clone the remote repository:
 
@@ -64,11 +59,17 @@ To create a new branch and switch to the branch at the same time, you can use th
 $ git checkout -b <name of the branch>
 ```
 
-This is equalivalent to first creating the branch and then switching to it with the following two commands:
+This is equivalent to first creating the branch and then switching to it with the following two commands:
 
 ```bash
 $ git branch <name of the branch>
 $ git checkout <name of the branch>
+```
+
+Note that if you have already checked out a branch and comitted changes, you should `checkout master` before creating your branch, or it will be created from the branch you have currently checked out. Alternatively, specify explicitly that the new branch should be created from master:
+
+```bash
+$ git checkout -b <name of the branch> master
 ```
 
 After creating and switching to the branch locally you should push the branch to GitHub and set it as the default upstream branch:
