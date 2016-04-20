@@ -421,7 +421,6 @@ To be added here, or in separate readmes.
 * [Destructuring](http://codingforeveryone.foundersandcoders.org/JavaScript/array-methods-overview.html#destructuring)
 * Enhanced Object literals
 * Generators
-* Map/ set & weakmap/ weakset
 * New Built-in Methods
 * Promises
 * Proxies/ Reflections
