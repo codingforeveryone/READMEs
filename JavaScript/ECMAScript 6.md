@@ -4,6 +4,8 @@
 
 ECMAScript (or ES) is the standardised scripting-language specification that Javascript is based upon. The current version of Javascript that is supported in modern browsers is ES5, which was published in 2009. ES6 was finalised in June 2015. Browser support for ES6 is still incomplete but [in progress](https://kangax.github.io/compat-table/es6/), and so it will become increasingly important to learn.
 
+If you would like to play around with ES6, [repl.it](https://repl.it/languages/javascript) is a great online code editor that fully supports ES6. To set up ES6 compiling in your editor or build system of choice, we recommend intalling the [Babel compiler](https://babeljs.io/).
+
 ES6 is purely additive to Javascript but it is a significant and extensive upgrade. This readme will introduce you to a few of the new main features.
 
 #### Features covered:
@@ -11,6 +13,10 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 * [Arrow Functions](/JavaScript/ECMAScript%206.md#arrow-functions)
 * [Block-Scoping](/JavaScript/ECMAScript%206.md#block-scoping)
 * [Constants](/JavaScript/ECMAScript%206.md#constants)
+* [For-of statement](/JavaScript/ECMAScript%206.md#for-of-statement)
+* [Maps](/JavaScript/ECMAScript%206.md#maps)
+* [Sets](/JavaScript/ECMAScript%206.md#sets)
+* [WeakMaps and WeakSets](/JavaScript/ECMAScript%206.md#weakmaps-and-weaksets)
 * [Extended Parameter Handling](/JavaScript/ECMAScript%206.md#extended-parameter-handling)
 * [Binary and Octal Literals](/JavaScript/ECMAScript%206.md#binary-and-octal-literals)
 * [Template Literals](/JavaScript/ECMAScript%206.md#template-literals)
@@ -109,7 +115,7 @@ Constants can be declared through the keyword `const` and must be assigned a val
 ```javascript
 //The common convention with constants is to use all uppercase when declaring them.
 
-Const FOO; // fails: missing = in declaration
+const FOO; // fails: missing = in declaration
 
 const HELLO_WORLD = “Hello World!”; // console.log(HELLO_WORLD) will print “Hello World!”
 
@@ -119,6 +125,151 @@ const HELLO_WORLD = “Goodbye World!”; // fails: cannot be redeclared
 
 var HELLO_WORLD = “Hello World!”; // fails: name is reserved for constant
 ```
+
+It is important to note that whilst the _assignment_ of constants is immutable, the value of a constant can still change. In the following example, `FOO` is assigned an empty object, but the properties of the object can still be altered:
+
+```javascript
+const FOO = {};
+FOO.bar = 42;
+console.log(FOO.bar);
+// 42
+```
+
+#### For-of statement
+
+The `for-of` statement is a new way of iterating over iterable objects, including Array, Map, Set and String.
+The following syntax is used:
+```javascript
+for (variable of iterable) {
+  statement
+}
+```
+
+The `for-of` loop is significantly more concise than the traditional `for` loop:
+
+```javascript
+var fruitArray = ['orange', 'apple', 'banana'];
+
+// for-of loop
+for (let fruit of fruitArray) {
+  console.log (fruit);
+}
+
+// traditional for loop
+for (var i = 0; i < fruitArray.length; i++) {
+  console.log (fruitArray[i]);
+}
+
+// 'orange'
+// 'apple'
+// 'banana'
+```
+
+This approach is also more versatile than the `forEach` method, which does not allow breaking out of the loop or returning from an enclosing function.
+
+Importantly, the `for-of` loop is not the same as the `for-in` loop.
+The `for-in` loop works on any object, and loops over the names of the object's properties.
+In contrast, the `for-of` loop works only on iterable objects (i.e. collections), and is for looping over data.
+
+#### Maps
+
+Maps are data structures for storing key-value pairs. Any value, including objects and primitive values, can be used as either a key or a value.
+
+Mapping in JavaScript has traditionally been done using Objects, an approach that has several shortcomings compared to using maps:
+- Objects have prototypes, and thus default keys
+- The keys of an object can only be strings or symbols
+- Tracking the size of an object is not as straight-forward as with maps
+
+Refer to the [MDN article on maps](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map) for a more thorough guide on when maps versus objects should be used.
+
+A map can be set up using an iterable object such as an Array, whose elements are key-value pairs (2-element arrays):
+
+```javascript
+let map = new Map ([
+  [1, 'one'],
+  [2, 'two'],
+  [3, 'three']
+]);
+```
+
+Values can be set using `set(key, value)` and retrieved using `get(key)`:
+
+```javascript
+map.set (4, 'four');
+map.get (4);
+// console.log prints 'four'
+```
+
+To iterate over a map, we can use the new `for-of` loop structure. Method `entries()` iterates over key-value pairs, whereas methods `keys()` and `values()` iterate over keys and values, respectively. The elements are iterated in their order of insertion.
+
+```javascript
+for (let [key, value] of map.entries()) {
+  console.log (key, value);
+}
+// 1, 'one'
+// 2, 'two'
+// etc.
+
+for (let key of map.keys()) {
+   console.log (key);
+}
+// 1
+// 2
+// etc.
+
+for (let value of map.values()) {
+   console.log (value);
+}
+// 'one'
+// 'two'
+// etc.
+```
+
+Other useful map methods include:
+- `size` counts the number of entries in the map
+- `has(key)` checks whether the given key exists in the map
+- `delete(key)` deletes a specific entry from the map
+- `clear()` removes all entries from the map
+
+The `map()` and `filter()` methods cannot be used on maps, however, it is possible to convert a map into an array of [key, value] pairs, and apply the `map()` or `filter()` method to the resulting array.
+
+#### Sets
+
+Sets are used for storing _unique_ values of any type, either primitive values or objects. This has traditionally been done using the keys of an object, or by storing arbitrary set elements in an array.
+
+A set can be created by passing an array to its constructor:
+
+```javascript
+let set = new Set (['red', 'green', 'blue']);
+```
+
+To iterate over a set in insertion order, the `for-of` loop can be used:
+```javascript
+for (let value of set) {
+  console.log (value);
+}
+// 'red'
+// 'green'
+// 'blue'
+```
+
+It is important to note that sets do not allow duplicates to be added:
+```javascript
+let set = new Set(1,2,3,3,3);
+console.log (set.size);
+// 3
+```
+
+The methods that can be applied to sets include `add()`, `has()`, `delete()` and `clear()`.
+
+#### WeakMaps and WeakSets
+
+WeakMaps and WeakSets are variants of Maps and Sets that do not prevent their keys from being 'garbage-collected'. This means that, if an object is destroyed, its corresponding entry is removed from the WeakMap or WeakSet, and the memory is freed.
+
+Keys of WeakMaps and WeakSets must be objects, but the values of WeakMaps can be arbitrary values. The API of a WeakMap includes `get()`, `set()`, `has()` and `delete()` methods, whereas the one of a WeakSet includes `add()`, `has()` and `delete()` methods.
+
+It is not possible to iterate over WeakMaps and WeakSets, or to determine their `size`.
+
 #### Extended Parameter Handling
 
 ##### Default
@@ -269,9 +420,7 @@ To be added here, or in separate readmes.
 * Classes & Modules/ Module Loaders
 * [Destructuring](http://codingforeveryone.foundersandcoders.org/JavaScript/array-methods-overview.html#destructuring)
 * Enhanced Object literals
-* For…of Operator
 * Generators
-* Map/ set & weakmap/ weakset
 * New Built-in Methods
 * Promises
 * Proxies/ Reflections
@@ -289,9 +438,15 @@ To be added here, or in separate readmes.
 
 [Arrow Functions — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
+[Let — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let)
+
 [Const — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const)
 
-[Let — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let)
+[For...of - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for...of)
+
+[Map - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+[Set - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
 [Rest Parameters — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
