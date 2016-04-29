@@ -7,10 +7,11 @@ var boy =
 }
 ```
 However, there is more to properties of an object than them just being a name and a value. Properties also have the following
-attributes: ‘writable’, ‘enumerable’ and ‘configurable’. To display, for instance, the attributes of the name: ‘Bart’ property,
-we can type the following code:
+attributes: ```writable```, ```enumerable``` and ```configurable```. To display, for instance, the attributes of the
+```name: ‘Bart’``` property, we can type the following code:
 
 console.log(Object.getOwnPropertyDescriptor(boy, ‘name’))
+
 This will be displayed:
 
 {
