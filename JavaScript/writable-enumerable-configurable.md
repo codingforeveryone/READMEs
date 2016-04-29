@@ -24,7 +24,7 @@ configurable:	true
 We can see that all three are set to ```true``` by default. Please remember that we are examining only the ```name``` here in our ```boy``` object.
 But what do they do? Let’s examine each one separately.
 
-Writable:
+WRITABLE:
 
 The ```writable``` attribute determines whether we can change that property from its current value. Our initial value of ```name``` is ```Bart```.
 
@@ -71,6 +71,8 @@ Now the whole ```name``` object is frozen and we are unable to change anything i
 
 Next we will examine ‘enumerable’:
 
+ENUMERABLE:
+
 As you know, we can display names in an object by using ```for in``` loop: 
 ```
 For(x in boy){
@@ -103,7 +105,10 @@ So you can still look at it by simple:
 ```
 console.log(boy.name); //-----> ‘Bart’
 ```
-And finally, ```configurable```:
+And finally, 'configurable':
+
+CONFIGURABLE:
+
 ```
 Object.defineProperty(boy, ‘name’, {configurable: false});
 ```
