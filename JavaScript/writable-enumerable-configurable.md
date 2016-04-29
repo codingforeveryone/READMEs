@@ -56,7 +56,7 @@ Once you set ```writable``` of ```name``` to ```false```, and try to change the 
 
 Of course, if you change the ```name``` before you set ```writable``` to ```false```, then that second name will now become ‘unchangeable’ so to speak.
 
-WARNING!! You have to be very careful now because if the value of ```ame``` is another object (so not a primitive like a string), for
+WARNING!! You have to be very careful now because if the value of ```name``` is another object (so not a primitive like a string), for
 example: 
 
 ```name: {first: ‘Bart’, nickname: ‘Bandit’}```
