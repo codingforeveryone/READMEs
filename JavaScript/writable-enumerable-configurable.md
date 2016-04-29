@@ -1,4 +1,4 @@
-As you know, objects are collections of name – value pairs. For example:
+As you know, objects are collections of ```name – value``` pairs. For example:
 ```
 var boy = 
 	name: ‘Bart’,
