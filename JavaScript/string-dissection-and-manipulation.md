@@ -177,7 +177,7 @@ This method accepts two arguments. The first can be a RegExp object or a string 
 
 ```javascript
 var text = "cat , bat , mat , hat";
-var result = text.replace("at" , "tty") // "catty , batty , matty , hatty"
+var result = text.replace(/t/g , "tty") // "catty , batty , matty , hatty"
 ```
 
 ##Related
