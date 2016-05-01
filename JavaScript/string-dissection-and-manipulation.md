@@ -18,7 +18,7 @@ var str = "HELLO WORLD";
 str[0];                   // returns H
 ```
 
-However, this method is unpredictable as numeric properties of a string is non-standard prior to ECMAScript 5 and doesn't workk in all browsers (for example, IE 6 or 7). It is best to use `str.charAt(0)` instead when your code has to work in non-ECMAScript 5 environments. Alternatively, if you're going to be accessing a lot of characters in the string then you can turn a string into an array of characters using its `split()` method.
+However, this method is unpredictable as numeric properties of a string is non-standard prior to ECMAScript 5 and doesn't work in all browsers (for example, IE 6 or 7). It is best to use `str.charAt(0)` instead when your code has to work in non-ECMAScript 5 environments. Alternatively, if you're going to be accessing a lot of characters in the string then you can turn a string into an array of characters using its `split()` method.
 
 #### 2.`charCodeAt()` and `fromCharCode()`: convert to and from unicode value
 
