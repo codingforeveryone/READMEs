@@ -19,8 +19,8 @@ For a very good and easy to understand post explaining how to use `replace()`, s
 
 
 ###Related
-- [String dissection and manipulation](JavaScript/string-dissection-and-manipulation.html)
-- [Regular Expression Beginners' Guide](JavaScript/string-dissection-and-manipulation.html)
+- [String dissection and manipulation](string-dissection-and-manipulation.md)
+- [Regular Expression Beginners' Guide](regular-expressions-beginners-guide.md)
 
 
 ###References
