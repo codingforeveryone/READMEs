@@ -35,7 +35,7 @@ return  condition===true ? "condition check result is true" : "condition check r
 
 ```
 
-In this case, we return the first string if the check of condition returns true, we return the second string otherwise. 
+In this case, we return the first string if the check of condition returns true, otherwise we return the second string. 
        
        
 It's an awesome tool that'll add readability to your code. Special thanks to warrior @GiacomoSorbi which posted a kata about it on the gitter channel ;)
