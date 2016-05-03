@@ -23,7 +23,7 @@ Math.max(14, 10, 5, 20) // 20
 ```
 **`Math.min()`** - Return the number with the lowest value from one or more numbers. Syntax `Math.min(n1,n2,n3,...,nX)`.
 ```javascript
-Math.max(14, 10, 5, 20) // 5
+Math.min(14, 10, 5, 20) // 5
 ```
 **`Math.trunc()`** - Unlike other three Math methods: `Math.floor()`, `Math.ceil()` and `Math.round()`, the way `Math.trunc()` works is very simple and straightforward, just truncate (remove) the dot and the digits behind it, no matter whether the argument is a positive number or a negative number.
 ```javascript
