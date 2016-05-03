@@ -161,7 +161,7 @@ var c = b.slice(1, 2);   //  [['w', 'x']]
 
 c[0] === a;              //  true
 ```
->A useful exercise is to write a function that will make a *deep* copy of an array, that is, copy an entire array, including all nested arrays, by value into a new variable, using loops and `Array.slice()`.
+_A useful exercise is to write a function that will make a *deep* copy of an array, that is, copy an entire array, including all nested arrays, by value into a new variable, using loops and `Array.slice()`._
 
 Some other useful ways to use ``` Array.prototype.slice ```:
 
@@ -304,7 +304,7 @@ arrayMap(arr, v => v + 1);    // [2, 3, 4]
 ### More array manipulation methods
 
 In addition to map and reduce, JavaScript provides various other array manipulation methods, all of
-which work in a similar way to `forEach` `map` and `reduce` (i.e. they take a callback
+which work in a similar way to `forEach`, `map` and `reduce` (i.e. they take a callback
 which is applied to each element in the array). Next we'll have a look at some of the most useful
 and also implement them using ```reduce```.
 
@@ -389,7 +389,7 @@ some(arr3, v => v % 5 === 0);  // false
 
 #### Sort
 
-Sorting algorithms are hard. In fact there's almost a whole [Khan Academy course](https://www.khanacademy.org/computing/computer-science/algorithms) on the subject. While this is all very interesting, it's a lot to learn just to put some values into order. Fortunately arrays have a built in sort method:
+Sorting algorithms are hard. In fact there's almost a whole [Khan Academy course](https://www.khanacademy.org/computing/computer-science/algorithms) on the subject. While this is all very interesting, it's a lot to learn just to put some values into order. Fortunately arrays have a built-in sort method:
 
 ```Array.prototype.sort([compareFunction])``` (see [definition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)).
 
@@ -400,7 +400,7 @@ By default, elements are converted to strings and then compared in Unicode point
 ```javascript
 var arr = ['orange', 'kiwi', 'apple', 'pear', 'banana'];
 
-var sortedArr = arr.sort(['orange', 'kiwi', 'apple', 'pear', 'banana']);  // ['apple', 'banana', 'pear', 'kiwi', 'orange']
+var sortedArr = arr.sort();  // ['apple', 'banana', 'pear', 'kiwi', 'orange']
 
 sortedArr === arr;    // true
 ```
@@ -413,7 +413,7 @@ var arr = [4, 2, 5, 7, 9, 11, 80];
 arr.sort();   // [ 11, 2, 4, 5, 7, 80, 9 ]
 ```
 
-This is where the compare function comes in. The compare function provides information to the sort method on how to sort the elements in the array. It takes in two values (lets call them ```a``` and ```b```) and returns a Number, which should be:
+This is where the compare function comes in. The compare function provides information to the sort method on how to sort the elements in the array. It takes in two values (let's call them ```a``` and ```b```) and returns a Number, which should be:
 
 - <b>0</b> if the sort order of ```a``` and ```b``` should remain unchanged
 - <b>less than 0</b> if ```a``` should have a lower sort index than ```b```
@@ -445,6 +445,35 @@ A method that fits well with sorting is reversing. For example, if you want to s
 var arr = ['orange', 'kiwi', 'apple', 'pear', 'banana'];
 
 arr.sort().reverse();     //  [ 'pear', 'orange', 'kiwi', 'banana', 'apple' ]
+```
+
+#### From
+
+Array-like or iterable objects, including strings, maps, sets, and function arguments, can be converted into arrays using the `Array.from()` method.
+
+``` javascript
+// strings
+Array.from('Hello');
+// ['H','e','l','l','o']
+
+// maps
+var numberMap = new Map ([[one,1], [two,2], [three,3]]);
+Array.from(numberMap);
+// [[one,1], [two,2], [three,3]]
+```
+
+`Array.from()` takes an optional parameter `mapFn`, which allows a `map` function to be executed on each element of the array:
+
+``` javascript
+Array.from([1,2,3], num => num * 2);
+// [2,4,6]
+```
+
+This method can also be useful for generating a sequence of numbers:
+
+``` javascript
+Array.from({length: 5}, (element, index) => index);
+// [0, 1, 2, 3, 4]
 ```
 
 ##Arrays in ES2015 (ES6) 
