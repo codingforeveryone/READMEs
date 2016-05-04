@@ -1,15 +1,22 @@
 #The `replace()` method
 
-Sometimes in Javascript we may want to replace all or part of a string with something else. We can do this with the `replace()` method, which searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+Sometimes in Javascript we may want to replace all or part of a string with something else. We can do this with the `replace()` method, which searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced. This can be really useful if, for instance, you have a lot of text and want to replace certain words with others.
 
-For example
+For example:
 
 ```javascript
 var greeting = "Hello, do you like yellow?";
 var myString = greeting.replace("yellow", "red"); // replaces "yellow" with "red"
 // myString contains "Hello, do you like red?"
 ```
-This can be really useful if for instance you have a lot of text and want to replace certain words with others. 
+
+More sophisticated replacements can be made using regular expressions:
+
+```javascript
+var greeting = "Hello, do you like yellow?";
+var myString = greeting.replace(/(yellow)/, "blue or $1 or red");
+// myString contains "Hello, do you like blue or yellow or red?"
+```
 
 For a very good and easy to understand post explaining how to use `replace()`, see:
 
