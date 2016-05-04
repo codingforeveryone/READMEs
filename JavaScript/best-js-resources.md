@@ -31,12 +31,12 @@
 <h1>YouTube Channels</h1><br>
 [Coders Guide](https://www.youtube.com/user/CodersGuide)<br>
 [Dev Tips](https://www.youtube.com/user/DevTipsForDesigners)<br>
-[Learn Code Academy](https://www.youtube.com/user/DevTipsForDesigners)<br>
-[The New Boston](https://www.youtube.com/user/DevTipsForDesigners)<br>
+[Learn Code Academy](https://www.youtube.com/user/learncodeacademy)<br>
+[The New Boston](https://www.youtube.com/user/thenewboston)<br>
 [Level Up Tuts](https://www.youtube.com/user/LevelUpTuts)<br>
 [Derek Banas](https://www.youtube.com/user/derekbanas/)<br>
-[CodeCourse](https://www.youtube.com/user/derekbanas/)<br>
-[Quentin Watt](https://www.youtube.com/user/derekbanas/)<br>
+[CodeCourse](https://www.youtube.com/user/phpacademy)<br>
+[Quentin Watt](https://www.youtube.com/user/QuentinWatt)<br>
 [YUI Library](https://www.youtube.com/channel/UCTHcgWOTU6gPje1g_U29tfQ)<br>
 [NODE JS Fan](https://www.youtube.com/channel/UChTJTbr5kf3hYazJZO-euHg)<br>
 [John Morris](https://www.youtube.com/channel/UCFh7FvnJ_0sVP4V0rZe6AaA)<br>
