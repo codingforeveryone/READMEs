@@ -180,6 +180,19 @@ var text = "cat , bat , mat , hat";
 var result = text.replace(/t/g , "tty") // "catty , batty , matty , hatty"
 ```
 
+##String-to-Expression Conversion
+
+Strings can be converted into expressions using the `eval()` function. In this way, arithmetic expressions can be constructed as strings, and evaluated at a later time.
+
+```javascript
+var x = 5;
+var expression = 'x * 3 + 2';
+eval (expression);
+// 17
+```
+
+Despite its usefulness, `eval()` [should only be used with care](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#Don't_use_eval_needlessly!). You should not use `eval()` to evaluate an arithmetic expression, which JavaScript does automatically.
+
 ##Related
 
 ##References
