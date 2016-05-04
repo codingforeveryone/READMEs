@@ -26,7 +26,7 @@ In this case, we check for the condition called `condition`. If it is true, then
 return  condition===true ? "condition check result is true" : "condition check result is false" 
 ```
 
-In this case, we return the first string if the check of condition returns true, otherwise we return the second string. 
+In this case, we return the first string if the check of condition returns `true`, otherwise we return the second string. 
 
 ###Combining conditional operators
 
@@ -39,7 +39,7 @@ console.log(compare); // logs "a and b are equal"
 
 ###Combining different operations
 
-It is possible to use different operations for the two cases, and to use more than one operation per case.
+It is possible to use different operations for the two cases, and to use more than one operation per case. In this case, the operations should be separated from each other with a comma.
 
 Example:
 ```javascript
@@ -56,6 +56,9 @@ function listTasks (time) {
     return listOfTasks;
 }
 
+checkTime(11);
+// logs 'Good day'
+// returns [ 'do some work', 'go for a walk' ]
 ```
        
 It's an awesome tool that'll add readability to your code. Special thanks to warrior @GiacomoSorbi who posted a kata about it on the gitter channel ;)
