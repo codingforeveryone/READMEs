@@ -107,6 +107,21 @@ Now we test the result from the user's solution against the result from your cor
 Test.assertEquals(multiply(i), testSolution(i), 'Should work for random tests!')
 ```
 If the function that the user has defined is working properly, `Test.assertEquals()` should evaluate `userSolution(i)` and `yourSolution(i)` as equal. If not, they get an error message back saying 'Should work for random tests!'
+### Step 6f – Print the input
+Especially with random tests, you want to make sure that the user knows why their solution failed. By default, only the _output_ of user's and the correct solutions is printed, which can be of very little help with some katas, and can make troubleshooting difficult. It is therefore good practice to print the input that is being used in each test, like so:
+
+``` javascript
+Test.it('Testing for argument' + i, function(){
+  Test.assertEquals(multiply(i), testSolution(i));
+});
+```
+
+This would then appear in the following format during testing:
+```
+// Testing for 5
+// Test passed: 15 == 15
+```
+
 ## Step 7 – Final description
 Phew, we've done all the hard stuff! Revisit your description to make sure that it includes everything that the user will need to complete the kata. Have you kept it up to date with any changes that occurred in the solution/test writing process? Does it follow [sections 2.1 to 2.6 of the Conjured Codewars Codex](http://bkaestner.github.io/codewars-rules/#writing-a-kata)? Check out the [Markdown Cheat Sheet](/programmer-skills/markdown-cheat-sheet.md) if you need a markdown reminder. Remember many people on the site don't have English as their first language. Now your description is perfect, time for golden rule #6
 #### Golden rule 6 – Double-check your description
