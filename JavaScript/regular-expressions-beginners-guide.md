@@ -11,7 +11,7 @@ Using a regular expression literal, which consists of a pattern enclosed between
 ```javascript
 var re = /ab+c/i;
 ```
-Regular expression literals provide compilation of the regular expression when the script is loaded. When the regular expression will remain constant, use this for better performance. .
+Regular expression literals provide compilation of the regular expression when the script is loaded. When the regular expression will remain constant, use this for better performance.
 
 Or calling the constructor function of the RegExp object, as follows:
 
@@ -32,7 +32,7 @@ Using the constructor function provides runtime compilation of the regular expre
 
 ### Further Character Classes
 
-Note that unless the "/g" flag is passed, the match of the regular expression is the first possible matching string. For more on "\g", see [*Modifiers*](#modifiers) below.
+Note that unless the "/g" flag is passed, the match of the regular expression is the first possible matching string. For more on "/g", see [*Modifiers*](#modifiers) below.
 
 | Symbol | Description                                                                            | Example                                |
 |--------|----------------------------------------------------------------------------------------|----------------------------------------|
@@ -159,13 +159,19 @@ console.log(newstr);
 
 The (\w+) matches and stores a pattern of alphanumeric characters up until a white space or the end of string. So $1 = "John" and $2 = "Smith".  Therefore the `newstr` replaces any occurance of "John Smith" with "$2, $1" (or "Smith, John"). So console log will print "Smith, John".
 
+## Regex Tester
+
+Regular Expressions 101 is an excellent platform for testing and debugging your regular expressions. The tested expression is broken down into components and each component explained, which can be very useful if you're trying to understand an expression that you've found in someone else's code.
+
+[Regex 101](https://regex101.com/)
+
 ## Regex Crossword
 
 Regex Crossword is a crossword puzzle game, where the crossword clues are defined using regular expressions. Everybody can play and it is a great way for newcomers to learn regular expressions and for experts to practice their skills.
 
 [Regex Crossword](https://regexcrossword.com/)
 
-## Codewars Practise Kata
+## Codewars Practice Kata
 
 Want to get stuck into the above? Try the following kata on codewars:
 
@@ -185,7 +191,7 @@ Want to get stuck into the above? Try the following kata on codewars:
 
 ## References
 
-There are a number of regular expression tutorials on the web, the above is a simplied and combined version of the following resources:
+There are a number of regular expression tutorials on the web, the above is a simplfied and combined version of the following resources:
 
 [W3Schools JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 
