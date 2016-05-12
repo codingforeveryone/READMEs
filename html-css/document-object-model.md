@@ -9,7 +9,7 @@ It all starts when you visit a webpage, there are a few things going on in the b
 
 3. It then goes to a process where the browser renders the visual attributes for each section of this structure and give them a size and coordinate.
 
-4. With the model of the HTML file created, the browser then paint it in the display pixel by pixel.
+4. With the model of the HTML file created, the browser then paints it in the display pixel by pixel.
 
 5. This model that we just described, is the DOM (aka Document Object Model).
 
@@ -32,7 +32,7 @@ Here's an example, the following HTML syntax
 </html>
 ```
 
-will produce the following tree strucure, and each page element is represented by a tree node (**Note**: This is a simplication of what the actual tree structure is):
+will produce the following tree structure, and each page element is represented by a tree node (**Note**: This is a simplification of what the actual tree structure is):
 
 ![DOM tree structure](/images/dom/dom-tree-small.png)
 
@@ -69,7 +69,7 @@ and you can traverse further into the tree structure
 ![DOM document's grand child node](/images/dom/document-child-child.png)
 
 
-just as a parent node has a ```childNodes``` method, the child notes themselves have a ```parentNode``` method to find its parent, although they will have only one.
+just as a parent node has a ```childNodes``` method, the child nodes themselves have a ```parentNode``` method to find its parent, although they will have only one.
 
 
 ![Parent node](/images/dom/parent-node.png)
@@ -138,7 +138,7 @@ Often times the manipulation of the DOM is done using Javascript. We can simply 
 </html>
 ```
 
-In the code above we just added a simple Javascript to change the text in the ```<h1>```
+In the code above we just added some simple Javascript to change the text in the ```<h1>```
 
 Here's the output from the console:
 
