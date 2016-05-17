@@ -1,4 +1,4 @@
-## HostingOnGitHub - gh-pages
+## Hosting On GitHub
 
 This tutorial explains how to host static pages on github. At the end of this you will be able to host for free you pages on github and to assign **customs URLs to them**.
 

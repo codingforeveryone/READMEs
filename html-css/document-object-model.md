@@ -152,7 +152,7 @@ You can see that even though the ```<h1>``` text was defined "This is my homepag
 - Creating [events](https://www.youtube.com/watch?v=qXkZbTXbBwM&index=4&list=PL18600E7CA651B16B) listener, i.e do something on the web page when people click, hover or type something.
 - Create [animation](http://www.w3schools.com/js/js_htmldom_animate.asp)
 - Do something once a web page is [loaded](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload)
-- [Change the attribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute) of the HTMl elements
+- [Change the attribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute) of the HTML elements
 - [Manipulate text](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
 - [Changing the visual outlook](http://www.w3schools.com/js/js_htmldom_css.asp)or the style (eg. color) of the page document
 

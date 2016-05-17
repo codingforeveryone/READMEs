@@ -166,7 +166,7 @@ In this example I have made the unreliableFunction even more unreliable. Now one
 
 ##Related
 
-[Debugging Javascript](programmer-skills/Debugging-Javascript.html)
+[Debugging Javascript](http://codingforeveryone.foundersandcoders.org/programmer-skills/Debugging-Javascript.html)
 
 ##References
 

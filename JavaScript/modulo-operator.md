@@ -90,7 +90,7 @@ Here are some example katas that can be solved with the modulo operator:
 
 ##Related
 
-[Math object](JavaScript/math-object-beginner-guide.html)
+[Math object](http://codingforeveryone.foundersandcoders.org/JavaScript/math-object-beginner-guide.html)
 
 ##References
 

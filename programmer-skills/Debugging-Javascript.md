@@ -10,7 +10,7 @@ A bug may be as simple to correct as a typo, or it may be the result of a subtle
 * The script cannot be executed and a runtime error occurs.
 * The script interacts with other programs that are flawed, or encounters a situation not originally anticipated by the programmer.
 
-Dealing with the latter kind of error gracefully has been addressed, in part, in this [readme](https://github.com/codingforeveryone/READMEs/blob/master/raising-exceptions.md). This readme is a beginner’s guide to finding bugs in your code.
+Dealing with the latter kind of error gracefully has been addressed, in part, in this [readme](http://codingforeveryone.foundersandcoders.org/JavaScript/raising-exceptions.html). This readme is a beginner’s guide to finding bugs in your code.
 
 ### Practical Tips
 
@@ -26,7 +26,7 @@ Debugging is intimately connected with learning to program. You make a mistake, 
 * Do not be afraid to re-write parts or the entirety of your script. Strip it back to the minimum of what you need.
 * Be methodical. Take notes of what you have and have not tested.
 * Focus on analysing your code and coming up with theories of why the problem might be happening. Test your theories, do not just randomly change variables.
-* Research all aspects of the language you are using and use search engines to look up any problems you are facing. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide), [Stack Overflow](http://stackoverflow.com), or these [readme’s](https://github.com/codingforeveryone/READMEs) are good resources to consider.
+* Research all aspects of the language you are using and use search engines to look up any problems you are facing. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide), [Stack Overflow](http://stackoverflow.com), or these [readme’s](http://codingforeveryone.foundersandcoders.org/) are good resources to consider.
 * If stuck, try writing out by hand what your script does line by line OR
 * Describe the situation to another programmer OR
 * Last resort: upload your code to [Jsbin](https://jsbin.com/?html,output) and link it to a query on [Stack Overflow](http://stackoverflow.com) or another programming forum.
@@ -230,13 +230,13 @@ Remember to remove these statements before your code goes live as this could sto
 
 Subjects with readmes are linked to.
 
-* [Start to develop JS](https://github.com/codingforeveryone/READMEs/blob/master/programmer-skills/start-to-develop-js.md)
-* [Exceptions](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/raising-exceptions.md)/ Assertions
+* [Start Developing with JavaScript](http://codingforeveryone.foundersandcoders.org/programmer-skills/start-to-develop-js.html)
+* [Exceptions handling](http://codingforeveryone.foundersandcoders.org/JavaScript/raising-exceptions.html)/ Assertions
 * Jslint/ Jshint
-* [Testing frameworks/ Suites](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/basic-performance-testing.md)
+* [Basic Performance Testing](http://codingforeveryone.foundersandcoders.org/JavaScript/basic-performance-testing.html)/ Suites
 * Console object/methods
 * Error object/constructor
-* Call Stack/ Execution Contexts/ [Control Flow](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/scope-and-hoisting.md)/ [Hoisting](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/hoisting.md)
+* Call Stack/ Execution Contexts/ [Control Flow](http://codingforeveryone.foundersandcoders.org/JavaScript/scope-and-hoisting.html)/ [Hoisting](http://codingforeveryone.foundersandcoders.org/JavaScript/hoisting.html)
 * Unwinding the Stack
 * Strict Mode
 * Common errors
@@ -251,6 +251,6 @@ Subjects with readmes are linked to.
 * [JavaScript and Jquery by Jon Duckett, Chapter 10.](http://www.amazon.co.uk/JavaScript-JQuery-Interactive-Front-end-Development/dp/1118531647/ref=sr_1_3?ie=UTF8&qid=1460235338&sr=8-3&keywords=jon+duckett)
 * [Firefox Browser Console Guide](https://developer.mozilla.org/en/docs/Tools/Browser_Console)
 * [Google Chrome Console Guide](https://developer.chrome.com/devtools/docs/console)
-* [Internet Explorer Console Guide](https://msdn.microsoft.com/en-us/library/gg589530(v=vs.85).aspx)
+* [Internet Explorer Console Guide](https://msdn.microsoft.com/en-us/library/gg589530(v=vs.85)
 * [Safari Console Guide](https://developer.apple.com/library/safari/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html)
 * [Opera Console Guide](http://www.opera.com/dragonfly/documentation/)

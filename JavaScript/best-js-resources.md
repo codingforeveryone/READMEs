@@ -12,8 +12,8 @@
 [Lynda](http://www.lynda.com/) (Paid)<br>
 [One Month](https://onemonth.com) (Paid)<br>
 [Team Treehouse](https://teamtreehouse.com) (Paid)<br>
-[Code Academy](www.codecademy.com)<br>
-[FreeCodeCamp](www.freecodecamp.com)<br>
+[Code Academy](https://www.codeacademy.com)<br>
+[FreeCodeCamp](https://www.freecodecamp.com)<br>
 [Egghead](https://egghead.io) (Paid)<br>
 [General Assembly](https://dash.generalassemb.ly) (Paid)<br>
 [The Code Player](https://thecodeplayer.com)<br>
@@ -60,7 +60,6 @@
 [Two Pillars Of Javascript-Part 1](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3#.dcoqbydng)<br>
 [Two Pillars Of JavaScript-Part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.t5mtu7cnc)<br>
 [JavaScript The Right Way](http://jstherightway.org/)<br>
-[The Full Stack](http://thefullstack.xyz/)<br>
 
 <br>
 <h1>JavaScript Books</h1><br>

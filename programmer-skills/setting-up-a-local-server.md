@@ -4,7 +4,7 @@
 ![XAMPP and MAMP](/images/setting-up-a-local-server.png)
 
 
-If you're working on a website, it's always a good idea to use a local test server. This is a server that runs on your computer, so you can work on a copy of a website that only you can access. This means a local server will allow you to see how your changes will work in the browser, without affecting the website that users actually visit [until you push your changes to the live site](https://github.com/codingforeveryone/READMEs/blob/master/git-basics.md). That means you can make all the changes you want without worrying you're sending your users to a broken site!
+If you're working on a website, it's always a good idea to use a local test server. This is a server that runs on your computer, so you can work on a copy of a website that only you can access. This means a local server will allow you to see how your changes will work in the browser, without affecting the website that users actually visit [until you push your changes to the live site](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html). That means you can make all the changes you want without worrying you're sending your users to a broken site!
 
 ## Installation
 

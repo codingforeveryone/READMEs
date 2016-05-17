@@ -86,7 +86,7 @@ It's common practice to start the full test suite with the same fixed test fixtu
 
 But as things stand, someone could hardcode a kata solution that passed all the tests because they can figure out what the test results should be and create a function that just feeds the tests those answers! In order to stop people doing that, you're going to need to apply golden rule #5.
 #### Golden rule 5 – Random tests
-Now we're getting to a part which can trip people up. Once you know what you're doing, random tests are easy but a lot of work can go into writing good random tests, so I won't be able to do it justice in this guide. I've tried to break the process into substeps but check out [Random Test Cases for Complete Beginners](/codewars/random-test-cases-for-complete-beginners.md) for more help.
+Now we're getting to a part which can trip people up. Once you know what you're doing, random tests are easy but a lot of work can go into writing good random tests, so I won't be able to do it justice in this guide. I've tried to break the process into substeps but check out [Random Test Cases for Complete Beginners](http://codingforeveryone.foundersandcoders.org/codewars/random-test-cases-for-complete-beginners.html) for more help.
 ### Step 6a – The test (correct) solution
 Copy across your correct solution to just underneath the block of fixed tests but change the function name to something like `testSolution()`.
 ### Step 6b – Test fixture descriptions
@@ -123,7 +123,7 @@ This would then appear in the following format during testing:
 ```
 
 ## Step 7 – Final description
-Phew, we've done all the hard stuff! Revisit your description to make sure that it includes everything that the user will need to complete the kata. Have you kept it up to date with any changes that occurred in the solution/test writing process? Does it follow [sections 2.1 to 2.6 of the Conjured Codewars Codex](http://bkaestner.github.io/codewars-rules/#writing-a-kata)? Check out the [Markdown Cheat Sheet](/programmer-skills/markdown-cheat-sheet.md) if you need a markdown reminder. Remember many people on the site don't have English as their first language. Now your description is perfect, time for golden rule #6
+Phew, we've done all the hard stuff! Revisit your description to make sure that it includes everything that the user will need to complete the kata. Have you kept it up to date with any changes that occurred in the solution/test writing process? Does it follow [sections 2.1 to 2.6 of the Conjured Codewars Codex](http://bkaestner.github.io/codewars-rules/#writing-a-kata)? Check out the [Markdown Cheat Sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/markdown-cheat-sheet.html) if you need a markdown reminder. Remember many people on the site don't have English as their first language. Now your description is perfect, time for golden rule #6
 #### Golden rule 6 – Double-check your description
 Check in the preview box to make sure the markdown is coming through correctly. Stand up, go away and do something else then come back to re-read your description. There's no spell or grammar check in the codewars editor so it's all down to you and your beady eyes!
 ## Step 8 – Estimated rank and tags
