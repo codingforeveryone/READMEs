@@ -137,6 +137,9 @@ On the repository you will go through the following steps to issue your pull req
 
 This is quite straight-forward. You can see the steps in more detail on [Github help](https://help.github.com/articles/creating-a-pull-request/).
 
+Note: If you find you have additional commits to push on the same file after completing the above steps, you may replicate part of the steps above and push additional commits to the existing pull request.
+To do so, start by setting the default upstream branch as before, then simply follow Step 2 again to stage, commit, and push the ADDITIONAL changes. If done correctly, the additional commits should be visible within your existing pull request. 
+
 #### Assign the pull request
 
 If possible, always assign your pull request to a specific person. That makes sure someone gets notified to look at it.
