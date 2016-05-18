@@ -140,9 +140,12 @@ This is quite straight-forward. You can see the steps in more detail on [Github 
 #### Assign the pull request
 
 If possible, always assign your pull request to a specific person. That makes sure someone gets notified to look at it.
-The assigned person should either be the original creator of the README file or someone who recently contributed a lot.
+The assigned person should either be the original creator of the README file or someone who recently contributed a lot. 
+To check who you should assign your request to, go back to the original file in the repository. To the right side, under "Contributors"
+you will find the "Blame" button. This reveals the change list, sorted by date in descending order, with corresponding usernames.
 
-Use the Blame button (at the top right of each file, next to the history) to check which person to assign your pull request to.
+To assign your pull request to an individual, go back to the page for your specific pull request and on the right side of the page you will 
+see "Assignee" next to a grey gear. Click the gear, and search for the user from the previous step.
 
 For completely new README files you created, you don't have to assign anyone. Instead just post the link in the [README Gitter channel](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 Then anyone available can check and merge your new README.
