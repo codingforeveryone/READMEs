@@ -148,5 +148,6 @@ A couple more katas using objects:
 [Inheritance and Javascript](http://codingforeveryone.foundersandcoders.org/JavaScript/inheritance-and-javascript.html)
 
 ##References
+For basic tutorials explaining step by step how to put Objects into practise you can try [Introduction to Objects I](https://www.codecademy.com/en/courses/spencer-sandbox/resume?curriculum_id=506324b3a7dffd00020bf661) and [Introduction to Objects II](https://www.codecademy.com/en/courses/objects-ii/resume?curriculum_id=506324b3a7dffd00020bf661)
 
 For a more advanced introduction to objects in Javascript, see the articles [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and [Introduction to Object-Oriented Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript) on the Mozilla Development Network..
