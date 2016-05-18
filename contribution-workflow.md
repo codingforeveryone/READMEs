@@ -15,9 +15,6 @@ The basic concept of this workflow is that every change is treated as a new "fea
 Once the change is ready a [pull request](https://help.github.com/articles/using-pull-requests/) is raised. This pull request will be checked by another person and then merged into the master branch.
 After merging the branch is deleted.
 
-The following picture visualizes the process of creating and merging a new branch for each feature or change:
-
-![Feature Branch visualization](http://wiki.techniv.fr/images/3/3c/Git_Feature_Workflow.png)
 
 While you could do all your editing and branch creation using the GitHib online interface, it is easier in the long run to keep a copy of the repository on you local machine, and work on it there. This entails setting up Git and learning to use the command line interface.
 
@@ -101,7 +98,7 @@ _NOTE: This naming convention makes sense for this repository because changes sh
 
 These steps add your local changes to the branch. Here the basic terminal commands for the Mac command line are outlined.
 
-More details on these commands can be found in the [Git Basics Tutorial](https://github.com/codingforeveryone/READMEs/blob/contribution-workflow/new/programmer-skills/git-basics.md) and the [official Github help pages](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/).
+More details on these commands can be found in the [Git Basics Tutorial](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html) and the [official Github help pages](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/).
 
 Staging changes to the file:
 
@@ -140,12 +137,18 @@ On the repository you will go through the following steps to issue your pull req
 
 This is quite straight-forward. You can see the steps in more detail on [Github help](https://help.github.com/articles/creating-a-pull-request/).
 
+Note: If you find you have additional commits to push on the same file after completing the above steps, you may replicate part of the steps above and push additional commits to the existing pull request.
+To do so, start by setting the default upstream branch as before, then simply follow Step 2 again to stage, commit, and push the ADDITIONAL changes. If done correctly, the additional commits should be visible within your existing pull request. 
+
 #### Assign the pull request
 
 If possible, always assign your pull request to a specific person. That makes sure someone gets notified to look at it.
-The assigned person should either be the original creator of the README file or someone who recently contributed a lot.
+The assigned person should either be the original creator of the README file or someone who recently contributed a lot. 
+To check who you should assign your request to, go back to the original file in the repository. To the right side, under "Contributors"
+you will find the "Blame" button. This reveals the change list, sorted by date in descending order, with corresponding usernames.
 
-Use the Blame button (at the top right of each file, next to the history) to check which person to assign your pull request to.
+To assign your pull request to an individual, go back to the page for your specific pull request and on the right side of the page you will 
+see "Assignee" next to a grey gear. Click the gear, and search for the user from the previous step.
 
 For completely new README files you created, you don't have to assign anyone. Instead just post the link in the [README Gitter channel](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 Then anyone available can check and merge your new README.
@@ -168,9 +171,9 @@ git branch -D <name of the branch>
 ```
 
 ## Related
-[Main README](https://github.com/codingforeveryone/READMEs/blob/master/README.md)
+[Main README](http://codingforeveryone.foundersandcoders.org/)
 
-[Git Basics Tutorial](https://github.com/codingforeveryone/READMEs/blob/contribution-workflow/new/programmer-skills/git-basics.md)
+[Git Basics Tutorial] (http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html)
 
 ## References
 [Atlassian: Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
