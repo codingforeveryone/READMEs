@@ -15,9 +15,6 @@ The basic concept of this workflow is that every change is treated as a new "fea
 Once the change is ready a [pull request](https://help.github.com/articles/using-pull-requests/) is raised. This pull request will be checked by another person and then merged into the master branch.
 After merging the branch is deleted.
 
-The following picture visualizes the process of creating and merging a new branch for each feature or change:
-
-![Feature Branch visualization](http://wiki.techniv.fr/images/3/3c/Git_Feature_Workflow.png)
 
 While you could do all your editing and branch creation using the GitHib online interface, it is easier in the long run to keep a copy of the repository on you local machine, and work on it there. This entails setting up Git and learning to use the command line interface.
 
@@ -101,7 +98,7 @@ _NOTE: This naming convention makes sense for this repository because changes sh
 
 These steps add your local changes to the branch. Here the basic terminal commands for the Mac command line are outlined.
 
-More details on these commands can be found in the [Git Basics Tutorial](https://github.com/codingforeveryone/READMEs/blob/contribution-workflow/new/programmer-skills/git-basics.md) and the [official Github help pages](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/).
+More details on these commands can be found in the [Git Basics Tutorial](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html) and the [official Github help pages](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/).
 
 Staging changes to the file:
 
@@ -168,9 +165,9 @@ git branch -D <name of the branch>
 ```
 
 ## Related
-[Main README](https://github.com/codingforeveryone/READMEs/blob/master/README.md)
+[Main README](http://codingforeveryone.foundersandcoders.org/)
 
-[Git Basics Tutorial](https://github.com/codingforeveryone/READMEs/blob/contribution-workflow/new/programmer-skills/git-basics.md)
+[Git Basics Tutorial] (http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html)
 
 ## References
 [Atlassian: Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
