@@ -117,11 +117,11 @@ console.log(regex.test(invalid));
 
 ###Related
 
-You should definitely read this first before coming back here, as if you do not understand the content of the link below, you will probably get lost here.
+You should definitely read this first before coming back here, as if you don't understand the content of the link below, you will probably get lost here.
 
 [Regular Expressions - A Beginners Guide](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-beginners-guide.html)
 
-As for how to **extend** this tutorial, i would say there are more advanced and complex ways of using lookaheads, even though we do not have lookbehinds in javascript yet (ES7 *fingers crossed), there are many other ways to demonstrate their uses. Another way would be to go the original article of this tutorial and summarize more advanced concepts, though many require lookbehind.
+As for how to **extend** this tutorial, I would say there are more advanced and complex ways of using lookaheads, even though we do not have lookbehinds in javascript yet (ES7 *fingers crossed), there are many other ways to demonstrate their uses. Another way would be to go the original article of this tutorial and summarize more advanced concepts, though many require lookbehind.
 
 ###References
 
