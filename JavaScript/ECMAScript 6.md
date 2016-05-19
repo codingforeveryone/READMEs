@@ -4,7 +4,7 @@
 
 ECMAScript (or ES) is the standardised scripting-language specification that Javascript is based upon. The current version of Javascript that is supported in modern browsers is ES5, which was published in 2009. ES6 was finalised in June 2015. Browser support for ES6 is still incomplete but [in progress](https://kangax.github.io/compat-table/es6/), and so it will become increasingly important to learn.
 
-If you would like to play around with ES6, [repl.it](https://repl.it/languages/javascript) is a great online code editor that fully supports ES6. To set up ES6 compiling in your editor or build system of choice, we recommend intalling the [Babel compiler](https://babeljs.io/).
+If you would like to play around with ES6, [repl.it](https://repl.it/languages/javascript) is a great online code editor that fully supports ES6. To set up ES6 compiling in your editor or build system of choice, we recommend installing the [Babel compiler](https://babeljs.io/).
 
 ES6 is purely additive to Javascript but it is a significant and extensive upgrade. This readme will introduce you to a few of the new main features.
 
@@ -435,6 +435,8 @@ To be added here, or in separate readmes.
 [List of ES6 Features with examples](http://es6-features.org/#MapDataStructure)
 
 [Github Summary of ES6 Features](https://github.com/lukehoban/es6features#default--rest--spread)
+
+[ES6 Interactive Guide & Tutorial](http://stack.formidable.com/es6-interactive-guide/#/)
 
 [Arrow Functions — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
