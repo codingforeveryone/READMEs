@@ -34,6 +34,7 @@ You now have a local copy of the repository, but you are not quite ready to make
 ```bash
 $ cd READMEs
 ```
+
 Then tell Git to pull any changes on the master branch of origin (the default name for the remote repository) into your local repository:
 
 ```bash
@@ -54,6 +55,13 @@ There are 4 main steps to go through for a new change to be implemented. The fir
 ###1. Create a new branch
 
 The first step is to create a new branch for the proposed change. Before you create the branch you should make sure your master is up-to-date by pulling all previous changes with `git pull`.
+
+_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc) change your directory to that subdirectory after updating the local repository. Simply specify the subdirectory by listing the path from READMEs:
+```bash
+$ cd READMEs
+$ cd git pull -u origin master
+$ cd READMEs/<subdirectory>
+```_
 
 To create a new branch and switch to the branch at the same time, you can use the following command:
 
