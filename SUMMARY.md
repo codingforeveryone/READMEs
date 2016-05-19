@@ -15,6 +15,7 @@
        * [Hoisting](/JavaScript/hoisting.md)
        * [Javascript Scope](/JavaScript/JavaScript-Scope.md)
     * [Regular Expressions Beginner Guide](/JavaScript/regular-expressions-beginners-guide.md)
+       * [Regular Expressions - Lookaheads](/JavaScript/regular-expressions-lookaheads.md)
     * [Recursion](/JavaScript/recursive-function.md)
     * [Objects](/JavaScript/Objects.md)
     * [Inheritance and Javascript](/JavaScript/inheritance-and-javascript.md)
