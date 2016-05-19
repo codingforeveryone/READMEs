@@ -1,5 +1,5 @@
 
-## Using Lookahead
+## Regular Expressions - Lookaheads
 
 | Symbol 	| Definition    			| Description																			|
 |-----------|---------------------------|---------------------------------------------------------------------------------------|
@@ -108,12 +108,6 @@ console.log(regex.test(invalid));
 // Outputs: false
 
 ```
-
-###Regex Tester
-
-This is an excellent testing platform where you can, for example, enter the regex we have just created and try out different passwords, to see what would match. Also i would suggest trying your own lookaheads or at least modify the one we have here to you can see exactly how it works. Be careful however with the way special characters are escaped in this tool compared to how you would write it in javascript. For example `\\n` in regex101.com is `\n` in javascript normally, when you create it in the `var regex = /regexHere/` way.
-
-[Regex 101](https://regex101.com/#javascript)
 
 ###Codewars Practice Kata
 
