@@ -2,10 +2,10 @@
 
 ## A little bit of history
 
-JavaScript, also known as ECMAScript is programming language created by
+JavaScript, also known as ECMAScript is a programming language created by
 [Brendam Eich](https://en.wikipedia.org/wiki/Brendan_Eich) for the
 Netscape browser in 1995. JavaScript was created to give some dynamism
-to the static web pages of the late 90's. Now, many of the most important websites
+to the static web pages of the late 90's. Nowadays, many of the most important websites
 are huge JavaScript applications. Some of them are Gmail,
 Youtube, Netflix, Airbnb...
 
@@ -15,7 +15,7 @@ which let you execute JavaScript in the command line or like a server language
 in substitution of *php*, *java*, *ruby*, or others.
 
 ## Code Editors and IDEs
-In order to start coding, we will need a tool to write our code within. These should should help us to be more productive writing code, avoid mistakes and highlight
+In order to start coding, we will need a tool to write our code within. These should help us be more productive while writing code, avoid mistakes and highlight
 our code while exposing our syntax errors.
 
 In this README I'm going to talk about two main kinds of code editors:
@@ -26,10 +26,10 @@ In this README I'm going to talk about two main kinds of code editors:
 
 Sometimes, it's tricky to setup your environment to start developing small projects, or concept proofs. Maybe you only want to be able to
 share a small snippet with other people. To accomplish those things we
-have available some online code editors like [jsbin](https://jsbin.com),
+have some online code editors available like [jsbin](https://jsbin.com),
 [jsfiddle](https://jsfiddle.net/), or [codepen](http://codepen.io/).
 There you can write your code and run it without leaving the browser.
-There are too others tools with more features like
+Other tools with more features can also be found like
 [cloud9](https://c9.io/), which allows you to run code from other
 languages, or even run a web server in nodejs.
 
@@ -81,18 +81,18 @@ Let's take a look at some of them:
   and plugins.
 - [Atom](https://atom.io/). This is a free and open source code editor
   developed by GitHub.
-  It has a lot of packages and plugins for everything you could need.
+  It has a lot of packages and plugins for everything you might need.
 - [Brackets](http://brackets.io/). Another free and open source code
   editor developed by Adobe. It comes with Live Preview, which is a good
-  feature for newbies, it allows you preview every change you made on
+  feature for newbies, it allows you to preview every change you made on
   your code files in the browser.
 - [Sublime Text](https://www.sublimetext.com/). One of the most famous
-  code editor. It has a bunch of packages and plugins. It isn't free,
-  but you can download a trial version which is completly functional.
+  code editors. It has a bunch of packages and plugins. It isn't free,
+  but you can download a trial version which is completely functional.
 
 #### How to start with Brackets
 I have selected Brackets to make this tutorial because I think built-in
-live preview is cool tool for newbies, so this feature is going to make
+live preview is a cool tool for newbies, so this feature is going to make it
 easier to start crafting websites.
 
 
@@ -111,17 +111,16 @@ easier to start crafting websites.
   ![live preview](/images/brackets_live_preview.png)
 
 - Now you can edit the html and css code of the starting guide and you will
-see this changes on the browser.
+see these changes in the browser.
   I.e. we can change the background color of the body in the `main.css`
-  file. As soon as we make this changes, our browser will update those:
+  file. As soon as we make these changes, our browser will update and display them:
 
   ![live preview changed](/images/brackets_live_preview_changes.png)
 
 
 
 
-Now we are going to create our first website for execute JavaScript
-there:
+Now we are going to create our first website in which we will execute JavaScript:
 
 - Close current working files. Click on `File > Close All`.
 
@@ -159,11 +158,11 @@ there:
 ![alert with your name](/images/brackets_alert.png)
 
 This is an easy way to start trying JavaScript snippets, but would be
-better if we split our html with JavaScript in two files. One for html,
-and other for JavaScript code.
+better if we split our html with JavaScript into two files. One for html,
+and another for JavaScript code.
 
 - Create a JavaScript file called `myscript.js` and save it in the same
-  folder where you saved your html. This is what you must to put there:
+  folder where you saved your html. This is what you must put there:
 
 ```javascript
 function wave(name) {
@@ -173,18 +172,18 @@ function wave(name) {
 alert(wave('Gabriel'))
 ```
 
-Maybe you adviced that we have forgotten some semicolons, don't worry I
+You might have noticed that we have forgotten some semicolons, don't worry I
 did it intentionally because Brackets will tell us our syntax errors.
 
 - Click on the warning button:
 
   ![brackets warning button](/images/brackets_warning_button.png)
 
-- Check our code errors:
+- Check code errors:
 
   ![code errors](/images/brackets_code_errors.png)
 
-- Modify or code to avoid those errors.
+- Modify code to avoid those errors.
 
 - Modify your html to make a reference to that JavaScript file, note that the Javascript file (in this case "myscript.js" should reside in the same folder as your html file:
 
@@ -204,7 +203,7 @@ did it intentionally because Brackets will tell us our syntax errors.
 
 You can view the output of your Javascript file using the browser's developer tool, and interact with the code that you have written. This is helpful when you're trying to debug, profile your site, or just learn in general what your code does.
 
-- Try copy and paste the following code to your Javascript file (i.e myscript.js):
+- Try to copy and paste the following code to your Javascript file (i.e myscript.js):
 
 ```
 var a = "Hello World!";
@@ -239,6 +238,6 @@ and bad practices. The two most popular are:
 - [jslint](http://www.jslint.com/)
 - [jshint](http://jshint.com/)
 
-Both of them have online tools for check your code, but there are
+Both of them have online tools for checking your code, but there are
 plugins for almost every code editor, and also for the command line.
 
