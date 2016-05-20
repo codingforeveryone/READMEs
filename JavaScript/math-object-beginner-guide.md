@@ -41,7 +41,7 @@ This function has 5 kinds of return values, 1, -1, 0, -0, NaN, which represent "
 ```javascript
 Math.random() // e.g 0.39622215856797993
 ```
-Commonly used in tandem with `Math.round()` to generate random integers for random tests cases in Codewars. See [Random Test Cases for Complete Beginners](/codewars/random-test-cases-for-complete-beginners.md).
+Commonly used in tandem with `Math.round()` to generate random integers for random tests cases in Codewars. See [Random Test Cases for Complete Beginners](http://codingforeveryone.foundersandcoders.org/codewars/random-test-cases-for-complete-beginners.html).
 
 ## Exponentiation
 

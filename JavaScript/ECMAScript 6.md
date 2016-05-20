@@ -10,16 +10,16 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 
 #### Features covered:
 
-* [Arrow Functions](/JavaScript/ECMAScript%206.md#arrow-functions)
-* [Block-Scoping](/JavaScript/ECMAScript%206.md#block-scoping)
-* [Constants](/JavaScript/ECMAScript%206.md#constants)
-* [For-of statement](/JavaScript/ECMAScript%206.md#for-of-statement)
-* [Maps](/JavaScript/ECMAScript%206.md#maps)
-* [Sets](/JavaScript/ECMAScript%206.md#sets)
-* [WeakMaps and WeakSets](/JavaScript/ECMAScript%206.md#weakmaps-and-weaksets)
-* [Extended Parameter Handling](/JavaScript/ECMAScript%206.md#extended-parameter-handling)
-* [Binary and Octal Literals](/JavaScript/ECMAScript%206.md#binary-and-octal-literals)
-* [Template Literals](/JavaScript/ECMAScript%206.md#template-literals)
+* [Arrow Functions](#arrow-functions)
+* [Block-Scoping](#block-scoping)
+* [Constants](#constants)
+* [For-of statement](#for-of-statement)
+* [Maps](#maps)
+* [Sets](#sets)
+* [WeakMaps and WeakSets](#weakmaps-and-weaksets)
+* [Extended Parameter Handling](#extended-parameter-handling)
+* [Binary and Octal Literals](#binary-and-octal-literals)
+* [Template Literals](#template-literals)
 
 #### Arrow Functions
 

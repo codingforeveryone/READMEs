@@ -3,7 +3,7 @@
 
 ## Introduction
 
-An array is a native JavaScript data structure used for storing lists of things. Arrays are a type of [Object](/JavaScript/Objects.md).
+An array is a native JavaScript data structure used for storing lists of things. Arrays are a type of [Object](http://codingforeveryone.foundersandcoders.org/JavaScript/Objects.html).
 
 ```javascript
 typeof [];                        // 'object'

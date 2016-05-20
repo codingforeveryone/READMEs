@@ -1,6 +1,6 @@
 #Inheritance and JavaScript
 
-Most modern object oriented programming (OOP) languages support the concept of inheritance.  Think of inheritance as a child inheriting the functionality of its parent, where the child can add its own specifics.  In this tutorial, I outline the difference between the version of inheritance found in C#, C++ or Java ("classical inheritance") and that found in Javascript ("prototypal inheritance"), and describe how prototypal inheritance in Javascript works. For a more detailed discussion of how to access and define prototypes, see [More on Javascript prototypes](/JavaScript/prototypes-more.md)
+Most modern object oriented programming (OOP) languages support the concept of inheritance.  Think of inheritance as a child inheriting the functionality of its parent, where the child can add its own specifics.  In this tutorial, I outline the difference between the version of inheritance found in C#, C++ or Java ("classical inheritance") and that found in Javascript ("prototypal inheritance"), and describe how prototypal inheritance in Javascript works. For a more detailed discussion of how to access and define prototypes, see [More on Javascript prototypes](http://codingforeveryone.foundersandcoders.org/JavaScript/prototypes-more.html)
  
 ##Classical inheritance
 
@@ -73,7 +73,7 @@ var ben = {
 }
 ```
 
-The next step is for demonstration purposes only and should not be used. It can, however, be done in most modern browsers. We can set the prototype of the `ben` object to the `person` object by using the inbuilt `__proto__` accessor. For information about `__proto__`, see [More on Javascript prototypes](/Javascript/prototypes-more.md).
+The next step is for demonstration purposes only and should not be used. It can, however, be done in most modern browsers. We can set the prototype of the `ben` object to the `person` object by using the inbuilt `__proto__` accessor. For information about `__proto__`, see [More on Javascript prototypes](http://codingforeveryone.foundersandcoders.org/JavaScript/prototypes-more.html).
 
 ```javascript
 ben.__proto__.person;

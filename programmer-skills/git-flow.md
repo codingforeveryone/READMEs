@@ -1,10 +1,10 @@
-git-flow
+Git Flow
 ===================
 
 
 git-flow is both the name of a branching model for git(the git flow) and a software that uses that model. It will most likely make your life easier !
 Before reading this READMEs, you should be familiar with git, as it is basically git, but with a new way of working with it.
-If you're not familiar with git, please read [Git Basics](https://github.com/codingforeveryone/READMEs/blob/master/git-basics.md)
+If you're not familiar with git, please read [Git Basics](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html)
 ----------
 The Git Flow
 -------------

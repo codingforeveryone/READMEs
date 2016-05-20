@@ -1,4 +1,4 @@
-# Start to develop JavaScript
+# Start Developing with JavaScript
 
 ## A little bit of history
 

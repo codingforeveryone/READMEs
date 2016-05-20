@@ -1,6 +1,6 @@
 #More on Javascript prototypes
 
-This tutorial offers some more in depth observations on prototypes in Javascript. It is designed to pick up where [Inheritance and Javascript](/Javascript/inheritance-and-javascript.md) left off, and will teach you about the different ways to access and define object prototypes. To that end, we will examine the difference between the so-called "internal" prototype property of an object (`[[prototype]]`), the prototype "accessor" (`__proto__`), and the ordinary `prototype` property specific to Functions. 
+This tutorial offers some more in depth observations on prototypes in Javascript. It is designed to pick up where [Inheritance and Javascript](http://codingforeveryone.foundersandcoders.org/JavaScript/inheritance-and-javascript.html) left off, and will teach you about the different ways to access and define object prototypes. To that end, we will examine the difference between the so-called "internal" prototype property of an object (`[[prototype]]`), the prototype "accessor" (`__proto__`), and the ordinary `prototype` property specific to Functions. 
 
 ##The internal prototype property (`[[prototype]]`)
 
@@ -140,9 +140,9 @@ Person.prototype.firstName; //'Default'
 
 ##Related
 
-[Objects](/JavaScript/Objects.md)
+[Objects](http://codingforeveryone.foundersandcoders.org/JavaScript/Objects.html)
 
-[Inheritance and Javascript](/JavaScript/inheritance-and-javascript.md)
+[Inheritance and Javascript](http://codingforeveryone.foundersandcoders.org/JavaScript/inheritance-and-javascript.html)
 
 ##References
 [The different kinds of object properties](http://www.2ality.com/2012/10/javascript-properties.html)

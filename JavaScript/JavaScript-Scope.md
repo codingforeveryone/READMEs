@@ -83,7 +83,7 @@ function outer(){
 
 ```
 
-> Things To Note:   Block scoped variables also cannot be [hoisted](https://github.com/codingforeveryone/READMEs/blob/master/hoisting.md), the const variable has to have a value; if not it will throw a syntax error. Also, once a const has a declared value, it cannot be changed or an error will be thrown. 
+> Things To Note:   Block scoped variables also cannot be [hoisted](http://codingforeveryone.foundersandcoders.org/JavaScript/hoisting.html), the const variable has to have a value; if not it will throw a syntax error. Also, once a const has a declared value, it cannot be changed or an error will be thrown. 
 
 ------------
 

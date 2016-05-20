@@ -6,7 +6,7 @@ The following is almost certainly not the only (or necessarily the best) way, ho
 
 ## The Functions
 
-We are tasked with performance testing two different ways of generating random strings 50 characters in length ([see random test cases guide](/codewars/random-test-cases-for-complete-beginners.md)).
+We are tasked with performance testing two different ways of generating random strings 50 characters in length ([see random test cases guide](http://codingforeveryone.foundersandcoders.org/codewars/random-test-cases-for-complete-beginners.html).
 
 Our original function took the following form:
 

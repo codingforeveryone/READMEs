@@ -9,7 +9,7 @@ The following is a basic introduction to objects, covering what objects are, how
 
 ##What is an object?
 
-An object is a list which contains items. Each of these items is stored by a _name:value_ pair. The values can be either primitive data types or reference data types. [Click here](/programmer-skills/mutable-vs-immutable.md) to see the different behaviour of primitive and reference types.
+An object is a list which contains items. Each of these items is stored by a _name:value_ pair. The values can be either primitive data types or reference data types. [Click here](http://codingforeveryone.foundersandcoders.org/programmer-skills/mutable-vs-immutable.html) to see the different behaviour of primitive and reference types.
 
 
 

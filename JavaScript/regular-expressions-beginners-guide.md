@@ -187,7 +187,7 @@ Want to get stuck into the above? Try the following kata on codewars:
 
 ##Related
 
-[String dissection and manipulation](JavaScript/string-dissection-and-manipulation.html)
+[String dissection and manipulation](http://codingforeveryone.foundersandcoders.org/JavaScript/string-dissection-and-manipulation.html)
 
 ## References
 
