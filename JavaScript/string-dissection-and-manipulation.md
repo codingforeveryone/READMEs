@@ -191,9 +191,11 @@ eval (expression);
 // 17
 ```
 
-Despite its usefulness, `eval()` [should only be used with care](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#Don't_use_eval_needlessly!). You should not use `eval()` to evaluate an arithmetic expression, which JavaScript does automatically.
+_Note: Because of how `eval()` works, it can cause issues with debugability, performance and security. While the use of `eval()` is sometimes necessary, it is often possible to refactor your code in a way that avoids its use. See the [eval() function MDN entry](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) and [this article](https://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/) for a more thorough discussion on the use of `eval()`._
 
 ##Related
+
+[Regular Expressions - A Beginners Guide](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-beginners-guide.html)
 
 ##References
 
