@@ -15,8 +15,7 @@ which let you execute JavaScript in the command line or like a server language
 in substitution of *php*, *java*, *ruby*, or others.
 
 ## Code Editors and IDEs
-In order to start coding, we will need a tool to write our code within. These should help us be more productive while writing code, avoid mistakes and highlight
-our code while exposing our syntax errors.
+In order to start coding, we will need a tool to write our code within. This tool should help us be more productive when writing code; avoid mistakes; and make use of proper highlighting to expose any potential syntax errors.
 
 In this README I'm going to talk about two main kinds of code editors:
 - Online Code Editors
@@ -29,9 +28,7 @@ share a small snippet with other people. To accomplish those things we
 have some online code editors available like [jsbin](https://jsbin.com),
 [jsfiddle](https://jsfiddle.net/), or [codepen](http://codepen.io/).
 There you can write your code and run it without leaving the browser.
-Other tools with more features can also be found like
-[cloud9](https://c9.io/), which allows you to run code from other
-languages, or even run a web server in nodejs.
+There are also other tools with more features. For instance, [cloud9](https://c9.io/) allows you to run code from other languages - and even run a web server in nodejs.
 
 
 #### How to start with jsbin
@@ -159,10 +156,10 @@ Now we are going to create our first website in which we will execute JavaScript
 
 This is an easy way to start trying JavaScript snippets, but would be
 better if we split our html with JavaScript into two files. One for html,
-and another for JavaScript code.
+and the other for JavaScript code.
 
 - Create a JavaScript file called `myscript.js` and save it in the same
-  folder where you saved your html. This is what you must put there:
+  folder where you saved your html. Enter the following lines of code into the file:
 
 ```javascript
 function wave(name) {
@@ -238,6 +235,4 @@ and bad practices. The two most popular are:
 - [jslint](http://www.jslint.com/)
 - [jshint](http://jshint.com/)
 
-Both of them have online tools for checking your code, but there are
-plugins for almost every code editor, and also for the command line.
-
+Both of them have online tools for checking your code, but there are also plugins for almost every code editor, as well as for the command line.
