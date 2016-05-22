@@ -159,6 +159,49 @@ console.log(newstr);
 
 The (\w+) matches and stores a pattern of alphanumeric characters up until a white space or the end of string. So $1 = "John" and $2 = "Smith".  Therefore the `newstr` replaces any occurance of "John Smith" with "$2, $1" (or "Smith, John"). So console log will print "Smith, John".
 
+## Non-Capturing Groups
+
+In order to group different bits of a regular expression together, but not remember them, non-capturing groups are used. The notation for non-capturing groups is `(?:x)`, where x is the the expression to be matched.
+
+Compare the following two regular expressions (without and with a non-capturing group used):
+
+```javascript
+var re1 = /foo{2}/g;                // equivalent to /fooo/g
+var re2 = /(?:foo){2}/g;            // equivalent to /foofoo/g
+var str = "foofooo";
+
+console.log(str.match(re1));   // ['fooo']
+console.log(str.match(re2));   // ['foofoo']
+```
+
+## Alternation
+
+Searching for different alternatives can be achieved within a regular expression using the vertical bar symbol (`|`). The beginning and the end of the alternation sequence need to be clearly specified, such as with capturing or (preferably) non-capturing groups.
+
+In the following example of a simple e-mail validator, alternation is used to allow three different address domains:
+
+```javascript
+var re = /^\w+@\w+\.(com|fr|nl)$/;
+var email = "the_boss@the_company.fr";
+
+re.test(email);   // true
+```
+
+## Greedy and Lazy Quantifiers
+
+By default, all quantifiers (*, +, ?, and {}) are 'greedy', meaning that they match a string the maximum number of times. It is possible to make a quantifier non-greedy (or 'lazy'), so that it matches the minimum number of times, by following it with a question mark (?).
+
+In the example below, we search for strings within inverted commas using both a greedy and a lazy quantifier. Whereas the greedy search returns a single match, corresponding to all of the text between the first and the last occurrence of the inverted comma, the lazy search returns several matches, each corresponding to a single word within inverted commas.
+
+```javascript
+var greedy = /'.*'/g;
+var lazy = /'.*?'/g;
+var str = "This 'section' is about the terms 'greedy' and 'lazy'."
+
+console.log(str.match(greedy));   // [ ''section' is about the terms 'greedy' and 'lazy'' ]
+console.log(str.match(lazy));   // [ ''section'', ''greedy'', ''lazy'' ]
+```
+
 ## Regex Tester
 
 Regular Expressions 101 is an excellent platform for testing and debugging your regular expressions. The tested expression is broken down into components and each component explained, which can be very useful if you're trying to understand an expression that you've found in someone else's code.
