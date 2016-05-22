@@ -156,7 +156,7 @@ Since there are 4 spaces in the string, the output of the code above will be: 4
 
 ## Using Parenthesized Substring Matches
 
-A slightly more advanced, yet incredibly useful, technique. Including parentheses (a pair of brackets) in a regular expression pattern causes the corresponding submatch (the pattern within the brackets) to be remembered. For example, /a(b)c/ matches the characters 'abc' and remembers 'b'. The nine most recent matches are stored and can be recalled using the notation $n (where n is an integer from 1-9).
+A slightly more advanced, yet incredibly useful, technique. Including parentheses (a pair of brackets) in a regular expression pattern causes the corresponding submatch (the pattern within the brackets) to be remembered. For example, /a(b)c/ matches the characters 'abc' and remembers 'b'. The nine most recent matches are stored and can be recalled using the notation \n (when used within a regular expression) or $n (when referring to a previously defined regular expression), where n is an integer from 1-9.
 
 The following script uses the replace() method to switch the words in the string. For the replacement text, the script uses the $1 and $2 in the replacement to denote the first and second parenthesized substring matches.
 
