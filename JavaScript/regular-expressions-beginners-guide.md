@@ -173,7 +173,7 @@ The (\w+) matches and stores a pattern of alphanumeric characters up until a whi
 
 In order to group different bits of a regular expression together, but not remember them, non-capturing groups are used. The notation for non-capturing groups is `(?:x)`, where x is the the expression to be matched.
 
-Compare the following two regular expressions (without and with a non-capturing group used):
+Compare the following two regular expressions (without and with a non-capturing group):
 
 ```javascript
 var re1 = /foo{2}/g;                // equivalent to /fooo/g
@@ -184,6 +184,8 @@ console.log(str.match(re1));   // ['fooo']
 console.log(str.match(re2));   // ['foofoo']
 ```
 
+_Warning: do not confuse non-capturing groups with [lookaheads](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-lookaheads.html)!_
+
 ## Alternation
 
 Searching for different alternatives can be achieved within a regular expression using the vertical bar symbol (`|`). The beginning and the end of the alternation sequence need to be clearly specified, such as with capturing or (preferably) non-capturing groups.
@@ -191,7 +193,7 @@ Searching for different alternatives can be achieved within a regular expression
 In the following example of a simple e-mail validator, alternation is used to allow three different address domains:
 
 ```javascript
-var re = /^\w+@\w+\.(com|fr|nl)$/;
+var re = /^\w+@\w+\.(?:com|fr|nl)$/;
 var email = "the_boss@the_company.fr";
 
 re.test(email);   // true
