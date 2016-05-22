@@ -132,6 +132,16 @@ The following example searches a string for the character "e":
 
 Since there is an "e" in the string, the output of the code above will be: e
 
+### Using String.match()
+
+Like `exec()`, this method searches a string for a specified pattern, and returns the match. The main difference is that whilst `exec()` will only return the first match in the string, `match()`, when used with the 'g' flag, will return an array with all the matches found.
+
+```javascript
+("The best things in life are free!").match(/.e/g);
+```
+
+The above code will return an array of all the matches: `[ 'he', 'be', 'fe', 're', 're' ]`
+
 ### Using String.match().length()
 
 A personal favourite; use this to count the number of occurances of a pattern in a string.
