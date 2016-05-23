@@ -88,7 +88,7 @@ console.log (myString);
 
 ###Using inline functions
 
-In addition to using a specific string or a replacement pattern, the second parameter of the `replace()` method can also be a function. In this case, the function's return value will be used as the replacement string. This allows the `replace()` method to be integrated with various other JavaScript features, and can be very powerful.
+In addition to using a specific string or a replacement pattern, the second parameter of the `replace()` method can also be a function. In this case, the function's return value will be used as the replacement string. This allows the `replace()` method to be integrated with various other JavaScript features, which can be very powerful.
 
 The function takes in the following arguments:
 
@@ -99,7 +99,7 @@ p1, p2 etc. | The nth captured group (submatch)
 offset | The offset of the matched substring
 string | The whole string being examined
 
-In the following example, we use an inline function to implement the method `.toLowerCase` within a call to `replace()`. We apply the method to all the characters except for the first character in the string, by specifying an appropriate regular expression:
+In the following example, we use an inline function to implement the method `.toLowerCase()` within a call to `replace()`. We apply the method to all the characters except for the first character in the string, by specifying an appropriate regular expression:
 
 ```javascript
 var sentence = 'HELLO, DO YOU LIKE YELLOW?';
@@ -110,8 +110,8 @@ console.log (myString);
 ```
 
 ###Related
-- [String dissection and manipulation](string-dissection-and-manipulation.md)
-- [Regular Expression Beginners' Guide](regular-expressions-beginners-guide.md)
+- [String dissection and manipulation](http://codingforeveryone.foundersandcoders.org/JavaScript/string-dissection-and-manipulation.html)
+- [Regular Expression Beginners' Guide](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-beginners-guide.html)
 
 ###References
 
