@@ -109,10 +109,6 @@ console.log (myString);
 // 'Hello, do you like yellow?'
 ```
 
-###Related
-- [String dissection and manipulation](http://codingforeveryone.foundersandcoders.org/JavaScript/string-dissection-and-manipulation.html)
-- [Regular Expression Beginners' Guide](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-beginners-guide.html)
-
 ###References
 
 - [W3Schools](http://www.w3schools.com/jsref/jsref_replace.asp)
