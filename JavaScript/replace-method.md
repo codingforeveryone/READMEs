@@ -86,6 +86,29 @@ console.log (myString);
 // 'Hello, do you like yellow?'
 ```
 
+###Using inline functions
+
+In addition to using a specific string or a replacement pattern, the second parameter of the `replace()` method can also be a function. In this case, the function's return value will be used as the replacement string. This allows the `replace()` method to be integrated with various other JavaScript features, and can be very powerful.
+
+The function takes in the following arguments:
+
+Name | Supplied value
+--- | --- | ---
+match | The matched substring
+p1, p2 etc. | The nth captured group (submatch)
+offset | The offset of the matched substring
+string | The whole string being examined
+
+In the following example, we use an inline function to implement the method `.toLowerCase` within a call to `replace()`. We apply the method to all the characters except for the first character in the string, by specifying an appropriate regular expression:
+
+```javascript
+var sentence = 'HELLO, DO YOU LIKE YELLOW?';
+var myString = sentence.replace(/(?!^).*/, x => x.toLowerCase());
+
+console.log (myString);
+// 'Hello, do you like yellow?'
+```
+
 ###Related
 - [String dissection and manipulation](string-dissection-and-manipulation.md)
 - [Regular Expression Beginners' Guide](regular-expressions-beginners-guide.md)
