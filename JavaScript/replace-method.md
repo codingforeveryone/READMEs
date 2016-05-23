@@ -88,7 +88,7 @@ console.log (myString);
 
 ###Using inline functions
 
-In addition to using a specific string or a replacement pattern, the second parameter of the `replace()` method can also be a function. In this case, the function's return value will be used as the replacement string. This allows the `replace()` method to be integrated with various other JavaScript features, and can be very powerful.
+In addition to using a specific string or a replacement pattern, the second parameter of the `replace()` method can also be a function. In this case, the function's return value will be used as the replacement string. This allows the `replace()` method to be integrated with various other JavaScript features, which can be very powerful.
 
 The function takes in the following arguments:
 
@@ -110,8 +110,8 @@ console.log (myString);
 ```
 
 ###Related
-- [String dissection and manipulation](string-dissection-and-manipulation.md)
-- [Regular Expression Beginners' Guide](regular-expressions-beginners-guide.md)
+- [String dissection and manipulation](http://codingforeveryone.foundersandcoders.org/JavaScript/string-dissection-and-manipulation.html)
+- [Regular Expression Beginners' Guide](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-beginners-guide.html)
 
 ###References
 
