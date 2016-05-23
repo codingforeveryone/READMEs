@@ -99,7 +99,7 @@ p1, p2 etc. | The nth captured group (submatch)
 offset | The offset of the matched substring
 string | The whole string being examined
 
-In the following example, we use an inline function to implement the method `.toLowerCase` within a call to `replace()`. We apply the method to all the characters except for the first character in the string, by specifying an appropriate regular expression:
+In the following example, we use an inline function to implement the method `.toLowerCase()` within a call to `replace()`. We apply the method to all the characters except for the first character in the string, by specifying an appropriate regular expression:
 
 ```javascript
 var sentence = 'HELLO, DO YOU LIKE YELLOW?';
@@ -108,6 +108,10 @@ var myString = sentence.replace(/(?!^).*/, x => x.toLowerCase());
 console.log (myString);
 // 'Hello, do you like yellow?'
 ```
+
+###Related
+- [String dissection and manipulation](http://codingforeveryone.foundersandcoders.org/JavaScript/string-dissection-and-manipulation.html)
+- [Regular Expression Beginners' Guide](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-beginners-guide.html)
 
 ###References
 
