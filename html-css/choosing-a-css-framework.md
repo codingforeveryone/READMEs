@@ -52,4 +52,4 @@ If you're in need of a framework with everything built in, then, Bootstrap is pr
 
 * * *
 
-There's nothing worse than getting weeks into working on a project and realising that the framework you've built it on just isn't suitable. By following this guide and taking the time to think about what framework would be the best before you get started, you'll be able to work faster, spend less time squashing bugs, and produce greater stuff with ease.
+There's nothing worse than getting weeks into working on a project and realising that the framework you've built it on just isn't suitable. By following this guide and taking the time to think about what framework would be the best before you get started, you'll be able to work faster, spend less time squashing bugs, and produce better code with ease.
