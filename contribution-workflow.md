@@ -56,16 +56,6 @@ There are 4 main steps to go through for a new change to be implemented. The fir
 
 The first step is to create a new branch for the proposed change. Before you create the branch you should make sure your master is up-to-date by pulling all previous changes with `git pull`.
 
----
-_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc) change your directory to that subdirectory after updating the local repository. Simply specify the subdirectory by listing the path from READMEs, then continue following the steps listed below:_
-```bash
-#working with subdirectories
-$ cd READMEs
-$ cd git pull -u origin master
-$ cd READMEs/<subdirectory>
-```
----
-
 To create a new branch and switch to the branch at the same time, you can use the following command:
 
 ```bash
@@ -116,6 +106,7 @@ Staging changes to the file:
 ```bash
 $ git add <name of the file>
 ```
+_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc), include the file path in <name of the file>, in the above step._
 
 Commiting the staged changes:
 
