@@ -1,5 +1,8 @@
 # Using JavaScript to manipulate inline styles of DOM elements
 #
+##
+### Introduction
+##
 
 To first understand how to use JavaScript to access elements in the HTML document, take a look at this tutorial [here](http://codingforeveryone.foundersandcoders.org/html-css/document-object-model.html).
 The tutorial explains how to traverse the DOM and use methods like *.getElementByID()*, *.getElementsByClassName()*, and *.getElementsByTagName()*, and how to manipulate inner text content with *.innerText*.
@@ -69,7 +72,7 @@ All three accomplish the same, but in order to decide what method to use one mus
 
 Consider this example;
 
-Let's say that in the main.css file their was a rule to color the text blue;
+Let's say that in the main.css file there was a rule to color the text blue;
 ```css
    p {
 	    color: blue;	
@@ -97,7 +100,7 @@ The browser can only render one style, and to decide which style it uses it cons
 
 For our example the outcome color of the text will be **red**.
 
-In general, it's best practice to use external css stylesheets to style content as you can have greater control of styling, and it helps to seperate presentation from content when building a website. The browser can also cache an external stylesheet too, so it can be stored in the users browser when revisiting the site to help with load times. 
+In general, it's best practice to use external css stylesheets to style content as you can have greater control of styling, and it helps to separate presentation from content when building a website. The browser can also cache an external stylesheet too, so it can be stored in the users browser when revisiting the site to help with load times. 
 
 It could also be useful to combine embedded and external styles if you want to create some overriding rules specific to a unique page on a site, like changing the background image for example.
 
@@ -107,9 +110,9 @@ Inline styles could be also useful to override all styles for a 'quick and dirty
         color: red !important;
     }
 ```
-If written in an externall css file, this would override inline styles.
+If written in an external css file, this would override inline styles.
 
-More imformation about importance and the cascading nature of CSS can be found [here](http://www.expression-web-tutorial.com/Types_CSS_Styles.html#.V0WZeZMrJMA)
+More information about importance and the cascading nature of CSS can be found [here](http://www.expression-web-tutorial.com/Types_CSS_Styles.html#.V0WZeZMrJMA)
 
 ##
 ## JavaScript Inline Manipulation
@@ -236,12 +239,12 @@ This method takes the name of an attribute (in this case 'style') and a string o
 ```javascript
     button.setAttribute('style', 'background-color:' + randomColor() + '; height: 50px;');
 ```
-Here you use the standard notation for declaring css rules with '-' instead of camelcase.
+Here you use the standard notation for declaring css rules with '-' instead of camelCase.
 
 
 **Note** every time you use .setAttribute it **overrides** the existing inline styling, whereas the .style method can be used multiple times to build up the inline style rule.
 
-To remove inline styling alltogether, you can use the removeAttribute('style') method;
+To remove inline styling altogether, you can use the removeAttribute('style') method;
 ```javascript
     button.removeAttribute('style');
 ```
@@ -252,20 +255,37 @@ Which is similar to
 
 ## CSS properties
 
-See [here](http://www.w3schools.com/jsref/dom_obj_style.asp) for a list of other style properties to alter with JavaScript.
+See [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) for a list of other style properties to alter with JavaScript.
+
 
 #
-## Resources
+## Related
 #
+
+[Document Object Model](http://codingforeveryone.foundersandcoders.org/html-css/document-object-model.html)
+
+Manipulating Element Attributes with JavaScript 
+
+Manipulating embedded CSS & stylesheets with JavaScript
+
+JavaScript for Animations
+
+Using Developer Tools to Debug HTML & CSS
+
+
+#
+## References
+#
+
+[HTMLElement.style] (https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
+
 [Cascade & Inheritance](https://www.w3.org/TR/CSS2/cascade.html#x12)
-
-[Using JavaScript to manipulate embedded CSS](http://stackoverflow.com/questions/524696/how-to-create-a-style-tag-with-javascript)
-
-[Accessing and manipulating stylesheets](https://www.w3.org/wiki/Dynamic_style_-_manipulating_CSS_with_JavaScript)
 
 [Using !important](https://css-tricks.com/when-using-important-is-the-right-choice/)
 
 [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+
+
 
 
  
