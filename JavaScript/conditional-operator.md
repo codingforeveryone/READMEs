@@ -2,7 +2,7 @@
 
 ###What is it?
 
-The ternary operator - also called the conditional operator - allows us to return different values depending on the results of checks.
+The ternary operator(also called the conditional operator) allows us to return different values depending on the results of checks.
 It can be a cleaner and shorter alternative to the `if...else` statement.
 
 ###General syntax
@@ -11,7 +11,7 @@ It can be a cleaner and shorter alternative to the `if...else` statement.
 var test= condition ? expr1 : expr2 
 ```
 
-Compare with:
+`if...else` equivalent:
 
 ```javascript
 if (condition===true) {test=expr1} 
@@ -26,7 +26,7 @@ In this case, we check for the condition called `condition`. If it is true, then
 return  condition===true ? "condition check result is true" : "condition check result is false" 
 ```
 
-In this case, we return the first string if the check of condition returns `true`, otherwise we return the second string. 
+In this case, the first string is returned if the condition evaluates to `true`, otherwise the second string is returned. 
 
 ###Combining conditional operators
 
@@ -61,7 +61,7 @@ checkTime(11);
 // returns [ 'do some work', 'go for a walk' ]
 ```
        
-It's an awesome tool that'll add readability to your code. Special thanks to warrior @GiacomoSorbi who posted a kata about it on the gitter channel ;)
+It's an awesome tool that'll add readability to your code. Special thanks to warrior @GiacomoSorbi who posted a kata about it on the gitter channel ;).
 
 ###Related:
 
