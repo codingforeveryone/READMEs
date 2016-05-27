@@ -1,4 +1,4 @@
-#Conditional operator
+#Conditional Operator
 
 ###What is it?
 
