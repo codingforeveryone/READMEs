@@ -34,6 +34,7 @@ You now have a local copy of the repository, but you are not quite ready to make
 ```bash
 $ cd READMEs
 ```
+
 Then tell Git to pull any changes on the master branch of origin (the default name for the remote repository) into your local repository:
 
 ```bash
@@ -105,6 +106,7 @@ Staging changes to the file:
 ```bash
 $ git add <name of the file>
 ```
+_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc), include the file path in <name of the file>, in the above step._
 
 Commiting the staged changes:
 
