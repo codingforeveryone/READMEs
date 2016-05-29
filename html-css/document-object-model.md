@@ -155,9 +155,9 @@ And indeed, it makes navigating in the DOM easy, using the power of Javascript.
 
 #### 1. Including jQuery in your project
 
-The simplest way to use jQuery is to add it from the CDN(Content Distribution Network);
+The simplest way to use jQuery is to add it from the CDN([Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network));
 
-`<script src="https://code.jquery.com/jquery-latest.min.js"></script> 
+`<script src="https://code.jquery.com/jquery-latest.min.js"></script>` 
 
 #### 2. jQuery syntax and starting point
 
