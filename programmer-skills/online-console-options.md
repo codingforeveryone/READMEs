@@ -22,7 +22,7 @@ There are 3 key points to take into consideration when choosing a platform to us
  
   1. Supported languages: Python, JavaScript, Ruby, Scheme, C#, Java, PHP, C++, C... (The list goes on!)<br>
   2. You can run code in the console and there is a built in syntax checker too.<br>
-  3. You can use this tool without an account and can save multiple sets of code with an account<br>
+  3. You can use this tool without an account and can save multiple sets of code with an account.<br>
 
 <b>Pros:</b> The best tool for creating functions and testing them in a console. Free service with great aims to democratize coding and make it accessible.<br>
 <b>Cons:</b> You have to create an account to retrieve saved code.
@@ -36,7 +36,7 @@ There are 3 key points to take into consideration when choosing a platform to us
   2. The tool is a simple syntax and error checker. <br>
   3. 100% functionality can be used without an account. <br>
 
-<b>Pros:</b> Very intuitive to use. Best tool for simple debugging purposes<br>
+<b>Pros:</b> Very intuitive to use. Best tool for simple debugging purposes.<br>
 <b>Cons:</b> No console output makes the tool limited in its use. You can't save code.<br>
 <br>
 <br>
@@ -44,7 +44,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 ####[jsbin.com](https://jsbin.com)
 ![alt tag](https://github.com/RhodesPeter/Console-Options/blob/Screenshots/jsbin.com.png)<br>
 
-  1. Supported languages: JavaScript, HTML, CSS, CoffeeScript<br>
+  1. Supported languages: JavaScript, HTML, CSS, CoffeeScript.<br>
   2. You can run code in the console and there is a built in error checker too.<br>
   3. Most of the functionality that a beginner needs can be used without signing up to a 'Pro' account.<br>
 
@@ -56,7 +56,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 ####[jsfiddle.net](https://jsfiddle.net/)
 ![alt tag](https://github.com/RhodesPeter/Console-Options/blob/Screenshots/jsfiddle.png)<br>
 
- 1. Supported languages: JavaScript, HTML, CSS, CoffeeScript<br>
+ 1. Supported languages: JavaScript, HTML, CSS, CoffeeScript.<br>
  2. You can run code in the console and there is a built in error checker too.<br>
  3. Most of the functionality that a beginner needs can be used without signing up to a 'Pro' account.<br>
 
@@ -68,7 +68,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 ####[codepen.io](http://codepen.io/nullobject/pen/rAbio)
 ![alt tag](https://github.com/RhodesPeter/Online-Console-Options/blob/Screenshots/codepen.io.png)<br>
 
- 1. Supported languages: JavaScript, HTML, CSS, CoffeeScript<br>
+ 1. Supported languages: JavaScript, HTML, CSS, CoffeeScript.<br>
  2. You can run code in the console and there is a built in error checker too.<br>
  3. Basic functionality can be used without an account but the tool is a small part of a bigger pay for service that most beginners won't want or need.<br>
 
@@ -81,8 +81,8 @@ There are 3 key points to take into consideration when choosing a platform to us
 This README focuses on online debugging and console tools, an extension of this README would be to explore a beginner's options in regards to applications that run direct from your OS such as Oracle and Android Studio.
 
 Here are some related Coding for Everyone READMEs:<br>
-[Debugging](https://github.com/codingforeveryone/READMEs/blob/master/programmer-skills/Debugging-Javascript.md)<br>
-[Start to develop with JavaScript](https://github.com/codingforeveryone/READMEs/blob/master/programmer-skills/start-to-develop-js.md)<br>
+[Debugging.](https://github.com/codingforeveryone/READMEs/blob/master/programmer-skills/Debugging-Javascript.md)<br>
+[Start to develop with JavaScript.](https://github.com/codingforeveryone/READMEs/blob/master/programmer-skills/start-to-develop-js.md)<br>
 
 ### References and further reading
 
