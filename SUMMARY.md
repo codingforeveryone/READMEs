@@ -41,6 +41,7 @@
     * [Start Developing with JavaScript](/programmer-skills/start-to-develop-js.md)
     * [Command Line](/programmer-skills/command-line.md)
     * [Setting Up a Local Server](/programmer-skills/setting-up-a-local-server.md)
+    * [Online Console Options](/programmer-skills/online-console-options.md)
     
 * [Codewars](/gitbook-chapter-headers/codewars.md)
     * [Writing Your Own Kata](/codewars/writing-your-own-kata.md)
