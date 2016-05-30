@@ -106,7 +106,7 @@ Staging changes to the file:
 ```bash
 $ git add <name of the file>
 ```
-_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc), include the file path in <name of the file>, in the above step._
+_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc), include the file path in <name of the file\>, in the above step._
 
 Commiting the staged changes:
 
