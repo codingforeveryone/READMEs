@@ -65,6 +65,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 
 [Instructions for using JSFiddle.](http://doc.jsfiddle.net/tutorial.html)
 <br>
+<br>
 
 ####[codepen.io](http://codepen.io/nullobject/pen/rAbio)
 ![alt tag](https://github.com/RhodesPeter/Online-Console-Options/blob/Screenshots/codepen.io.png)<br>
@@ -78,6 +79,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 <br>
 
 [Instructions for using the console tool on CodePen.](https://blog.codepen.io/documentation/editor/console/)
+<br>
 <br>
 
 ### Related
