@@ -76,6 +76,8 @@ There are 3 key points to take into consideration when choosing a platform to us
 <b>Cons:</b> Could be more intuitive to use. 
 <br>
 
+[Instructions for using the console tool on CodePen.](https://blog.codepen.io/documentation/editor/console/)
+
 ### Related
 
 This README focuses on online debugging and console tools, an extension of this README would be to explore a beginner's options in regards to applications that run direct from your OS such as Oracle and Android Studio.
