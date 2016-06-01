@@ -132,6 +132,16 @@ The following example searches a string for the character "e":
 
 Since there is an "e" in the string, the output of the code above will be: e
 
+### Using String.match()
+
+Like `exec()`, this method searches a string for a specified pattern, and returns the match. The main difference is that whilst `exec()` will only return the first match in the string, `match()`, when used with the 'g' flag, will return an array with all the matches found.
+
+```javascript
+("The best things in life are free!").match(/.e/g);
+```
+
+The above code will return an array of all the matches: `[ 'he', 'be', 'fe', 're', 're' ]`
+
 ### Using String.match().length()
 
 A personal favourite; use this to count the number of occurances of a pattern in a string.
@@ -146,7 +156,7 @@ Since there are 4 spaces in the string, the output of the code above will be: 4
 
 ## Using Parenthesized Substring Matches
 
-A slightly more advanced, yet incredibly useful, technique. Including parentheses (a pair of brackets) in a regular expression pattern causes the corresponding submatch (the pattern within the brackets) to be remembered. For example, /a(b)c/ matches the characters 'abc' and remembers 'b'. The nine most recent matches are stored and can be recalled using the notation $n (where n is an integer from 1-9).
+A slightly more advanced, yet incredibly useful, technique. Including parentheses (a pair of brackets) in a regular expression pattern causes the corresponding submatch (the pattern within the brackets) to be remembered. For example, /a(b)c/ matches the characters 'abc' and remembers 'b'. The nine most recent matches are stored and can be recalled using the notation \n (when used within a regular expression) or $n (when referring to a previously defined regular expression), where n is an integer from 1-9.
 
 The following script uses the replace() method to switch the words in the string. For the replacement text, the script uses the $1 and $2 in the replacement to denote the first and second parenthesized substring matches.
 
@@ -158,6 +168,51 @@ console.log(newstr);
 ```
 
 The (\w+) matches and stores a pattern of alphanumeric characters up until a white space or the end of string. So $1 = "John" and $2 = "Smith".  Therefore the `newstr` replaces any occurance of "John Smith" with "$2, $1" (or "Smith, John"). So console log will print "Smith, John".
+
+## Non-Capturing Groups
+
+In order to group different bits of a regular expression together, but not remember them, non-capturing groups are used. The notation for non-capturing groups is `(?:x)`, where x is the the expression to be matched.
+
+Compare the following two regular expressions (without and with a non-capturing group):
+
+```javascript
+var re1 = /foo{2}/g;                // equivalent to /fooo/g
+var re2 = /(?:foo){2}/g;            // equivalent to /foofoo/g
+var str = "foofooo";
+
+console.log(str.match(re1));   // ['fooo']
+console.log(str.match(re2));   // ['foofoo']
+```
+
+_Warning: do not confuse non-capturing groups with [lookaheads](http://codingforeveryone.foundersandcoders.org/JavaScript/regular-expressions-lookaheads.html)!_
+
+## Alternation
+
+Searching for different alternatives can be achieved within a regular expression using the vertical bar symbol (`|`). The beginning and the end of the alternation sequence need to be clearly specified, such as with capturing or (preferably) non-capturing groups.
+
+In the following example of a simple e-mail validator, alternation is used to allow three different address domains:
+
+```javascript
+var re = /^\w+@\w+\.(?:com|fr|nl)$/;
+var email = "the_boss@the_company.fr";
+
+re.test(email);   // true
+```
+
+## Greedy and Lazy Quantifiers
+
+By default, all quantifiers (*, +, ?, and {}) are 'greedy', meaning that they match a string the maximum number of times. It is possible to make a quantifier non-greedy (or 'lazy'), so that it matches the minimum number of times, by following it with a question mark (?).
+
+In the example below, we search for strings within inverted commas using both a greedy and a lazy quantifier. Whereas the greedy search returns a single match, corresponding to all of the text between the first and the last occurrence of the inverted comma, the lazy search returns several matches, each corresponding to a single word within inverted commas.
+
+```javascript
+var greedy = /'.*'/g;
+var lazy = /'.*?'/g;
+var str = "This 'section' is about the terms 'greedy' and 'lazy'."
+
+console.log(str.match(greedy));   // [ ''section' is about the terms 'greedy' and 'lazy'' ]
+console.log(str.match(lazy));   // [ ''section'', ''greedy'', ''lazy'' ]
+```
 
 ## Regex Tester
 
