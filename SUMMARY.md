@@ -5,6 +5,7 @@
 * [JavaScript](/gitbook-chapter-headers/js.md)
     * [ECMAScript 6](/JavaScript/ECMAScript 6.md)
     * [String Dissection and Manipulation](/JavaScript/string-dissection-and-manipulation.md)
+       * [String Replace](/JavaScript/replace-method.md)
     * [Arrays](/gitbook-chapter-headers/arrays.md)
        * [Array Methods Overview](/JavaScript/array-methods-overview.md)
        * [Array Map](/JavaScript/array-map.md)
