@@ -32,7 +32,7 @@
 * [HTML and CSS](/gitbook-chapter-headers/html-css.md)
     * [Choosing a CSS Framework](/html-css/choosing-a-css-framework.md)
     * [Document Object Model](/html-css/document-object-model.md)
-
+    * [Manipulating Inline Styles](/html-css/manipulating-inline-styles.md)
 * [Programmer Skills](/gitbook-chapter-headers/programmer-skills.md)
     * [Debugging Javascript](/programmer-skills/Debugging-Javascript.md)
     * [Git Basics](/programmer-skills/git-basics.md)
