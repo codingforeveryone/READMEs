@@ -104,3 +104,9 @@ The honor also determines the 'privileges' that you get as a user.
 - 1500 honor: Ability to contribute to katas
 - 2000 honor: Kata voting power increases to +4 honor per upvote
 - 3000 honor: Ability to approve a kata
+
+## Resources
+
+- [Codewars docs](https://www.codewars.com/docs/ranking-and-honor-1)
+- [Codewars forum](https://www.codewars.com/topics)
+- [List of privileges](http://blog.markpearl.co.za/CodeWars-Privileges-Unlock)
