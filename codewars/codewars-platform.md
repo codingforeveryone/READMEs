@@ -18,7 +18,7 @@ The ranking is also said to reflect the kata subject area. However, this is rare
 
 You may find that some older katas, created in the early days of Codewars, are higher-rated than their newer counterparts.
 
-## Kata discussion page
+## Kata Discussion Page
 
 Once you solve a kata, you get full access to its discussion page (including the content marked as 'spoiler'), as well as to everyone else's solutions to that kata.
 
@@ -30,7 +30,7 @@ It is also good practice to browse through others' solutions, expecially those m
 
 Similar solutions are grouped together, however, the algorithm behind this is rather poor so identical solutions often appear as separate. (The solutions need to be more or less exactly the same, except for whitespaces.)
 
-## The beta process
+## The Beta Process
 
 After a beta kata is created, it goes through a community approval process, to ensure that it is of sufficient quality and that all issues have been resolved.
 
