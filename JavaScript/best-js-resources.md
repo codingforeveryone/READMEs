@@ -96,3 +96,6 @@
 [Interview Bits](https://www.interviewbit.com/)<br>
 [Screeps](https://screeps.com/)<br>
 [ReactiveX Functional Programming Challenges](http://reactivex.io/learnrx/)<br>
+
+<h1>Articles</h1><br>
+[Paul Ford - What Is Code? ](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)<br>
