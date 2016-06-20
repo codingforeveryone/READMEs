@@ -98,4 +98,5 @@
 [ReactiveX Functional Programming Challenges](http://reactivex.io/learnrx/)<br>
 
 <h1>Articles</h1><br>
-[Paul Ford - What Is Code? ](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)<br>
+[Paul Ford - What Is Code?](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)<br>
+[Expectations of a Junior Developer](http://blog.thefirehoseproject.com/posts/expectations-of-a-junior-developer/)<br>
