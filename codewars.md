@@ -4,6 +4,10 @@
 
 Codewars is a great way to learn (and teach) code! The Codewars platform is quite carefully developed and designed, and usually functions well, although it does have some limitations. The following guide contains some of the information that you will find useful to know about the Codewars platform. Note that not all of this information is available on the Codewars website and some of it is a little subjective.
 
+## Code Challenges or Kata
+
+The Codewars platform offers code challenges which are called kata and can be solved using different programming languages. Users can get involved with the kata in a number of ways: they can solve, create, comment on or review any of the kata based on a set of rules, as discussed below.
+
 ## Kata Ranking
 
 Every kata is assigned a 'kyu' rank, based on its difficulty. The ranks so far implemented, from the lowest (easiest) to the highest (hardest) are:
@@ -12,7 +16,7 @@ Every kata is assigned a 'kyu' rank, based on its difficulty. The ranks so far i
 - 4 and 3 kyu (competent, blue belt colour)
 - 2 and 1 kyu (proficient, purple belt colour)
 
-The ranking is determined by the community, and is somewhat controversial. What is difficult for some warriors may be easy for others, and 'difficulty' can be understood in different ways (amount of work needed to solve the problem, the complexity of the algorithm involved, etc.)
+The ranking is determined by the community, and is somewhat controversial. What is difficult for some users may be easy for others, and 'difficulty' can be understood in different ways (amount of work needed to solve the problem, the complexity of the algorithm involved, etc.)
 
 The ranking is also said to reflect the kata subject area. However, this is rarely considered when ranking a kata (e.g. regular expressions are only supposed to appear in kata of 4 kyu or higher, and yet there are plenty of 8 kyu regex kata).
 
@@ -20,7 +24,7 @@ You may find that some older kata, created in the early days of Codewars, are hi
 
 ## Solving a Kata
 
-The website will suggest a kata for you to solve next, based on your chosen 'focus' (whether you want to warm up with the fundamentals, practice at your current level or rank up). However, you can also search for kata based on their difficulty and subject area - all kata are labelled with one or several tags indicating the latter.
+The website will suggest a kata for you to solve next, based on your chosen 'focus' (whether you want to warm up with the fundamentals, practice at your current level or rank up). However, you can also search for kata (through the 'Kata' section on the left navigation bar) based on their difficulty and subject area - all kata are labelled with one or several tags indicating the latter.
 
 Once you've selected a kata, you will see the instructions panel, a panel to write your solution in, and a panel for the test cases. Use 'Run Tests' to test your initial solution, and 'Submit' for more thorough testing of a solution that has passed the initial tests. Finally, you may refactor or comment on your solution before hitting 'Submit Final' to send off your final solution.
 
