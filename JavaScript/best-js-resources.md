@@ -96,3 +96,10 @@
 [Interview Bits](https://www.interviewbit.com/)<br>
 [Screeps](https://screeps.com/)<br>
 [ReactiveX Functional Programming Challenges](http://reactivex.io/learnrx/)<br>
+
+<h1>Articles</h1><br>
+[Paul Ford - What Is Code?](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)<br>
+[Expectations of a Junior Developer](http://blog.thefirehoseproject.com/posts/expectations-of-a-junior-developer/)<br>
+[FCC - Things I Wish Someone Had Told Me When I Was Learning How to Code](https://medium.freecodecamp.com/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329#.xyo1z0sf1)<br>
+[FCC - One Does Not Simply Learn to Code](https://medium.freecodecamp.com/one-does-not-simply-learn-to-code-f25bacdc5b62#.ktf6kemay)<br>
+[OK, So You Want to Learn How to Code](https://medium.com/@charlotteis/ok-so-you-want-to-learn-how-to-code-b74bc3ac6107#.5ovkw46j9)<br>
