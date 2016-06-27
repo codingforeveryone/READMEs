@@ -10,7 +10,7 @@ The Codewars platform offers code challenges which are called kata and can be so
 
 ## Kata Ranking
 
-Every kata is assigned a 'kyu' rank, based on its difficulty. The ranks so far implemented, from the lowest (easiest) to the highest (hardest) are:
+Every kata is assigned a 'kyu' rank, based on its difficulty. The kyu rank number decreases with increasing kata difficulty, such that the easiest kata are ranked 8 kyu and the hardest are 1 kyu. The ranks so far implemented are:
 - 8 and 7 kyu (beginner, white belt colour)
 - 6 and 5 kyu (novice, yellow belt colour)
 - 4 and 3 kyu (competent, blue belt colour)
@@ -36,7 +36,7 @@ The discussion page allows you to let others know of any comments you may have, 
 
 You can use markdown in your comments, the same way as in GitHub. This is particularly useful when pasting code into your comment. Make sure to mark your comment as spoiler if it contains information about the kata that might give out clues about the solution.
 
-Solutions can be upvoted as either 'best practice', indicating a good balance of performance, readability and maintainability, or as 'clever', which indicates creative coding styles and features that would not necessarily be used in production.
+Solutions can be upvoted as either 'Best Practice', indicating a good balance of performance, readability and maintainability, or as 'Clever', which indicates creative coding styles and features that would not necessarily be used in production.
 
 Similar solutions are grouped together, however, the algorithm behind this is rather poor so identical solutions often appear as separate. (The solutions need to be more or less exactly the same, except for whitespaces.)
 
@@ -130,15 +130,15 @@ The honour also determines the 'privileges' that you get as a user.
 ## Tips for developing your skills
 
 - Train every day.
-- Don't skip Katas that contain unfamiliar methods/tasks. Embrace the challenge, use your resources to study the methodologies needed.
-- After completing a Kata, consider searching for a similar Kata for added practice benefits of the skills you've just used.
+- Don't skip kata that contain unfamiliar methods/tasks. Embrace the challenge, use your resources to study the methodologies needed.
+- After completing a kata, consider searching for a similar kata for added practice benefits of the skills you've just used.
 - When building a solution, you should consider using your browser's developer tools, or a good online console as your environment of choice, which will help break down a solution and resolve issues with it too. For more information on available online console options, visit [here](http://codingforeveryone.foundersandcoders.org/programmer-skills/online-console-options.html). Visit [here](http://codingforeveryone.foundersandcoders.org/programmer-skills/Debugging-Javascript.html) for more information on how to utilize debugging to fix issues with your solution.
-- Study impressive solutions to Katas, particularly if they're scored highly for Best Practice/Clever. If you want to better understand a solution, ask the author for clarification, or load their solution into your environment of choice and break it down step by step.
-- Be friendly when communicating with other users on Codewars, especially if you're reporting an issue with someone's Kata. Help others and they'll help you in return.
-- Follow users. If you notice a user creates a particularly impressive solution to a Kata you've completed, follow them, complete the Katas they've completed and study their solutions. Similarly, if a user has created an interesting or unique Kata, follow them to keep up to date with their future Katas.
-- Plan a training session. Consider starting with a 7/8kyu Kata to warm up the brain cells as these are easier than the tougher Kata (from level 6kyu onwards). Starting with a tough Kata could fatigue the mind too quickly and exhaust you for the rest of the day.
-- When learning a new programming language, return to old completed Katas and (if a Kata translation for that language exists), complete it again with your new language. You may find problem solving in one language is much harder than in another, and vice versa, so use this approach to help understand the strengths and weaknesses of your new language.
-- Use pseudo code to first write out a rough solution to a Kata in steps. Read over the steps to consider whether they'd satisfy all cases for the solution, then build the solution. Leave your pseudo code in the final solution for others to understand, neaten it up grammatically too. Remember to also refactor your solution before you submit it as the final solution, by indenting your code well and naming arguments/variables/functions appropriately. If every user explained their solution well, it'd be much quicker to learn from the best solutions.
+- Study impressive solutions to kata, particularly if they're scored highly for 'Best Practice' or 'Clever'. If you want to better understand a solution, ask the author for clarification, or load their solution into your environment of choice and break it down step by step.
+- Be friendly when communicating with other users on Codewars, especially if you're reporting an issue with someone's kata. Help others and they'll help you in return.
+- Follow users. If you notice a user creates a particularly impressive solution to a kata you've completed, follow them, complete the kata they've completed and study their solutions. Similarly, if a user has created an interesting or unique kata, follow them to keep up to date with their future kata.
+- Plan a training session. Consider starting with a 7/8 kyu kata to warm up the brain cells as these are easier than the tougher kata (from level 6 kyu onwards). Starting with a tough Kata could fatigue the mind too quickly and exhaust you for the rest of the day.
+- When learning a new programming language, return to old completed kata and (if a kata translation for that language exists), complete it again with your new language. You may find problem solving in one language is much harder than in another, and vice versa, so use this approach to help understand the strengths and weaknesses of your new language.
+- Use pseudo code to first write out a rough solution to a kata in steps. Read over the steps to consider whether they'd satisfy all cases for the solution, then build the solution. Leave your pseudo code in the final solution for others to understand, neaten it up grammatically too. Remember to also refactor your solution before you submit it as the final solution, by indenting your code well and naming arguments/variables/functions appropriately. If every user explained their solution well, it'd be much quicker to learn from the best solutions.
 
 ## Related
 
