@@ -46,5 +46,6 @@
     * [Online Console Options](/programmer-skills/online-console-options.md)
     
 * [Codewars](/gitbook-chapter-headers/codewars.md)
+    * [Codewars](/codewars/codewars.md) 
     * [Writing Your Own Kata](/codewars/writing-your-own-kata.md)
     * [Random Test Cases for Complete Beginners](/codewars/random-test-cases-for-complete-beginners.md)
