@@ -20,6 +20,7 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 * [Extended Parameter Handling](#extended-parameter-handling)
 * [Binary and Octal Literals](#binary-and-octal-literals)
 * [Template Literals](#template-literals)
+* [Destructuring](#destructuring)
 
 #### Arrow Functions
 
@@ -413,6 +414,55 @@ var height = 15;
 String.raw`The area is ${width * height}!`;
 // "The area is 75!"
 ```
+
+#### Destructuring
+
+Destructuring is a way of extracting data stored in objects and arrays into distinct variables according to a specified pattern. It can be used in locations that receive data, such as the left-hand sides of assignments or when handling return values from functions.
+
+##### Syntax
+
+```javascript
+var foo, bar;
+[foo, bar] = [1, 2];
+console.log(foo); // 1
+console.log(bar); // 2
+
+var rest;
+[foo, bar, ...rest] = [1, 2, 3, 4, 5];
+console.log(foo); // 1
+console.log(bar); // 2
+console.log(rest); // [3, 4, 5]
+
+({foo, bar} = {foo:1, bar:2})
+console.log(foo); // 1
+console.log(bar); // 2
+```
+
+##### Description
+
+Destructuring assignments use a similar syntax to objects and arrays. Instead of using the syntax to package data into an object or array, however, they are used to define which elements to extract from a source variable.
+
+##### Destructuring arrays
+Variables can be assigned values via destructuring either at declaration or at a later point. Variables in a deconstruction assignment can also be assigned default values, in case the value pulled from the array is `undefined`.
+
+```javascript
+var baz = [1, 2, 3, 4, 5];
+var [foo, bar] = baz;
+console.log(foo); // 1
+console.log(bar); // 2
+
+var quz, quux;
+[quz, quux] = [1, 2];
+console.log(quz); // 1
+console.log(quux); // 2
+
+var a, b;
+
+[a=4, b=6] = [1];
+console.log(a); // 1
+console.log(b); // 6
+```
+
 #### Related
 
 To be added here, or in separate readmes.
