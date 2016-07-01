@@ -506,7 +506,7 @@ console.log(a); // 1
 console.log(b); // 7
 ```
 
-Destructuring expressions can be used to extract variables from an object and assign them to variables with a different name than the original property:
+Destructuring expressions can also be used to extract variables from an object and assign them to variables with a different name than the original property:
 
 ```javascript
 var baz = {foo: 12, bar: true};
