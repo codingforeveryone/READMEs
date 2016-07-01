@@ -443,7 +443,7 @@ console.log(bar); // 2
 Destructuring assignments use a similar syntax to objects and arrays. Instead of using the syntax to package data into an object or array, however, they are used to define which elements to extract from a source variable.
 
 ##### Destructuring arrays
-Variables can be assigned values via destructuring either at declaration or at a later point. Variables in a deconstruction assignment can also be assigned default values, in case the value pulled from the array is `undefined`.
+Variables can be assigned values via destructuring either at declaration or at a later point. Variables in a deconstruction assignment can also be assigned default values, in case the value pulled from the array is `undefined`. And by omitting a variable name, it is possible to ignore return values that you're not interested in.
 
 ```javascript
 var baz = [1, 2, 3, 4, 5];
@@ -451,16 +451,40 @@ var [foo, bar] = baz;
 console.log(foo); // 1
 console.log(bar); // 2
 
-var quz, quux;
-[quz, quux] = [1, 2];
-console.log(quz); // 1
-console.log(quux); // 2
+var foo, bar;
+[foo, bar] = [1, 2];
+console.log(foo); // 1
+console.log(bar); // 2
 
 var a, b;
-
 [a=4, b=6] = [1];
 console.log(a); // 1
 console.log(b); // 6
+
+function f() { return [1, 2, 3] };
+var [x, , y] = f();
+console.log(x); // 1
+console.log(y); // 3
+```
+
+Destructuring expressions can be used to swap the values of two variables without the use of a temporary variable:
+
+```javascript
+var foo = 1;
+var bar = 2;
+
+[foo, bar] = [bar, foo];
+console.log(foo); // 2
+console.log(bar); // 1
+```
+
+Destructuring can also be used to simplify the handling of arrays returned from functions:
+
+```javascript
+function f() { return [1, 2]; }
+var [a, b] = f();
+console.log(foo); // 1
+console.log(bar); // 2
 ```
 
 #### Related
