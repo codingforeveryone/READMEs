@@ -487,17 +487,44 @@ console.log(foo); // 1
 console.log(bar); // 2
 ```
 
+##### Destructuring objects
+As with arrays, destructuring objects can be used to assign values to variables either at declaration or separately, and variables can be assigned a default in case the pulled value is `undefined`. However, when assigning a value to a variable separate from its declaration, it is necessary to wrap the assignment statement in brackets - otherwise, the assignment statement will be interpreted as a block.
+
+```javascript
+var baz = {foo: 12, bar: true};
+var {foo, bar} = baz;
+console.log(foo); // 12
+console.log(bar); // true
+
+var x, y;
+({x, y} = {x:1, y:2});
+console.log(x); // 1
+console.log(y); // 2
+
+var {a=3, b=7} = {a: 1};
+console.log(a); // 1
+console.log(b); // 7
+```
+
+Destructuring expressions can be used to extract variables from an object and assign them to variables with a different name than the original property:
+
+```javascript
+var baz = {foo: 12, bar: true};
+var {foo: a, bar: b} = baz;
+console.log(a); // 12
+console.log(b); // true  
+```
+
 #### Related
 
 To be added here, or in separate readmes.
 
-* Classes & Modules/ Module Loaders
-* [Destructuring](http://codingforeveryone.foundersandcoders.org/JavaScript/array-methods-overview.html#destructuring)
+* Classes & Modules / Module Loaders
 * Enhanced Object literals
 * Generators
 * New Built-in Methods
 * Promises
-* Proxies/ Reflections
+* Proxies / Reflections
 * Symbols
 * Typed Arrays
 * Unicode
@@ -529,3 +556,5 @@ To be added here, or in separate readmes.
 [Spread Operator — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
 [Template Literals - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+[Destructuring assignment - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
