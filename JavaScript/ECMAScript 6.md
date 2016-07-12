@@ -326,6 +326,13 @@ var arr2 = [3, 4, 5];
 arr1.push(…arr2);
 //  arr1 = [0, 1, 2, 3, 4, 5];
 ```
+Note the difference without using the spread operator:
+```javascript
+var arr1 = [0, 1, 2];
+var arr2 = [3, 4, 5];
+arr1.push(arr2);
+//  arr1 = [0, 1, 2, [3, 4, 5]];
+```
 
 **Note:** Default, Rest and Spread parameters can also be used with arrow functions, as well as destructuring within the parameter list.
 
@@ -386,10 +393,8 @@ var width = 5;
 var height = 15;
 
 function tag(strings, ...values) {
-    strings[0] === "Hello "
-    strings[1] === " world "
-    values[0] ===  20
-    values[1] ===  75
+  // strings = ["Hello ", " world "];
+  // values = [20, 75];
   return `The area is ${width * height}`
 }
 
