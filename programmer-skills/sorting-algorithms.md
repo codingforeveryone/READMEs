@@ -1,17 +1,30 @@
 # Sorting algorithms
-Sorting algorithms arrange data in a particular order. There are many ways to classify these algorithms:
 
-####1.Comparison sorts
-All the discussed algorithms are comparison sorts. The algorithm is a comparison sort if the algorithm only reads the array of elements through a single comparison operation (e.g: greater than or equal to).
-Algorithms not based on comparison (such as [counting sort](https://en.wikipedia.org/wiki/Counting_sort)) are not covered in this tutorial.
+At a risk of stating the obvious, sorting algorithms arrange lists of data in a particular order. There are various types of sorting algorithms, such as counting, radix and comparison sorts. This tutorial is concerned with comparison sorts, which usually sort list elements using a single comparison operation (eg: >= ).
 
-####2. Memory usage 
-* In-place sorting: when the algorithm requires constant amount of additional space. E.g.: bubble sort.
-* Not-in-place sorting, e.g.: merge sort.
+You are probably familiar with the JavaScript array function array.prototype.sort(). You can read all about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
 
-####3. Stable and Non-stable  
+MDN says 
+>The sort() method sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points.
 
-* an algorithm is stable if it maintains the relative order of items with equals values,
+As you probably know, the sort function takes your array and compares the elements according to their Unicode values. It coerces numbers to strings and then compares them, and it makes a bit of a mess of numbers! To overcome this, you can pass a comparison function argument to the sort function, which will allow numerical sorting. Using the arguments a and b you can sort in ascending or descending order, and using bracket and dot notation, you can sort multidimensional arrays and arrays of objects. 
+
+So far so good. But one day, you find yourself in front of a whiteboard, and the interviewer says 'Write me a sort function suitable for small to medium datasets of moderate complexity, including different data types and floating point numbers. Your time starts now.'
+
+You can't use the built-in sort function. What are you going to do? What do you need to know?
+
+###Types of data
+- Comparison sorts allow sorting of different data types and fine control over how the list is sorted.
+- Comparison sorts can adapt to complex orders such as the order of floating-point numbers.
+
+So this is probably going to be a good fit for your whiteboard problem.
+
+###Memory use
+- Some sorting algorithms use 'in-place sorting', which means the algorithm requires only a small constant amount of additional space. An example of this is the bubble sort.
+- Others, such as the merge sort, use an auxillary data structure to sort.
+
+###Stable and Non-stable
+- An algorithm is stable if it maintains the relative order of items with equal values, such as the 5 of hearts and the 5 of spades from a deck of playing cards (pictured below). Bubble sort is an example of a stable algorithm.Sorting algorithms arrange data in a particular order. There are many ways to classify these algorithms:
 
 ![Stable](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sorting_stability_playing_cards.svg/220px-Sorting_stability_playing_cards.svg.png)  
 *Fig1. is taken from [Wikipedia](https://en.wikipedia.org/wiki/Sorting_algorithm)*    
