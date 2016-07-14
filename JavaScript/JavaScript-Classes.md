@@ -2,157 +2,180 @@
 
 ###Introduction
 
-JavaScript is a prototypal object-oriented language, meaning that objects can inherit directly from other objects.  This is a bit different to those who have learned to develop in other langauges like Java or C# where a subclass will inherit from a superclass, and objects are instances of classes. 
+JavaScript is a prototypal object-oriented language, meaning that objects can inherit properties directly from other objects. This is a bit different to those who have learned to develop in other langauges like Java or C# where a subclass inherits from a superclass, and objects are instances of classes.
 
 If you want to create multiple objects with similar methods and properties in JavaScript, the best options are functional classes, or the constructor function. There are four styles of functional classes.
 
- * Functional
+#####*Functional*
+ 
+#####*Functional-Shared*
 
- * Functional-Shared
+#####*Prototypal*
 
- * Prototypal
-
- * Pseudoclassical
+#####*Pseudoclassical*
 
 Each of these four is a different approach to object construction; they all accomplish the same thing in a slightly different way.
 
-Take for example, a street, which has many houses. Every house on the street requires a colour for the house, a front door with methods to open and close the door. A very simple example of where houses may be thought of as objects. 
+Take for example, a street with many houses. Every house on the street has a colour and front door which opens or closes. So Houses may be thought of as objects.
 
-We can implement functional classes here, as every instance created by the function will have the attributes of house colour and the methods to open and close the door.  
+If we implement functional classes here, every instance created by the function will have the attributes of house colour and the method to open and close the door.
 
-From here we can potentially create hundreds, thousands or even more new house objects, which are similar.  So each functional class performs the same basic steps to generate the new houses.
+From here we can potentially create unlimited new house objects, which are similar. So each functional class performs the same basic steps to generate the new houses.
 
-* generate an object
-* assign properties
-* add methods
-* return that object
+* 	generate an object
+* 	assign properties
+*	add methods
+*	return that object
 
 Each of the four styles has its pros and cons.
 
-####Functional
-Firstly **functional style** is **fast, very simple and clear in object creation**.  However all methods will be duplicated for every single object created, so a new function is stored in memory every time the object is generated.
+###Functional
 
-````
-var House = function(colour){
-	var obj = {}; // generate object
-	
-	obj.colour = colour;
-	obj.door = 'open'; //assign properties
-	
-	obj.openDoor = function(){
-		obj.door = 'open';
-	}; //explicitly define or borrow methods
-	
-	obj.closeDoor = function(){
-		obj.door = 'closed;
-	}; //explicitly define or borrow methods
-	
-	return obj;
-}
+Firstly functional style is fast, very simple and clear in object creation. However all methods will be duplicated for every single object created, so a new function is stored in memory every time the object is generated.  If you are working with large numbers of objects, this may not be the best choice.
 
-var house = House('red'); //instantiation pattern
-	
-````
 
-####Functional-Shared
-Secondly **functional-shared**, which is better for memory management as it **utilises a single repository for the methods**. Every time an object is created, pointers are generated, so every new object will point back to the houseMethods object, where the functions are stored one single time in memory.  
 
-````
-var House = function(colour){
-	var obj = {}; // generate object
-	
-	obj.colour = colour;
-	obj.door = 'open'; //assign properties
-	
-	obj.open = houseMethods.open;
-	obj.close = houseMethods.close; //explicitly define or borrow methods
-	
-	return obj;
-};
+	var House = function(colour){
+    var obj = {}; // generate object
 
-var houseMethods = {};
+    obj.colour = colour;
+    obj.door = 'open'; //assign properties
 
-houseMethods.openDoor = function(){
-	this.door = 'open'; //Add method to delegate fallback object
-};
+    obj.openDoor = function(){
+        obj.door = 'open';
+    }; //explicitly define or borrow methods
 
-houseMethods.closeDoor = function(){
-	this.door = 'closed'; //Add method to delegate fallback object
+    obj.closeDoor = function(){
+        obj.door = 'close;
+    }; //explicitly define or borrow methods
 
-};
+    return obj;
+	}
 
-var house = House('red'); //instantiation pattern
+	var house = House('red'); //instantiation pattern
 
-````
-This is not as efficient as delegating through fallback.
 
-####Prototypal
-Fallbacks are a back-up plan for objects, they are the cornerstone of **prototypal** style.  If a method or property is called on an object, where it does not exist for that object, JavaScript will check if it's defined on its fallback object. (See the README on [Inheritance and JavaScript](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/inheritance-and-javascript.md)).  Every function has a property called prototype where the fallback methods are stored.  So in the **prototypal** House function, **the House function's property (House.prototype) is explicitly delegated as the fallback location for EVERY house object created by House**.  So every method in House.prototype is available to every object created by House.  The advantage is that methods are not duplicated in memory. However, it utilises more code than the others.
+###Functional-Shared
 
-````
-var House = function(colour){
-	var obj = Object.create(House.prototype); // generate object
-	
-	obj.colour = colour;
-	obj.door = 'open'; //assign properties
-	
-	return obj;
-};
+Secondly functional-shared, which is better for memory management as it utilises a single repository for the methods. Every time an object is created, pointers are generated, so every new object will point back to the houseMethods object, where the functions are stored one single time in memory.
 
-//(Automatically generated by interpreter)
-//House.prototype = {};
 
-House.prototype.openDoor = function(){
-	this.door = 'open';
-};
+	var House = function(colour){
+    var obj = {}; // generate object
 
-House.prototype.closeDoor = function(){
-	this.door = 'closed';
-};
+    obj.colour = colour;
+    obj.door = 'open'; //assign properties
 
-var house = House('red'); //instantiation pattern
+    obj.open = houseMethods.open;
+    obj.close = houseMethods.close; //explicitly define or borrow methods
 
-````
+    return obj;
+	};
 
-####Pseudoclassical
+	var houseMethods = {};
 
-Lastly we come to **pseudoclassical**.  Instead of assigning the Object.create(House.prototype) to a new variable, it is assigned to `this` for the purpose of simple property assignment and method creation.  **The interpreter will do this automatically 'under the bonnet', and return the object, so long as the keyword `new` initialised at instantiation**  `var house = new House('red')`.  The disadvantage is that object creation is not that clear.
+	houseMethods.openDoor = function(){
+    this.door = 'open'; //Add method to delegate fallback object
+	};
 
-````
-var House = function(colour){
-	//(Automatically generated by interpreter)
-	//var this = Object.create(House.prototype);
-	this.colour = colour;
-	this.door = 'open';
+	houseMethods.closeDoor = function(){
+    this.door = 'closed'; //Add method to delegate fallback object
+
+	};
+
+	var house = House('red'); //instantiation pattern
+
+This is not as efficient as using the properties of its prototype which is known as delegating through fallback.
+
+###Prototypal
+
+If a method or property is called on an object, where it does not exist for that object, JavaScript will check if it's defined on its fallback object. (See the README on [Inheritance and JavaScript](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/inheritance-and-javascript.md)).  Fallbacks are like a back-up plan for objects, they are the cornerstone of *prototypal* style. Every function has a property called prototype where the fallback methods are stored. So in the prototypal House function, the House function's property (House.prototype) is explicitly delegated as the fallback location for EVERY house object created by House. So every method in House.prototype is available to every object created by House. The advantage is that methods are not duplicated in memory. However, it utilises more code than the others.
+
+	var House = function(colour){
+    var obj = Object.create(House.prototype); // generate object
+
+    obj.colour = colour;
+    obj.door = 'open'; //assign properties
+
+    return obj;
+	};
 
 	//(Automatically generated by interpreter)
-	//return this;
-};
+	//House.prototype = {};
 
-//(Automatically generated by interpreter)
-//House.property = {}
+	House.prototype.openDoor = function(){
+    this.door = 'open';
+	};
 
-House.prototype.openDoor = function(){
-	this.door = 'open';
-};
+	House.prototype.closeDoor = function(){
+    this.door = 'close';
+	};
 
-House.prototype.closeDoor = function(){
-	this.door = 'closed';
-};
-
-var house = new House('red'); //instantiation pattern
+	var house = House('red'); //instantiation pattern
 
 
-````
+###Pseudoclassical
+
+Lastly we come to pseudoclassical. Instead of assigning the Object.create(House.prototype) to a new variable, it is assigned to this for the purpose of simple property assignment and method creation. The interpreter will do this automatically 'under the bonnet', and return the object, so long as the keyword new initialised at instantiation var house = new House('red'). The disadvantage is that object creation is not that clear.
+
+	var House = function(colour){
+    //(Automatically generated by interpreter)
+    //var this = Object.create(House.prototype);
+    this.colour = colour;
+    this.door = 'open';
+
+    //(Automatically generated by interpreter)
+    //return this;
+	};
+
+	//(Automatically generated by interpreter)
+	//House.property = {}
+
+	House.prototype.openDoor = function(){
+    this.door = 'open';
+	};
+
+	House.prototype.closeDoor = function(){
+    this.door = 'closed';
+	};
+
+	var house = new House('red'); //instantiation pattern
+
 
 Instantiation happens when a functional class is utilized to create a new object,
- 
-`var house = House('red')` 
-     
-Note that Pseudoclassical is the only style that makes use of the `new` keyword, the other three classes are used like a function call.
 
-####Summary
-None of the above are better or worse to use, they are just styles, and it is up to you as the programmer to decide which your program would benefit the most from.
+	var house = House('red')
+
+Note that Pseudoclassical is the only style that makes use of the new keyword, the other three classes are used like a function call.
+
+###Summary
+
+None of these four are better or worse to use, they are just styles, and it is up to you as the programmer to decide which your program would benefit the most from.
+
+*Functional*
+
+* Most transparent and easy to understand.
+ 
+* Higher memory cost because each instance retains its own properties
+
+
+*Functional-shared*
+
+* Offers memory cost advantage over functional
+
+* Adds a little complexity over functional
+
+*Prototypal*
+
+* Shared properties in a seperate object and not extended within the instatiated object.
+
+* Code readability is more complex
+
+*Pseudoclassical*
+
+* Often the most optimized pattern and very common
+
+* *this* can be difficult to understand
 
 ###Related
 
@@ -160,8 +183,8 @@ None of the above are better or worse to use, they are just styles, and it is up
 
 [Inheritance and JavaScript](http://codingforeveryone.foundersandcoders.org/JavaScript/inheritance-and-javascript.html)
 
-
 ###References
+
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 
 [Udacity Object-Oriented JavaScript course](https://www.udacity.com/course/object-oriented-javascript--ud015)
