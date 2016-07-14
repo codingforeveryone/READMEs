@@ -24,11 +24,11 @@ So this is probably going to be a good fit for your whiteboard problem.
 - Others, such as the merge sort, use an auxillary data structure to sort.
 
 ###Stable and Non-stable
-- An algorithm is stable if it maintains the relative order of items with equal values, such as the 5 of hearts and the 5 of spades from a deck of playing cards (pictured below). Bubble sort is an example of a stable algorithm.Sorting algorithms arrange data in a particular order. There are many ways to classify these algorithms:
+- An algorithm is stable if it maintains the relative order of items with equal values, such as the 5 of hearts and the 5 of spades from a deck of playing cards (pictured below). Bubble sort is an example of a stable algorithm.
 
 ![Stable](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sorting_stability_playing_cards.svg/220px-Sorting_stability_playing_cards.svg.png)  
 *Fig1. is taken from [Wikipedia](https://en.wikipedia.org/wiki/Sorting_algorithm)*    
-* an algorithm is non-stable if it doesn't maintain the relative order of items with equals values.
+* An algorithm is non-stable if it doesn't maintain the relative order of items with equal values.
 
 ###Comparison of sorting algorithm's performance
   
@@ -43,12 +43,11 @@ heap sort|O(nlogn)|O(nlogn)|O(nlogn)|O(1)|no|
 <caption>*Depends on the implementation.</caption>
 
 ### Bubble sort
-Bubble sort is a descriptive name, since bubbles float to the surface just as grater elements „bubble” to the end of the array.
-Bubble sort is rarely used in practice, but almost every introducton to sorting algorithms starts with bubble sort.
+'Bubble sort' is a descriptive name, since bubbles float to the surface just as greater elements 'bubble' to the end of the array.
+Bubble sort is rarely used in practice, but almost every introducton to sorting algorithms starts with it.
 
 Main sorting principle: the algorithm compares each pair of adjacent elements and swaps them if they are not in order.
-After the first iteration the highest value is at the end of the array. Thus, the next iteration doesn’t need to include the last element. 
-So the second for cycle restricts the inner loop to exclude already sorted values. 
+After the first iteration the highest value is at the end of the array. Thus, the each iteration includes fewer elements. 
 
 Figure 2. explains the bubble sort algorithm:
 
@@ -77,12 +76,9 @@ function bubbleSort(test){
 ```
 
 ###Selection Sort
-
-Algorihm: the idea behind the algorithm is to imaginary devide the array into two parts: sorted and unsorted parts.  
-1. The sorted part is empty, while the unsorted part contains all the values.  
-2. Find the smallest element in the unsorted part, and add it to the sorted part. (In practice: swap the  first value in the unsorted part
-with the smallest value, then the minimal element is included in the sorted part. At every step the number of sorted elements are increased by one,
- while the number of unsorted ones are decreased by 1.)  
+Algorithm: the idea behind the algorithm is to imagine dividing the array into two parts: sorted and unsorted.  
+1. The sorted part is empty, while the unsorted part contains all the values.
+2. Find the smallest element in the unsorted part, and add it to the sorted part. In practice: swap the first value in the unsorted part with the smallest value, then the minimal element is included in the sorted part. At every step the number of sorted elements are increased by one, while the number of unsorted ones are decreased by one.
 3. Repeat step 2 until the unsorted array is not empty.
 
 Figure 3. explains the selection sort algorithm:
@@ -116,13 +112,13 @@ function selectionSort(test){
 ```
 
 ###Insertion Sort
-Algorithm: the idea behind the algorithm is to imaginarily devide the array into rwo parts: sorted and unsorted part.  
-1. If it is the first element, it is regarded as sorted.  
-2. Select the next element in the array.  
+Again, imagine dividing the array into sorted and unsorted parts, and work through the elements.  
+1. If it is the first element, it is regarded as sorted.
+2. Select the next element in the array.
 3. Compare the selected element with all elements in the sorted sub-array.  
 4. Shift all the elements in the sorted sub-array that are greater than the value to be inserted.  
 5. Insert the element.  
-6. Repeat steps 2-5 until the whole array is sorted..  
+6. Repeat steps 2-5 until the whole array is sorted.
 
 Figure 4. explains the insertion sort algorithm:
 
@@ -150,7 +146,7 @@ function insertionSort(test){
 
 ###Quicksort
 
-Quicksort is a divide and conquer algorithm. The algorithm can be borken down to two basic operations:
+Quicksort is a 'divide and conquer' algorithm. The algorithm can be broken down to two basic operations:
  swapping items and partitioning a section of the array.
 
 
