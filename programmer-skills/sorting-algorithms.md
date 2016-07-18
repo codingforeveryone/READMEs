@@ -1,15 +1,15 @@
 # Sorting algorithms
 
-At a risk of stating the obvious, sorting algorithms arrange lists of data in a particular order. There are various types of sorting algorithms, such as counting, radix and comparison sorts. This tutorial is concerned with comparison sorts, which usually sort list elements using a single comparison operation (eg: >= ).
+At a risk of stating the obvious, sorting algorithms arrange lists of data in a particular order. There are various types of sorting algorithms, such as counting, radix and comparison sorts. This tutorial is concerned with comparison sorts, which usually sort list elements using a single comparison operation (eg: `>=` ).
 
-You are probably familiar with the JavaScript array function array.prototype.sort(). You can read all about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
+You are probably familiar with the JavaScript array method `Array.prototype.sort()`. You can read all about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
 
-MDN says 
+As the Mozilla Developer Network documentation explains:
 >The sort() method sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points.
 
-As you probably know, the sort function takes your array and compares the elements according to their Unicode values. It coerces numbers to strings and then compares them, and it makes a bit of a mess of numbers! To overcome this, you can pass a comparison function argument to the sort function, which will allow numerical sorting. Using the arguments a and b you can sort in ascending or descending order, and using bracket and dot notation, you can sort multidimensional arrays and arrays of objects. 
+As you probably know, the sort method takes your array and compares the elements according to their Unicode values. It coerces numbers to strings and then compares them, and it makes a bit of a mess of numbers! To overcome this, you can pass a comparison function argument to the sort method, which will allow numerical sorting. Using the arguments `a` and `b` you can sort in ascending or descending order, and using bracket and dot notation you can sort multidimensional arrays and arrays of objects.
 
-So far so good. But one day, you find yourself in front of a whiteboard, and the interviewer says 'Write me a sort function suitable for small to medium datasets of moderate complexity, including different data types and floating point numbers. Your time starts now.'
+So far so good. But one day, you find yourself in front of a whiteboard, and the interviewer says 'write me a sort function suitable for small to medium datasets of moderate complexity, including different data types and floating-point numbers. Your time starts now.'
 
 You can't use the built-in sort function. What are you going to do? What do you need to know?
 
@@ -21,16 +21,17 @@ So this is probably going to be a good fit for your whiteboard problem.
 
 ###Memory use
 - Some sorting algorithms use 'in-place sorting', which means the algorithm requires only a small constant amount of additional space. An example of this is the bubble sort.
-- Others, such as the merge sort, use an auxillary data structure to sort.
+- Others, such as the merge sort, use an auxillary data structure while sorting.
 
-###Stable and Non-stable
+###Stable and non-stable
 - An algorithm is stable if it maintains the relative order of items with equal values, such as the 5 of hearts and the 5 of spades from a deck of playing cards (pictured below). Bubble sort is an example of a stable algorithm.
+- An algorithm is non-stable if it doesn't maintain the relative order of items with equal values.
 
 ![Stable](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sorting_stability_playing_cards.svg/220px-Sorting_stability_playing_cards.svg.png)  
 *Fig1. is taken from [Wikipedia](https://en.wikipedia.org/wiki/Sorting_algorithm)*    
-* An algorithm is non-stable if it doesn't maintain the relative order of items with equal values.
 
-###Comparison of sorting algorithm's performance
+
+###Comparison of sorting algorithms' performance
   
 Method | Best | Average | Worse | Memory | Stable |
 ----|----|----|----|----|----|
@@ -40,34 +41,33 @@ Insertion sort|O(n)|O(n<sup>2</sup>)|O(n<sup>2)</sup>|O(1)|yes|
 Quick sort|O(nlogn)|O(nlogn)|O(n<sup>2</sup>)|O(logn)|*|
 merge sort|O(nlogn)|O(nlogn)|O(nlogn)|O(n)|yes|
 heap sort|O(nlogn)|O(nlogn)|O(nlogn)|O(1)|no|
-<caption>*Depends on the implementation.</caption>
+<caption>*Implementation-dependent.</caption>
 
 ### Bubble sort
-'Bubble sort' is a descriptive name, since bubbles float to the surface just as greater elements 'bubble' to the end of the array.
-Bubble sort is rarely used in practice, but almost every introducton to sorting algorithms starts with it.
 
-Main sorting principle: the algorithm compares each pair of adjacent elements and swaps them if they are not in order.
-After the first iteration the highest value is at the end of the array. Thus, the each iteration includes fewer elements. 
+Bubble sort is so called because greater elements "bubble" to the end of the array just as bubbles float to the surface of a liquid.
+Bubble sort is rarely used in practice due to its poor performance, but almost every introduction to sorting algorithms starts with bubble sort as it is easy to understand and implement.
+
+The algorithm compares each pair of adjacent elements and swaps them if they are not in order.
+
+After the first iteration the highest value is at the end of the array. Thus, the next iteration doesn’t need to include the last element.
 
 Figure 2. explains the bubble sort algorithm:
 
 ![BubbleSort](http://www.algolist.net/img/sorts/bubble-sort-1.png)  
 *Fig2. Picture is taken from  [algolist.net](http://www.algolist.net/Algorithms/Sorting/Selection_sort).*  
 
+#####JavaScript implementation of bubble sort:
 
-
-#####Javascript implementation of bubble sort:
-
-```javascript
+```JavaScript
 function bubbleSort(test){
-    console.log(test);
     for (var i = test.length; i > 1; i--){
         for (var j = 0; j < i -1; j++){
-            if( test[j] > test[j+1])
+            if (test[j] > test[j+1])
             {
                 var temp = test[j];
                 test[j] = test[j+1];
-                test[j+1]= temp;
+                test[j+1] = temp;
             }
         }
     }
@@ -75,22 +75,24 @@ function bubbleSort(test){
 }
 ```
 
-###Selection Sort
-Algorithm: the idea behind the algorithm is to imagine dividing the array into two parts: sorted and unsorted.  
-1. The sorted part is empty, while the unsorted part contains all the values.
-2. Find the smallest element in the unsorted part, and add it to the sorted part. In practice: swap the first value in the unsorted part with the smallest value, then the minimal element is included in the sorted part. At every step the number of sorted elements are increased by one, while the number of unsorted ones are decreased by one.
-3. Repeat step 2 until the unsorted array is not empty.
+###Selection sort
+
+The idea behind the algorithm is to divide the array into two parts: a sorted part and an unsorted part.
+
+1. Initially, the sorted part is empty while the unsorted part contains all the values.
+2. Find the smallest element in the unsorted part, and add it to the sorted part. (In practice: swap the first value in the unsorted part with the smallest value. This smallest value then forms the beginning of the sorted part. At every step the number of sorted elements are increased by one, while the number of unsorted ones are decreased by one.)
+3. Repeat step 2 until the unsorted array is empty.
 
 Figure 3. explains the selection sort algorithm:
 
 ![SelectionSort](http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/09/images/selection-sort.gif)  
 *Fig3. Picture is taken from  this [page](http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/09/images/selection-sort.gif)*   
 
-#####Javascript implementation of selection sort:
+#####JavaScript implementation of selection sort:
 
-```javascript
-function selectionSort(test){
-	for (var  j = 0; j < test.length-1; j++)
+```JavaScript
+function selectionSort(test) {
+	for (var j = 0; j < test.length-1; j++)
 	{
 		var iMin = j;
 		for (var i = j+1; i < test.length; i++)
@@ -111,11 +113,12 @@ function selectionSort(test){
 }
 ```
 
-###Insertion Sort
-Again, imagine dividing the array into sorted and unsorted parts, and work through the elements.  
+###Insertion sort
+The idea behind insertion sort is to divide the array into two parts: a sorted part and an unsorted part.
+
 1. If it is the first element, it is regarded as sorted.
 2. Select the next element in the array.
-3. Compare the selected element with all elements in the sorted sub-array.  
+3. Compare the selected element with all elements in the sorted sub-array.
 4. Shift all the elements in the sorted sub-array that are greater than the value to be inserted.  
 5. Insert the element.  
 6. Repeat steps 2-5 until the whole array is sorted.
@@ -125,14 +128,14 @@ Figure 4. explains the insertion sort algorithm:
 ![InsertionSort](http://www.algolist.net/img/sorts/insertion-sort-1.png)   
 *Fig4. Picture is taken from  [algolist](http://www.algolist.net/Algorithms/Sorting/Selection_sort)*    
 
-#####Javascript implementation of insertion sort:
+#####JavaScript implementation of insertion sort:
 
-```javascript
-function insertionSort(test){
+```JavaScript
+function insertionSort(test) {
 	for (var i = 1; i < test.length; i++)
 	{
 		var j = i;
-		while ( j > 0 && test[j-1] > test[j])
+		while (j > 0 && test[j-1] > test[j])
 		{
 			var temp = test[j-1];
 			test[j-1] = test[j];
@@ -144,63 +147,58 @@ function insertionSort(test){
 }
 ```
 
-###Quicksort
+###Quick sort
 
-Quicksort is a 'divide and conquer' algorithm. The algorithm can be broken down to two basic operations:
+Quick sort is a 'divide and conquer' algorithm. The algorithm can be broken down to two basic operations:
  swapping items and partitioning a section of the array.
 
+The steps of the algorithm are:
 
-Algorithm in steps:  
 1. Choose the pivot value (you compare all other elements against the pivot at first).    
-2. Partition: rearrange the array in such a way that it is divided into two parts. 
-All the elements smaller than the pivot element go before the pivot that is the left part. All the
-elements greater than the pivot go after the pivot element that is the right part.
-All the elements in the left and right sub-arrays must satisfy *left ≤ pivot ≤ right* inequality.  
-3. Sort both parts of the array. Recursively invoke quicksort to the rigth and left part.
+2. Partition: rearrange the array in such a way that it is divided into two parts. All the elements smaller than the pivot element go before the pivot (known as the 'left part'). All the elements greater than the pivot go after the pivot element (known as 'the right part'). All the elements in the left and right sub-arrays must satisfy *left ≤ pivot ≤ right* inequality.
+3. Sort both parts of the array. Recursively invoke quick sort in the right and left parts.
 
 Partition algorithm:  
 1. Define two variables:  
-&emsp;&emsp;left: pointing at the first item in the array,  
-&emsp;&emsp;right: pointing at the last item in  the array.  
-2. While the value at array[left] is less than the pivot value, add 1 to left.
-Continue until you reach an item which is greater or equal to the pivot value.    
-3.While the value at array[right] is greater than the pivot value, substract one from right.
-Continue until you reach an item which is lesser or equal to the pivot value.    
-4.If array[left] is less than or equal to array[right], then swap the two values.  
-5. Add 1 to left,and substract one to right.  
-6. if left and right indices point to the same element (array[left]==array[right]) STOP, otherwise start again from step 1.
+&emsp;&emsp;`left`: pointing at the first item in the array,
+&emsp;&emsp;`right`: pointing at the last item in the array.
+2. While the value at `array[left]` is less than the pivot value, add one to `left`. Continue until you reach an item which is greater or equal to the pivot value.
+3.vWhile the value at `array[right]` is greater than the pivot value, substract one from right. Continue until you reach an item which is lesser than or equal to the pivot value.
+4. If `array[left]` is less than or equal to `array[right]`, then swap the two values.
+5. Add one to `left`, and substract one from `right`.
+6. If left and right indices point to the same element (`array[left] === array[right]`) then stop, otherwise start again from step 1.
 
-There are many approaches to choose the pivot item.
+There are many approaches to choosing the pivot item, e.g.:
 * select the first item in the array. If the array is already sorted, this choice has the worst performance.
-* select the middle item in the array. The latter implementation will follow this approach.
+* select the middle item in the array. The implementation below will follow this approach.
 
-Figure 5. explains the quicksort algorithm:  
+Figure 5. explains the quick sort algorithm:
 ![Quicsort](http://www.tutorialspoint.com/data_structures_algorithms/images/quick_sort_partition_animation.gif)    	  
 *Fig5. is taken from  [Tutorialspoint](http://www.tutorialspoint.com/data_structures_algorithms)* 
 
-#####Javascript implementation of quicksort:
+#####JavaScript implementation of quick sort:
 
-```javascript
-function swap(array,index1,index2){
+```JavaScript
+function swap(array,index1,index2) {
 	var temp = array[index1];
 	array[index1] = array[index2];
 	array[index2] = temp;
 }
 
-function partition(array,left,right){
-	var pivot = Math.floor( (left + right)/2 );
+function partition(array,left,right) {
+	var pivot = Math.floor((left + right) / 2);
 	var i = left;
 	var j = right;
-	while ( i < j)
+	while (i < j)
 	{
-		while ( array[i] < array[pivot]){
+		while (array[i] < array[pivot])
+        {
 			i++;
 		}
-		while ( array[j] > array[pivot] )
+		while (array[j] > array[pivot])
 		{
 			j--;
 		}
-		
 		if (i <= j)
 		{
 			swap(array, i, j);
@@ -212,35 +210,34 @@ function partition(array,left,right){
 	return i;
 }
 
-
-function quickSort(array,left,right){
+function quickSort(array, left, right) {
 	var index;
-	if (array.length > 1) {
-
+	if (array.length > 1)
+    {
         index = partition(array, left, right);
-
-        if (left < index - 1) {
+        if (left < index - 1)
+        {
             quickSort(array, left, index - 1);
         }
-
-        if (index < right) {
+        if (index < right)
+        {
             quickSort(array, index, right);
         }
 
     }
-
     return array;
 }
 ```
 
-###Merge Sort
+###Merge sort
 
-The idea behind merge sort is that it's easier to merge two smaller already sorted lists than to sort a single bigger unsorted list.
+The idea behind merge sort is that it's easier to merge two smaller, already sorted lists than to sort a single, bigger unsorted list.
 
-Algorithm:   
-1. if the list has only one element, it is considered sorted, return it.  
-2. divide the list into two halves until every list has only 1 element.  
-3. merge the smaller lists into new lists in sorted order until you have one sorted list. 
+The steps of the algorithm are:
+
+1. If the list has only one element, it is considered sorted so return it.
+2. Divide the list into two halves until every list has only 1 element.
+3. Merge the smaller lists into new lists in sorted order until you have one sorted list.
 
 Figure 6. explains the merge sort algorithm:
 
@@ -248,10 +245,10 @@ Figure 6. explains the merge sort algorithm:
 *Fig6. Picture is taken from [Java2novice](href="www.java2novice.com)*   
 
 
-#####Javascript implementation of merge sort:
+#####JavaScript implementation of merge sort:
 
-```javascript
-function merge(left_array, right_array){
+```JavaScript
+function merge(left_array, right_array) {
 	var result = [];
 	var right_index = 0;
 	var left_index = 0;
@@ -259,23 +256,24 @@ function merge(left_array, right_array){
 	{
 		if (left_array[left_index] < right_array[right_index])
 		{
-			result.push( left_array[left_index] );
+			result.push(left_array[left_index]);
 			++left_index;
-		}else{
-			result.push( right_array[right_index] );
+		} else
+        {
+			result.push(right_array[right_index]);
 			++right_index;
 		}
 	}
 	return result.concat(left_array.slice(left_index)).concat(right_array.slice(right_index));
 }
 
-function mergeSort(array){
-	if (array.length < 2) return array;
-	var middle = Math.floor( array.length/2 );
-	var left_array = array.slice(0,middle);
+function mergeSort(array) {
+	if (array.length < 2) { return array; }
+	var middle = Math.floor(array.length/2);
+	var left_array = array.slice(0, middle);
 	var right_array = array.slice(middle);
 	
-	return merge(mergeSort(left_array),mergeSort(right_array));
+	return merge(mergeSort(left_array), mergeSort(right_array));
 }
 ```
 
