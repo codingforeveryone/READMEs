@@ -33,14 +33,14 @@ So this is probably going to be a good fit for your whiteboard problem.
 
 ###Comparison of sorting algorithms' performance
   
-Method | Best | Average | Worse | Memory | Stable |
+Method | Best | Average | Worst | Memory | Stable |
 ----|----|----|----|----|----|
 Bubble sort |O(n)|O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|yes|
 Selection sort|O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|no|
 Insertion sort|O(n)|O(n<sup>2</sup>)|O(n<sup>2)</sup>|O(1)|yes|
 Quick sort|O(nlogn)|O(nlogn)|O(n<sup>2</sup>)|O(logn)|*|
-merge sort|O(nlogn)|O(nlogn)|O(nlogn)|O(n)|yes|
-heap sort|O(nlogn)|O(nlogn)|O(nlogn)|O(1)|no|
+Merge sort|O(nlogn)|O(nlogn)|O(nlogn)|O(n)|yes|
+Heap sort|O(nlogn)|O(nlogn)|O(nlogn)|O(1)|no|
 <caption>*Implementation-dependent.</caption>
 
 ### Bubble sort
@@ -159,18 +159,17 @@ The steps of the algorithm are:
 3. Sort both parts of the array. Recursively invoke quick sort in the right and left parts.
 
 Partition algorithm:  
-1. Define two variables:  
-&emsp;&emsp;`left`: pointing at the first item in the array,
-&emsp;&emsp;`right`: pointing at the last item in the array.
+
+1. Define two variables: `left` (pointing at the first item in the array) and `right` (pointing at the last item in the array).
 2. While the value at `array[left]` is less than the pivot value, add one to `left`. Continue until you reach an item which is greater or equal to the pivot value.
-3.vWhile the value at `array[right]` is greater than the pivot value, substract one from right. Continue until you reach an item which is lesser than or equal to the pivot value.
+3. While the value at `array[right]` is greater than the pivot value, substract one from right. Continue until you reach an item which is lesser than or equal to the pivot value.
 4. If `array[left]` is less than or equal to `array[right]`, then swap the two values.
 5. Add one to `left`, and substract one from `right`.
 6. If left and right indices point to the same element (`array[left] === array[right]`) then stop, otherwise start again from step 1.
 
 There are many approaches to choosing the pivot item, e.g.:
-* select the first item in the array. If the array is already sorted, this choice has the worst performance.
-* select the middle item in the array. The implementation below will follow this approach.
+* Select the first item in the array. If the array is already sorted, this choice has the worst performance.
+* Select the middle item in the array. The implementation below will follow this approach.
 
 Figure 5. explains the quick sort algorithm:
 ![Quicsort](http://www.tutorialspoint.com/data_structures_algorithms/images/quick_sort_partition_animation.gif)    	  
