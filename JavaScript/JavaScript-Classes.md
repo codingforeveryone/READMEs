@@ -46,7 +46,7 @@ Firstly, the functional style is a fast, very simple and clear means of object c
     }; //explicitly define or borrow methods
 
     obj.closeDoor = function(){
-        obj.door = 'close;
+        obj.door = 'close';
     }; //explicitly define or borrow methods
 
     return obj;
@@ -79,7 +79,7 @@ Secondly there is functional-shared, a better approach for memory management as 
 	};
 
 	houseMethods.closeDoor = function(){
-    this.door = 'closed'; //Add method to delegate fallback object
+    this.door = 'close'; //Add method to delegate fallback object
 
 	};
 
@@ -136,7 +136,7 @@ Lastly we come to pseudoclassical. Instead of assigning the `Object.create(House
 	};
 
 	House.prototype.closeDoor = function(){
-    this.door = 'closed';
+    this.door = 'close';
 	};
 
 	var house = new House('red'); //instantiation pattern
@@ -174,7 +174,7 @@ None of these four are better or worse than each other to use, they are just sty
 
 * Often the most optimized pattern and very common
 
-* *this* can be difficult to understand
+* The keyword *this* can be difficult to understand
 
 ###Related
 
