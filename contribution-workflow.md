@@ -3,8 +3,7 @@
 ## Introduction
 
 This document outlines the workflow and steps to go through when proposing new changes to the READMEs repository. The workflow should be followed when making changes to improve current READMEs as well as when adding new READMEs.
-At first sight the process might seem complicated, but it is a great exercise to practice contribution to future programming projects and
-ensures that all added changes are checked.
+At first sight the process might seem complicated, but it is a great exercise to practise contributing to future programming projects and ensures that all added changes are checked.
 
 If you have any questions or are stuck somewhere please don't hesitate to ask in the README Gitter channel: [![Join the chat at https://gitter.im/codingforeveryone/READMEs](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -13,14 +12,14 @@ If you have any questions or are stuck somewhere please don't hesitate to ask in
 The process used is called [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 The basic concept of this workflow is that every change is treated as a new "feature" and made on a branch dedicated to that change.
 Once the change is ready a [pull request](https://help.github.com/articles/using-pull-requests/) is raised. This pull request will be checked by another person and then merged into the master branch.
-After merging the branch is deleted.
+After merging, the branch is deleted.
 
 
 While you could do all your editing and branch creation using the GitHib online interface, it is easier in the long run to keep a copy of the repository on you local machine, and work on it there. This entails setting up Git and learning to use the command line interface.
 
 ##Setting up a local repository
 
-Before working with the READMEs repository we should install git and clone the repository to our local directory. Refer to [Git Basics]((http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac)) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there).
+Before working with the READMEs repository we should install Git and clone the repository to our local directory. Refer to [Git Basics]((http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac)) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there).
 Be aware that most beginners' guides to setting up Git out on the web assume that you will be making contributions via a fork. **In this workflow though we don't use forks (remote copies of the repository) but simply branches.**
 
 Setting up Git without a fork is simpler. All you need to do is clone the remote repository:
@@ -62,14 +61,14 @@ To create a new branch and switch to the branch at the same time, you can use th
 $ git checkout -b <name of the branch>
 ```
 
-This is equalivalent to first creating the branch and then switching to it with the following two commands:
+This is equivalent to first creating the branch and then switching to it with the following two commands:
 
 ```bash
 $ git branch <name of the branch>
 $ git checkout <name of the branch>
 ```
 
-After creating and switching to the branch locally you should push the branch to GitHub and set it as the default upstream branch:
+After creating and switching to the branch locally, you should push the branch to GitHub and set it as the default upstream branch:
 
 ```bash
 $ git push -u origin <name of the branch>
@@ -120,7 +119,7 @@ Pushing the commited stages on the branch to the remote repository:
 $ git push
 ```
 
-For `git push` to correctly work, the default upstream branch has to be set correctly already. Otherwise you have to use the following command once, in order to set the upstream branch.
+For `git push` to correctly work, the default upstream branch has to be set correctly already. Otherwise you have to use the following command once in order to set the upstream branch.
 
 ```bash
 git push -u origin <name of the branch>
@@ -134,23 +133,21 @@ On the repository you will go through the following steps to issue your pull req
 
 1. Switch to your branch via the drop-down menu on the top left.
 2. Click on "New pull request"
-3. Name & assign your pull request
+3. Name and assign your pull request
 4. Click on "Create pull request"
 
-This is quite straight-forward. You can see the steps in more detail on [Github help](https://help.github.com/articles/creating-a-pull-request/).
+This is quite straightforward. You can see the steps in more detail on [Github help](https://help.github.com/articles/creating-a-pull-request/).
 
-Note: If you find you have additional commits to push on the same file after completing the above steps, you may replicate part of the steps above and push additional commits to the existing pull request.
+Note: If you find you have additional commits to push to the same file after completing the above steps, you may replicate part of the steps above and push additional commits to the existing pull request.
 To do so, start by setting the default upstream branch as before, then simply follow Step 2 again to stage, commit, and push the ADDITIONAL changes. If done correctly, the additional commits should be visible within your existing pull request. 
 
 #### Assign the pull request
 
 If possible, always assign your pull request to a specific person. That makes sure someone gets notified to look at it.
 The assigned person should either be the original creator of the README file or someone who recently contributed a lot. 
-To check who you should assign your request to, go back to the original file in the repository. To the right side, under "Contributors"
-you will find the "Blame" button. This reveals the change list, sorted by date in descending order, with corresponding usernames.
+To check who you should assign your request to, go back to the original file in the repository. To the right side, under "Contributors" you will find the "Blame" button. This reveals the change list, sorted by date in descending order and with corresponding usernames.
 
-To assign your pull request to an individual, go back to the page for your specific pull request and on the right side of the page you will 
-see "Assignee" next to a grey gear. Click the gear, and search for the user from the previous step.
+To assign your pull request to an individual, go back to the page for your specific pull request and on the right side of the page you will see "Assignee" next to a grey gear symbol. Click the gear, and search for the user from the previous step.
 
 For completely new README files you created, you don't have to assign anyone. Instead just post the link in the [README Gitter channel](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 Then anyone available can check and merge your new README.
