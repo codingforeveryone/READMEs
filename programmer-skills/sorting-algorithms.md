@@ -32,6 +32,10 @@ So this is probably going to be a good fit for your whiteboard problem.
 
 
 ###Comparison of sorting algorithms' performance
+
+The big-o notation is widely used to measure the efficiency of algorithms. When can  this be important? When you handle data sets with millions of entries scaling matters.
+
+For further inromation read the README on the big-O notation.  
   
 Method | Best | Average | Worst | Memory | Stable |
 ----|----|----|----|----|----|
@@ -55,7 +59,7 @@ After the first iteration the highest value is at the end of the array. Thus, th
 Figure 2. explains the bubble sort algorithm:
 
 ![BubbleSort](http://www.algolist.net/img/sorts/bubble-sort-1.png)  
-*Fig2. Picture is taken from  [algolist.net](http://www.algolist.net/Algorithms/Sorting/Selection_sort).*  
+*Fig2. is taken from  [algolist.net](http://www.algolist.net/Algorithms/Sorting/Selection_sort).*  
 
 #####JavaScript implementation of bubble sort:
 
@@ -86,7 +90,7 @@ The idea behind the algorithm is to divide the array into two parts: a sorted pa
 Figure 3. explains the selection sort algorithm:
 
 ![SelectionSort](http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/09/images/selection-sort.gif)  
-*Fig3. Picture is taken from  this [page](http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/09/images/selection-sort.gif)*   
+*Fig3.  is taken from  this [page](http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/09/images/selection-sort.gif)*   
 
 #####JavaScript implementation of selection sort:
 
@@ -126,7 +130,7 @@ The idea behind insertion sort is to divide the array into two parts: a sorted p
 Figure 4. explains the insertion sort algorithm:
 
 ![InsertionSort](http://www.algolist.net/img/sorts/insertion-sort-1.png)   
-*Fig4. Picture is taken from  [algolist](http://www.algolist.net/Algorithms/Sorting/Selection_sort)*    
+*Fig4.  is taken from  [algolist](http://www.algolist.net/Algorithms/Sorting/Selection_sort)*    
 
 #####JavaScript implementation of insertion sort:
 
@@ -171,9 +175,14 @@ There are many approaches to choosing the pivot item, e.g.:
 * Select the first item in the array. If the array is already sorted, this choice has the worst performance.
 * Select the middle item in the array. The implementation below will follow this approach.
 
-Figure 5. explains the quick sort algorithm:
+
+Figure 5. explains the quick ort algorithm:  
+![Qicksort](http://www.algolist.net/img/sorts/quick-sort.png)  
+*Fig5. is taken from [Algolist](http://www.algolist.net/img/sorts/quick-sort.png)*
+
+Figure 6. shows ananimation of the quick sort algorithm:
 ![Quicsort](http://www.tutorialspoint.com/data_structures_algorithms/images/quick_sort_partition_animation.gif)    	  
-*Fig5. is taken from  [Tutorialspoint](http://www.tutorialspoint.com/data_structures_algorithms)* 
+*Fig6. is taken from  [Tutorialspoint](http://www.tutorialspoint.com/data_structures_algorithms)* 
 
 #####JavaScript implementation of quick sort:
 
@@ -238,10 +247,12 @@ The steps of the algorithm are:
 2. Divide the list into two halves until every list has only 1 element.
 3. Merge the smaller lists into new lists in sorted order until you have one sorted list.
 
-Figure 6. explains the merge sort algorithm:
+
+
+Figure 7. explains the merge sort algorithm:
 
 ![MergeSort](http://www.java2novice.com/images/merge_sort.png)   
-*Fig6. Picture is taken from [Java2novice](href="www.java2novice.com)*   
+*Fig7. is taken from [Java2novice](href="www.java2novice.com)*   
 
 
 #####JavaScript implementation of merge sort:
@@ -276,8 +287,156 @@ function mergeSort(array) {
 }
 ```
 
+###Heapsort  
+
+It is an inplace sorting algorithm implemented using the heap datastructure. Thus, we first have to explore what is a heap and how to build one. 
+
+
+####The heap data structure
+
+The heap data structure is an array that can be interpreted as a complete binary tree.
+Each element of the array is represented as a node in the binary tree.
+Every new level is filled from left to right. Only the last level can have missing elements.
+When we use an array to represent a heap it has two important characteristics:
+* the length of the array, which is equal to the total number of elements.
+* the heapsize, the number of elements in the heap. (Note: during the heapsort algorithm the number of elements in the heap changes dynamically. )
+
+
+There are two types of heap:  
+1. Max heap: 	
+&emsp;&emsp;`array[parent(i)]` &ge; `array[i]` is true if i is not the root element.  
+2. Min heap:  
+&emsp;&emsp;`array[parent(i)]` &le; `array[i]` is true if i is not the root element.  
+For clarity we will always use a max heap in this note. We will refer to (1.) as heap property.
+
+
+Figure 8. explains the relation between an array and the corresponding heap:  
+![heap as an array](http://www.stoimen.com/blog/wp-content/uploads/2012/08/4.-Heap-as-an-Array.png)  
+*Fig 8. taken from [here](http://www.stoimen.com/blog/2012/08/07/computer-algorithms-heap-and-heapsort-data-structure/)*  
+ 
+The JavaScript code for finding a node's parent and child elements:  
+ ```javascript
+function parent(i){
+	return Math.ceil( i / 2)-1;
+}
+
+function leftChild(i){
+	return 2*i+1;
+}
+
+function rightChild(i){
+return 2*i+2;
+}
+```
+
+The functions in our implementation:   
+1. heapSort: we invoke it on the array to be sorted.  
+2. buildHeap: builds a heap from an array.  
+3. heapify: tests whether all nodes satisfy the heap property.  
+4. swap: swaps elements if they violate the heap property. 
+
+The heapsort algorithm:      
+1. Build a max/min heap from the array to be sorted, now  `heapsize = array.length`  
+2. While `heapsize > 1`  
+&emsp;Swap the frist element (mininum or maximum value depending on you implementation) with last one,  
+&emsp; reduce the `heapsize` by one,  then heapify the heap.  
+3. The array is sorted.  
+
+####Building the heap  
+
+The items in the lowest tree level have no child nodes to compare against, thus they are considered sorted. Good for us! 
+We start from `Math.floor( array.length / 2) ` counting backwards. 
+
+![Random array to heap](http://www.stoimen.com/blog/wp-content/uploads/2012/08/7.-Random-Array-to-Heap.png)   
+*Fig 9. is taken from [here](http://www.stoimen.com/blog/2012/08/07/computer-algorithms-heap-and-heapsort-data-structure/)*   
+
+####Heapify
+
+When we are building a max heap with our heapify function, we have to compare parent nodes with its children.  
+1. If the parent node has the greatest value, then do nothing.  
+2. If one of the child nodes is greater than the parent node, then swap the greater child node with its parent node.  
+3. If both of the child nodes are greater than the parent node, then swap the biggest of the child nodes with the parent node.    
+
+Figure 10. explains heapify:
+
+![heapify explained](http://www.stoimen.com/blog/wp-content/uploads/2012/08/6.-Heapify-Part-1.png)  
+*Fig 10. is taken from [here](http://www.stoimen.com/blog/2012/08/07/computer-algorithms-heap-and-heapsort-data-structure/)*  
+	
+
+
+```javascript
+function swap(array,i,j)
+{
+	var temp = array[i];
+	array[i] = array[j];
+    array[j] = temp;
+	return array;
+}
+```
+
+```javascript
+function heapify(array,heapSize,i){
+	console.log("heapSize",heapSize)
+	var l = leftChild(i);
+	var r = rightChild(i);
+	var largest;
+	if (l < heapSize && array[l]>array[i])
+		largest = l;
+	else
+		largest = i;
+	if (r < heapSize && array[r] > array[largest])
+		largest = r;
+	if (largest != i){
+		swap(array,i,largest);		
+		return heapify(array, heapSize,largest);
+	}
+}
+```
+
+```javascript
+function buildHeap(array,heapSize){
+	for (var i= Math.floor(heapSize / 2) -1; i >=0; i--){
+		console.log("within buildheap",array,i);
+		heapify(array,heapSize,i);
+	}
+}
+``` 
+
+#### Sorting
+
+Now the elements are in a proper heap, but they are not necessarily sorted (the heap property only guarantees that every parent node is
+greater than its childrens, we know nothing about the relations of elements on different branches!).
+We will collect the largest elements at the end of our array in a sorted state, and store the other elements in a heap at the front of our array.
+At start, we have no large elements at the end, and the heap at the front occupies all space. We will denote the size of the heap with heapsize,
+this is array.length at the beginning, and we will decrement it by one at each iteration step.
+
+At any given iteration, the largest element remaining in the heap is its root, physically stored as the first element in the array. The array(length-heapsize-1)
+element is the physically last element still stored in the heap (elements with higher indices are the large elements, already sorted). We swap the root with
+array(length-heapsize-1). Now the set of large elements already sorted is larger by one new element. The problem is that the remaining heap might not be a
+heap because the new 
+root element might be smaller than some of its children thus violating the heap property. We can fix this by calling heapify! 
+
+```javascript
+function heapSort(array){
+	var heapSize = array.length;
+	buildHeap(array,heapSize);
+	console.log('afterbuildheap',array);
+	while (heapSize > 1){
+		swap(array,0, --heapSize);
+		heapify(array,heapSize,0);
+	}
+	return array;
+}
+```
+#### Heapsort finished
+
+
 ###References
-1. <http://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm>  
-2. <http://ddeville.me/2010/10/sorting-algorithms-comparison>   
-3. <http://www.algolist.net/Algorithms/>  
-4. <https://en.wikipedia.org/wiki/Sorting_algorithm> 
+1. [Tutorialspoint: Data structures and algorithms](http://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm)
+2. [ddeville: Sorting algorithms comparison](http://ddeville.me/2010/10/sorting-algorithms-comparison) 
+3. [Algolist:Algoritms](http://www.algolist.net/Algorithms/)
+4. [Wikipedia: Sorting algorithms](https://en.wikipedia.org/wiki/Sorting_algorithm)
+5. [Heapsort 1](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap07.htm)
+6. [Heapsort 2](http://condor.depaul.edu/ntomuro/courses/402/notes/heap.html) 
+7. [Heap data structure] (http://www.tutorialspoint.com/data_structures_algorithms/heap_data_structure.htm)  
+8. [Heapsort 3] (http://www.stoimen.com/blog/2012/08/07/computer-algorithms-heap-and-heapsort-data-structure/)  
