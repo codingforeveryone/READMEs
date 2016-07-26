@@ -16,7 +16,7 @@ Once the change is ready a [pull request](https://help.github.com/articles/using
 After merging the branch is deleted.
 
 
-While you could do all your editing and branch creation using the GitHib online interface, it is easier in the long run to keep a copy of the repository on you local machine, and work on it there. This entails setting up Git and learning to use the command line interface.
+While you could do all your editing and branch creation using the GitHib online interface, it is easier in the long run to keep a copy of the repository on your local machine, and work on it there. This entails setting up Git and learning to use the command line interface.
 
 ##Setting up a local repository
 
