@@ -176,7 +176,7 @@ There are many approaches to choosing the pivot item, e.g.:
 * Select the middle item in the array. The implementation below will follow this approach.
 
 
-Figure 5. explains the quick ort algorithm:  
+Figure 5. explains the quick sort algorithm:  
 ![Qicksort](http://www.algolist.net/img/sorts/quick-sort.png)  
 *Fig5. is taken from [Algolist](http://www.algolist.net/img/sorts/quick-sort.png)*
 
@@ -304,9 +304,9 @@ When we use an array to represent a heap it has two important characteristics:
 
 There are two types of heap:  
 1. Max heap: 	
-&emsp;&emsp;`array[parent(i)]` &ge; `array[i]` is true if i is not the root element.  
+&emsp;&emsp;`array[parent(i)]` &ge; `array[i]` is true if `i` is not the root element.  
 2. Min heap:  
-&emsp;&emsp;`array[parent(i)]` &le; `array[i]` is true if i is not the root element.  
+&emsp;&emsp;`array[parent(i)]` &le; `array[i]` is true if `i` is not the root element.  
 For clarity we will always use a max heap in this note. We will refer to (1.) as heap property.
 
 
@@ -338,7 +338,7 @@ The functions in our implementation:
 The heapsort algorithm:      
 1. Build a max/min heap from the array to be sorted, now  `heapsize = array.length`  
 2. While `heapsize > 1`  
-&emsp;Swap the frist element (mininum or maximum value depending on you implementation) with last one,  
+&emsp;Swap the first element (mininum or maximum value depending on your implementation) with last one,  
 &emsp; reduce the `heapsize` by one,  then heapify the heap.  
 3. The array is sorted.  
 
@@ -405,7 +405,7 @@ function buildHeap(array,heapSize){
 #### Sorting
 
 Now the elements are in a proper heap, but they are not necessarily sorted (the heap property only guarantees that every parent node is
-greater than its childrens, we know nothing about the relations of elements on different branches!).
+greater than its children's, we know nothing about the relations of elements on different branches!).
 We will collect the largest elements at the end of our array in a sorted state, and store the other elements in a heap at the front of our array.
 At start, we have no large elements at the end, and the heap at the front occupies all space. We will denote the size of the heap with heapsize,
 this is array.length at the beginning, and we will decrement it by one at each iteration step.
