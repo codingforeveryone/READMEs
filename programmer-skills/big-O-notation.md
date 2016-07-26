@@ -5,7 +5,7 @@
 Imagine that you are building a website for the BBC.
 During an important event, such as the Olympic games, a Formula-1 race, or an important news event, millions of people try to visit the BBC site within a few minutes. You don't want your site to crash under high demand.
 You need to know how your site will respond to the enormous number of users, so it is of great importance to know how your algorithms scale, and how long they will take to handle those requests.
-There is one more problem, in real life you never know the exact number of people visiting your site (the number of inputs). Thus, you need way to measure and compare the growth rate of an algorithm, known as ‘asymptotic notation’.
+There is one more problem, in real life you never know the exact number of people visiting your site (the number of inputs). Thus, you need a way to measure and compare the growth rate of an algorithm, known as ‘asymptotic notation’.
 What you need is the big-O notation.
 
 The Big-O notation is used to classify algorithms based on how their runtime grows relative to the input size, when the input gets arbitrarily large. 
