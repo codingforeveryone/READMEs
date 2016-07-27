@@ -45,7 +45,7 @@ var double = arr.map(function(v) {
 //returns [10,12,26,0,2,36,46];
 ```
 ##### Lexical this
-The other main reason for introducing arrow functions is that they share the same lexical `this` as their surrounding code. Standard functions define their own this value, which makes arrow functions the more intuitive option in handling object contexts:
+The other main reason for introducing arrow functions is that they share the same lexical `this` as their surrounding code. Standard functions define their own `this` value, which makes arrow functions the more intuitive option in handling object contexts:
 ```javascript
 //arrow function
 function Person() {
@@ -66,11 +66,11 @@ function Person() {
   }, 1000);
 }
 ```
-#### Block-Scoping
+#### Block scoping
 
-In ES5, variables are either globally or locally function scoped. In other languages like C/C#/Java it is also possible to block-scope variables. ES6 enables this feature for Javascript.
+In ES5, variables are either globally or locally function scoped. In other languages like C/C#/Java it is also possible to block scope variables. ES6 enables this feature for Javascript.
 
-Block-scope variables can be achieved through the use of the new keyword `let`. For most practical purposes `let` works like the `var` keyword, with the exception that `let` variables have as their scope the code block in which they are defined. `var` variables in contrast have as their scope their entire enclosing function:
+Block scope variables can be achieved through the use of the new keyword `let`. For most practical purposes `let` works like the `var` keyword, with the exception that `let` variables have as their scope the code block in which they are defined. `var` variables in contrast have as their scope their entire enclosing function:
 ```javascript
 function letTest() {
     let x = 31;  //console.log(x) prints 31.
@@ -95,7 +95,7 @@ for (let i = 0; i < 10; i++) { //i is block scoped
 }
 ```
 ##### Functions
-You can also use `let` to block-scope functions:
+You can also use `let` to block scope functions:
 ```javascript
 {
     let foo = function () { return 1 }
@@ -111,7 +111,7 @@ You can also use `let` to block-scope functions:
 
 Constants are single-assignment variables, which means that once assigned a value the variable identifier cannot be re-assigned or redeclared new values.
 
-Constants can be declared through the keyword `const` and must be assigned a value in the same declaration statement. `Const`, like `let`, is block-scoped, and cannot share its name with a function or variable in the same scope.
+Constants can be declared through the keyword `const` and must be assigned a value in the same declaration statement. `Const`, like `let`, is block scoped, and cannot share its name with a function or variable in the same scope.
 ```javascript
 //The common convention with constants is to use all uppercase when declaring them.
 
@@ -342,7 +342,7 @@ ES6 supports new literal forms for binary (```0b```) and octal (```0o```) repres
 Template literals are String literals that allow embedded expressions. You can use
 them for multi-line strings and string interpolation (see below).
 
-Template literals are enclosed by back-ticks and can contain placeholders 
+Template literals are enclosed by back-ticks and can contain placeholders
 indicated by the dollar sign and curly braces `${expression}`:
 ```javascript
 `String text ${expression}`
@@ -378,7 +378,7 @@ var string = `The area is ${width * height}`;
 ##### Tagged Template Literals
 
 If the template literal is 'tagged' you can modify the output of it using a function.
-The first argument will contain an array of strings, and the second and subsequent 
+The first argument will contain an array of strings, and the second and subsequent
 arguments will contain the values of the processed substitution expressions:
 ```javascript
 //Note that the use of the function name tag here is arbitrary. Any function name can be used.
@@ -400,7 +400,7 @@ Tagged template literals have the `raw` property. This is available on their
 first function argument and allows you to access the raw strings as they were entered:
 ```javascript
 function tag(strings, ...values) {
-    strings.raw[0] === "example string" 
+    strings.raw[0] === "example string"
 }
 
 tag`example string`;
