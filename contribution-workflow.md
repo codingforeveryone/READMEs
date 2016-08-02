@@ -20,7 +20,7 @@ While you could do all your editing and branch creation using the GitHib online 
 
 ##Setting up a local repository
 
-Before working with the READMEs repository we should install git and clone the repository to our local directory. Refer to [Git Basics]((http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac)) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there).
+Before working with the READMEs repository we should install git and clone the repository to our local directory. Refer to [Git Basics](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#installing-git-on-mac) for instructions on how to install Git (and glance over the [cheat sheet](http://codingforeveryone.foundersandcoders.org/programmer-skills/git-basics.html#cheat-sheet) while you're there).
 Be aware that most beginners' guides to setting up Git out on the web assume that you will be making contributions via a fork. **In this workflow though we don't use forks (remote copies of the repository) but simply branches.**
 
 Setting up Git without a fork is simpler. All you need to do is clone the remote repository:
@@ -106,7 +106,7 @@ Staging changes to the file:
 ```bash
 $ git add <name of the file>
 ```
-_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc), include the file path in <name of the file\>, in the above step._
+_NOTE: If you are editing a file in one of "READMEs" subdirectories (e.g. "Javascript", "codewars", etc), include the file path in ```<name of the file>```, in the above step._
 
 Commiting the staged changes:
 
