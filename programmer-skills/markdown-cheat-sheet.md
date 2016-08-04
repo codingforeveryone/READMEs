@@ -3,10 +3,10 @@
 [![Join the chat at https://gitter.im/codingforeveryone/READMEs](https://badges.gitter.im/codingforeveryone/READMEs.svg)](https://gitter.im/codingforeveryone/READMEs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-This is a simple tutorial  to provide a refresher to Markdown and a reference to the most frequently used sintax.  
+This is a simple tutorial  to provide a refresher to Markdown and a reference to the most frequently used syntax.  
 Here there is a short [interactive markdown tutorial](http://markdowntutorial.com/) to try.   
-This is a link to [John Gruber site](https://daringfireball.net/projects/markdown/syntax), the creator of markdown, for a more exaustive list of the sintax.  
-Below you can find a small cheat sheet with some sintax present in the interactive tutorial, for quick reference.
+This is a link to [John Gruber site](https://daringfireball.net/projects/markdown/syntax), the creator of markdown, for a more exhaustive list of the syntax.  
+Below you can find a small cheat sheet with some syntax present in the interactive tutorial, for quick reference.
 
 ##### Further text formatting
 If you want to achieve some effects that are not covered by basic Markdown syntax, you can **embed standard html tags** in Markdown and use inline css.
@@ -24,7 +24,7 @@ with:
 ```
 
 
-Beware that what showed above **will not work on GitHub** due to Github Markdown Limitation.
+Beware that what is shown above **will not work on GitHub** due to Github Markdown Limitation.
 GitHub accepts html tags in the Markdown, but for consistency/safety reasons it strips the 'style' parameter.
 See [here](http://stackoverflow.com/questions/20598628/do-style-tags-work-in-markdown) for a better explanation.
 
@@ -60,14 +60,14 @@ The number of hashtags indicates what kind of header you are creating.
  * use \> on the first line of the text you want to quote
 
 * lists
- * unordened lists  
+ * unordered lists  
  use \* followed by a space and your text
  * ordered lists  
  use 1. followed by a space and  your text
 
 * code
  * \` var foo = 'bar'; \`  --> `var foo = 'bar';` 
- * wrap your code between \`\`\`  to conservate its format. Optionally you can indicate its language. I.e:
+ * wrap your code between \`\`\`  to preserve its format. Optionally you can indicate its language. I.e:
  
   \`\`\`javascript
   
