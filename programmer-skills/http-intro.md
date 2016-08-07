@@ -1,11 +1,11 @@
 Introduction to HTTP
 ====================
 
-The Hypertext Transfer Protocol (HTTP) is the foundation of web communication, so some familiarity with it is essential for any web developer. HTTP works on the basis of a *client* sending a *request* to a *server*, which in return provides a *response*. You can think of the client as being the user's web browser and the server as being any kind of back-end server you might write (e.g. in Express.js).
+Hypertext Transfer Protocol (HTTP) is one of the main foundations of web communication. As a developer it is prudent to be familiar with it. HTTP works on the basis of a *client* sending a *request* to a *server*, which in return provides a *response*. For example, a web browser is a client program on the user's computer that may request information from any web server in the world.
 
-Browsers must formulate valid requests with the appropriate information for that request. Sevrvers will respond to requests according to the specifications. Browsers will in turn interpret these responses according to the specifications. this means that it is important that both your front-end and back-end code is using HTTP correctly.
+Servers respond to requests according to specifications. Browsers interpret these specific responses differently. So it is imperative that front- and back-end HTTP is configured correctly.
 
-Of course, as so often happens in web development, different browsers have their own implementation quirks.
+Competing browsers behave differently with their own individual behaviours, though they will in general follow the specifications.
 
 Overview of HTTP
 ----------------
@@ -331,8 +331,8 @@ Related
 
 Now that you have a better understanding of how HTTP works, you can apply it to [setting up a local server](http://codingforeveryone.foundersandcoders.org/programmer-skills/setting-up-a-local-server.html).
 
-Further reading
-===============
+References
+==========
 
 https://httpstatuses.com/
 
