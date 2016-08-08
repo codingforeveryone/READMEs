@@ -150,3 +150,4 @@ The honour also determines the 'privileges' that you get as a user.
 - [Codewars docs](https://www.codewars.com/docs/ranking-and-honour-1)
 - [Codewars forum](https://www.codewars.com/topics)
 - [List of privileges](http://blog.markpearl.co.za/CodeWars-Privileges-Unlock)
+- [*The conjured Codewars Codex*](http://bkaestner.github.io/codewars-rules/)
