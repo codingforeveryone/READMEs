@@ -28,8 +28,7 @@ The CSS code:
   display: inline-block
 }
 ```
-[*JSFiddle*](https://jsfiddle.net/dangonrei/vowvzfqa/):
-<script async src="//jsfiddle.net/dangonrei/vowvzfqa/embed/html,css,result/"></script>
+[*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/vowvzfqa/)
 
 Notice that the element centered is the one with the class `child`, and the parent is the one with the attribute `text-align`.
 
@@ -59,8 +58,7 @@ If you don't have any restriction on vertical margins, you can use the margin sh
   margin: auto
 }
 ```
-[*JSFiddle*](https://jsfiddle.net/dangonrei/pdd6vwn4/):
-<script async src="//jsfiddle.net/dangonrei/pdd6vwn4/embed/html,css,result/"></script>
+[*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/pdd6vwn4/)
 
 ## Using absolute positioning
 You can use this technique whenever your design fulfills two requisites:
@@ -91,8 +89,7 @@ For the code, let's suppose that the known width is `300px`, and the known heigh
   margin-top: -100px
 }
 ```
-[*JSFiddle*](https://jsfiddle.net/dangonrei/qh6y7vqo/):
-<script async src="//jsfiddle.net/dangonrei/qh6y7vqo/embed/html,css,result/"></script>
+[*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/qh6y7vqo/)
 **Explanation:**
   * `position: absolute` makes you able to set the position of the element freely, using the attributes top, left, right and bottom.
   * `left: 50%` sets the left border of the element exactly at a distance of **50% of its parent's width**. That is, the left border of the element gets placed just in the middle of its parent, horizontally.
@@ -126,8 +123,7 @@ The CSS code:
   transform: translate(-50%, -50%)
 }
 ```
-[*JSFiddle*](https://jsfiddle.net/dangonrei/a3zfkat0/):
-<script async src="//jsfiddle.net/dangonrei/a3zfkat0/embed/html,css,result/"></script>
+[*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/a3zfkat0/)
 **Explanation:** The attributes `position`, `left` and `top` are used with the same purpose as in [absolute positioning](#using-absolute-positioning). The `transform` attribute defined in the code, translates both vertical and horizontally the element by 50%. The difference is that, inside `transform`, the dimensions given in percentages **are relatives to the element dimensions**, and not to the parent's. Therefore, you are just moving to the left by half of the width and to the top by half of the height.
 <br/>
 <br/>
@@ -153,8 +149,7 @@ The CSS code:
   align-items: center;
 }
 ```
-[*JSFiddle*](https://jsfiddle.net/dangonrei/abg85wa8/):
-<script async src="//jsfiddle.net/dangonrei/abg85wa8/embed/html,css,result/"></script>
+[*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/abg85wa8/)
 **Explanation:**
   * `display: flex` makes the parent behave as a flexbox, and allows you to use the following attributes.
   * `justify-content: center` set the content of the *flexbox* centered in the *main-axis*. By default the `flex-direction` is set to `row`, so you should expect it to center in width by default.
