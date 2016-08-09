@@ -90,6 +90,7 @@ For the code, let's suppose that the known width is `300px`, and the known heigh
 }
 ```
 [*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/qh6y7vqo/)
+
 **Explanation:**
   * `position: absolute` makes you able to set the position of the element freely, using the attributes top, left, right and bottom.
   * `left: 50%` sets the left border of the element exactly at a distance of **50% of its parent's width**. That is, the left border of the element gets placed just in the middle of its parent, horizontally.
@@ -124,6 +125,7 @@ The CSS code:
 }
 ```
 [*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/a3zfkat0/)
+
 **Explanation:** The attributes `position`, `left` and `top` are used with the same purpose as in [absolute positioning](#using-absolute-positioning). The `transform` attribute defined in the code, translates both vertical and horizontally the element by 50%. The difference is that, inside `transform`, the dimensions given in percentages **are relatives to the element dimensions**, and not to the parent's. Therefore, you are just moving to the left by half of the width and to the top by half of the height.
 <br/>
 <br/>
@@ -150,6 +152,7 @@ The CSS code:
 }
 ```
 [*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/abg85wa8/)
+
 **Explanation:**
   * `display: flex` makes the parent behave as a flexbox, and allows you to use the following attributes.
   * `justify-content: center` set the content of the *flexbox* centered in the *main-axis*. By default the `flex-direction` is set to `row`, so you should expect it to center in width by default.
