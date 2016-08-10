@@ -44,7 +44,7 @@ For example if a user was to select an item in a dropdown list, which is impleme
 3. Create the function to be executed when the server response is ready.
 4. Send the request off to a file on the server.
 
-Then in turn the page on the server called by the JavaScript above is an ASP file called "getdetails.asp".  This file would run a query against a database, and returns the result in an HTML table
+Then in turn the page on the server called by the JavaScript above is an ASP file called "getdetails.asp".  This file would run a query against a database, and return the result in an HTML table
 
 
 #### Writing files to the server
