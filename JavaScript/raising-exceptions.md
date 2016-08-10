@@ -134,43 +134,55 @@ One way could be to use the error messages to differentiate, however this method
 A safer way is to define your own object to be used in raising exceptions. Check this example:
 ```javascript
 function MyError(msg){
-    this.message = msg
+  this.message = msg;
+  this.stack = (new Error()).stack;
 }
+MyError.prototype = Object.create(Error.prototype);
+MyError.prototype.name = "MyError";
 
 function unreliableFunction(a,b){
-  var x = Math.random()
+  var x = Math.random();
   if (x <= 0.33 ){
-    console.log(a*b)
-    return a*b
+    console.log(a*b);
+    return a*b;
   }
   else if (x > 0.33 && x<= 0.66)
-    throw new MyError("this is the error that I want")
+    throw new MyError("this is the error that I want");
   
   else if (x > 0.66)
-        console.log(y)
+        console.log(y);
 }
 
 try {
-    unreliableFunction(2,3)
+    unreliableFunction(2,3);
 } catch(e){
-    if (e instanceof MyError)
-        console.log(e.message)
-    else
-        throw e
+    if (e instanceof MyError) {
+        console.log(e.message);
+        console.log(e.stack);
+    } else
+        throw e;
 }
 ```
 
-In this example I have made the unreliableFunction even more unreliable. Now one third of the time it will work, one third throw an exception that I expect, and one third of the time it will be a language related exception. I am interested in catching and handling only the exceptions that I expect. To do so I define my own object, MyError. In the _catch_ block I will  check if the object caught was created using my constructor. In case it wasn't, I throw it further. All errors created by JS will use the standard Error constructor and will be sent further to the environment, while the ones using MyError, will be handled inside the _catch_ block. 
+In this example I have made the unreliableFunction even more unreliable. Now one third of the time it will work, one third throw an exception that I expect, and one third of the time it will be a language related exception. I am interested in catching and handling only the exceptions that I expect. To do so I define my own object, MyError. In the _catch_ block I will check if the object caught was created using my constructor. In case it wasn't, I throw it further. All errors created by JS will use the standard Error constructor and will be sent further to the environment, while the ones using MyError, will be handled inside the _catch_ block. 
 
+Notice that my own object, MyError, has a defined property called stack that creates a new built-in Error and copies its stack property.  MyError also copies the prototype of the built-in Error object then changes the name property to "MyError".  These lines of code help when debugging a more complex script in a number of ways:
 
+- an instance of MyError will also be an instance of Error, this allows us to catch it and deal with it in the same way we would a JavaScript generated error;
+- the stack property holds useful information that will enable us to locate the source of the error quicker (especially if we anticipate using MyError in different contexts throughout our script).  See an example of how this stack will appear in the console below:
+
+![img6](/images/s6.png)
+
+- other properties of the Error object will be available in MyError (e.g. the toString() method). 
 
 ##Related
 
-[Debugging Javascript](http://codingforeveryone.foundersandcoders.org/programmer-skills/Debugging-Javascript.html)
+- [Debugging Javascript](http://codingforeveryone.foundersandcoders.org/programmer-skills/Debugging-Javascript.html)
 
 ##References
 
-[Chapter 8 of Eloquent Javascript](http://eloquentjavascript.net/08_error.html)
+- [Chapter 8 of Eloquent Javascript](http://eloquentjavascript.net/08_error.html)
+- [MDN Reference for Error Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
 
 
 
