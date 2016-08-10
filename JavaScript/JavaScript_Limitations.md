@@ -1,6 +1,6 @@
 # The Not So Good Parts of JavaScript
 
-JavaScript is quite an amazing programming language, despite what some in the development community have to say about it.  It runs in web browsers, which is great as it's executed on the client side, as opposed to the server, making it faster for the end user.  It makes web pages feel 'alive' with its interactivity.  However there are also problems, the fact it runs on the web browser makes it a security issue, as this can be used to exploit the users system.  This article is not a definitive guide of all the limitations of JavaScript, it does cover some of the more common points as a developer you should be aware of.
+JavaScript is quite an amazing programming language, despite what some in the development community have to say about it.  It runs in web browsers, which is great as it's executed on the client side, as opposed to the server, making it faster for the end user.  It makes web pages feel 'alive' with its interactivity.  However there are also problems, the fact it runs on the web browser makes it a security issue, as this can be used to exploit the user's system.  This article is not a definitive guide of all the limitations of JavaScript, it does cover some of the more common points as a developer you should be aware of.
 
 #### Multithreading
 
