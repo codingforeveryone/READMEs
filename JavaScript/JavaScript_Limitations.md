@@ -64,7 +64,7 @@ $.ajax({
 
 #### Other
 
-Other limitations of note are that JavaScript cannot close a window if it didn't open it, an obvious security reason.  Also protection of page source or images, this is not done by JavaScript.  Finally the option to disable JavaScript, many users disable it for security reasons.  If your site is highly scripted and the user has disabled JavaScript then it can be disadvantageous to both parties.
+JavaScript cannot close a window if it didn't open it, for obvious security reasons.  Also protection of page source or images, this is not done by JavaScript.  Finally the option to disable JavaScript, many users disable it for security reasons.  If your site is highly scripted and the user has disabled JavaScript then it can be disadvantageous to both parties.
 
 There are more limitations which are not mentioned here.  As a Developer it is good to be aware of pitfalls and work around them.
 
