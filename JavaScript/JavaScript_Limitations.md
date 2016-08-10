@@ -36,7 +36,7 @@ targetDomain - Limit receiving iframe by given domain. Can contain ‘*’ which
 
 #### Database Access
 
-Accessing databases, in particular backend databases. This is a problem without the help of a server side script like Ajax which performs the db access.  
+Accessing databases, in particular backend databases, is a problem without the help of a server side script like Ajax which performs the database access.  
 
 For example if a user was to select an item in a dropdown list, which is implemented by JavaScript and these items are in a database.  A function could be used to show the dropdown details.  This function would do the following.
 1. Check if item is selected.
