@@ -39,9 +39,9 @@ targetDomain - Limit receiving iframe by given domain. Can contain ‘*’ which
 Accessing databases, in particular backend databases. This is a problem without the help of a server side script like Ajax which performs the db access.  
 
 For example if a user was to select an item in a dropdown list, which is implemented by JavaScript and these items are in a database.  A function could be used to show the dropdown details.  This function would do the following.
-1. chick if item is selected.
-2. Create a XMLHttpRequest object
-3. Create the function to be executed when the server response is ready
+1. Check if item is selected.
+2. Create an XMLHttpRequest object.
+3. Create the function to be executed when the server response is ready.
 4. Send the request off to a file on the server.
 
 Then in turn the page on the server called by the JavaScript above is an ASP file called "getdetails.asp".  This file would run a query against a database, and returns the result in an HTML table
@@ -49,7 +49,7 @@ Then in turn the page on the server called by the JavaScript above is an ASP fil
 
 #### Writing files to the server
 
-Writing files to the server.  JavaScript cannot write to files on the server without the help of a server side script. Using Ajax, JavaScript can send a request to the server, which can read a file in XML or plain text format but it cannot write to a file unless the file called on the server actually runs as a script to do the file write for you.
+JavaScript cannot write to files on the server without the help of a server side script. Using Ajax, JavaScript can send a request to the server, which can read a file in XML or plain text format but it cannot write to a file unless the file called on the server actually runs as a script to do the file write for you.
 
 ````
 $.ajax({
