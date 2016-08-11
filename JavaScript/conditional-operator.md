@@ -2,20 +2,23 @@
 
 ###What is it?
 
-The ternary operator(also called the conditional operator) allows us to return different values depending on the results of checks.
+The ternary operator (also called the conditional operator) allows us to return different values depending on the results of checks.
 It can be a cleaner and shorter alternative to the `if...else` statement.
 
 ###General syntax
 
 ```javascript
-var test= condition ? expr1 : expr2 
+var test = condition ? expr1 : expr2;
 ```
 
 `if...else` equivalent:
 
 ```javascript
-if (condition===true) {test=expr1} 
-else {test=expr2}
+if (condition === true) {
+    test = expr1;
+} else {
+    test = expr2;
+}
 ```
 
 In this case, we check for the condition called `condition`. If it is true, then the var `test` is equal to `expr1`. Else, it is equal to `expr2`.
@@ -23,7 +26,7 @@ In this case, we check for the condition called `condition`. If it is true, then
 ###Simple example
 
 ```javascript
-return  condition===true ? "condition check result is true" : "condition check result is false" 
+return  condition === true ? "condition check result is true" : "condition check result is false";
 ```
 
 In this case, the first string is returned if the condition evaluates to `true`, otherwise the second string is returned. 
@@ -53,12 +56,12 @@ function listTasks (time) {
     list.push('do some work'),
     list.push('go for a walk')
   );
-    return listOfTasks;
+    return list;
 }
 
-checkTime(11);
-// logs 'Good day'
-// returns [ 'do some work', 'go for a walk' ]
+listTasks(11);
+// logs 'Good day!'
+// returns ["do some work", "go for a walk"]
 ```
        
 It's an awesome tool that'll add readability to your code. Special thanks to warrior @GiacomoSorbi who posted a kata about it on the gitter channel ;).
