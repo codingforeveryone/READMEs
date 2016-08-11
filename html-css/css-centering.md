@@ -101,6 +101,9 @@ For the code, let's suppose that the known width is `300px`, and the known heigh
 ## Using translate
 To use this technique you should be able to set the element position as `absolute`, and the parents position as `relative`. If you cannot, you could probably nest your element in an outer `<div>` and use this technique with that div as the parent.
 
+:warning:  *Note on `transform` property*: **the transform property allows for modifying an elements position, size and rotation in place. Though versatile, it is not widely adopted by many modern browsers by default, and requires additional prefixed declarations to extend support. The code shown below is not prefixed in order to keep the focus on centering HTML elements. If you want to expand your knowledge about prefixes, you can check the [resources](#resources).** |
+---|
+
 The HTML:
 ```HTML
 <body>
@@ -168,3 +171,7 @@ The *flexbox* is a very powerful tool, that can be extremely helpful when used c
 ## Resources
 
 - [Flexbox documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+- [CSS position](https://css-tricks.com/almanac/properties/p/position/)
+- [CSS display](https://css-tricks.com/almanac/properties/d/display/)
+- [CSS Prefixes cheat sheet](http://shouldiprefix.com/)
+- [More information about CSS browser prefixes](http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm)
