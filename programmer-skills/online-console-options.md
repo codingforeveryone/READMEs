@@ -18,7 +18,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 ### Console and debugging tools:
 
 ####[repl.it](https://repl.it/)
-![alt tag](https://github.com/RhodesPeter/online-console-options/blob/Screenshots/repl.it.png)<br>
+![alt tag](http://codingforeveryone.foundersandcoders.org/images/OnlineConsoleOptions__repl_it.png)<br>
  
   1. Supported languages: Python, JavaScript, Ruby, Scheme, C#, Java, PHP, C++, C... (The list goes on!)<br>
   2. You can run code in the console and there is a built in syntax checker too.<br>
@@ -30,7 +30,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 <br>
 
 ####[jshint.com](http://jshint.com)
-![alt tag](https://github.com/RhodesPeter/Online-Console-Options/blob/Screenshots/jshint.com.png)<br>
+![alt tag](http://codingforeveryone.foundersandcoders.org/images/OnlineConsoleOptions__jshint_com.png)<br>
 
   1. Supported languages: JavaScript. <br>
   2. The tool is a simple syntax and error checker. <br>
@@ -42,7 +42,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 <br>
 
 ####[jsbin.com](https://jsbin.com)
-![alt tag](https://github.com/RhodesPeter/Console-Options/blob/Screenshots/jsbin.com.png)<br>
+![alt tag](http://codingforeveryone.foundersandcoders.org/images/OnlineConsoleOptions__jsbin_com.png)<br>
 
   1. Supported languages: JavaScript, HTML, CSS, CoffeeScript.<br>
   2. You can run code in the console and there is a built in error checker too.<br>
@@ -54,7 +54,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 <br>
 
 ####[jsfiddle.net](https://jsfiddle.net/)
-![alt tag](https://github.com/RhodesPeter/Console-Options/blob/Screenshots/jsfiddle.png)<br>
+![alt tag](http://codingforeveryone.foundersandcoders.org/images/OnlineConsoleOptions__jsfiddle.png)<br>
 
  1. Supported languages: JavaScript, HTML, CSS, CoffeeScript.<br>
  2. You can run code in the console and there is a built in error checker too.<br>
@@ -68,7 +68,7 @@ There are 3 key points to take into consideration when choosing a platform to us
 <br>
 
 ####[codepen.io](http://codepen.io/nullobject/pen/rAbio)
-![alt tag](https://github.com/RhodesPeter/Online-Console-Options/blob/Screenshots/codepen.io.png)<br>
+![alt tag](http://codingforeveryone.foundersandcoders.org/images/OnlineConsoleOptions__codepen_io.png)<br>
 
  1. Supported languages: JavaScript, HTML, CSS, CoffeeScript.<br>
  2. You can run code in the console and there is a built in error checker too.<br>
