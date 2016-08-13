@@ -1,6 +1,6 @@
 # The Not So Good Parts of JavaScript
 
-JavaScript is quite an amazing programming language, despite what some in the development community have to say about it.  It runs in web browsers, which is great as it's executed on the client side, as opposed to the server, making it faster for the end user.  It makes web pages feel 'alive' with its interactivity.  However there are also problems - for example, the fact it runs on the web browser makes it a security issue, as this can be used to exploit the user's system.  This article is not a definitive guide of all the limitations of JavaScript, it does cover some of the more common points as a developer you should be aware of.
+JavaScript is quite an amazing programming language, despite what some in the development community have to say about it.  It runs in web browsers, which is great as it's executed on the client side, as opposed to the server, making it faster for the end user.  It makes web pages feel 'alive' with its interactivity.  However there are also problems - for example, the fact it runs on the web browser makes it a security issue, as this can be used to exploit the user's system.  This article is not a definitive guide of all the limitations of JavaScript, but it does cover... ...common points that as a developer... you should be aware of.
 
 #### Multithreading
 
@@ -10,7 +10,7 @@ Firstly JavaScript does not support multithreading.  Multithreading is a way to 
 
 Web pages hosted on different domains cannot be accessed using JavaScript.  This is based on the "Same origin policy", which prevents a document or script loaded from one origin, from getting or setting properties of a document from another origin. This policy dates all the way back to Netscape Navigator 2.0.  It helps to ensure that potentially malicious documents/scripts can be isolated.
 
-A workaround is in place with HTML5 using postMessage interface, or using server side scripts using AJAX calls.  There are a few methods to do this the common ones are `document.domain` method which is an iframe method that sets the value of document.domain to a suffix of the current domain.
+A workaround is in place with HTML5 using postMessage interface, or using server side scripts using AJAX calls.  There are a few methods to do this the common ones are _document.domain_ method which is an iframe method that sets the value of document.domain to a suffix of the current domain.
 ````
 For example, assume a script in the document at `http://shop.company.com/dir/other.html`
 which executes the following statement:
