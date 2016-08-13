@@ -53,7 +53,7 @@ Then in turn the page on the server called by the JavaScript above is an ASP fil
 
 #### Writing files to the server
 
-JavaScript cannot write to files on the server without the help of a server side script. Using Ajax, JavaScript can send a request to the server, which can read a file in XML or plain text format but it cannot write to a file unless the file called on the server actually runs as a script to do the file write for you.
+JavaScript cannot write to files on the server without the help of a server side script. Using Ajax, JavaScript can send a request to the server, which can read a file in XML or plain text format. However it cannot write to a file unless the file called on the server actually runs as a script, to do the file write for you.
 
 ````
 $.ajax({
