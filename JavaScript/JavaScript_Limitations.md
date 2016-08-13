@@ -1,6 +1,6 @@
 # The Not So Good Parts of JavaScript
 
-JavaScript is quite an amazing programming language, despite what some in the development community have to say about it.  It runs in web browsers, which is great as it's executed on the client side, as opposed to the server, making it faster for the end user.  It makes web pages feel 'alive' with its interactivity.  However there are also problems - for example, the fact it runs on the web browser makes it a security issue, as this can be used to exploit the user's system.  This article is not a definitive guide of all the limitations of JavaScript, but it does cover... ...common points that as a developer... you should be aware of.
+JavaScript is quite an amazing programming language, despite what some in the development community have to say about it.  It runs in web browsers, which is great as it's executed on the client side, as opposed to the server, making it faster for the end user.  It makes web pages feel 'alive' with its interactivity.  However there are also problems - for example, the fact it runs on the web browser makes it a security issue, as this can be used to exploit the user's system.  This article is not a definitive guide of all the limitations of JavaScript, but it does cover common points that as a developer, you should be aware of.
 
 #### Multithreading
 
@@ -38,7 +38,7 @@ targetDomain - Limit receiving iframe by given domain. Can contain ‘*’ which
 
 Accessing databases, in particular backend databases, is a problem without the help of a server side script like Ajax which performs the database access.  
 
-For example if a user was to select an item in a dropdown list, which is implemented by JavaScript and these items are in a database.  A function could be used to show the dropdown details.  This function would do the following.
+One example would be a user wanting to select an item in a dropdown list, which is implemented by JavaScript and these items are in a database.  A function could be used to show the dropdown details.  This function would do the following.
 1. Check if item is selected.
 2. Create an XMLHttpRequest object.
 3. Create the function to be executed when the server response is ready.
