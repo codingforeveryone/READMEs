@@ -92,7 +92,7 @@ For the code, let's suppose that the known width is `300px`, and the known heigh
 [*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/qh6y7vqo/)
 
 **Explanation:**
-  * `position: absolute` makes you able to set the position of the element freely, using the attributes top, left, right and bottom.
+  * `position: absolute` means you're able to set the position of the element freely, using the attributes top, left, right and bottom.
   * `left: 50%` sets the left border of the element exactly at a distance of **50% of its parent's width**. That is, the left border of the element gets placed just in the middle of its parent, horizontally.
   * `top: 50%` add the same logic as `left: 50%`, but this time vertically.
   * `margin-left: -150px` puts a *negative margin* to the element as big as **half of its width**. This forces the element to be placed in the center of its parent horizontally.
@@ -100,6 +100,9 @@ For the code, let's suppose that the known width is `300px`, and the known heigh
 
 ## Using translate
 To use this technique you should be able to set the element position as `absolute`, and the parents position as `relative`. If you cannot, you could probably nest your element in an outer `<div>` and use this technique with that div as the parent.
+
+:warning:  *Note on `transform` property*: **the transform property allows for modifying an elements position, size and rotation in place. Though versatile, it is not widely adopted by many modern browsers by default, and requires additional prefixed declarations to extend support. The code shown below is not prefixed in order to keep the focus on centering HTML elements. If you want to expand your knowledge about prefixes, you can check the [resources](#resources).** |
+---|
 
 The HTML:
 ```HTML
@@ -126,12 +129,15 @@ The CSS code:
 ```
 [*Play with this code on JSFiddle*](https://jsfiddle.net/dangonrei/a3zfkat0/)
 
-**Explanation:** The attributes `position`, `left` and `top` are used with the same purpose as in [absolute positioning](#using-absolute-positioning). The `transform` attribute defined in the code, translates both vertical and horizontally the element by 50%. The difference is that, inside `transform`, the dimensions given in percentages **are relatives to the element dimensions**, and not to the parent's. Therefore, you are just moving to the left by half of the width and to the top by half of the height.
+**Explanation:** The attributes `position`, `left` and `top` are used with the same purpose as in [absolute positioning](#using-absolute-positioning). The `transform` attribute defined in the code, translates both vertical and horizontally the element by 50%. The difference is that, inside `transform`, the dimensions given in percentages **are relatives to the element dimensions**, and not to the parents. Therefore, you are just moving to the left by half of the width and to the top by half of the height.
 <br/>
 <br/>
 ## Using flexbox
 To use this technique, the parent of the centered element should behave as a *flexbox*. To do so, you should just be able to set the parent display as `flex` or `inline-flex`, depending on your design.  
 **Note** that using a *flexbox* may produce unexpected results if you don't understand how they work.
+
+:warning:  *Note on Flexbox*: **Flexbox is also not widely adopted, therefore appropriate prefixed declarations should be written. Check the [resources](#resources) for further information.** |
+---|
 
 The HTML:
 ```HTML
@@ -168,3 +174,7 @@ The *flexbox* is a very powerful tool, that can be extremely helpful when used c
 ## Resources
 
 - [Flexbox documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+- [CSS position](https://css-tricks.com/almanac/properties/p/position/)
+- [CSS display](https://css-tricks.com/almanac/properties/d/display/)
+- [CSS Prefixes cheat sheet](http://shouldiprefix.com/)
+- [More information about CSS browser prefixes](http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm)
