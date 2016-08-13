@@ -14,7 +14,7 @@ var test = condition ? expr1 : expr2;
 `if...else` equivalent:
 
 ```javascript
-if (condition === true) {
+if (condition) {
     test = expr1;
 } else {
     test = expr2;
@@ -26,7 +26,7 @@ In this case, we check for the condition called `condition`. If it is true, then
 ###Simple example
 
 ```javascript
-return  condition === true ? "condition check result is true" : "condition check result is false";
+return  condition ? "condition check result is true" : "condition check result is false";
 ```
 
 In this case, the first string is returned if the condition evaluates to `true`, otherwise the second string is returned. 
