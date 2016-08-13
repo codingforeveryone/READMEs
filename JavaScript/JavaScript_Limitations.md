@@ -39,10 +39,14 @@ targetDomain - Limit receiving iframe by given domain. Can contain ‘*’ which
 Accessing databases, in particular backend databases, is a problem without the help of a server side script like Ajax which performs the database access.  
 
 One example would be a user wanting to select an item in a dropdown list, which is implemented by JavaScript and these items are in a database.  A function could be used to show the dropdown details.  This function would do the following.
-1. Check if item is selected.
-2. Create an XMLHttpRequest object.
-3. Create the function to be executed when the server response is ready.
-4. Send the request off to a file on the server.
+
+  1. Check if item is selected.
+  
+  2. Create an XMLHttpRequest object.
+  
+  3. Create the function to be executed when the server response is ready.
+  
+  4. Send the request off to a file on the server.
 
 Then in turn the page on the server called by the JavaScript above is an ASP file called "getdetails.asp".  This file would run a query against a database, and return the result in an HTML table
 
