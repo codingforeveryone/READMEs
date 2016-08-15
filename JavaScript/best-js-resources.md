@@ -27,6 +27,8 @@
 [iLoveCoding](https://ilovecoding.org/)<br>
 [PluralSight](https://www.pluralsight.com/)<br>
 [Nathan's Lessons](http://nathansjslessons.appspot.com/)<br>
+[Udemy.com - JavaScript: Understanding the Weird Parts](https://www.udemy.com/understand-javascript/learn/v4/overview) (Paid)<br>
+[Udemy.com - The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview) (Paid)<br>
 <br>
 <h1>YouTube Channels</h1><br>
 [Coders Guide](https://www.youtube.com/user/CodersGuide)<br>
@@ -60,7 +62,9 @@
 [Two Pillars Of Javascript-Part 1](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3#.dcoqbydng)<br>
 [Two Pillars Of JavaScript-Part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.t5mtu7cnc)<br>
 [JavaScript The Right Way](http://jstherightway.org/)<br>
-
+[JS Arrays cheatsheet](http://ricostacruz.com/cheatsheets/js-array.html)<br>
+[Online regex tester tool](https://regex101.com)<br>
+[JS Code Execution visualization tool](http://www.pythontutor.com/javascript.html#mode=edit)<br>
 <br>
 <h1>JavaScript Books</h1><br>
 [Eloquent JavaScript](http://eloquentjavascript.net/) (one of the best resources for detailed explanations with good examples, try running and then rewriting the examples by yourself in the browser)<br>
@@ -77,7 +81,8 @@
 [JavaScript Allonge](https://leanpub.com/javascriptallongesix/read)<br>
 [Mostly-Adequate-Guide](https://drboolean.gitbooks.io/mostly-adequate-guide//)<br>
 [Human JavaScript](http://read.humanjavascript.com/)<br>
-
+[Professor Frisby's Mostly Adequate Guide To Functional Programming](https://www.gitbook.com/book/drboolean/mostly-adequate-guide/details)<br>
+<br>
 <h1>Competitive Programming / Coding Challenges </h1><br>
 [4Clojure](http://www.4clojure.com/)<br>
 [Code Abbey](http://www.codeabbey.com/)<br>
@@ -103,3 +108,4 @@
 [FCC - Things I Wish Someone Had Told Me When I Was Learning How to Code](https://medium.freecodecamp.com/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329#.xyo1z0sf1)<br>
 [FCC - One Does Not Simply Learn to Code](https://medium.freecodecamp.com/one-does-not-simply-learn-to-code-f25bacdc5b62#.ktf6kemay)<br>
 [OK, So You Want to Learn How to Code](https://medium.com/@charlotteis/ok-so-you-want-to-learn-how-to-code-b74bc3ac6107#.5ovkw46j9)<br>
+
