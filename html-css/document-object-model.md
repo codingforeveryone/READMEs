@@ -146,6 +146,48 @@ Here's the output from the console:
 
 You can see that even though the ```<h1>``` text was defined "This is my homepage" originally, it was later modified to "This is her homepage" by the javascript code.
 
+## Going further with jQuery
+
+jQuery is a javascript library that allows us to manipulate the DOM. According to Wikipedia:  
+>"jQuery's syntax is designed to make it easier to navigate a document"
+
+And indeed, it makes navigating in the DOM easy, using the power of Javascript.
+
+#### 1. Including jQuery in your project
+
+The simplest way to use jQuery is to add it from the CDN([Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network));
+
+`<script src="https://code.jquery.com/jquery-latest.min.js"></script>` 
+
+#### 2. jQuery syntax and starting point
+
+jQuery syntax is made to be easy to understand if you know javascript basics already. It starts with a `$` function, and then the object you want to call.
+
+You'll usually want to start your jQuery script with this function:
+
+``` 
+$(document).ready(function(){
+       Your code here 
+}); 
+```
+
+* `$(document)`selects the `document` object
+* `.ready` method tells the browser to only execute your function (your code) when the DOM is ready. Here it takes a function as its argument.
+* Your code will go inside the function: `function(){YOUR CODE}` 
+
+#### 3. Chaining
+
+With jQuery, you can write cascading commands/methods:
+
+`$("div.test").add("p.quote").addClass("blue").slideDown("slow");`
+
+This is called chaining: The perfect way to achieve DRY awesomeness ! ;)
+
+#### 4. More about jQuery 
+
+These are the basics about how jQuery can manipulate the DOM. To learn more about it, you can go to the [learn section](http://learn.jquery.com/) of jQuery.com or you can do the [jQuery course on FreeCodeCamp](https://www.freecodecamp.com/map-aside#nested-collapsejQuery).
+
+
 ## Other example uses cases of the DOM
 
 - [Adding](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) or [removing](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) HTML elements on the web page
@@ -169,8 +211,3 @@ You can see that even though the ```<h1>``` text was defined "This is my homepag
 - [CSS Tricks - DOM](https://css-tricks.com/dom/)
 - [MDN - DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 - [Douglas Crockford - The theory of DOM](https://www.youtube.com/watch?v=Y2Y0U-2qJMs)
-
-
-
-
-
