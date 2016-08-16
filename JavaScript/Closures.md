@@ -160,12 +160,12 @@ next(); // returns 'd'
 - [Ben Alman » Immediately-Invoked Function Expression (IIFE)][12]
 
 
-[1]:	/JavaScript-Scope.md
+[1]:	https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/JavaScript-Scope.md
 [2]:	https://developer.mozilla.org/en/docs/Web/JavaScript/Closures
 [3]:	https://developer.mozilla.org/en-US/docs/Glossary/IIFE
-[4]:	/JavaScript-Scope.md
-[5]:	/scope-and-hoisting.md
-[6]:	/hoisting.md
+[4]:	https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/JavaScript-Scope.md
+[5]:	https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/scope-and-hoisting.md
+[6]:	https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/hoisting.md
 [7]:	https://developer.mozilla.org/en/docs/Web/JavaScript/Closures
 [8]:	https://journeyintojavascript.quora.com/whats-the-point-of-closures
 [9]:	https://spin.atomicobject.com/2014/10/20/javascript-scope-closures/

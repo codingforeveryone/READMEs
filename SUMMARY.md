@@ -15,7 +15,7 @@
     * [Variable Scope and Hoisting](/JavaScript/scope-and-hoisting.md)
        * [Hoisting](/JavaScript/hoisting.md)
        * [Javascript Scope](/JavaScript/JavaScript-Scope.md)
-       * [Closures](/JavaScript/Closures.md)
+    * [Closures](/JavaScript/Closures.md)
     * [Regular Expressions Beginner Guide](/JavaScript/regular-expressions-beginners-guide.md)
        * [Regular Expressions - Lookaheads](/JavaScript/regular-expressions-lookaheads.md)
     * [Recursion](/JavaScript/recursive-function.md)
