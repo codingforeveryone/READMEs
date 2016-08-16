@@ -158,6 +158,7 @@ next(); // returns 'd'
 - [Closure (computer programming) - Wikipedia][10]
 - [Explaining JavaScript scope and closures - Robert's Talk][11]
 - [Ben Alman » Immediately-Invoked Function Expression (IIFE)][12]
+- [Alwin Solanky's post in codingforeveryone/today-i-learned][13]
 
 
 [1]:	https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/JavaScript-Scope.md
@@ -172,3 +173,4 @@ next(); // returns 'd'
 [10]:	https://en.wikipedia.org/wiki/Closure_(computer_programming)
 [11]:	https://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/
 [12]:	http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+[13]:	https://github.com/codingforeveryone/today-i-learned/blob/master/oojs/closures.md
