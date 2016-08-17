@@ -1,11 +1,11 @@
 
 # A primer on Document Object Model (DOM)
 
-It all starts when you visit a webpage, there are a few things going on in the background whenever a web page is displayed in the browser. 
+It all starts when you visit a webpage, there are a few things going on in the background whenever a web page is displayed in the browser.
 
 1. When you visit a URL, the browser will fetch the HTML file from the destination along with the assets needed (i.e css, js, images etc).
 
-2. The browser will then parse the HTML file and produce a representation, or a structure of that file. 
+2. The browser will then parse the HTML file and produce a representation, or a structure of that file.
 
 3. It then goes to a process where the browser renders the visual attributes for each section of this structure and give them a size and coordinate.
 
@@ -15,7 +15,7 @@ It all starts when you visit a webpage, there are a few things going on in the b
 
 ## How does the DOM look like
 
-When the DOM is created, it is represented by a [Tree structure](https://en.wikipedia.org/wiki/Tree_structure). 
+When the DOM is created, it is represented by a [Tree structure](https://en.wikipedia.org/wiki/Tree_structure).
 
 Here's an example, the following HTML syntax
 
@@ -52,7 +52,7 @@ There are several ways to interact with the DOM, they are inclusive of but not l
 
 ##### 1. Traverse the DOM tree structure
 
-If you go over to the console in the browser development tool, and type in ```document```, you can see its immediate child nodes being logged. The ```document``` node sits right at the top of the tree (aka the root node). 
+If you go over to the console in the browser development tool, and type in ```document```, you can see its immediate child nodes being logged. The ```document``` node sits right at the top of the tree (aka the root node).
 
 ![DOM document](/images/dom/document.png)
 
@@ -110,13 +110,52 @@ Of course, there are several other ways in which you can find nodes on the page,
 
 ![Get options](/images/dom/get-option.png)
 
+#### **querySelector** and **querySelectorAll**
+```querySelector``` is an alternative to ```getElementBy``` and is the do-it-all method when it comes to element selection.  It can be used in place of any of the ```getElementBy``` methods.  The querySelector method allows us to use the CSS selector syntax that we already know and love to select elements.  ```querySelector``` will return the **first** match only and ```querySelectorAll``` will return **all** matches.
+
+Basic syntax is: ```document.querySelector("< CSS selector >")  ```
+
+
+**Select by class**
+```
+document.querySelector(".className")
+```
+**Select by id**
+```
+document.querySelector("#idName")
+```
+**Select by tag**
+```
+document.querySelector("tagName")
+```
+
+These are the most basic examples of ```querySelector```.  Because the arguments it takes are literally just CSS selectors, this enables us to be very specific with selections.  For instance, the following statement will select only ```anchor``` tags where ```src``` attribute is ```"myimage.jpg"```
+```
+document.querySelectorAll("a[src='myimage.jpg']")
+```
+This statement will select the third ```li``` in the second ```ul```:
+```
+document.querySelector("ul:nth-of-type(2) li:nth-of-type(3)")
+```
+
+
+
 ##### 3. Manipulating the DOM elements
 
-While we can certainly inspect the DOM elements and its structure, we can also change it. Below we are changing the text in the ```<h1>``` from "This is my homepage" to "This is David's homepage" using ```element.innerText```.
+While we can certainly inspect the DOM elements and its structure, we can also change it. Below we are changing the text in the ```<h1>``` from "This is my homepage" to "This is David's homepage" using ```element.textContent```.
 
 ![Before node manipulation](/images/dom/manipulate-before.png)
 
 ![After node manipulation](/images/dom/manipulate-after.png)
+
+*Please note: the reference to* ```a.innerText``` *in this image should be* ```a.textContent```
+
+It is widely regarded as best practice to use ```textContent``` over ```innerText```.  Internet Explorer introduced ```innerText``` and the intention is similar to ```textContent``` but with the following differences:
+
+* While ```textContent``` gets the content of all elements, including ```<script>``` and ```<style>``` elements, the IE-specific property ```innerText``` does not.
+* ```innerText``` is aware of style and will not return the text of hidden elements, whereas ```textContent``` will.
+* As ```innerText``` is aware of CSS styling, it will trigger a reflow, whereas ```textContent``` will not.
+* Unlike ```textContent```, altering ```innerText``` in Internet Explorer (up to version 11 inclusive) not just removes child nodes from the element, but also permanently destroys all descendant text nodes (so it is impossible to insert the nodes again into any other element or into the same element anymore).
 
 Often times the manipulation of the DOM is done using Javascript. We can simply update our HTML syntax again to show an example:
 
@@ -132,7 +171,7 @@ Often times the manipulation of the DOM is done using Javascript. We can simply 
         <p class="yellow">I hope you like it</p>
          <script>
         	var a = document.getElementById('blue');
-        	a.innerText = "This is her homepage";
+        	a.textContent = "This is her homepage";
         </script>
      </body>
 </html>
@@ -145,6 +184,77 @@ Here's the output from the console:
 ![Her homepage](/images/dom/her-homepage.png)
 
 You can see that even though the ```<h1>``` text was defined "This is my homepage" originally, it was later modified to "This is her homepage" by the javascript code.
+
+There are many other aspects of our HTML file that can be updated with JavaScript Code, I will demonstrate some of the most common:
+
+**Style** - note this is covered in more depth in [this](https://github.com/codingforeveryone/READMEs/blob/master/html-css/manipulating-inline-styles.md) existing ReadME.
+```style``` will add inline style attributes to the element **inside** the HTML file.  Note the use of camelCase as opposed to kebab-case.
+```
+<element>.style.color = "blue";
+<element>.style.fontSize = "15px";
+```
+
+**Class** - Using the ```classList``` method; you can add, remove and toggle classes on HTML elements, which can be referenced in CSS.  This method is generally recommended over adding inline styles wherever possible.
+
+*Add & Remove*:
+```
+<element>.classList.add("someclass")
+<element>.classList.remove("someclass")
+```
+*Toggle* - (If class is not assigned to the element it will add it, otherwise it will remove):
+```
+<element>.classList.toggle("someclass")
+```
+
+**Attribute** - The ```setAttribute``` method takes two arguments - the attribute name, and value it is to be set to.
+
+```
+<element>.setAttribute("attributeName", "valueToSet")
+```  
+```
+i.e.  document.querySelector("h1").setAttribute("href", "http://www.google.com")
+```
+
+
+##### 4. Event triggered DOM manipulation
+Perhaps the most important aspect when dealing with the DOM and JavaScript is event triggered actions.  Without triggers all the long hours spent writing brilliant code are pointless, we need something to tell it to run!  I have listed four very basic and common events calls.  This is by no means comprehensive and it simply intended to demonstrate the general idea.  
+
+The ```eventListener``` method can be attached to an element.  This method takes two arguments - an event, and a function.  The listener will wait for the specified event to occur, at which point the second argument - the function, will be executed. The basic syntax is as follows:
+```
+<element>.addEventListener("event", function)
+```
+
+**"click" event** - Function runs any time the specified element is clicked on
+```
+<element>.addEventListener("click" function(){
+  //do something
+  })
+```
+
+**"change" event** - Function runs any time an element is changed.  For example if an input is populated with some text.
+```
+numInput.addEventListener("change", function(){
+  //do something
+  i.e.
+  <someElement>.textContent = this.value;
+});
+```
+
+**"mouseover" event** - Function runs any time the mouse pointer hovers over an element.
+```
+<element>.addEventListener("mouseover" function(){
+  //do something
+  })
+```
+
+**"mouseout" event** - Function runs any time the mouse pointer moves off from an element is was hovering over.
+```
+<element>.addEventListener("mouseout" function(){
+  //do something
+  })
+```
+
+A complete list of available events can be found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/Events).
 
 ## Other example uses cases of the DOM
 
@@ -169,8 +279,3 @@ You can see that even though the ```<h1>``` text was defined "This is my homepag
 - [CSS Tricks - DOM](https://css-tricks.com/dom/)
 - [MDN - DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 - [Douglas Crockford - The theory of DOM](https://www.youtube.com/watch?v=Y2Y0U-2qJMs)
-
-
-
-
-
