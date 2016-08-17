@@ -65,17 +65,18 @@ configurable:	true
 }
 ```
 
-Once the `writable` attribute of the `name` property has been set to `false`, then trying to change the value of `name`:
+Once the `writable` attribute of the `name` property has been set to `false`, then trying to change the value of `name` will result in `name`  still being set to `'Bart'`. An error is only thrown in strict mode, otherwise the assignment will fail silently. Strict mode error:
 
 ```javascript
-boy.name = 'Leonard';
-```
+boy.name = 'Leonard'
+         ^
 
-Will result in `name`  still being set to `'Bart'`.
+TypeError: Cannot assign to read only property 'name' of #<Object>
+```
 
 Of course, if the `name` property was changed before `writable` was set to `false`, then that second name will be the one that is ‘unchangeable’.
 
-**WARNING** We have to be very careful now because if the value of `name` is another object (not a primitive like a string), for example:
+**Warning**  - We have to be very careful now because if the value of `name` is another object (not a primitive like a string), for example:
 
 ```javascript
 name: { first: 'Bart', nickname: 'Bandit' }
