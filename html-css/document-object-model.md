@@ -148,7 +148,14 @@ While we can certainly inspect the DOM elements and its structure, we can also c
 
 ![After node manipulation](/images/dom/manipulate-after.png)
 
-*Please note: the refernce to* ```a.innerText``` *in this image should be* ```a.textContent```
+*Please note: the reference to* ```a.innerText``` *in this image should be* ```a.textContent```
+
+It is widely regarded as best practice to use ```textContent``` over ```innerText```.  Internet Explorer introduced ```innerText``` and the intention is similar to ```textContent``` but with the following differences:
+
+* While ```textContent``` gets the content of all elements, including ```<script>``` and ```<style>``` elements, the IE-specific property ```innerText``` does not.
+* ```innerText``` is aware of style and will not return the text of hidden elements, whereas ```textContent``` will.
+* As ```innerText``` is aware of CSS styling, it will trigger a reflow, whereas ```textContent``` will not.
+* Unlike ```textContent```, altering ```innerText``` in Internet Explorer (up to version 11 inclusive) not just removes child nodes from the element, but also permanently destroys all descendant text nodes (so it is impossible to insert the nodes again into any other element or into the same element anymore).
 
 Often times the manipulation of the DOM is done using Javascript. We can simply update our HTML syntax again to show an example:
 
