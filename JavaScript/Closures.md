@@ -153,6 +153,7 @@ next(); // returns 'd'
 ### Resources
 
 - [Closures - JavaScript | MDN][7]
+- [How do JavaScript closures work? - Stack Overflow][14]
 - [what's the point of closures? - Journey Into JavaScript][8]
 - [JavaScript Scope - Lexical Scoping, Closures & Controlling Context][9]
 - [Closure (computer programming) - Wikipedia][10]
@@ -174,3 +175,4 @@ next(); // returns 'd'
 [11]:	https://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/
 [12]:	http://benalman.com/news/2010/11/immediately-invoked-function-expression/
 [13]:	https://github.com/codingforeveryone/today-i-learned/blob/master/oojs/closures.md
+[14]:	http://stackoverflow.com/questions/111102/how-do-javascript-closures-work#answer-111111
