@@ -10,9 +10,9 @@ Closures have a reputation for being one of JavaScript's most difficult concepts
 
 As you should know before attempting to understand closures, JavaScript variables are accessible within:
 
-**global scope** when defined outside of any function or declared without the `var` keyword
-**local scope** when defined inside a function
-**lexical scope** when defined as part of a nested function chain
+**global scope** when defined outside of any function or declared without the `var` keyword  
+**local scope** when defined inside a function  
+**lexical scope** when defined as part of a nested function chain  
 **block scope** when defined with ES6 keywords `let` or `const`
 
 Consider the following example of a nested function:
@@ -147,7 +147,7 @@ next(); // returns 'd'
 ### Related
 
 [JavaScript Scope: A Beginners Perspective][4]  
-[Variable scope and hoisting][5]
+[Variable scope and hoisting][5]  
 [Hoisting][6]
 
 ### Resources
