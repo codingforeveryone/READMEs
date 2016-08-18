@@ -108,7 +108,7 @@ last line of the code, then during the execution phase, JavaScripts assigns ‘l
 (remember that assignments happen during the execution phase) and then when it hits the last line it can call it.
 
 ## Recap
-Let me give you two different example that demonstrates hoisting rather nicely:          
+Let me give you two different examples that demonstrate hoisting rather nicely:          
 Example 1:
 ```javascript
 function family(){
@@ -139,7 +139,7 @@ console.log(money());
 
 So, the answer to Ex. 1 would be ```"Tom" ``` and the answer to Ex. 2 would be ```TypeError: coins is not a function ```
 
-Explanation for Ex. 1 - So we know that we are dealing with function declarations in this example, therefore we can say that the functions and their body is hoisted, so after the interpreter is finished with the code, it runs in this order.
+Explanation for Ex. 1 - As we know we are dealing with function declarations in this example, we know that the functions and their bodies are hoisted. After the interpreter is finished with the code, it runs in the following order:
 ```javascript
 //**Simulated processing sequence for Ex. 1**
 function family(){
@@ -156,7 +156,7 @@ function family(){
 console.log(family());
 ```
 
-Explanation for Ex. 2 - Here we can see that function expressions are used, so no functions are hoisted. However if there were no hoisting in this example whatsoever, the error would be ```TypeError: coins is not a defined ```. What occurs is variable hoisting, thus coins is declared up front but it's value is undefined. Everything else runs to order.
+Explanation for Ex. 2 - Here we can see that function expressions are used, so no functions are hoisted. However if there were no hoisting in this example whatsoever, the error would be ```TypeError: coins is not a defined ```. What occurs is variable hoisting, thus coins is declared up front but its value is undefined. Everything else runs in order.
 ```javascript
 //**Simulated processing sequence for Ex. 2**
 function money(){
