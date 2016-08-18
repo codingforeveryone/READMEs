@@ -28,6 +28,7 @@
     * [JavaScript Shortcuts](/JavaScript/shortcuts.md)
     * [Synchrous and Asynchronous](/JavaScript/synchronous-and-asynchronous.md)
     * [Conditional Operator](/JavaScript/conditional-operator.md)
+    * [Using the XMLHttpRequest API](/JavaScript/xhr.md)
 
 * [HTML and CSS](/gitbook-chapter-headers/html-css.md)
     * [Choosing a CSS Framework](/html-css/choosing-a-css-framework.md)
