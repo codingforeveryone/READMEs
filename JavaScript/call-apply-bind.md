@@ -1,12 +1,12 @@
 # Call(), Apply() & Bind()
 ___
 
-#### In essence, the purpose of the Call(), Apply(), Bind() methods is to enable the ability to control what the ```this``` variable ends up being when a function is run.
+#### Essentially the purpose of the Call(), Apply(), Bind() are to enable `this` to be better controlled when a function is executed'
 ___
 
 ##  What are call(), apply() & bind() methods?
 
-```call```, ```apply``` & ```bind``` are simply methods which are created - by default - by the JavaScript engine as properties on every function object. Exactly the same way you can have methods as properties of a standard JavaScript object.  This is made possible because of the fact that technically, JavaScript functions are classed as objects.
+```call```, ```apply``` & ```bind``` are simply methods which are created - by default - by the JavaScript engine as properties on every function object, in exactly the same way that methods as properties are of a standard JavaScript object.  This is made possible because of the fact that technically, JavaScript functions are classed as objects.
 ___
 
 
@@ -92,7 +92,7 @@ ___
 ## Common Use Cases
 
 ### Method Sharing
-The ```call``` and ```apply``` methods can be leveraged to shorten and simplify our code drastically by sharing repeatable methods between multiple objects.  In the example below, I have created three objects for storing people, all of which we are going to assume require a method to print the first and last name.
+The ```call``` and ```apply``` methods can be used to simplify and shorten code significantly by sharing repeatable methods between multiple objects.  In the example below, I have created three objects for storing people, all of which we are going to assume require a method to print the first and last name.
 
 ```javascript
 var person1 =  {firstname: "Eve", lastname: "Wilson"};
