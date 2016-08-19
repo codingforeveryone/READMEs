@@ -16,6 +16,12 @@ There is a lot of reading that can be done, if you choose so, with the ‘Gettin
 
 Other than this, the quick tutorial is a really useful introduction into the command line and the many things you can do with it and use it for. I’d advise everyone to check it out. There are also cheat sheets available on the ‘Next Steps’ section, use the one that’s right for your system.
 
+## Command line in Windows
+
+Cygwin is an old but usefull tool that allows you to have an Unix enviroment inside a Windows machine. Most of the commands and tools of a typical Linux distribution are available there. It´s a great way to practice and learn.
+
+[Cygwin](https://www.cygwin.com/). You can download the simple installer there. 
+
 ## Links
 
 http://cli.learncodethehardway.org/book/
@@ -23,3 +29,7 @@ http://cli.learncodethehardway.org/book/
 http://www.macworld.com/article/2080814/master-the-command-line-copying-and-moving-files.html
 
 https://www.codecademy.com/learn/learn-the-command-line
+
+http://linuxcommand.org/learning_the_shell.php
+
+
