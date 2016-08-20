@@ -15,9 +15,9 @@ Debian or Ubuntu:
 
 $ apt-get install git
 
-If you get an error, try adding sudo infront as this will give you access to install git.
+If you get an error, try adding sudo in front as this will give you access to install git.
 
-To verify which version of git you have, type the following into terminal:
+To verify which version of git you have installed, type the following into terminal:
 
 $ git -- version
 
