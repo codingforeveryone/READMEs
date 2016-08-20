@@ -1,5 +1,26 @@
 # Git Basics
 
+## Installing git on Linux
+To install git on linux, type the following into terminal.
+
+Up to Fedora 21:
+
+$ yum install git
+
+Fedora 22 and later:
+
+$ dnf install git
+
+Debian or Ubuntu:
+
+$ apt-get install git
+
+If you get an error, try adding sudo in front as this will give you access to install git.
+
+To verify which version of git you have installed, type the following into terminal:
+
+$ git -- version
+
 
 ### Installing git on Mac
 If you are on a mac, git may already be installed. To verify type this in the [terminal](https://en.wikipedia.org/wiki/Terminal_(OS_X)):  
