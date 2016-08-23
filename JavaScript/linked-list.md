@@ -93,6 +93,136 @@ function nth(pos,list){
 ```
 This works similarly to converting a list to an array, except instead of adding each value to the array, we increment the counter. Here, the base case, when we return the value, is when the counter matches the desired number (`pos`).
 
+## An object-oriented version
+
+So far our list is created and manipulated via a group of free-standing functions. However, we can easily package these functions with the list itself to create an object-oriented version.
+
+The first step is to write a constructor for `Node` objects, rather than writing them as object literals.
+
+```Javascript
+function Node(value, rest) {
+  this.value = value;
+  this.rest = rest || null; // default value of null
+}
+```
+
+In order to create a new terminal node, we can simply do the following:
+
+```Javascript
+var list = new Node(5);
+```
+
+We can then chain nodes together backwards to create a linked list:
+
+```Javascript
+list = new Node(4, list);
+list = new Node(3, list);
+```
+
+Of course, we don't want to do this manually, so we create a constructor which takes an array, turns it into a chain of nodes and stores this as the `head` attribute of a `LinkedList` object:
+
+```Javascript
+function LinkedList(arr) {
+    if (!arr) {
+      this.head = null; // default head for empty lists
+    } else {
+      var list = new Node( arr[ arr.length - 1 ] )
+      for ( var i = arr.length - 2; i >= 0; i-- ) {
+        list = new Node( arr[i], list )
+      }
+      this.head = list;
+    }
+}
+```
+
+This constructor plays the role of the `arrayToList` function.
+
+We can now add the `listToArray`, `prepend` and `nth` functions, with some modifications, as methods of a `LinkedList` object.
+
+```Javascript
+LinkedList.prototype.toArray = function toArray() {
+  if (this.head === null) {
+    return [];
+  } else {
+    var res = [];
+    traverse(this.head);
+    return res;
+  }
+
+  function traverse(head){
+    res.push(head.value)
+    if(head.rest !== null) {
+      traverse(head.rest);
+    }
+  }
+
+};
+
+LinkedList.prototype.prepend = function prepend(value) {
+  var n = new Node(value, this.head);
+  this.head = n;
+};
+
+LinkedList.prototype.nth = function nth(index) {
+  var counter = 0;
+
+  function reach(head) {
+    if (head == null) {
+      throw "Index out of range";
+    }
+    if (index === counter) {
+      return head.value;
+    } else {
+      counter++;
+      return reach(head.rest);
+    }
+  }
+
+  return reach(this.head);
+};
+```
+
+Here's a demonstration of the usage of this object-oriented version:
+
+```Javascript
+> var list = new LinkedList([4,5,6]);
+undefined
+
+> list;
+LinkedList {
+  head: Node { value: 4, rest: Node { value: 5, rest: [Object] } } }
+
+> list.head;
+Node {
+  value: 4,
+  rest: Node { value: 5, rest: Node { value: 6, rest: null } } }
+
+> list.toArray();
+[ 4, 5, 6 ]
+
+> list.prepend('h');
+undefined
+
+> list.toArray()
+[ 'h', 4, 5, 6 ]
+
+> list.nth(0);
+'h'
+
+> list.nth(1);
+4
+
+> list.nth(2);
+5
+
+> list.nth(3);
+6
+
+> list.nth(4);
+"Index out of range"
+```
+
+
 ##Related
 
 ##References
