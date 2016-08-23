@@ -1,7 +1,7 @@
 # Call(), Apply() & Bind()
 ___
 
-#### Essentially the purpose of the Call(), Apply(), Bind() are to enable `this` to be better controlled when a function is executed'
+#### Essentially the purpose of the Call(), Apply(), Bind() are to enable `this` to be better controlled when a function is executed
 ___
 
 ##  What are call(), apply() & bind() methods?
@@ -82,7 +82,7 @@ Typing ```.call()``` on the end of a function simply invokes it, the same way th
 </br>
 </br>
 
-Typing ```.apply()``` on the end of a function work exactly the same way as ```.call()``` with one difference - The arguments must be passed in an array.
+Typing ```.apply()``` on the end of a function works exactly the same way as ```.call()``` with one difference - The arguments must be passed in an array.
 
 ```javascript
 printUser.apply(person, [arg1, arg2, ...argX])
