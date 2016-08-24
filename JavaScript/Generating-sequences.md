@@ -48,7 +48,7 @@ candidate number for divisibility by each prime:
 
 Fibonnaci Sequence
 
-In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation Fn = Fn-1 + Fn-2 with seed values.
+In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation Fn = Fn-1 + Fn-2 with seed values 0,1.
 
 	function fibonacci(nums) {
 		
