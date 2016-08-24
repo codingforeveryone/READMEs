@@ -6,7 +6,7 @@ on their face, depending upon the size of the sunflower. Additionally, lilies an
 have five, delphiniums have eight petals, all related to the Fibonacci sequence. Or simply triangular numbers in bowling! 
 We are surrounded by sequences which are regularly analysed within computer programming.
 
-Being equipped to generate such sequences is vital. This is dedicated to exploring the possibleways these sequences can be produced 
+Being equipped to generate such sequences is vital. This article is dedicated to exploring the possible ways these sequences can be produced 
 within a computer program using javascript:
 
 Prime Numbers
