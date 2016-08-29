@@ -109,7 +109,7 @@ Congratulations - you have just set up your TypeScript environment and used it t
 
 - Node.js
 - NPM
-- [ECMAScript 6](/JavaScript/ECMASCript6.md)
+- [ECMAScript 6](/JavaScript/ECMAScript 6.md)
 - Angular 2
 
 ## Resources

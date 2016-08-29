@@ -44,7 +44,7 @@
     * [Command Line](/programmer-skills/command-line.md)
     * [Setting Up a Local Server](/programmer-skills/setting-up-a-local-server.md)
     * [Online Console Options](/programmer-skills/online-console-options.md)
-    * [Getting Started with TypeScript](/programmer-skills/typescript_get_started.md)
+    * [Getting Started with TypeScript](/programmer-skills/typescript_get_started.mdcd)
     
 * [Codewars](/gitbook-chapter-headers/codewars.md)
     * [Codewars](/codewars/codewars.md) 
