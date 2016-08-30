@@ -6,7 +6,7 @@
 
 TypeScript is a free and open source language that has been developed and is maintained by Microsoft.  It is a higher order class-based object oriented programming language that expands the standard ECMAScript versions of JavaScript.  The Venn Diagram above illustrates how TypeScript fits into the scheme of ES5 and ES6.  Since TypeScript essentially expands on these ECMAScript standards, a JavaScript program will also be a valid TypeScipt program.
 
-Unlike JavaScript libraries (such as jQuery.js or Underscore.js), TypeScript cannot be interpreted directly by browsers or node.js.  Instead, TypeScript code must be *transcompiled* into either ES5 or ES6 in order to be run.
+Unlike JavaScript libraries (such as jQuery.js or Underscore.js), TypeScript cannot be interpreted directly by browsers or node.js.  Instead, TypeScript code must be *transpiled* into either ES5 or ES6 in order to be run.
 
 One of the defining features of TypeScript is that it uses (optional) static typing, meaning that as a variable is declared it can be provided with a type (e.g. number, boolean or string).  When compiled, the type of each variable will be verified and an exception will occur if an unexpected assignment occurs.  This will be familiar to programmers coming from other languages (such as C# or Java) that are stricter with types than JavaScript.
 
@@ -14,7 +14,7 @@ One of the defining features of TypeScript is that it uses (optional) static typ
 
 ### 1. It allows you to quickly compare ES6 and ES5
 
-Since ES6 is valid TypeScript that can be transpiled into nice and readable ES5, a TypeScript environment makes a nice sandbox to compare ES5 and ES6.  While this functionality can also be achieved using a standalone transpiler called [Babel](https://babeljs.io/), the extra functionality of TypeScript means that it has many more beginner tutorials and insructions online.
+Since ES6 is valid TypeScript that can be transpiled into nice and readable ES5, a TypeScript environment makes a nice sandbox to compare ES5 and ES6.  While this functionality can also be achieved using a standalone transpiler called [Babel](https://babeljs.io/), the extra functionality of TypeScript means that it has many more beginner tutorials and instructions online.
 
 Since the installation of TypeScript and Babel have similar levels of complexity (both involve NPM and require small amounts of configuration), TypeScript is generally preferred if all you are looking to do is play.
 
