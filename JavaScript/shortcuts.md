@@ -58,6 +58,18 @@ console.log(userName("James Stewart")); // James Stewart
 - If `name` is _falsy_ it gets assigned the value to the right (`Not applicable`) and returns that _value_. 
 
 -
+**Even Shorter Shortcut using default values/parameters**
+
+```javascript
+function userName(name = "Not applicable") {
+         return name;
+         }
+//Attention!
+console.log(userName("")); // returns ""
+console.log(userName()); // returns "Not applicable"
+console.log(userName("James Stewart")); // James Stewart
+```
+- Default function parameters allow formal parameters to be initialized with default values if no value (at all) or _undefined_ is passed.
 
 ![Javascript shortcuts](http://wersm.com/wp-content/uploads/2013/01/shortcut-keyboard-howztech.jpg)
 
