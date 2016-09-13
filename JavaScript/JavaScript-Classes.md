@@ -66,8 +66,8 @@ Secondly there is functional-shared, a better approach for memory management as 
     obj.colour = colour;
     obj.door = 'open'; //assign properties
 
-    obj.open = houseMethods.open;
-    obj.close = houseMethods.close; //explicitly define or borrow methods
+    obj.open = houseMethods.openDoor;
+    obj.close = houseMethods.closeDoor; //explicitly define or borrow methods
 
     return obj;
 	};
