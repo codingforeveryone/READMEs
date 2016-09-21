@@ -109,3 +109,9 @@
 [FCC - One Does Not Simply Learn to Code](https://medium.freecodecamp.com/one-does-not-simply-learn-to-code-f25bacdc5b62#.ktf6kemay)<br>
 [OK, So You Want to Learn How to Code](https://medium.com/@charlotteis/ok-so-you-want-to-learn-how-to-code-b74bc3ac6107#.5ovkw46j9)<br>
 
+<h1>Podcasts</h1><br>
+[JavaScript Air](https://javascriptair.com/)<br>
+[JavaScript Jabber](https://devchat.tv/js-jabber/)<br>
+[Developer Tea](https://spec.fm/podcasts/developer-tea/)<br>
+[Software Engineering Daily](http://softwareengineeringdaily.com/)<br>
+[The Changelog](https://changelog.com/podcast/)<br>
