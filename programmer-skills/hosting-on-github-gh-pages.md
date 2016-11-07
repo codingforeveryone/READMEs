@@ -1,10 +1,10 @@
 ## Hosting On GitHub
 
-This tutorial explains how to host static pages on github. At the end of this you will be able to host for free you pages on github and to assign **customs URLs to them**.
+This tutorial explains how to host static pages on github. At the end of this you will be able to host your pages on github for free  and to assign **customs URLs to them**.
 
 The service is called Github Pages, and is very easy to use from your current github account.
-There are several  good tutorials on github, so in this guide I  will try to answer to all the questions I still had after going through those.  
-I encourage you to start from [here](https://pages.github.com/). That tutorial explains how to create a **user page**. A user page is not what you will probably be using most often, but it is the easiest to set up ( they are all easy) and a good starting point. The next paragraph is about the differences between **user pages** and **project pages**
+There are several good tutorials on github, so in this guide I  will try to answer all the questions I still had after going through those.  
+I encourage you to start from [here](https://pages.github.com/). This tutorial explains how to create a **user page**. A user page is not what you will probably be using most often, but it is the easiest to set up ( they are all easy) and a good starting point. The next paragraph is about the differences between **user pages** and **project pages**
 
 NOTE: to be able to use the project pages you need to be familiar with branches. [here](https://www.atlassian.com/git/tutorials/using-branches/git-branch) a good tutorial
 
@@ -49,7 +49,7 @@ And switch to it:
 
 The shorthand for this would be:  
 `$ git checkout -b gh-pages`  
-The `-b` is an option to create a branch while switching to it. 
+The `-b` is an option to create a branch while switching to it.
 
 Now you can create a new file into this branch to test:  
 `$ echo “Hello, world” > index.html`
@@ -71,33 +71,25 @@ Done! Your site will be accessible at http://__yourUsername__.github.io/repoName
 
 ### Using customs urls
 
-All of what has been covered until now it's pretty cool, but it wouldn't be as useful as it is,  if you couldn't then use a custom URL. Which means to change **yourUsername.github.io/repoName** to something like **www.myWebsite.com**.  
+All of what has been covered until now is pretty cool, but it wouldn't be as useful as it is,  if you couldn't then use a custom URL. Which means to change **yourUsername.github.io/repoName** to something like **www.myWebsite.com**.  
 
 The practical steps to do it are covered by [this short tutorial](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) from gitHub.
 
 The main difficulty here for me was to understand how to set up DNS records.
-If you are using a subdomain, like **www.myWebsite.com**, or **myName.myFamilyName.com**, use a CNAME type of DNS record by your DNS provider. 
+If you are using a subdomain, like **www.myWebsite.com**, or **myName.myFamilyName.com**, use a CNAME type of DNS record by your DNS provider.
 
 If you are using an apex domain, like **myWebsite.com**, you can set it up with an A or ANAME type of DNS record, by your DNS provider.
-Be aware that using apex domain is highly discourage on github as you will have some serious load time issues. 
+Be aware that using apex domain is highly discourage on github as you will have some serious load time issues.
 
 
 
 ### Jekyll
 
-If you start to read documentations about gh-pages you will come across often to references to Jekyll. So what is it? It is the engine that powers gh-pages, but for the pourpose of this tutorial, it's a totally different way of using gh-pages then what has been shown in this tutorial. Instead of upload valid html/css pages you will have to upload a valid jekyll website, or, to make things easier, to use the online generator that is found on gitHub. (To be tecnically accurate, an html site is a valid Jekyll site, and on github even html pages are processed by Jekyll, which doesn not apply any changes to them. However just for clarity, I make the distinction between the two as a Jeckyll site is practically different to make and as a different structure)
+If you start to read documentations about gh-pages you will often come across references to Jekyll. So what is Jekyll? It is the engine that powers gh-pages, but for the purpose of this tutorial, it's a totally different way of using gh-pages than what has been shown in this tutorial. Instead of uploading valid html/css pages you will have to upload a valid Jekyll website, or, to make things easier, to use the online generator that is found on gitHub. (To be technically accurate, an html site is a valid Jekyll site, and on github even html pages are processed by Jekyll, which does not apply any changes to them. However just for clarity, I make the distinction between the two as a Jekyll site is practically different to make and as a different structure)
 
-While uploading a valid Jekyll  website require you to understand a little better how Jekyll works, the online generator is very easy to use. In essence, all you need is to write content in a markup language, like *Markdown* (see the irony?) or *Textile*, and Jekyll will translate it into valid html, and apply templates. The templates are based on the *Liquid* templating language, but if you use the online generator you don't need to know it either, as you can select those via a graphic interface. 
+While uploading a valid Jekyll website requires you to understand a little better how Jekyll works, the online generator is very easy to use. In essence, all you need is to write content in a markup language, like *Markdown* (see the irony?) or *Textile*, and Jekyll will translate it into valid html, and apply templates. The templates are based on the *Liquid* templating language, but if you use the online generator you don't need to know it either, as you can select those via a graphic interface.
 
-So, why use Jekyll over plain html/css? Because with it you can do things that would normally require a database and a content managment system.
+So, why use Jekyll over plain html/css? Because with it you can do things that would normally require a database and a content management system.
 In its own documentation Jekyll is defined  as a blog-aware, static site generator.  
-Blog-aware means that creating a blog is a feature embedded in Jekyll, which means that you can create a blog without the need for a database and without the need for a content managment system.
+Blog-aware means that creating a blog is a feature embedded in Jekyll, which means that you can create a blog without the need for a database and without the need for a content management system.
 I'll stop here as Jekyll would require a tutorial for itself. If you are interested in the topic you can find a good resource [here](https://jekyllrb.com/docs/resources/)
-
-
-
-
-
-
-
-
