@@ -136,9 +136,9 @@ You can of course, use the random number generators above to generate random int
 
 ## Random Tests - Codewars - A Full Example
 
-In the following snippet, you can see how you can add a random test for your Kata. Assuming the user solution to your Kata is as followed:
+In the following snippet, you can see how you can add a random test for your kata. Assuming the user solution to your kata is as followed:
 
-```
+```javascript
 function sumUser(a, b) {
     return a + b;
 }
@@ -146,7 +146,7 @@ function sumUser(a, b) {
 
 Then you would add the following code block under "Test Cases":
 
-```
+```javascript
 // Your predefined solution:
 function sumKataAuthor(a, b) {
     return a + b;
