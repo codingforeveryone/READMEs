@@ -133,3 +133,13 @@ function makestring(min, max) {
 ```
 
 You can of course, use the random number generators above to generate random integers to be passed in to the makestring function.
+
+## Random Tests - Codewars - A Full Example
+
+In the following snippet, you can see how you can add a random test for your Kata. Assuming the user solution to your Kata is as followed:
+
+```
+function sumUser(a,b) {
+    return a+b;
+}
+```
