@@ -29,7 +29,7 @@ console.log(roots);
 // [1, 2, 3]
 ```
 
-This is much more concise.
+This is much more concise. Brevity and simplicity reduce the potential for bugs to appear in your code.
 
 ## Callback function
 
