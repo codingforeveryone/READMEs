@@ -166,7 +166,7 @@ for (var i = 0; i < 10; i++) {
 
   // Adding console.log of the inputs used in the test may help
   // the user understand and debug their solution: 
-  console.log('input a was:', a, 'input b was:', b);
+  console.log('input a was:', a,', input b was:', b);
 
   // Compare user's function with a working solution:
   Test.assertEquals(sumUser(a, b), sumKataAuthor(a, b));
