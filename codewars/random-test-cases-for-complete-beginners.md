@@ -151,3 +151,8 @@ Then you would add the following code block under "Test Cases":
 function sumKataAuthor(a,b) {
     return a+b;
 }
+
+// A function generating a random number in a range between min and max:
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max + 1 - min) + min);
+}
