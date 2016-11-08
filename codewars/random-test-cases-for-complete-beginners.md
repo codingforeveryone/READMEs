@@ -75,13 +75,15 @@ will update this document as time goes on.
 
 ## Further Random Number Examples
 
-Are you looking to generate a random integer greater than 0 and less than but not including `x`? Try `Math.round(Math.random() * x)`.
+Are you looking to generate a random integer greater than 0 and less than but not including `x`? Try `Math.floor(Math.random() * x)`.
 
-*For integers `0 <= x < 100`, use `Math.round(Math.random() * 100)`.*
+*For integers `0 <= x < 100`, use `Math.floor(Math.random() * 100)`.*
 
-Are you looking to generate a random integer greater than or equal to `x` but less than `y`? Try adding the lower bound `x` to a random object generating the remaining variable number (which is equal to `y - x`) e.g. `Math.round(Math.random() * (y - x)) + x`.
+Are you looking to generate a random integer greater than or equal to `x` but less than `y`? Try adding the lower bound `x` to a random object generating the remaining variable number (which is equal to `y - x`) e.g. `Math.floor(Math.random() * (y - x)) + x`.
 
-*For integers `40 <= x < 100`, use `Math.round(Math.random() * 60) + 40`.*
+*For integers `40 <= x < 100`, use `Math.floor(Math.random() * 60) + 40`.*
+
+N.B. If you are wondering why we use floor here instead of round, it is because it assures that each result is equally likely to occur. Although this is often not important for kata random test cases, it is more standard to require a random variable which is uniformally distributed (i.e. an equal chance of getting any of the possibilities).
 
 ## Generating Random Strings
 
