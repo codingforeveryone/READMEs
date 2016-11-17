@@ -147,7 +147,7 @@ Add new remote repository
 $ git remote add <shortname> <url>
 ```
 
-Publish local changes on a remote branch  
+Push committed changes on your local branch up to a remote server  
 ```bash
 $ git push <remote> <branch>
 ```
