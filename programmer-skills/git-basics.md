@@ -159,12 +159,12 @@ $ git pull <remote> <branch>
 
 ### Merge and rebase
 
-Merge a branch into your current HEAD  
+Merge a branch into your current HEAD (commit history will read: commits from checked out branch first, then merged branch commits)
 ```bash
 $ git merge <branch>
 ```
 
-Rebase your current HEAD onto <branch>  
+Rebase a branch into your current HEAD (commit history will read chronologically, regardless of which branch they were from)  
 ```bash
 $ git rebase <branch>
 ```
