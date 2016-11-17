@@ -102,14 +102,14 @@ $ git commit --amend
 
 ### Commit history
 
-Show all commits, order from newest to oldest  
+Show all commits, ordered from newest to oldest  
 ```bash
 $ git log
 ```
 
 Show all of your commits in a tree-like view
 ```bash
-$ git log --graph --online --all
+$ git log --graph --oneline --all
 ```
 
 ### Branches
