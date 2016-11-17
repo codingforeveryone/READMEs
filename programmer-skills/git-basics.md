@@ -152,7 +152,7 @@ Push committed changes on your local branch up to a remote server
 $ git push <remote> <branch>
 ```
 
-Download changes and merge into HEAD  
+Pull all files from a branch of the remote repository, and merge this into the current local branch  
 ```bash
 $ git pull <remote> <branch>
 ```
