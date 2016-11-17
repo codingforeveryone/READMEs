@@ -171,9 +171,9 @@ $ git rebase <branch>
 
 ### Undo
 
-Discard all local changes  
+Unstages files i.e. resets back to previous commit  
 ```bash
-$ git reset --hard HEAD
+$ git reset HEAD
 ```
 
 Discard local changes in a specific file  
