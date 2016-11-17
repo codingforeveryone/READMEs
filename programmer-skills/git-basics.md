@@ -31,7 +31,7 @@ $ git --version
 If a version is displayed, you have it. If not, proceed to download git from [the official page](http://git-scm.com/downloads).
 This will download a DMG file. Double click on it and follow the steps. At the end open a terminal and verify with git --version if it is there.
 
-Now you need to set the username and user.email associated with git. This is relevant because services like github, or bitbucket will check your user.email, when you push something. If user.email is different from that set on github, you might encounter some problems. 
+Now you need to set the username and user.email associated with git. This is relevant because services like github, or bitbucket will check your user.email, when you push something. If user.email is different from that set on github, you might encounter some problems.
 
 Username:  
 ```bash
@@ -70,12 +70,12 @@ Show changed files
 $ git status
 ```
 
-Show changes in tracked files  
+Show changes in tracked files (that haven't been staged yet)  
 ```bash
 $ git diff
 ```
 
-Add files to your repository  
+Add files to your staging area  
 ```bash
 $ git add <files>
 ```
@@ -85,9 +85,14 @@ Add all files from your current directory
 $ git add .
 ```
 
-Commit all local changes in tracked files  
+Commit all local changes to the files in your staging area (i.e. files that have already been added)
 ```bash
-$ git commit -a -m <"a descriptive message">
+$ git commit -m <"descriptive message">
+```
+
+Add all tracked files to the staging area _and_ commit all local changes to these files
+```bash
+$ git commit -a -m <"descriptive message">
 ```
 
 Amend changes to your last commit  
@@ -97,14 +102,14 @@ $ git commit --amend
 
 ### Commit history
 
-Show all commits, order from newest to oldest  
+Show all commits, ordered from newest to oldest  
 ```bash
 $ git log
 ```
 
 Show all of your commits in a tree-like view
 ```bash
-$ git log --graph --online --all
+$ git log --graph --oneline --all
 ```
 
 ### Branches
@@ -131,7 +136,8 @@ $ git branch -d <branch>
 
 ### Update and publish
 
-List all remote branches  
+List the URLs of all remote repositories  
+(e.g. the remote repo that you cloned from is called `origin` by default)
 ```bash
 $ git remote -v
 ```
@@ -141,33 +147,33 @@ Add new remote repository
 $ git remote add <shortname> <url>
 ```
 
-Publish local changes on a remote branch  
+Push committed changes on your local branch up to a remote server  
 ```bash
 $ git push <remote> <branch>
 ```
 
-Download changes and merge into HEAD  
+Pull all files from a branch of the remote repository, and merge this into the current local branch  
 ```bash
 $ git pull <remote> <branch>
 ```
 
 ### Merge and rebase
 
-Merge a branch into your current HEAD  
+Merge a branch into your current HEAD (commit history will read: commits from checked out branch first, then merged branch commits)
 ```bash
 $ git merge <branch>
 ```
 
-Rebase your current HEAD onto <branch>  
+Rebase a branch into your current HEAD (commit history will read chronologically, regardless of which branch they were from)  
 ```bash
 $ git rebase <branch>
 ```
 
 ### Undo
 
-Discard all local changes  
+Unstages files i.e. resets back to previous commit  
 ```bash
-$ git reset --hard HEAD
+$ git reset HEAD
 ```
 
 Discard local changes in a specific file  
