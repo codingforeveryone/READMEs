@@ -85,9 +85,14 @@ Add all files from your current directory
 $ git add .
 ```
 
-Commit all local changes in tracked files  
+Commit all local changes to the files in your staging area (i.e. files that have already been added)
 ```bash
-$ git commit -a -m <"a descriptive message">
+$ git commit -m <"descriptive message">
+```
+
+Add all tracked files to the staging area _and_ commit all local changes to these files
+```bash
+$ git commit -a -m <"descriptive message">
 ```
 
 Amend changes to your last commit  
