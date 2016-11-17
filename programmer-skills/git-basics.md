@@ -136,7 +136,8 @@ $ git branch -d <branch>
 
 ### Update and publish
 
-List all remote branches  
+List the URLs of all remote repositories  
+(e.g. the remote repo that you cloned from is called `origin` by default)
 ```bash
 $ git remote -v
 ```
