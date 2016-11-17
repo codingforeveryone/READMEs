@@ -31,7 +31,7 @@ $ git --version
 If a version is displayed, you have it. If not, proceed to download git from [the official page](http://git-scm.com/downloads).
 This will download a DMG file. Double click on it and follow the steps. At the end open a terminal and verify with git --version if it is there.
 
-Now you need to set the username and user.email associated with git. This is relevant because services like github, or bitbucket will check your user.email, when you push something. If user.email is different from that set on github, you might encounter some problems. 
+Now you need to set the username and user.email associated with git. This is relevant because services like github, or bitbucket will check your user.email, when you push something. If user.email is different from that set on github, you might encounter some problems.
 
 Username:  
 ```bash
@@ -70,7 +70,7 @@ Show changed files
 $ git status
 ```
 
-Show changes in tracked files  
+Show changes in tracked files (that haven't been staged yet)  
 ```bash
 $ git diff
 ```
