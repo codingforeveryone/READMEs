@@ -75,7 +75,7 @@ Show changes in tracked files (that haven't been staged yet)
 $ git diff
 ```
 
-Add files to your repository  
+Add files to your staging area  
 ```bash
 $ git add <files>
 ```
