@@ -39,8 +39,13 @@ The default behaviour is for flex elements to arrange themselves from left-to-ri
 ## Distributing content along the main axis with justify-content
 By default, flex elements stack themselves one right next to another, from start to end along the main axis. The `justify-content` property allows us to more meaningfully distribute the flex items along the **main-axis**. Bear in mind that the main axis runs horizontally or vertically depending on the flex-direction you specify, so `justify-content` will distribute items horizontally in row layout, and vertically in column layout.
 
-## justify-content (in row layout)
+### justify-content (in row layout)
 <img src="../images/flexbox-flex-direction-row-justify-content.jpg" width="80%">
 
-## justify-content (in column layout)
+### justify-content (in column layout)
 <img src="../images/flexbox-flex-direction-column-justify-content.jpg" width="80%">
+
+## Aligning content along the cross axis with align-items
+
+### align-items (in row layout)
+<img src="../images/flexbox-flex-direction-row-align-items.jpg" width="80%">
