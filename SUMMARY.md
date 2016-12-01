@@ -10,6 +10,7 @@
        * [Array Methods Overview](/JavaScript/array-methods-overview.md)
        * [Array Map](/JavaScript/array-map.md)
        * [Array Reduce](/JavaScript/array-reduce.md)
+    * [Numbers](/gitbook-chapter-headers/numbers.md)
     * [Math Object Beginner Guide](/JavaScript/math-object-beginner-guide.md)
     * [Modulo Operator](/JavaScript/modulo-operator.md)
     * [Variable Scope and Hoisting](/JavaScript/scope-and-hoisting.md)
@@ -48,8 +49,8 @@
     * [Setting Up a Local Server](/programmer-skills/setting-up-a-local-server.md)
     * [Online Console Options](/programmer-skills/online-console-options.md)
     * [Getting Started with TypeScript](/programmer-skills/typescript_get_started.md)
-    
+
 * [Codewars](/gitbook-chapter-headers/codewars.md)
-    * [Codewars](/codewars/codewars.md) 
+    * [Codewars](/codewars/codewars.md)
     * [Writing Your Own Kata](/codewars/writing-your-own-kata.md)
     * [Random Test Cases for Complete Beginners](/codewars/random-test-cases-for-complete-beginners.md)
