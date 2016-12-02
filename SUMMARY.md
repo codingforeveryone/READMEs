@@ -11,6 +11,7 @@
        * [Array Map](/JavaScript/array-map.md)
        * [Array Reduce](/JavaScript/array-reduce.md)
     * [Numbers](/gitbook-chapter-headers/numbers.md)
+       * [Arithmetic with large numbers](/JavaScript/large-numbers-in-js.md)
     * [Math Object Beginner Guide](/JavaScript/math-object-beginner-guide.md)
     * [Modulo Operator](/JavaScript/modulo-operator.md)
     * [Variable Scope and Hoisting](/JavaScript/scope-and-hoisting.md)
