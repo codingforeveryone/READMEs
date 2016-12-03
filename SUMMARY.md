@@ -48,6 +48,7 @@
     * [Start Developing with JavaScript](/programmer-skills/start-to-develop-js.md)
     * [Command Line](/programmer-skills/command-line.md)
     * [Setting Up a Local Server](/programmer-skills/setting-up-a-local-server.md)
+    * [Setting Up Your Development Environment](/programmer-skills/setting-up-your-development-environment.md)
     * [Online Console Options](/programmer-skills/online-console-options.md)
     * [Getting Started with TypeScript](/programmer-skills/typescript_get_started.md)
 
