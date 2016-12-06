@@ -1,5 +1,14 @@
 # Git Basics
 
+## Git and GitHub Summary
+### Version Control and Branches
+Git is a tool used for version control: it allows you to store past versions of a project. To store the current state of your work in the project history, you must _commit_ your work. A commit is like a digital snapshot in time of your folders and files.
+When working, you may want to add a new feature to your project. _Branches_ are used to safeguard your current code from being broken by that new feature you're adding. Each branch is the sum of the commits that forms it. Branches are timelines of commits that diverge from your _master branch_ (generally speaking, the "main" branch) at a specified point in time.
+If your new feature works, then your test branch can be fused into your _master branch_ via a _merge_ command. At that point, the commits from the test branch become an inseparable part of the master branch's history. It is then safe to delete your test branch and continue working on your master branch.
+
+### Group Work with GitHub
+You can use git commands to _push_ your local work up to GitHub (i.e. "the cloud"), where it can be _cloned_ down to other coders' computers, or _forked_ over to their own GitHub accounts online. Git and GitHub are invaluable tools for working with others on group projects. Individual coders work on their own branches and then submit _pull requests_ to merge their branches into the group project's master branch. Pull requests are used to solicit peer review on proposed branch merges before they are permanently committed into the master branch.
+
 ## Installing git on Linux
 To install git on linux, type the following into terminal.
 
