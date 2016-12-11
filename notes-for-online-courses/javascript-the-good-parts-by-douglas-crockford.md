@@ -4,14 +4,12 @@
 
 There are two main drivers in decision-making: Head and Gut.
 
-The head favours deliberate decisions, while the Gut prefers instinct. The Gut will provide estimated data to the Head, which then
+The head favours deliberate decisions, while the Gut prefers instinct. The Gut provides estimates to the Head, which then
 comes up with an elaborate output based on that imperfect input.
 
 JS has really good parts and really bad parts; very polarized language in that way.
 
-Avoid confusing code: it's best to adopt practices that reduce ambiguity in the way your code could be interpreted. Most coding resources
-go into debugging rather than the initial writing of the code. So write good code in the first place! Take the time for some extra
-keystrokes - it'll pay off in the maintenance portion of the software lifecycle.
+Avoid confusing code: it's best to adopt practices that reduce ambiguity in the way your code could be interpreted. Most coding resources are sunk into code debugging rather than the initial writing of the code. So write good code in the first place! Take the time for some extra keystrokes - it'll pay off in the maintenance portion of the software lifecycle.
 
 ###JSLint
 JSLint is a tool Crockford developed to help spot typos and small errors (e.g. forgetting a semi-colon).
@@ -22,8 +20,7 @@ JSLint is a tool Crockford developed to help spot typos and small errors (e.g. f
 JavaScript was written in 10 days! It also underwent a period of 10 YEARS (1999-2009) without a major update. ES3 --> ES5; ES4 was scrapped altogether.
 
 JS is an object-oriented language where almost everything is an object. Object literals are important. JS is a prototype-based language,
-rather than a class-based language. This means that we can create object prototypes and then create new objects (e.g. with the "new" constructor) that
-inherit properties from a given object prototype.
+rather than a class-based language. This means that we can create object prototypes and then create new objects (e.g. with the "new" constructor) that inherit properties from a given object prototype.
 
 ###Numbers
 There is only one number-type in JS: 64-bit floating point, aka "Double".
@@ -43,7 +40,7 @@ You can even add your own Number Methods to the Number object (e.g. a truncation
 
 Numbers are first class objects!
 
-Math object: some of the math functions (e.g. "min", "max", "log", "ceil", "sin") are expensive (e.g. trig functions) and you don't always need them. It would be better for math functions and math constants (e.g. PI and E) to be Number Methods, but instead JS has them has methods on the _Math Object_.
+Math object: some of the math functions (e.g. "min", "max", "log", "ceil", "sin") are expensive (e.g. trig functions) and you don't always need them. It would be better for math functions and math constants (e.g. PI and E) to be Number Methods, but instead JS has them as methods on the _Math Object_.
 
 NaN: stands for "Not a Number", but has a type of "Number". Result of an undefined or erroneous operation. It's not equal to anything - not even itself! NaN === NaN is false.
 
