@@ -52,4 +52,8 @@ Quite easy: open your Command Palette (CTRL+SHIFT+P) and type "Package Control: 
 
 ##Atom
 
+###Packages
+* Atom HTML Preview:
+[This package](https://atom.io/packages/atom-html-preview) allows you to preview your HTML live, while you code!
+
 ##Brackets
