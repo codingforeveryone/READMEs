@@ -56,3 +56,6 @@
     * [Codewars](/codewars/codewars.md)
     * [Writing Your Own Kata](/codewars/writing-your-own-kata.md)
     * [Random Test Cases for Complete Beginners](/codewars/random-test-cases-for-complete-beginners.md)
+    
+* [Notes for Online Courses](/gitbook-chapter-headers/courses-notes.md)
+    * [JavaScript: The Good Parts by Douglas Crockford](/notes-for-online-courses/javascript-the-good-parts-by-douglas-crockford.md)
