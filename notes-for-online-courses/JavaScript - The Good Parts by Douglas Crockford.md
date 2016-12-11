@@ -170,13 +170,13 @@ Invocation operator, "()" :  it binds the arguments.
 
 Four ways to call a function: Function form, Method form, Constructor form, Apply form.
 
-Method form: thisObject.methodName(arguments)
+* Method form: thisObject.methodName(arguments)
 
-Function form: functionObject(arguments)
+* Function form: functionObject(arguments)
 
-Constructor form: new FunctionValue(arguments)
+* Constructor form: new FunctionValue(arguments)
 
-Apply form: functionObject.apply(thisObject, arguments) or functionObject.call(thisObject, argument...)
+* Apply form: functionObject.apply(thisObject, arguments) or functionObject.call(thisObject, argument...)
 
 _this_ refers to different things in the different forms of calling a function: function form --> _this_ is the global object or undefined. method form --> _this_ is the object. constructor form --> _this_ is the new object. apply fom --> _this_ is the argument.
 
