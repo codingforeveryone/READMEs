@@ -123,7 +123,7 @@ Consult the links below for a tutorial on *Tail Call Optimisation* for further i
 
 ##Related
 
-* [Linked Lists](JavaScript/linked-list.md)
+* [Linked Lists](http://codingforeveryone.foundersandcoders.org/JavaScript/linked-list.html)
 
 ## References
 * [Understanding recursion in functional JavaScript Programming](http://www.integralist.co.uk/posts/js-recursion.html) TCO using *Trampolining*  
