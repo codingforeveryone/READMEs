@@ -59,3 +59,4 @@
     
 * [Notes for Online Courses](/gitbook-chapter-headers/courses-notes.md)
     * [JavaScript: The Good Parts by Douglas Crockford](/notes-for-online-courses/javascript-the-good-parts-by-douglas-crockford.md)
+    * [CS50: Introduction to Computer Science](/notes-for-online-courses/CS50-Videos.md)
