@@ -52,7 +52,7 @@ By default, flex elements stack themselves one right next to another, from start
 
 ## Distributing content along one or multiple lines with flex-wrap
 
-##flex-wrap
+###flex-wrap
 The `flex-wrap` property defines whether the flex items are forced in a single line or can be flowed into multiple lines. It also defines the cross-axis, which determines the direction the new lines are stacked in.
 
 The `flex-wrap` property accepts 3 different values:
