@@ -35,6 +35,7 @@
 
 * [HTML and CSS](/gitbook-chapter-headers/html-css.md)
     * [Choosing a CSS Framework](/html-css/choosing-a-css-framework.md)
+    * [CSS Centering](/html-css/css-centering.md)
     * [Document Object Model](/html-css/document-object-model.md)
     * [Manipulating Inline Styles](/html-css/manipulating-inline-styles.md)
     * [Laying Out Content with Flexbox](/html-css/laying-out-content-with-flexbox.md)
