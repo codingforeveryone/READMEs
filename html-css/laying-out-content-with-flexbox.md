@@ -62,3 +62,8 @@ The `flex-wrap` property accepts 3 different values:
 `flex-wrap:wrap` – items are flowed into multiple lines and the direction of the lines is determined by the flex-direction (which takes a value of either row or column)
 
 `flex-wrap:wrap–reverse` – items are flowed in multiple lines and the direction is opposite to the flex-direction(which takes a value of either row or column)
+
+## Aligning multiple lines of content with align-content
+
+### align-content (in row layout)
+<img src="../images/flexbox-flex-direction-row-align-content.jpg" width="80%">
