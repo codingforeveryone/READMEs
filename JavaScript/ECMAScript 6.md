@@ -20,6 +20,7 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 * [Extended Parameter Handling](#extended-parameter-handling)
 * [Binary and Octal Literals](#binary-and-octal-literals)
 * [Template Literals](#template-literals)
+* [Enhanced Object Literals](#enhanced-object-literals)
 
 #### Arrow Functions
 
@@ -326,6 +327,13 @@ var arr2 = [3, 4, 5];
 arr1.push(…arr2);
 //  arr1 = [0, 1, 2, 3, 4, 5];
 ```
+Note the difference without using the spread operator:
+```javascript
+var arr1 = [0, 1, 2];
+var arr2 = [3, 4, 5];
+arr1.push(arr2);
+//  arr1 = [0, 1, 2, [3, 4, 5]];
+```
 
 **Note:** Default, Rest and Spread parameters can also be used with arrow functions, as well as destructuring within the parameter list.
 
@@ -386,10 +394,8 @@ var width = 5;
 var height = 15;
 
 function tag(strings, ...values) {
-    strings[0] === "Hello "
-    strings[1] === " world "
-    values[0] ===  20
-    values[1] ===  75
+  // strings = ["Hello ", " world "];
+  // values = [20, 75];
   return `The area is ${width * height}`
 }
 
@@ -413,13 +419,72 @@ var height = 15;
 String.raw`The area is ${width * height}!`;
 // "The area is 75!"
 ```
+
+#### Enhanced Object Literals
+
+ES6 provides a number of syntax additions that allow for clearer and more concise object literal declarations.
+
+##### Method definitions
+
+The syntax for declaring methods in an object is now shorter:
+```javascript
+function makePerson(name, age) {
+  return {
+    sayHello() {
+      console.log("Hi!");
+    }
+  };
+}
+
+// In ES5 you would write 'sayHello: function() { ... }'
+```
+Removing the need for the colon and `function` keyword makes the code slightly more readable.
+
+##### Property values
+
+Similarly, properties can be defined more concisely if (and only if) the name of the property key matches an existing variable. For example:
+```javascript
+function makePerson(name, age) {
+  return {
+    name,
+    age,
+    sayHello() {
+      console.log("Hi!");
+    }
+  };
+}
+
+var person = makePerson("Sarah", 37);
+// person.name === "Sarah";
+```
+This syntactic sugar avoids having to write duplicative `name: name`-style definitions.
+
+##### Computed property keys
+
+Finally, and perhaps most usefully, property keys can be computed values, meaning that you do not need to specify the complete string at the time of definition. For example, you can do the following:
+```javascript
+function makePerson(name, age, gender) {
+  return {
+    name,
+    age,
+    sayHello() {
+      console.log("Hi!");
+    },
+    ["is" + gender]: true
+  };
+}
+
+var person = makePerson("Claire", 28, "Female");
+person.isFemale; // output: true
+```
+You may use any expression within the square brackets. This is useful in cases where you need to programmatically generate a lot of properties in an object. A useful way to think of it is like using the square bracket key access notation (e.g. `person["is" + gender]`) but at the time of object definition. Anything that works with square bracket notation will work with ES6 computed property keys.
+
 #### Related
 
 To be added here, or in separate readmes.
 
 * Classes & Modules/ Module Loaders
 * [Destructuring](http://codingforeveryone.foundersandcoders.org/JavaScript/array-methods-overview.html#destructuring)
-* Enhanced Object literals
 * Generators
 * New Built-in Methods
 * Promises
