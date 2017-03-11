@@ -20,6 +20,7 @@ ES6 is purely additive to Javascript but it is a significant and extensive upgra
 * [Extended Parameter Handling](#extended-parameter-handling)
 * [Binary and Octal Literals](#binary-and-octal-literals)
 * [Template Literals](#template-literals)
+* [Destructuring](#destructuring)
 
 #### Arrow Functions
 
@@ -413,17 +414,117 @@ var height = 15;
 String.raw`The area is ${width * height}!`;
 // "The area is 75!"
 ```
+
+#### Destructuring
+
+Destructuring is a way of extracting data stored in objects and arrays into distinct variables according to a specified pattern. It can be used in locations that receive data, such as the left-hand sides of assignments or when handling return values from functions.
+
+##### Syntax
+
+```javascript
+var foo, bar;
+[foo, bar] = [1, 2];
+console.log(foo); // 1
+console.log(bar); // 2
+
+var rest;
+[foo, bar, ...rest] = [1, 2, 3, 4, 5];
+console.log(foo); // 1
+console.log(bar); // 2
+console.log(rest); // [3, 4, 5]
+
+({foo, bar} = {foo:1, bar:2})
+console.log(foo); // 1
+console.log(bar); // 2
+```
+
+##### Description
+
+Destructuring assignments use a similar syntax to objects and arrays. Instead of using the syntax to package data into an object or array, however, they are used to define which elements to extract from a source variable.
+
+##### Destructuring arrays
+Variables can be assigned values via destructuring either at declaration or at a later point. Variables in a deconstruction assignment can also be assigned default values, in case the value pulled from the array is `undefined`. And by omitting a variable name, it is possible to ignore return values that you're not interested in.
+
+```javascript
+var baz = [1, 2, 3, 4, 5];
+var [foo, bar] = baz;
+console.log(foo); // 1
+console.log(bar); // 2
+
+var foo, bar;
+[foo, bar] = [1, 2];
+console.log(foo); // 1
+console.log(bar); // 2
+
+var a, b;
+[a=4, b=6] = [1];
+console.log(a); // 1
+console.log(b); // 6
+
+function f() { return [1, 2, 3] };
+var [x, , y] = f();
+console.log(x); // 1
+console.log(y); // 3
+```
+
+Destructuring expressions can be used to swap the values of two variables without the use of a temporary variable:
+
+```javascript
+var foo = 1;
+var bar = 2;
+
+[foo, bar] = [bar, foo];
+console.log(foo); // 2
+console.log(bar); // 1
+```
+
+Destructuring can also be used to simplify the handling of arrays returned from functions:
+
+```javascript
+function f() { return [1, 2]; }
+var [a, b] = f();
+console.log(foo); // 1
+console.log(bar); // 2
+```
+
+##### Destructuring objects
+As with arrays, destructuring objects can be used to assign values to variables either at declaration or separately, and variables can be assigned a default in case the pulled value is `undefined`. However, when assigning a value to a variable separate from its declaration, it is necessary to wrap the assignment statement in brackets - otherwise, the assignment statement will be interpreted as a block.
+
+```javascript
+var baz = {foo: 12, bar: true};
+var {foo, bar} = baz;
+console.log(foo); // 12
+console.log(bar); // true
+
+var x, y;
+({x, y} = {x:1, y:2});
+console.log(x); // 1
+console.log(y); // 2
+
+var {a=3, b=7} = {a: 1};
+console.log(a); // 1
+console.log(b); // 7
+```
+
+Destructuring expressions can also be used to extract variables from an object and assign them to variables with a different name than the original property:
+
+```javascript
+var baz = {foo: 12, bar: true};
+var {foo: a, bar: b} = baz;
+console.log(a); // 12
+console.log(b); // true  
+```
+
 #### Related
 
 To be added here, or in separate readmes.
 
-* Classes & Modules/ Module Loaders
-* [Destructuring](http://codingforeveryone.foundersandcoders.org/JavaScript/array-methods-overview.html#destructuring)
+* Classes & Modules / Module Loaders
 * Enhanced Object literals
 * Generators
 * New Built-in Methods
 * Promises
-* Proxies/ Reflections
+* Proxies / Reflections
 * Symbols
 * Typed Arrays
 * Unicode
@@ -455,3 +556,5 @@ To be added here, or in separate readmes.
 [Spread Operator — MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
 [Template Literals - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+[Destructuring assignment - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
