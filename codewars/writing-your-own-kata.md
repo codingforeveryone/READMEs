@@ -1,4 +1,5 @@
 # Writing your own kata – a step by step guide
+
 Writing Codewars kata is hard. You’re producing something that you’re hoping will be fun and challenging for a community that while supportive, has high expectations for your work. This guide is a roadmap for beginners who are familiar with the Codewars framework but don't know where to start when it comes to writing their own kata. Writing a kata can be quite a long and involved process so don't try to read this guide all in one go. Just dip into the relevant bits when you're at each stage. All example code is in the [Founders & Coders](http://www.foundersandcoders.com/) language of choice, Javascript.
 ## Step 1 – Come up with an idea
 According to Wikipedia, _“Kata (型 or 形 literally: "form"), a Japanese word, are the detailed choreographed patterns of movements practised in many traditional Japanese arts, most commonly known for their presence in the martial arts, such as aikido, judo, kendo and karate.”_

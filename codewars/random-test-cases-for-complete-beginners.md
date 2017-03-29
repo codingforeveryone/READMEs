@@ -162,15 +162,132 @@ function getRandomNumber(min, max) {
 // Run test 10 times (or as many times as you like!):
 for (var i = 0; i < 10; i++) {
 
-  // Generate random input numbers between 0 and 100 for each test: 
+  // Generate random input numbers between 0 and 100 for each test:
   var a = getRandomNumber(0, 100);
   var b = getRandomNumber(0, 100);
 
   // Adding console.log of the inputs used in the test may help
-  // the user understand and debug their solution: 
+  // the user understand and debug their solution:
   console.log('input a was:', a,', input b was:', b);
 
   // Compare user's function with a working solution:
   Test.assertEquals(sumUser(a, b), sumKataAuthor(a, b));
 }
 ```
+
+## Random Tests - Best Practices
+
+Once you've gotten the hang on how to write basic random test cases, here are a few "best practices" that you should consider.
+
+### I. Ensure that the reference solution/algorithm is inaccessible to the user undertaking the Kata
+
+In the basic examples shown above, both the user solution and the reference solution exist in the **global scope**.  This means that if the user ever finds out the name of your reference solution (function), he/she could easily just utilize your reference solution in his/her function, like such:
+
+```javascript
+// User Solution
+function add(a, b) {
+  return addCheck(a, b); // The user cheated without actually implementing the algorithm himself/herself
+}
+
+// some code ...
+
+// Reference Solution (in Test Cases)
+function addCheck(a, b) {
+  return a + b;
+}
+
+// 100 Random Tests
+for (var i = 0; i < 100; i++) {
+  var a = Math.floor(101 * Math.random()); // Random integer between 0 and 100 both inclusive
+  var b = Test.randomNumber(); // The CW-2 JavaScript testing framework provides this method for generating a random integer from 0 to 100 inclusive so you don't need to use Math.random() yourself
+  var expected = addCheck(a, b); // Best Practice - always evaluate the expected result first - explained later
+  var actual = add(a, b);
+  Test.assertEquals(actual, expected);
+}
+```
+
+As you might have expected, this results in the user passing all the test cases without actually implementing the algorithm required in the Kata.  There are a number of ways to prevent this, e.g. using regular expression checks on the user solution to detect for the name of the reference solution, but the **simplest** way is to just enclose your test cases in a closure:
+
+```javascript
+// User Solution
+function add(a, b) {
+  return addCheck(a, b); // Now this won't work and will probably throw an error - see explanation below
+}
+
+// some code ...
+
+// Test Cases section - wrapping all assertions and the reference solution in a closure that is defined and executed immediately
+
+(function () {
+  // Your reference solution - now invisible to the user
+  function addCheck(a, b) {
+    return a + b;
+  }
+  // 100 Random Tests
+  for (var i = 0; i < 100; i++) {
+    var a = Test.randomNumber(); // JavaScript CW-2 testing framework built-in method - explained above
+    var b = Test.randomNumber();
+    var expected = addCheck(a, b);
+    var actual = add(a, b);
+    Test.assertEquals(actual, expected);
+  }
+})();
+```
+
+If you then try to execute this on Codewars, you will realise that the user solution (which attempted a cheat by using your reference directly) will throw an error instead.  This is because by placing your reference solution and the test cases in a closure, you limit the definition of your reference solution in the closure that it is defined in (see [Function Scope in JavaScript](https://www.w3schools.com/js/js_scope.asp)).  As the user solution is defined in the global scope and not the scope of your closure, it will not be able to find a (global) variable called `addCheck` when it attempts to call it as a function which sabotages the user's attempt to cheat.
+
+Additionally, if you find this method a bit complicated, note that using the [spec methods](http://www.codewars.com/docs/js-slash-coffeescript-test-reference) throughout your test cases and only defining your reference solution in the section where random tests are involved would achieve the same anti-cheat effect:
+
+```javascript
+Test.describe("add(a, b)", function () {
+  Test.it("should work for some fixed tests", function () {
+    // Don't forget to add fixed assertions even with your random tests!
+    // It's best to have at least 5 distinct fixed assertions on top of random tests
+    // You'll need them anyway when you're testing *your own* solution as you author your Kata so don't throw them away :)
+    Test.assertEquals(add(1, 2), 3);
+    Test.assertEquals(add(3, 4), 7);
+    Test.assertEquals(add(5, 10), 15);
+    Test.assertEquals(add(23, 37), 60);
+    Test.assertEquals(add(100, -77), 23);
+  });
+  Test.it("should work for random tests", function () {
+    // Define your reference soluution **here**, *not* in the global scope
+    function addCheck(a, b) {
+      return a + b;
+    }
+    // 100 random assertions
+    for (var i = 0; i < 100; i++) {
+      var a = Test.randomNumber();
+      var b = Test.randomNumber();
+      var expected = addCheck(a, b);
+      var actual = add(a, b);
+      Test.assertEquals(actual, expected);
+    }
+  });
+});
+```
+### II. Always evaluate the expected value before the user-returned value in your random assertions
+
+Although it is generally considered best practice for the user undertaking the Kata to keep his/her function **pure** (i.e. does not modify the variable passed in), it is usually not a hard requirement for the user solution to do so.  This means that when you are writing your random test cases, they should account for the fact that the user's solution may not be pure and **still allow such solutions to pass** as long as the correct return value is returned every time.  In order to ensure that, you should **always** evaluate the result from your reference solution **before** passing the input into the user solution:
+
+```javascript
+// Your reference solution
+function addCheck(a, b) {
+  return a + b;
+}
+
+// 100 random tests
+for (var i = 0; i < 100; i++) {
+  var a = Test.randomNumber();
+  var b = Test.randomNumber();
+  // Always evaluate the expected result first
+  var expected = addCheck(a, b);
+  var actual = add(a, b);
+  // Then pass both evaluated results into the assertion method
+  Test.assertEquals(actual, expected);
+}
+```
+
+This may not seem important when your Kata only deals with primitive values (since a direct assignment to a function argument immediately gets rid of the reference to the variable passed in) but the problems start to become apparent when your Kata deals with arrays and objects.  **Keep in mind that the reference solution you use, however, MUST be pure.**  Otherwise, the randomly generated input will be modified by your reference solution before they get passed in to the user solution which would very likely cause the two functions to return different values which would cause the random tests to *unfairly* fail.
+
+Note that this best practice method of generating random tests should be used in conjunction with other best practices (e.g. placing the code example above in a closure).
