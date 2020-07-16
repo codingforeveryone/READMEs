@@ -96,7 +96,90 @@ The number of hashtags indicates what kind of header you are creating.
 
 repeat(foo, 5);
  ```
+* Tables
+ * Each header cell must be seperated by at least three dashes.  
+ * The outer pipes ('|') are optional.
+ * [Mardown table generator](http://www.tablesgenerator.com/markdown_tables) is a useful tool to make your life easier.
+ 
+ ```
+|    table      |     example   |  :D   |     
+| ------------- |:-------------:| -----:|
+| col 1 is      | left-aligned  |   :)  | 
+| left-aligned  | is default    |   O_o |    
+| col 2 is      | centered      |   ;D  |     
+| col 3 is      | right-aligned |   :P  |     
+ ```
+ 
+|    table      |     example   |  :D   |     
+| ------------- |:-------------:| -----:|  
+| col 1 is      | left-aligned  |   :)  |   
+| left-aligned  | is default    |   O_o |    
+| col 2 is      | centered      |   ;D  |     
+| col 3 is      | right-aligned |   :P  |  
+ 
+ ```
+ *This* | *is* | *also*
+:---: | :--- :| :---:
+valid | although | not
+so | pretty! | :) 
+ ```
+ *This* | *is* | *also*
+:---: | :---: | :---:
+valid | although | not
+so | pretty! | :)
+ 
+* Quotes
+ * Texts can be quoted with \<.
 
+ ```
+>Rudyard Kipling: If
+>If you can dream—and not make dreams your master;   
+>    If you can think—and not make thoughts your aim;   
+>If you can meet with Triumph and Disaster 
+>    And treat those two impostors just the same;   
+>If you can bear to hear the truth you’ve spoken 
+>    Twisted by knaves to make a trap for fools, 
+>Or watch the things you gave your life to, broken, 
+>    And stoop and build ’em up with worn-out tools.
+ ```
+ 
+>Rudyard Kipling: If  
+>If you can dream—and not make dreams your master;   
+>    If you can think—and not make thoughts your aim;     
+>If you can meet with Triumph and Disaster   
+>    And treat those two impostors just the same;     
+>If you can bear to hear the truth you’ve spoken   
+>    Twisted by knaves to make a trap for fools,   
+>Or watch the things you gave your life to, broken,   
+>    And stoop and build ’em up with worn-out tools.  
+ 
+* Task lists
+	* Tasks can be markes as complete or incomplete. 
+	
+	* \[ \] list a task prefacing a list item.   
+	
+	* \[x\] marks a task as completed.  
+	
+```
+	- [x] Find a topic
+	- [x] Write a README
+	- [ ] Push my commits to GitHub
+	- [ ] Open a new pull request
+```
+
+- [x] Find a topic  
+- [x] Write a README  
+- [ ] Push my commits to GitHub
+- [ ] Open a new pull request     
+* Ignore markdown Formatting by using the '\' escape character.
+
+	```
+	Let's \*solve\* a \_Kata\_!
+	```
+
+	Let's \*solve\* a \_Kata\_!
+	
+	
 ### Further readings
 
 - [Markdown basics by John Gruber](https://daringfireball.net/projects/markdown/basics)
