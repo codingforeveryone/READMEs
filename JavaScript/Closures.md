@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Closures have a reputation for being one of JavaScript's most difficult concepts to grasp. However, if you're already comfortable with how JavaScript deals with functions and [scope][1], you're already halfway there.
+Closures have a reputation for being one of JavaScript's most difficult concepts to grasp, however, if you're already comfortable with the way JavaScript deals with functions and [scope][1], you're already halfway there.
 
 ---- 
 
@@ -35,9 +35,9 @@ d; // 6
 
 The variable `a` has **global scope** so can be accessed anywhere.
 
-The variable `b` has **local scope**, local to the function `outer()` - it can only be accessed inside of it. Similarly, variable `c` is local to the function `inner()` and can only be accessed inside of it.
+The variable `b` has **local scope** - local to the function `outer()` - it can only be accessed inside it. Similarly, variable `c` is local to the function `inner()` and can only be accessed inside it.
 
-However, due to **lexical scope**, `inner()` also has access to variables `b` and `a` because they are defined within the its parent functions - `outer()` and the global space.
+However, due to **lexical scope**, `inner()` also has access to variables `b` and `a` because they are defined within the parent function - `outer()`- and also the global space.
 
 Running this code, we set `a` and then call `outer()`, which sets `b` and calls `inner()`, which sets `c` and adds `a`, `b` and `c` together, returning a value of `6` because it has access to all 3 variables. Finally, the value of `6` is returned by `outer()` and assigned to `d`.
 
